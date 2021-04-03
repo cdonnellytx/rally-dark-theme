@@ -187,6 +187,16 @@
         margin-right: 10px;
     }
 
+    #main .smb-DataTableBlankSlate-primaryMessage,
+    #main .no-data-container .primary-message {
+        color: #ddd;
+    }
+
+    #main .smb-DataTableBlankSlate-secondaryMessage,
+    #main .no-data-container .secondary-message {
+        color: #aaa;
+    }
+
     /* New Item Side Panel */
     .smb-ResizableDrawer {
         color: #ddd !important;
@@ -243,6 +253,17 @@
     /* Story Page */
     #main .chr-QuickDetailEntityHeader .chr-QuickDetailFormattedId-panelTitle {
         color: #ddd;
+    }
+
+    /* Discussion Page */
+    #main .chr-DiscussionsPostTile-post,
+    #main .chr-DiscussionsPostTile-arrow,
+    #main .chr-DiscussionsPostTile-arrow::after {
+        background-color: #111;
+    }
+
+    #main .chr-DiscussionsPostTile-text {
+        color: #bbb;
     }
 
     /* Misc UI Widgets */
