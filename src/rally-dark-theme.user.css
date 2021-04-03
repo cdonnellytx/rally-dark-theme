@@ -378,3 +378,101 @@
         background-color: #bbb !important;
     }
 }
+
+@-moz-document domain("rallydev.com") {
+
+    h2 .chr-QuickDetailAttributeEditorWrapper-label,
+    h3 .chr-QuickDetailAttributeEditorWrapper-label,
+    .project-picker .project-nav-button,
+    .smb-HeaderTitle {
+        color: hsl(218.2, 11.1%, 65.2%);
+    }
+
+    /* ExtJS 4 */
+
+    #main .x4-btn
+
+    /*,#main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button*/
+        {
+        background-color: #292929;
+        border: 0.1rem solid #555;
+    }
+
+    #main .x4-grid-body {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    #main .x4-form-field,
+    #main .x4-form-field input {
+        background-color: #555 !important;
+        color: #ddd !important;
+    }
+
+    #main .x4-form-trigger {
+        color: #ddd;
+        background-color: #555;
+    }
+
+    #main .x4-field-label-cell,
+    #main .page-size-label {
+        color: #ddd;
+    }
+
+    #main .x4-column-header {
+        color: #ddd;
+        background-color: #333;
+        border-color: #333;
+    }
+
+    #main .x4-column-header .x4-column-header-inner {
+        color: #ddd;
+    }
+
+    #main .x4-grid-cell {
+        background-color: #111;
+        color: #ddd;
+        border-color: #555;
+    }
+
+
+    /* Text Editor */
+    .cke_editable {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+    }
+
+    .cke_editable *[style^="color:#000000"] {
+        /* no black */
+        color: inherit !important;
+    }
+
+    .smb-Button--icon,
+    .chr-FormattedId .chr-FormattedId-idText,
+    .cke_editable a {
+        color: hsl(200.3, 93%, 60.8%)
+    }
+
+    .cke_bottom {
+        background-color: #bbb;
+    }
+
+    /* Images so they don't POP white (they'll still be white because they are.) */
+    .style_4 {
+        background-color: #000;
+    }
+
+    /* Select State (P/I/D) */
+
+    .chr-EditorsScheduleStateEditor .smb-Select-text {
+        color: transparent !important;
+    }
+
+    .chr-EditorsScheduleStates-block--before {
+        background-color: hsl(216.8, 93%, 63.1%);
+    }
+
+    .chr-EditorsScheduleStates-block--after {
+        background-color: hsl(217.5, 30.8%, 69.8%);
+    }
+}
