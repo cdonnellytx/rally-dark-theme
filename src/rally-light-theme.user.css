@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           Rally Light Theme
+@namespace      USO Archive
+@author         CA
+@description    `Default Theme for CA Technologies' Rally AgileThis theme is a work-in-progress for the new Rally theme based on Bootstrap`
+@version        any
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("rallydev.com") {
+
+    /* Global */
+    :root.LIGHT_MODE {
+        --main-background-color: #f5f7fa;
+        --main-color: #000;
+
+        --smb-panel-header: #f6f6f6;
+        --smb-panel-header-border-bottom: #d6d6d6;
+
+        --smb-table-header-cell-background-color: #fff;
+        --smb-table-header-cell-border-bottom-color: #c8d1e0;
+        --smb-table-header-cell-color: #333840;
+
+        --smb-table-cell-border-top-color: var(--main-background-color);
+
+        --smb-data-table-background-color: var(--main-background-color);
+    }
+
+}

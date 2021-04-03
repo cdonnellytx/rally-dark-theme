@@ -10,9 +10,25 @@
 @-moz-document domain("rallydev.com") {
 
     /* Global */
+    :root {
+        --main-background-color: #111;
+        --main-color: #ddd;
+
+        --smb-panel-header: #111;
+        --smb-panel-border-bottom: #555;
+
+        --smb-table-header-cell-background-color: #1f1f29;
+        --smb-table-header-cell-border-bottom-color: #555;
+        --smb-table-header-cell-color: #bbb;
+
+        --smb-table-cell-border-top-color: #112; /* var(--main-background-color); */
+        --smb-data-table-background-color: var(--smb-table-header-cell-background-color); /* var(--main-background-color); */
+
+    }
+
     #main,
     #main #content {
-        background-color: #111;
+        background-color: var(--main-background-color);
     }
 
     ::-webkit-scrollbar {
@@ -81,16 +97,12 @@
     #main .chr-PlanTeamPage,
     #main .chr-BacklogPage,
     #main .chr-ToolbarDefaultToolbar {
-        background-color: #111;
+        background-color: var(--main-background-color);
     }
 
     #main .chr-PlanTeamPage>.smb-Header {
         border-bottom: 1px solid #444;
     }
-
-    #main #viewport .smb-PanelHeader {}
-
-    #main #viewport .smb-PanelBody {}
 
     #main .chr-PlanTeamPage .chr-PlanTeamPage-columnDivider {
         background-color: #444;
@@ -111,30 +123,44 @@
     }
 
     #main .smb-Panel {
-        border-bottom-color: #555 !important;
+        border-bottom-color: var(--smb-panel-border-bottom);
     }
 
-    #main .smb-PanelHeader,
+    #main .smb-PanelHeader {
+        /* color: #ddd; */ /* TODO what uses this */
+        background-color: var(--smb-panel-header);
+        border-bottom-color: var(--smb-panel-border-bottom);
+    }
+
+    #main .chr-FullDetailOverlay {
+        background-color: var(--main-background-color);
+    }
+
     #main .chr-FullDetailPage {
         color: #ddd;
-        background-color: #111 !important;
         border-color: #555 !important;
     }
 
     /* Tables */
     #main .smb-DataTable,
-    #main .smb-TableHeaderCell,
     #main .smb-TableCell,
     #main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped>.smb-DataTable-wrapper>.smb-DataTable>.smb-TableBody>.smb-TableRow,
     #main .smb-TableRow,
     #main .smb-Pagination,
     #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow,
     #main .chr-RollupRow-cell {
-        color: #bbb;
-        background-color: #1f1f29;
+        color: var(--smb-table-header-cell-color);
+        background-color: var(--smb-data-table-background-color);
     }
 
-    #main #viewport .smb-TableCell {}
+    #main .smb-DataTableTableHeaderCellDragLayer,
+    #main .smb-TableHeaderCell {
+        background-color: var(--smb-table-header-cell-background-color);
+        border-bottom-color: var(--smb-table-header-cell-border-bottom-color);
+        color: var(--smb-table-header-cell-color);
+    }
+
+
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
@@ -163,11 +189,6 @@
     #main .chr-PlanTeamIterationsDataTable>thead .smb-TableHeaderCell .smb-TableHeaderCell-content {
         background-color: #335;
         color: #ddd;
-    }
-
-    #main .smb-DataTableTableHeaderCellDragLayer,
-    #main .smb-TableHeaderCell {
-        border-bottom: 2px solid #555;
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-colResizer,
@@ -215,7 +236,7 @@
 
     /* Team Board */
     #main .chr-BoardRow {
-        background-color: #111;
+        background-color: var(--main-background-color);
     }
 
     #main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-column,
