@@ -82,21 +82,15 @@
     #main .chr-BacklogPage,
     #main .chr-ToolbarDefaultToolbar {
         background-color: #111;
-        padding-top: 0rem;
     }
 
     #main .chr-PlanTeamPage>.smb-Header {
         border-bottom: 1px solid #444;
-        padding-bottom: 0.5rem;
     }
 
-    #main #viewport .smb-PanelHeader {
-        padding: 0;
-    }
+    #main #viewport .smb-PanelHeader {}
 
-    #main #viewport .smb-PanelBody {
-        padding-top: 0;
-    }
+    #main #viewport .smb-PanelBody {}
 
     #main .chr-PlanTeamPage .chr-PlanTeamPage-columnDivider {
         background-color: #444;
@@ -140,9 +134,7 @@
         background-color: #1f1f29;
     }
 
-    #main #viewport .smb-TableCell {
-        padding: 0rem 0.4rem;
-    }
+    #main #viewport .smb-TableCell {}
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
