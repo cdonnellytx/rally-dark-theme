@@ -27,3 +27,8 @@ indent_size = 4
 insert_final_newline = true
 charset = utf-8
 trim_trailing_whitespace = false
+
+
+[*.css]
+css_brace_style = end_of_line
+css_space_around_selector_operator = true
