@@ -13,22 +13,34 @@
     :root {
         --main-background-color: #111;
         --main-color: #ddd;
+        --main-border-color: #555;
+        --link-color: hsl(200.3, 93%, 60.8%);
 
-        --smb-panel-header: #111;
-        --smb-panel-border-bottom: #555;
+        --smb-panel-header-background-color: #111;
 
         --smb-table-header-cell-background-color: #1f1f29;
-        --smb-table-header-cell-border-bottom-color: #555;
         --smb-table-header-cell-color: #bbb;
 
-        --smb-table-cell-border-top-color: #112; /* var(--main-background-color); */
-        --smb-data-table-background-color: var(--smb-table-header-cell-background-color); /* var(--main-background-color); */
+        --smb-table-cell-border-top-color: #112;
+        /* var(--main-background-color); */
+        --smb-data-table-background-color: var(--smb-table-header-cell-background-color);
+        /* var(--main-background-color); */
 
+        --popover-background-color: #223;
+        --title-color: #ddd;
+    }
+
+    #main {
+        border-color: var(--main-border-color);
     }
 
     #main,
     #main #content {
         background-color: var(--main-background-color);
+    }
+
+    #main a {
+        color: var(--link-color);
     }
 
     ::-webkit-scrollbar {
@@ -123,13 +135,14 @@
     }
 
     #main .smb-Panel {
-        border-bottom-color: var(--smb-panel-border-bottom);
+        border-bottom-color: var(--main-border-color);
     }
 
     #main .smb-PanelHeader {
-        /* color: #ddd; */ /* TODO what uses this */
-        background-color: var(--smb-panel-header);
-        border-bottom-color: var(--smb-panel-border-bottom);
+        /* color: #ddd; */
+        /* TODO what uses this */
+        background-color: var(--smb-panel-header-background-color);
+        border-bottom-color: var(--main-border-color);
     }
 
     #main .chr-FullDetailOverlay {
@@ -138,7 +151,7 @@
 
     #main .chr-FullDetailPage {
         color: #ddd;
-        border-color: #555 !important;
+        border-color: var(--main-border-color) !important;
     }
 
     /* Tables */
@@ -156,20 +169,19 @@
     #main .smb-DataTableTableHeaderCellDragLayer,
     #main .smb-TableHeaderCell {
         background-color: var(--smb-table-header-cell-background-color);
-        border-bottom-color: var(--smb-table-header-cell-border-bottom-color);
+        border-bottom-color: var(--main-border-color);
         color: var(--smb-table-header-cell-color);
     }
-
-
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
+    #main .smb-TableHeaderCell .smb-TableHeaderCell-sort .smb-TableHeaderCell-sortIcon,
     #main .smb-TableCell.smb-TableCell--rowActions,
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>td,
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>th {
-        background-color: #1f1f29;
+        background-color: var(--smb-table-header-cell-background-color);
     }
 
     #main .smb-SvgIcon--gear,
@@ -195,7 +207,7 @@
     #main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer,
     #main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
     #main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
-        background-color: #555;
+        background-color: var(--main-border-color);
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer.is-resizing,
@@ -230,7 +242,7 @@
 
     .smb-TextInput,
     .smb-TextInput input {
-        background-color: #555 !important;
+        background-color: var(--main-border-color) !important;
         color: #ddd !important;
     }
 
@@ -255,7 +267,7 @@
 
     #main .chr-BoardCard {
         background-color: #112;
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px #555;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px var(--main-border-color);
     }
 
     #main .smb-FieldLabel-text,
@@ -289,21 +301,30 @@
 
     /* Misc UI Widgets */
     #main .smb-Popover,
-    #main .smb-Popover-arrow {
-        background-color: #223 !important;
+    #main .smb-Popover>.smb-Popover-arrow,
+    #main .smb-Popover>.smb-Popover-arrow::after,
+    #main .smb-PopoverContent {
+        background-color: var(--popover-background-color);
+        /* !important; */
     }
 
     #main .smb-Popover-header .smb-Popover-title {
-        color: #ddd;
+        color: var(--title-color);
     }
 
     #main .smb-Button--success,
     #main .smb-Button--failure,
-    #main .smb-Select-trigger,
-    #main .smb-Button--secondary {
+    #main .smb-Button--secondary,
+    #main .chr-FilterButton--numFilters,
+    #main .smb-Select-trigger {
         color: #ddd !important;
         /* fixes hover */
         background-color: #444 !important;
+    }
+
+    #main .chr-SavedViewsCollectionsDataTable-title,
+    #main .chr-SavedViewsSelect-label {
+        color: var(--title-color);
     }
 
     #main .smb-Button--success,
@@ -312,7 +333,7 @@
     #main .smb-Select-trigger,
     #main .smb-SearchInput.smb-TextInput,
     #main .smb-Button.is-disabled {
-        border-color: #555;
+        border-color: var(--main-border-color);
     }
 
     #main .smb-Button--success.is-active {
@@ -330,7 +351,7 @@
     #main .smb-ButtonGroup>.smb-Button,
     #main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button {
         background-color: #292929;
-        border: 0.1rem solid #555;
+        border: 0.1rem solid var(--main-border-color);
     }
 
     .smb-DropdownHeader,
@@ -342,7 +363,7 @@
     }
 
     .smb-Select-trigger {
-        border: 1px solid #555 !important;
+        border: 1px solid var(--main-border-color) !important;
     }
 
     #main .chr-EditorsWorkItemEditor,
@@ -350,7 +371,7 @@
     #main .smb-TextInput {
         color: #bbb !important;
         background-color: #444 !important;
-        border-color: #555 !important;
+        border-color: var(--main-border-color) !important;
     }
 
     #main .smb-CapacityBar {
@@ -379,7 +400,7 @@
     #main .smb-DropdownList-listContentWrapper,
     #main .smb-DropdownItem {
         color: #ddd;
-        background-color: #555;
+        background-color: var(--main-border-color);
     }
 
     /* TODO: .smb-Select:not(.is-disabled):not(.is-readOnly):focus */
@@ -409,14 +430,24 @@
         color: hsl(218.2, 11.1%, 65.2%);
     }
 
+    font[style^="color:#000000"],
+    span[style^="color:#000000"] {
+        /* no black */
+        color: #fff !important;
+    }
+
     /* ExtJS 4 */
+
+    .x4-body {
+        color: var(--main-color);
+    }
 
     #main .x4-btn
 
     /*,#main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button*/
         {
         background-color: #292929;
-        border: 0.1rem solid #555;
+        border: 0.1rem solid var(--main-border-color);
     }
 
     #main .x4-grid-body {
@@ -426,13 +457,13 @@
 
     #main .x4-form-field,
     #main .x4-form-field input {
-        background-color: #555 !important;
+        background-color: var(--main-border-color) !important;
         color: #ddd !important;
     }
 
     #main .x4-form-trigger {
         color: #ddd;
-        background-color: #555;
+        background-color: var(--main-border-color);
     }
 
     #main .x4-field-label-cell,
@@ -453,7 +484,7 @@
     #main .x4-grid-cell {
         background-color: #111;
         color: #ddd;
-        border-color: #555;
+        border-color: var(--main-border-color);
     }
 
 
@@ -471,7 +502,7 @@
     .smb-Button--icon,
     .chr-FormattedId .chr-FormattedId-idText,
     .cke_editable a {
-        color: hsl(200.3, 93%, 60.8%)
+        color: var(--link-color);
     }
 
     .cke_bottom {

@@ -14,8 +14,7 @@
         --main-background-color: #f5f7fa;
         --main-color: #000;
 
-        --smb-panel-header: #f6f6f6;
-        --smb-panel-header-border-bottom: #d6d6d6;
+        --smb-panel-header-background-color: #f6f6f6;
 
         --smb-table-header-cell-background-color: #fff;
         --smb-table-header-cell-border-bottom-color: #c8d1e0;
@@ -24,6 +23,9 @@
         --smb-table-cell-border-top-color: var(--main-background-color);
 
         --smb-data-table-background-color: var(--main-background-color);
+
+        --popover-background-color: #fff;
+        --title-color: #58606e;
     }
 
 }
