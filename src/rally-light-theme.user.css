@@ -13,6 +13,8 @@
     :root.LIGHT_MODE {
         --main-background-color: #f5f7fa;
         --main-color: #000;
+        --main-border-color: #;
+        --link-color: #3272d9;
 
         --smb-panel-header-background-color: #f6f6f6;
 
@@ -24,8 +26,19 @@
 
         --smb-data-table-background-color: var(--main-background-color);
 
+        --hover-background-color: #ebeff5;
+        --current-background-color: #c8d1e0;
+        --active-background-color: #f0f5fc;
+
         --popover-background-color: #fff;
         --title-color: #58606e;
-    }
 
+        --alm-background-color: #fff;
+        --alm-border-color: #dde3ed;
+
+        --navbar-section-color: #58606e;
+        --navbar-section-selected-background-color: #f0f5fc;
+
+        --viewport-button-background-color: #f0f5fc;
+    }
 }

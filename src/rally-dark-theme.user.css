@@ -14,9 +14,9 @@
         --main-background-color: #111;
         --main-color: #ddd;
         --main-border-color: #555;
-        --link-color: hsl(200.3, 93%, 60.8%);
+        --link-color: #3eb9f8;
 
-        --smb-panel-header: #111;
+        --smb-panel-header-background-color: #111;
 
         --smb-table-header-cell-background-color: #1f1f29;
         --smb-table-header-cell-border-bottom-color: #555;
@@ -24,11 +24,28 @@
 
         --smb-table-cell-border-top-color: #112;
         /* var(--main-background-color); */
+
         --smb-data-table-background-color: var(--smb-table-header-cell-background-color);
         /* var(--main-background-color); */
 
         --popover-background-color: #223;
         --title-color: #ddd;
+
+        --alm-background-color: #112;
+        --alm-border-color: #444;
+
+        --alm-button-background-color: #1f1f29;
+        --alm-button-border-color: #555;
+        --alm-button-color: #bbb;
+
+        --navbar-section-color: #aaa;
+        --navbar-section-selected-background-color: #223;
+
+        --hover-background-color: #50509F;
+        --current-background-color: #4B4B85;
+        --active-background-color: #2929c4;
+
+        --viewport-button-background-color: #223;
     }
 
     #main {
@@ -59,31 +76,77 @@
 
     /* Header */
     .alm-header-container {
-        background-color: #112;
-        border-bottom: solid 1px #444;
+        background-color: var(--alm-background-color);
+        border-bottom-color: var(--alm-border-color);
+    }
+
+    .alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton) {
+        background-color: var(--alm-button-background-color);
+        border-color: var(--alm-button-border-color);
+        color: var(--alm-button-color);
     }
 
     #main .chr-NavBar .chr-NavSection,
     #main .chr-NavBar-alt .chr-NavSection,
     #main .project-picker .project-nav-container .project-nav-label {
-        color: #aaa;
-    }
-
-    #main .chr-NavDropMenu {
-        background-color: #112;
-    }
-
-    #main .chr-NavDropMenu .chr-NavDropMenu-item .chr-NavDropMenu-itemContent>span {
-        color: #ddd;
+        color: var(--navbar-section-color);
     }
 
     #main .chr-NavBar .chr-NavSection.is-selected>div:first-child,
     #main .chr-NavBar-alt .chr-NavSection.is-selected>div:first-child,
     #main .chr-NavBar .chr-NavSection.is-selected,
     #main .chr-NavBar-alt .chr-NavSection.is-selected {
-        background-color: #223;
-        color: #3272d9;
+        background-color: var(--navbar-section-selected-background-color);
+        color: var(--link-color);
     }
+
+    #main .chr-NavBar .chr-NavSection:hover,
+    #main .chr-NavBar-alt .chr-NavSection:hover {
+        background-color: var(--active-background-color);
+    }
+
+    #main .chr-NavDropMenu {
+        background-color: var(--alm-background-color);
+    }
+
+    /* Nav */
+    #main .chr-NavDropMenu .chr-NavDropMenu-item .chr-NavDropMenu-itemContent>span {
+        color: var(--main-color);
+    }
+
+    /* Viewport */
+
+    #main .chr-WorkspacePicker-listContainer,
+    #main .chr-ViewportProjectPickerTray,
+    #main .chr-ViewportRecentProjects,
+    #main .chr-ViewportScopeUpDown {
+        background-color: var(--alm-background-color);
+    }
+
+    #main .chr-ViewportProjectPickerTreeItem:hover {
+        background-color: var(--hover-background-color);
+    }
+
+    #main .chr-ViewportProjectPickerTreeItem--current {
+        background-color: var(--current-background-color);
+    }
+
+    #main .chr-ViewportProjectPickerTray a,
+    #main .chr-WorkspacePicker-listItem .chr-WorkspacePicker-workspaceLink {
+        color: var(--main-color);
+    }
+
+    .chr-ViewportProjectPickerHierarchy .chr-ViewportProjectPickerHierarchy-header>.smb-Button,
+    .chr-ViewportProjectPickerHierarchy .chr-ViewportProjectPickerHierarchy-header>.chr-ViewportProjectPickerHierarchy-search>.smb-Button {
+        background-color: var(--viewport-button-background-color);
+    }
+
+    .chr-WorkspacePicker-listItem.chr-WorkspacePicker-listItem--active {
+        background-color: var(--current-background-color);
+
+    }
+
+    /* Stats */
 
     #main .chr-StatsBanner-panels,
     #main .chr-StatsBanner-toggle,
@@ -101,7 +164,7 @@
 
     /* Footer */
     #main .chr-Footer {
-        background-color: #112;
+        background-color: var(--alm-background-color);
         color: #aaa;
     }
 
@@ -142,7 +205,7 @@
     #main .smb-PanelHeader {
         /* color: #ddd; */
         /* TODO what uses this */
-        background-color: var(--smb-panel-header);
+        background-color: var(--smb-panel-header-background-color);
         border-bottom-color: var(--main-border-color);
     }
 
@@ -195,7 +258,7 @@
     #main .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     #main .smb-TableCell,
     #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
-        border-top: 3px solid #112;
+        border-top-color: var(--alm-background-color);
     }
 
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable>thead th,
@@ -267,7 +330,7 @@
     }
 
     #main .chr-BoardCard {
-        background-color: #112;
+        background-color: var(--alm-background-color);
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px #555;
     }
 
@@ -292,8 +355,13 @@
     /* Discussion Page */
     #main .chr-DiscussionsPostTile-post,
     #main .chr-DiscussionsPostTile-arrow,
-    #main .chr-DiscussionsPostTile-arrow::after {
+    #main .chr-DiscussionsPostTile-arrow::after,
+    #main .discussion-richtext-stream-view {
         background-color: #111;
+    }
+
+    #main .discussion-richtext-stream-view .list .list-item {
+        color: #bbb;
     }
 
     #main .chr-DiscussionsPostTile-text {
@@ -311,6 +379,21 @@
 
     #main .smb-Popover-header .smb-Popover-title {
         color: var(--title-color);
+    }
+
+    #main .smb-Button--icon:not(.is-disabled):hover,
+    #main .smb-Button--link:not(.is-disabled):hover,
+    #main .smb-Button--minimal:not(.is-disabled):hover {
+        background-color: var(--main-background-color);
+        border-color: var(--main-background-color);
+        color: var(--link-color);
+    }
+
+    #main .smb-Button--icon:not(.is-disabled):active,
+    #main .smb-Button--link:not(.is-disabled):active,
+    #main .smb-Button--minimal:not(.is-disabled):active {
+        background-color: var(--active-background-color);
+        /* technically not... */
     }
 
     #main .smb-Button--success,
@@ -439,7 +522,7 @@
 
     /* ExtJS 4 */
 
-    .x4-body {
+    #main .x4-body {
         color: var(--main-color);
     }
 
