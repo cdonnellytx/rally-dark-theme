@@ -16,6 +16,14 @@
         --main-border-color: #555;
         --link-color: #3eb9f8;
 
+        --content-background-color: #112;
+
+        --control-background-color: #223;
+
+        --text-input-color: #bbb;
+        --text-input-background-color: #444;
+        --text-input-border-color: #555;
+
         --smb-panel-header-background-color: #111;
 
         --smb-table-header-cell-background-color: #1f1f29;
@@ -28,15 +36,18 @@
         --smb-data-table-background-color: var(--smb-table-header-cell-background-color);
         /* var(--main-background-color); */
 
-        --popover-background-color: #223;
         --title-color: #ddd;
 
-        --alm-background-color: #112;
+
         --alm-border-color: #444;
 
         --alm-button-background-color: #1f1f29;
         --alm-button-border-color: #555;
         --alm-button-color: #bbb;
+
+        --button-background-color: #292929;
+        --button-border-color: #555;
+        --button-disabled-background-color: var(--hover-background-color);
 
         --navbar-section-color: #aaa;
         --navbar-section-selected-background-color: #223;
@@ -48,17 +59,22 @@
         --viewport-button-background-color: #223;
     }
 
-    #main {
+    body, #main {
         border-color: var(--main-border-color);
-    }
-
-    #main,
-    #main #content {
         background-color: var(--main-background-color);
+        color: var(--main-color);
     }
 
     #main a {
         color: var(--link-color);
+    }
+
+    #main #content {
+        background-color: var(--main-background-color);
+    }
+
+    #main #content .page {
+        background-color: var(--content-background-color);
     }
 
     ::-webkit-scrollbar {
@@ -76,7 +92,7 @@
 
     /* Header */
     .alm-header-container {
-        background-color: var(--alm-background-color);
+        background-color: var(--content-background-color);
         border-bottom-color: var(--alm-border-color);
     }
 
@@ -106,7 +122,7 @@
     }
 
     #main .chr-NavDropMenu {
-        background-color: var(--alm-background-color);
+        background-color: var(--content-background-color);
     }
 
     /* Nav */
@@ -120,7 +136,7 @@
     #main .chr-ViewportProjectPickerTray,
     #main .chr-ViewportRecentProjects,
     #main .chr-ViewportScopeUpDown {
-        background-color: var(--alm-background-color);
+        background-color: var(--content-background-color);
     }
 
     #main .chr-ViewportProjectPickerTreeItem:hover {
@@ -164,7 +180,7 @@
 
     /* Footer */
     #main .chr-Footer {
-        background-color: var(--alm-background-color);
+        background-color: var(--content-background-color);
         color: #aaa;
     }
 
@@ -258,7 +274,7 @@
     #main .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     #main .smb-TableCell,
     #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
-        border-top-color: var(--alm-background-color);
+        border-top-color: var(--content-background-color);
     }
 
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable>thead th,
@@ -304,10 +320,15 @@
         background-color: #222 !important;
     }
 
-    .smb-TextInput,
-    .smb-TextInput input {
-        background-color: #555 !important;
-        color: #ddd !important;
+
+    #main .smb-TextInput {
+        color: var(--text-input-color);
+        background-color: var(--text-input-background-color);
+        border-color: var(--text-input-border-color);
+    }
+
+    #main .smb-TextInput input {
+        color: inherit;
     }
 
     /* Team Board */
@@ -330,7 +351,7 @@
     }
 
     #main .chr-BoardCard {
-        background-color: var(--alm-background-color);
+        background-color: var(--content-background-color);
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px #555;
     }
 
@@ -368,17 +389,31 @@
         color: #bbb;
     }
 
-    /* Misc UI Widgets */
-    #main .smb-Popover,
-    #main .smb-Popover>.smb-Popover-arrow,
-    #main .smb-Popover>.smb-Popover-arrow::after,
-    #main .smb-PopoverContent {
-        background-color: var(--popover-background-color);
-        /* !important; */
+    /* SMB Button */
+    #main .smb-Button {
+        border-color: var(--button-border-color);
     }
 
-    #main .smb-Popover-header .smb-Popover-title {
-        color: var(--title-color);
+    #main .smb-Button--icon,
+    #main .smb-Button--link,
+    #main .smb-Button--minimal {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--link-color);
+    }
+
+    #main .smb-ButtonGroup>.smb-Button,
+    #main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button {
+        background-color: var(--button-background-color);
+        border-color: var(--button-border-color);
+    }
+
+    #main .smb-Button.is-disabled,
+    #main .smb-Button[disabled],
+    #main .smb-Button[disabled]:active,
+    #main .smb-Button[disabled]:focus,
+    #main .smb-Button[disabled]:hover {
+        background-color: var(--button-disabled-background-color);
     }
 
     #main .smb-Button--icon:not(.is-disabled):hover,
@@ -406,19 +441,41 @@
         background-color: #444 !important;
     }
 
+    /* SMB Popover */
+    #main .smb-Popover,
+    #main .smb-Popover>.smb-Popover-arrow,
+    #main .smb-Popover>.smb-Popover-arrow::after,
+    #main .smb-PopoverContent {
+        background-color: var(--control-background-color);
+        /* !important; */
+    }
+
+    #main .smb-Popover-header .smb-Popover-title {
+        color: var(--title-color);
+    }
+
+    /* CHR Saved Views */
+
     #main .chr-SavedViewsCollectionsDataTable-title,
     #main .chr-SavedViewsSelect-label {
         color: var(--title-color);
     }
 
+    #main .chr-SavedViewsSelect .smb-DropdownList-footer {
+        background-color: var(--control-background-color);
+    }
+
+    /*
+    I think this is redundant...
     #main .smb-Button--success,
     #main .smb-Button--failure,
     #main .smb-Button--secondary,
     #main .smb-Select-trigger,
     #main .smb-SearchInput.smb-TextInput,
     #main .smb-Button.is-disabled {
-        border-color: #555;
+        border-color: var(--button-border-color);
     }
+    */
 
     #main .smb-Button--success.is-active {
         background-color: #005700 !important;
@@ -430,12 +487,6 @@
 
     #main .smb-Button.is-disabled {
         background-color: #292929 !important;
-    }
-
-    #main .smb-ButtonGroup>.smb-Button,
-    #main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button {
-        background-color: #292929;
-        border: 0.1rem solid #555;
     }
 
     .smb-DropdownHeader,
@@ -451,8 +502,7 @@
     }
 
     #main .chr-EditorsWorkItemEditor,
-    #main .chr-EditorsMultiItemEditor,
-    #main .smb-TextInput {
+    #main .chr-EditorsMultiItemEditor {
         color: #bbb !important;
         background-color: #444 !important;
         border-color: #555 !important;
@@ -514,13 +564,19 @@
         color: hsl(218.2, 11.1%, 65.2%);
     }
 
-    font[style^="color:#000000"],
-    span[style^="color:#000000"] {
-        /* no black */
+    /* font[style^="color:#000000"],
+    span[style^="color:#000000"],
+    font[style^="color:black"],
+    span[style^="color:black"] {
+        *//* no black *//*
         color: #fff !important;
-    }
+    } */
 
     /* ExtJS 4 */
+
+    /* .x4-body class is on body, in main.
+     * Following rule is for any *nested* .x4-body elements (unlikely but not impossible).
+     */
 
     #main .x4-body {
         color: var(--main-color);
@@ -530,8 +586,8 @@
 
     /*,#main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button*/
         {
-        background-color: #292929;
-        border: 0.1rem solid #555;
+        background-color: var(--button-background-color);
+        border-color: #555;
     }
 
     #main .x4-grid-body {
@@ -573,12 +629,17 @@
 
 
     /* Text Editor */
+    .smb-RichTextEditor-textArea,
     .cke_editable {
         background-color: #1e1e1e;
         color: #dcdcdc;
     }
 
-    .cke_editable *[style^="color:#000000"] {
+    .cke_editable font[style^="color:#000000"],
+    .cke_editable span[style^="color:#000000"],
+    .cke_editable font[style^="color:black"],
+    .cke_editable span[style^="color:black"]
+     {
         /* no black */
         color: inherit !important;
     }

@@ -13,14 +13,23 @@
     :root.LIGHT_MODE {
         --main-background-color: #f5f7fa;
         --main-color: #000;
-        --main-border-color: #;
+        --main-border-color: #ddd;
         --link-color: #3272d9;
+
+        --content-background-color: #fff;
+
+
+        --control-background-color: #fff;
 
         --smb-panel-header-background-color: #f6f6f6;
 
         --smb-table-header-cell-background-color: #fff;
         --smb-table-header-cell-border-bottom-color: #c8d1e0;
         --smb-table-header-cell-color: #333840;
+
+
+        --button-background-color: ???;
+        --button-border-color: #c8d1e0;
 
         --smb-table-cell-border-top-color: var(--main-background-color);
 
@@ -30,10 +39,8 @@
         --current-background-color: #c8d1e0;
         --active-background-color: #f0f5fc;
 
-        --popover-background-color: #fff;
         --title-color: #58606e;
 
-        --alm-background-color: #fff;
         --alm-border-color: #dde3ed;
 
         --navbar-section-color: #58606e;
