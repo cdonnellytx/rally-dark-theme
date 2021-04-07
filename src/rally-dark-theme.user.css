@@ -16,9 +16,10 @@
         --main-border-color: #555;
         --link-color: hsl(200.3, 93%, 60.8%);
 
-        --smb-panel-header-background-color: #111;
+        --smb-panel-header: #111;
 
         --smb-table-header-cell-background-color: #1f1f29;
+        --smb-table-header-cell-border-bottom-color: #555;
         --smb-table-header-cell-color: #bbb;
 
         --smb-table-cell-border-top-color: #112;
@@ -141,7 +142,7 @@
     #main .smb-PanelHeader {
         /* color: #ddd; */
         /* TODO what uses this */
-        background-color: var(--smb-panel-header-background-color);
+        background-color: var(--smb-panel-header);
         border-bottom-color: var(--main-border-color);
     }
 
@@ -151,7 +152,7 @@
 
     #main .chr-FullDetailPage {
         color: #ddd;
-        border-color: var(--main-border-color) !important;
+        border-color: #555 !important;
     }
 
     /* Tables */
@@ -169,7 +170,7 @@
     #main .smb-DataTableTableHeaderCellDragLayer,
     #main .smb-TableHeaderCell {
         background-color: var(--smb-table-header-cell-background-color);
-        border-bottom-color: var(--main-border-color);
+        border-bottom-color: var(--smb-table-header-cell-border-bottom-color);
         color: var(--smb-table-header-cell-color);
     }
 
@@ -207,7 +208,7 @@
     #main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer,
     #main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
     #main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
-        background-color: var(--main-border-color);
+        background-color: #555;
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer.is-resizing,
@@ -242,7 +243,7 @@
 
     .smb-TextInput,
     .smb-TextInput input {
-        background-color: var(--main-border-color) !important;
+        background-color: #555 !important;
         color: #ddd !important;
     }
 
@@ -267,7 +268,7 @@
 
     #main .chr-BoardCard {
         background-color: #112;
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px var(--main-border-color);
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px #555;
     }
 
     #main .smb-FieldLabel-text,
@@ -333,7 +334,7 @@
     #main .smb-Select-trigger,
     #main .smb-SearchInput.smb-TextInput,
     #main .smb-Button.is-disabled {
-        border-color: var(--main-border-color);
+        border-color: #555;
     }
 
     #main .smb-Button--success.is-active {
@@ -351,7 +352,7 @@
     #main .smb-ButtonGroup>.smb-Button,
     #main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button {
         background-color: #292929;
-        border: 0.1rem solid var(--main-border-color);
+        border: 0.1rem solid #555;
     }
 
     .smb-DropdownHeader,
@@ -363,7 +364,7 @@
     }
 
     .smb-Select-trigger {
-        border: 1px solid var(--main-border-color) !important;
+        border: 1px solid #555 !important;
     }
 
     #main .chr-EditorsWorkItemEditor,
@@ -371,7 +372,7 @@
     #main .smb-TextInput {
         color: #bbb !important;
         background-color: #444 !important;
-        border-color: var(--main-border-color) !important;
+        border-color: #555 !important;
     }
 
     #main .smb-CapacityBar {
@@ -400,7 +401,7 @@
     #main .smb-DropdownList-listContentWrapper,
     #main .smb-DropdownItem {
         color: #ddd;
-        background-color: var(--main-border-color);
+        background-color: #555;
     }
 
     /* TODO: .smb-Select:not(.is-disabled):not(.is-readOnly):focus */
@@ -447,7 +448,7 @@
     /*,#main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button*/
         {
         background-color: #292929;
-        border: 0.1rem solid var(--main-border-color);
+        border: 0.1rem solid #555;
     }
 
     #main .x4-grid-body {
@@ -457,13 +458,13 @@
 
     #main .x4-form-field,
     #main .x4-form-field input {
-        background-color: var(--main-border-color) !important;
+        background-color: #555 !important;
         color: #ddd !important;
     }
 
     #main .x4-form-trigger {
         color: #ddd;
-        background-color: var(--main-border-color);
+        background-color: #555;
     }
 
     #main .x4-field-label-cell,
@@ -484,7 +485,7 @@
     #main .x4-grid-cell {
         background-color: #111;
         color: #ddd;
-        border-color: var(--main-border-color);
+        border-color: #555;
     }
 
 
