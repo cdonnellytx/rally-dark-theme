@@ -18,8 +18,11 @@
 
         --content-background-color: #fff;
 
+        --panel-background-color: #fff;
 
         --control-background-color: #fff;
+        --control-border-color: #333840;
+        --control-color: #434a54;
 
         --smb-panel-header-background-color: #f6f6f6;
 
@@ -36,8 +39,13 @@
         --smb-data-table-background-color: var(--main-background-color);
 
         --hover-background-color: #ebeff5;
-        --current-background-color: #c8d1e0;
+        --hover-color: #333840;
+
+        --selected-background-color: #c8d1e0;
+        --selected-color: #333840;
+
         --active-background-color: #f0f5fc;
+        --active-color: #333840;
 
         --title-color: #58606e;
 

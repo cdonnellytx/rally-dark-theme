@@ -18,11 +18,20 @@
 
         --content-background-color: #112;
 
-        --control-background-color: #223;
+        --panel-background-color: #223;
+        --panel-color: #bbb;
 
-        --text-input-color: #bbb;
-        --text-input-background-color: #444;
-        --text-input-border-color: #555;
+        --control-background-color: #444;
+        --control-border-color: #777;
+        --control-color: #bbb;
+        --control-text-shadow-color: #44444480;
+
+        --text-input-background-color: var(--control-background-color);
+        --text-input-border-color: var(--control-border-color);
+        --text-input-color: var(--control-color);
+
+        --cke-editable-background-color: #1e1e1e;
+        --cke-editable-color: #dcdcdc;
 
         --smb-panel-header-background-color: #111;
 
@@ -52,14 +61,19 @@
         --navbar-section-color: #aaa;
         --navbar-section-selected-background-color: #223;
 
-        --hover-background-color: #50509F;
-        --current-background-color: #4B4B85;
         --active-background-color: #2929c4;
+        --active-color: #ddd;
+        --hover-background-color: #50509F;
+        --hover-border-color: #494991;
+        --hover-color: var(--active-color);
+        --selected-background-color: #4B4B85;
+        --selected-color: var(--active-color);
 
         --viewport-button-background-color: #223;
     }
 
-    body, #main {
+    body,
+    #main {
         border-color: var(--main-border-color);
         background-color: var(--main-background-color);
         color: var(--main-color);
@@ -67,6 +81,14 @@
 
     #main a {
         color: var(--link-color);
+    }
+
+    /* HACK: Workaround for hardcoded inline CSS for black */
+    font[style^="color:#000000"],
+    span[style^="color:#000000"],
+    font[style^="color:black"],
+    span[style^="color:black"] {
+        color: inherit !important;
     }
 
     #main #content {
@@ -144,7 +166,7 @@
     }
 
     #main .chr-ViewportProjectPickerTreeItem--current {
-        background-color: var(--current-background-color);
+        background-color: var(--selected-background-color);
     }
 
     #main .chr-ViewportProjectPickerTray a,
@@ -158,7 +180,7 @@
     }
 
     .chr-WorkspacePicker-listItem.chr-WorkspacePicker-listItem--active {
-        background-color: var(--current-background-color);
+        background-color: var(--selected-background-color);
 
     }
 
@@ -230,7 +252,8 @@
     }
 
     #main .chr-FullDetailPage {
-        color: #ddd;
+        /* color: #ddd; */
+        /* REDUNDANT */
         border-color: #555 !important;
     }
 
@@ -434,11 +457,103 @@
     #main .smb-Button--success,
     #main .smb-Button--failure,
     #main .smb-Button--secondary,
-    #main .chr-FilterButton--numFilters,
-    #main .smb-Select-trigger {
+    #main .chr-FilterButton--numFilters {
         color: #ddd !important;
         /* fixes hover */
         background-color: #444 !important;
+    }
+
+    #main .smb-Button--success.is-active {
+        background-color: #005700 !important;
+    }
+
+    #main .smb-Button--failure.is-active {
+        background-color: #790000 !important;
+    }
+
+    #main .smb-Button.is-disabled {
+        background-color: #292929 !important;
+    }
+
+    /*
+    .smb-DropdownHeader,
+    .smb-DropdownHeader-text,
+    .smb-Select-text,
+    .smb-DropdownItem,
+    .smb-DropdownItem-text {
+        color: #ddd !important;
+    }
+*/
+
+    #main .smb-Dropdown.smb-Select .smb-SvgIcon {
+        color: var(--link-color);
+    }
+
+    #main .smb-Dropdown .smb-Select-trigger {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+        color: var(--control-color);
+    }
+
+    #main .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+    }
+
+    #main .smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover {
+        background-color: var(--hover-background-color);
+    }
+
+    #main .smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-text,
+    #main .smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-subtext {
+        color: var(--hover-color);
+    }
+
+    #main .smb-DropdownList-listContentWrapper {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+        color: var(--control-color);
+    }
+
+    #main .smb-DropdownList-footer {
+        background-color: var(--panel-background-color);
+        color: var(--panel-color);
+    }
+
+    #main .smb-DropdownItem {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+        color: var(--control-color);
+    }
+
+    #main .smb-DropdownItem.is-active {
+        background-color: var(--active-background-color);
+        color: var(--active-color);
+    }
+
+    #main .smb-DropdownItem.is-active:not(.is-disabled) {
+        background-color: var(--active-background-color);
+    }
+
+    #main .smb-DropdownItem.is-active:not(.is-disabled) .smb-DropdownItem-text,
+    #main .smb-DropdownItem.is-active:not(.is-disabled) .smb-DropdownItem-subtext {
+        color: var(--active-color);
+    }
+
+    #main .smb-DropdownItem.is-selected {
+        background-color: var(--selected-background-color);
+    }
+
+    #main .smb-DropdownItem-subtext {
+        color: var(--title-color);
+    }
+
+    #main .smb-DropdownHeader {
+        color: var(--control-color);
+    }
+
+    #main .smb-Select-subtext {
+        color: var(--title-color);
     }
 
     /* SMB Popover */
@@ -446,8 +561,7 @@
     #main .smb-Popover>.smb-Popover-arrow,
     #main .smb-Popover>.smb-Popover-arrow::after,
     #main .smb-PopoverContent {
-        background-color: var(--control-background-color);
-        /* !important; */
+        background-color: var(--panel-background-color);
     }
 
     #main .smb-Popover-header .smb-Popover-title {
@@ -462,43 +576,7 @@
     }
 
     #main .chr-SavedViewsSelect .smb-DropdownList-footer {
-        background-color: var(--control-background-color);
-    }
-
-    /*
-    I think this is redundant...
-    #main .smb-Button--success,
-    #main .smb-Button--failure,
-    #main .smb-Button--secondary,
-    #main .smb-Select-trigger,
-    #main .smb-SearchInput.smb-TextInput,
-    #main .smb-Button.is-disabled {
-        border-color: var(--button-border-color);
-    }
-    */
-
-    #main .smb-Button--success.is-active {
-        background-color: #005700 !important;
-    }
-
-    #main .smb-Button--failure.is-active {
-        background-color: #790000 !important;
-    }
-
-    #main .smb-Button.is-disabled {
-        background-color: #292929 !important;
-    }
-
-    .smb-DropdownHeader,
-    .smb-DropdownHeader-text,
-    .smb-Select-text,
-    .smb-DropdownItem,
-    .smb-DropdownItem-text {
-        color: #ddd !important;
-    }
-
-    .smb-Select-trigger {
-        border: 1px solid #555 !important;
+        background-color: var(--panel-background-color);
     }
 
     #main .chr-EditorsWorkItemEditor,
@@ -530,29 +608,111 @@
         background-color: #c00;
     }
 
-    #main .smb-Dropdown .smb-Select-trigger,
-    #main .smb-DropdownList-listContentWrapper,
-    #main .smb-DropdownItem {
-        color: #ddd;
-        background-color: #555;
-    }
-
-    /* TODO: .smb-Select:not(.is-disabled):not(.is-readOnly):focus */
-    #main .smb-DropdownItem.is-selected {
-        background-color: #777;
-    }
-
     #main .is-disabled.smb-TextArea,
     #main [disabled].smb-TextArea {
         color: #444;
     }
 
     /* Text Editor */
-    .cke_top,
+
+    /* CKE's rules are... ugh. */
+    .cke_reset_all {
+        background-color: var(--main-background-color);
+        border-color: var(--main-border-color);
+        color: var(--main-color);
+    }
+
+    .cke_reset_all *,
+    .cke_reset_all a,
+    .cke_reset_all textarea {
+        background-color: var(--main-background-color);
+        border-color: var(--main-border-color);
+        color: var(--main-color);
+    }
+
+    /* Text Editor : Toolbar -- icons limit what we can do here... */
+    .cke_top {
+        background-color: var(--control-color);
+        border-color: var(--control-border-color);
+        color: var(--control-background-color);
+    }
+    /* have to '*' and 'a' because cke_reset_all does */
+    .cke_top div,
+    .cke_top span,
+    .cke_top a {
+        background-color: inherit;
+        border-color: inherit;
+        color: var(--control-background-color);
+    }
+
+    .cke_combo_text {
+        /* seems broken */
+        margin-bottom: 0;
+    }
+
     .cke_wysiwyg_frame,
     .cke_wysiwyg_div {
         background-color: #bbb !important;
     }
+
+    .cke_combo_off a.cke_combo_button:hover,
+    .cke_combo_off a.cke_combo_button:focus,
+    .cke_toolgroup a.cke_button_off:hover,
+    .cke_toolgroup a.cke_button_on:hover {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+        color: var(--hover-color);
+    }
+
+    .cke_top .cke_toolbox .cke_combo_text:hover,
+    .cke_top .cke_toolbox .cke_combo_off a.cke_combo_button:hover,
+    .cke_top .cke_toolbox .cke_combo_off a.cke_combo_button:focus,
+    .cke_top .cke_toolbox .cke_toolgroup a.cke_button_off:hover,
+    .cke_top .cke_toolbox .cke_toolgroup a.cke_button_on:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-border-color);
+        color: var(--hover-background-color);
+    }
+
+    .cke_toolbox .cke_combo_off a.cke_combo_button:hover,
+    .cke_toolbox .cke_combo_off a.cke_combo_button:focus,
+    .cke_toolbox .cke_combo_off a.cke_combo_button:active {
+        border-color: var(--link-color);
+    }
+
+    .cke_combo_text {
+        color: var(--control-color);
+        text-shadow: 0 1px 0 var(--control-text-shadow-color);
+    }
+
+    /* Make the CKE font panel match the editor. */
+    .cke_panel_container {
+        background-color: var(--cke-editable-background-color);
+        color: var(--cke-editable-color);
+    }
+
+    .cke_panel_grouptitle {
+        border-color: var(--control-border-color);
+        color: var(--control-color);
+        text-shadow: 0 1px 0 var(--control-text-shadow-color);
+    }
+
+    .cke_panel_listItem a {
+        border-color: var(--cke-editable-background-color);
+    }
+
+    .cke_panel_listItem a:hover {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+    }
+
+    .cke_panel_listItem a:focus,
+    .cke_panel_listItem a:active {
+        background-color: var(--active-background-color);
+        border-color: var(--cke-editable-background-color);
+        color: var(--active-color);
+    }
+
 }
 
 @-moz-document domain("rallydev.com") {
@@ -563,14 +723,6 @@
     .smb-HeaderTitle {
         color: hsl(218.2, 11.1%, 65.2%);
     }
-
-    /* font[style^="color:#000000"],
-    span[style^="color:#000000"],
-    font[style^="color:black"],
-    span[style^="color:black"] {
-        *//* no black *//*
-        color: #fff !important;
-    } */
 
     /* ExtJS 4 */
 
@@ -631,17 +783,8 @@
     /* Text Editor */
     .smb-RichTextEditor-textArea,
     .cke_editable {
-        background-color: #1e1e1e;
-        color: #dcdcdc;
-    }
-
-    .cke_editable font[style^="color:#000000"],
-    .cke_editable span[style^="color:#000000"],
-    .cke_editable font[style^="color:black"],
-    .cke_editable span[style^="color:black"]
-     {
-        /* no black */
-        color: inherit !important;
+        background-color: var(--cke-editable-background-color);
+        color: var(--cke-editable-color);
     }
 
     .smb-Button--icon,
@@ -671,5 +814,10 @@
 
     .chr-EditorsScheduleStates-block--after {
         background-color: hsl(217.5, 30.8%, 69.8%);
+    }
+
+    .chr-QuickDetailQuickDetailEditor .smb-DropdownItem:not(.is-active):not(.is-selected):not(.is-disabled):not(:hover) .smb-DropdownItem-text,
+    .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-disabled) .smb-Select-text {
+        color: var(--control-color);
     }
 }
