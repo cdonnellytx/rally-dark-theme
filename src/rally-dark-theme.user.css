@@ -17,6 +17,7 @@
         --link-color: #3eb9f8;
 
         --content-background-color: #112;
+        --content-color: #bbb;
 
         --panel-background-color: #223;
         --panel-color: #bbb;
@@ -54,27 +55,39 @@
         --alm-button-border-color: #555;
         --alm-button-color: #bbb;
 
+        --button-primary-background-color: #3272d9;
+
         --button-background-color: #292929;
         --button-border-color: #555;
-        --button-disabled-background-color: var(--hover-background-color);
+        --button-disabled-background-color: #223;
+        --button-disabled-border-color: #444;
+        --button-disabled-color: #555;
+        --button-color: #ddd;
 
         --navbar-section-color: #aaa;
         --navbar-section-selected-background-color: #223;
 
         --active-background-color: #2929c4;
+        --active-border-color: #2525B3;
         --active-color: #ddd;
         --hover-background-color: #50509F;
         --hover-border-color: #494991;
         --hover-color: var(--active-color);
+        --focus-border-color: #777;
+        --focus-color: var(--active-color);
         --selected-background-color: #4B4B85;
         --selected-color: var(--active-color);
 
         --viewport-button-background-color: #223;
     }
 
+    /* Reset */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        border-color: var(--main-border-color);
+    }
+
     body,
     #main {
-        border-color: var(--main-border-color);
         background-color: var(--main-background-color);
         color: var(--main-color);
     }
@@ -210,7 +223,8 @@
     #main .chr-Page,
     #main .chr-PlanTeamPage,
     #main .chr-BacklogPage,
-    #main .chr-ToolbarDefaultToolbar {
+    #main .chr-ToolbarDefaultToolbar,
+    #main .chr-CollectionEditor {
         background-color: var(--main-background-color);
     }
 
@@ -234,17 +248,6 @@
     #main .chr-Tray {
         background-color: #223;
         border-color: #444;
-    }
-
-    #main .smb-Panel {
-        border-bottom-color: var(--main-border-color);
-    }
-
-    #main .smb-PanelHeader {
-        /* color: #ddd; */
-        /* TODO what uses this */
-        background-color: var(--smb-panel-header-background-color);
-        border-bottom-color: var(--main-border-color);
     }
 
     #main .chr-FullDetailOverlay {
@@ -351,6 +354,7 @@
     }
 
     #main .smb-TextInput input {
+        background-color: inherit;
         color: inherit;
     }
 
@@ -412,9 +416,38 @@
         color: #bbb;
     }
 
-    /* SMB Button */
-    #main .smb-Button {
+    /*
+     * SMB
+     */
+
+    /* SMB > Button */
+    .smb-Button {
         border-color: var(--button-border-color);
+        color: var(--button-color);
+    }
+
+    .smb-Button--primary {
+        background-color: var(--button-primary-background-color);
+        color: var(--button-color);
+    }
+
+    .smb-Button--secondary,
+    .smb-Button--secondaryDark {
+        background-color: var(--button-background-color);
+        color: var(--button-color);
+    }
+
+    .smb-Button--secondary:hover,
+    .smb-Button--secondaryDark:hover {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+        color: var(--hover-color);
+    }
+
+    .smb-Button--secondary:focus,
+    .smb-Button--secondaryDark:focus {
+        border-color: var(--focus-border-color);
+        box-shadow:  0 0 0 0.1rem var(--main-background-color);
     }
 
     #main .smb-Button--icon,
@@ -437,6 +470,8 @@
     #main .smb-Button[disabled]:focus,
     #main .smb-Button[disabled]:hover {
         background-color: var(--button-disabled-background-color);
+        border-color: var(--button-disabled-border-color);
+        color: var(--button-disabled-color);
     }
 
     #main .smb-Button--icon:not(.is-disabled):hover,
@@ -456,7 +491,6 @@
 
     #main .smb-Button--success,
     #main .smb-Button--failure,
-    #main .smb-Button--secondary,
     #main .chr-FilterButton--numFilters {
         color: #ddd !important;
         /* fixes hover */
@@ -471,20 +505,13 @@
         background-color: #790000 !important;
     }
 
-    #main .smb-Button.is-disabled {
-        background-color: #292929 !important;
+    /* SMB > Dialog */
+    .smb-Modal-dialog {
+        background-color: var(--content-background-color);
+        color: var(--content-color);
     }
 
-    /*
-    .smb-DropdownHeader,
-    .smb-DropdownHeader-text,
-    .smb-Select-text,
-    .smb-DropdownItem,
-    .smb-DropdownItem-text {
-        color: #ddd !important;
-    }
-*/
-
+    /* SMB > Dropdown */
     #main .smb-Dropdown.smb-Select .smb-SvgIcon {
         color: var(--link-color);
     }
@@ -556,7 +583,24 @@
         color: var(--title-color);
     }
 
-    /* SMB Popover */
+    /* SMB > Panel */
+    .smb-Panel {
+        background-color: inherit;
+        border-bottom-color: var(--main-border-color);
+    }
+
+    .smbPanel--clear {
+        background-color: var(--panel-background-color);
+    }
+
+    #main .smb-PanelHeader {
+        /* color: #ddd; */
+        /* TODO what uses this */
+        background-color: var(--smb-panel-header-background-color);
+        border-bottom-color: var(--main-border-color);
+    }
+
+    /* SMB > Popover */
     #main .smb-Popover,
     #main .smb-Popover>.smb-Popover-arrow,
     #main .smb-Popover>.smb-Popover-arrow::after,
@@ -568,15 +612,43 @@
         color: var(--title-color);
     }
 
-    /* CHR Saved Views */
+    /* SMB > Tab List */
+    .smb-TabList {
+        background-color: var(--panel-background-color);
+    }
+
+    .smb-Tab {
+        background-color:  var(--button-background-color);
+    }
+
+    .smb-Tab.is-active {
+        background-color:  var(--active-background-color);
+        border-color:  var(--active-border-color);
+        color:  var(--active-color);
+    }
+
+    .smb-Tab:not(.is-active):hover,
+    .smb-Tab.is-active:hover {
+        background-color:  var(--hover-background-color);
+        border-color:  var(--hover-border-color);
+        color:  var(--hover-color);
+    }
+
+    /*
+     * CHR
+     */
+
+    /* CHR > Saved Views */
 
     #main .chr-SavedViewsCollectionsDataTable-title,
     #main .chr-SavedViewsSelect-label {
         color: var(--title-color);
     }
 
-    #main .chr-SavedViewsSelect .smb-DropdownList-footer {
+    #main .chr-SavedViewsSelect .smb-DropdownList-footer,
+    #main .chr-ToolbarChooseExistingModal-modalFooterMessage {
         background-color: var(--panel-background-color);
+        color: var(--panel-color)
     }
 
     #main .chr-EditorsWorkItemEditor,
@@ -613,7 +685,10 @@
         color: #444;
     }
 
-    /* Text Editor */
+
+    /*
+     * Text Editor
+     */
 
     /* CKE's rules are... ugh. */
     .cke_reset_all {
@@ -717,13 +792,6 @@
 
 @-moz-document domain("rallydev.com") {
 
-    h2 .chr-QuickDetailAttributeEditorWrapper-label,
-    h3 .chr-QuickDetailAttributeEditorWrapper-label,
-    .project-picker .project-nav-button,
-    .smb-HeaderTitle {
-        color: hsl(218.2, 11.1%, 65.2%);
-    }
-
     /* ExtJS 4 */
 
     /* .x4-body class is on body, in main.
@@ -819,5 +887,17 @@
     .chr-QuickDetailQuickDetailEditor .smb-DropdownItem:not(.is-active):not(.is-selected):not(.is-disabled):not(:hover) .smb-DropdownItem-text,
     .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-disabled) .smb-Select-text {
         color: var(--control-color);
+    }
+
+
+    h2 .chr-QuickDetailAttributeEditorWrapper-label,
+    h3 .chr-QuickDetailAttributeEditorWrapper-label,
+    .project-picker .project-nav-button,
+    .smb-HeaderTitle {
+        color: hsl(218.2, 11.1%, 65.2%);
+    }
+
+    #main .chr-QuickDetailEntityFooter {
+        background-color: var(--content-background-color);
     }
 }
