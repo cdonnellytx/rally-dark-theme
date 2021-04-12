@@ -17,7 +17,7 @@
         --link-color: #3eb9f8;
 
         --content-background-color: #112;
-        --content-color: #bbb;
+        --content-color: #ddd;
         --content-shadow-color: rgba(0, 0, 0, 0.4);
 
         --tertiary-background-color: #223;
@@ -76,12 +76,22 @@
 
         --viewport-button-background-color: #223;
 
-        --cardboard-background-color: #131313;
-        --cardboard-color: #ddd;
+        --kanban-column-background-color: #223;
+        --kanban-column-color: #ddd;
 
-        --card-background-color: #222;
-        --card-border-color: #555;
-        --card-color: var(--cardboard-color);
+        --kanban-card-background-color: var(--content-background-color);
+        --kanban-card-border-color: #555;
+        --kanban-card-color: #bbb;
+        --kanban-card-shadow-color: rgba(0, 0, 0, 0.4);
+        --kanban-card-box-shadow: 0 2px 3px 0 var(--kanban-card-shadow-color), 0 0 0 1px var(--kanban-card-border-color);
+
+        --tag-background-color: #036490;
+        --tag-color: #d7edf5;
+        --tag-border-color: #035a81;
+
+        --filter-bar-background-color: #223;
+        --filter-bar-border-color: #444;
+
     }
 
     /* Reset */
@@ -151,7 +161,8 @@
         color: var(--main-color);
     }
 
-    #main a {
+    a,
+    a:link {
         color: var(--link-color);
     }
 
@@ -306,9 +317,10 @@
         color: #999;
     }
 
-    #main .chr-Tray {
-        background-color: #223;
-        border-color: #444;
+    #main .chr-Tray,
+    .inline-filter-panel>.x-panel-body {
+        background-color: var(--filter-bar-background-color);
+        border-color: var(--filter-bar-border-color);
     }
 
     #main .chr-FullDetailOverlay {
@@ -427,7 +439,11 @@
     #main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-column,
     #main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-columnHeader,
     #main .chr-TeamBoardSettingsColumn {
-        background-color: #223;
+        background-color: var(--kanban-column-background-color);
+    }
+
+    #main .chr-BoardField {
+        color: var(--kanban-card-color);
     }
 
     #main .chr-BoardTitle {
@@ -438,15 +454,47 @@
         color: #aaa !important;
     }
 
-    #main .chr-BoardCard {
-        background-color: var(--content-background-color);
-        box-shadow: 0 2px 3px 0 var(--content-shadow-color), 0 0 0 1px #555;
+    #main .chr-BoardCard,
+    .rui-card {
+        background-color: var(--kanban-card-background-color);
+        border-color: var(--kanban-card-border-color);
+        box-shadow: var(--kanban-card-box-shadow);
+        color: var(--kanban-card-color);
     }
 
-    #main .smb-FieldLabel-text,
-    #main .chr-BoardField {
-        color: #ddd;
+    .cardboard .column-container .column-header {
+        color: var(--kanban-column-color);
     }
+
+    .cardboard .column-container td.card-column {
+        background-color: var(--kanban-column-background-color);
+        color: var(--kanban-column-color);
+    }
+
+    .rui-card .field-content .rui-field-value {
+        color: var(--kanban-card-color);
+    }
+
+    .rui-card .field-content.editable:hover .rui-field-value {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+    }
+
+    .rui-card,
+    .cardboard .column-container .card-column.over-capacity .rui-card {
+        box-shadow: var(--kanban-card-box-shadow);
+    }
+
+    .rui-card .card-table-ct {
+        border-color: var(--kanban-card-border-color);
+    }
+
+    .rui-tag-list-item {
+        background-color: var(--tag-background-color);
+        border-color: var(--tag-border-color);
+        color: var(--tag-color)
+    }
+
 
     #main .chr-RenderersUser .chr-RenderersUser-ownedBy {
         color: #ccc;
@@ -486,7 +534,8 @@
         border-color: var(--button-border-color);
     }
 
-    .smb-Button--primary, {
+    .smb-Button--primary,
+        {
         background-color: var(--button-primary-background-color);
         color: var(--button-color);
     }
@@ -661,6 +710,11 @@
         color: var(--title-color);
     }
 
+    /* SMB > Label */
+    #main .smb-FieldLabel-text {
+        color: #ddd;
+    }
+
     /* SMB > Panel */
     .smb-Panel {
         background-color: inherit;
@@ -688,6 +742,11 @@
 
     #main .smb-Popover-header .smb-Popover-title {
         color: var(--title-color);
+    }
+
+    .rly-popover.description-popover .description-richtext-view .description {
+        background-color: var(--content-background-color);
+        color: var(--content-color);
     }
 
     /* SMB > Tab List */
@@ -986,35 +1045,5 @@
         background-color: var(--content-background-color);
     }
 
-    .cardboard .column-container .column-header {
-        color: var(--cardboard-color);
-    }
-
-    .cardboard .column-container td.card-column {
-        background-color: var(--cardboard-background-color);
-        color: var(--cardboard-color);
-    }
-
-    .rui-card {
-        background-color: var(--card-background-color);
-        border-color: var(--card-border-color);
-        color: var(--card-color);
-    }
-
-    .rui-card .field-content .rui-field-value {
-        color: var(--card-color);
-    }
-
-    .rui-card .field-content.editable:hover .rui-field-value {
-        background-color: var(--hover-background-color);
-        border-color: var(--hover-border-color);
-    }
-
-    .rui-card,
-    .cardboard .column-container .card-column.over-capacity .rui-card {
-        -webkit-box-shadow: var(--content-shadow-color) 2px 2px;
-        -moz-box-shadow: var(--content-shadow-color) 2px 2px;
-        box-shadow: var(--content-shadow-color) 2px 2px
-    }
 
 }

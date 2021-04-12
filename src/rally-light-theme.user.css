@@ -57,11 +57,15 @@
 
         --viewport-button-background-color: #f0f5fc;
 
-        --cardboard-background-color: #f6f6f6;
-        --cardboard-color: #000;
+        --kanban-column-background-color: #f6f6f6;
+        --kanban-column-color: #000;
 
-        --card-background-color: #fff;
-        --card-border-color: ???;
-        --card-color: ???;
+        --kanban-card-background-color: #fff;
+        --kanban-card-border-color: ???;
+        --kanban-card-color: ???;
+
+        --tag-background-color: #eff8fb;
+        --tag-color: #035a81;
+        --tag-border-color: #b5d8eb;
     }
 }
