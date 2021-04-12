@@ -1,3 +1,7 @@
 {
-    "css.lint.universalSelector": "warning"
+    "css.lint.universalSelector": "warning",
+    "files.associations": {
+
+        "*.css.*.pack": "css"
+    }
 }

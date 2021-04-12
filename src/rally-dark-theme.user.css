@@ -12,24 +12,21 @@
     /* Global */
     :root {
         --main-background-color: #111;
-        --main-color: #ddd;
         --main-border-color: #555;
+        --main-color: #ddd;
         --link-color: #3eb9f8;
 
         --content-background-color: #112;
         --content-color: #bbb;
+        --content-shadow-color: rgba(0, 0, 0, 0.4);
 
-        --panel-background-color: #223;
-        --panel-color: #bbb;
+        --tertiary-background-color: #223;
+        --tertiary-color: #bbb;
 
         --control-background-color: #444;
         --control-border-color: #777;
         --control-color: #bbb;
         --control-text-shadow-color: #44444480;
-
-        --text-input-background-color: var(--control-background-color);
-        --text-input-border-color: var(--control-border-color);
-        --text-input-color: var(--control-color);
 
         --cke-editable-background-color: #1e1e1e;
         --cke-editable-color: #dcdcdc;
@@ -47,7 +44,6 @@
         /* var(--main-background-color); */
 
         --title-color: #ddd;
-
 
         --alm-border-color: #444;
 
@@ -79,10 +75,73 @@
         --selected-color: var(--active-color);
 
         --viewport-button-background-color: #223;
+
+        --cardboard-background-color: #131313;
+        --cardboard-color: #ddd;
+
+        --card-background-color: #222;
+        --card-border-color: #555;
+        --card-color: var(--cardboard-color);
     }
 
     /* Reset */
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
         border-color: var(--main-border-color);
     }
 
@@ -104,12 +163,9 @@
         color: inherit !important;
     }
 
-    #main #content {
-        background-color: var(--main-background-color);
-    }
-
+    #main #content,
     #main #content .page {
-        background-color: var(--content-background-color);
+        background-color: var(--main-background-color);
     }
 
     ::-webkit-scrollbar {
@@ -135,6 +191,11 @@
         background-color: var(--alm-button-background-color);
         border-color: var(--alm-button-border-color);
         color: var(--alm-button-color);
+    }
+
+    .chr-NavBar,
+    .chr-NavBar-alt {
+        background-color: var(--control-background-color);
     }
 
     #main .chr-NavBar .chr-NavSection,
@@ -348,9 +409,9 @@
 
 
     #main .smb-TextInput {
-        color: var(--text-input-color);
-        background-color: var(--text-input-background-color);
-        border-color: var(--text-input-border-color);
+        color: var(--control-color);
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
     }
 
     #main .smb-TextInput input {
@@ -379,7 +440,7 @@
 
     #main .chr-BoardCard {
         background-color: var(--content-background-color);
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px #555;
+        box-shadow: 0 2px 3px 0 var(--content-shadow-color), 0 0 0 1px #555;
     }
 
     #main .smb-FieldLabel-text,
@@ -423,17 +484,22 @@
     /* SMB > Button */
     .smb-Button {
         border-color: var(--button-border-color);
-        color: var(--button-color);
     }
 
-    .smb-Button--primary {
+    .smb-Button--primary, {
         background-color: var(--button-primary-background-color);
         color: var(--button-color);
     }
 
     .smb-Button--secondary,
-    .smb-Button--secondaryDark {
+    .smb-Button--secondaryDark,
+    .x-btn.secondary.secondary {
         background-color: var(--button-background-color);
+        border-color: var(--button-border-color);
+        color: var(--button-color);
+    }
+
+    .x-btn.secondary.secondary span {
         color: var(--button-color);
     }
 
@@ -447,7 +513,7 @@
     .smb-Button--secondary:focus,
     .smb-Button--secondaryDark:focus {
         border-color: var(--focus-border-color);
-        box-shadow:  0 0 0 0.1rem var(--main-background-color);
+        box-shadow: 0 0 0 0.1rem var(--main-background-color);
     }
 
     #main .smb-Button--icon,
@@ -506,6 +572,11 @@
     }
 
     /* SMB > Dialog */
+    .smb-LoadingMask-pill {
+        background-color: var(--control-background-color);
+        color: var(--control-color);
+    }
+
     .smb-Modal-dialog {
         background-color: var(--content-background-color);
         color: var(--content-color);
@@ -516,7 +587,8 @@
         color: var(--link-color);
     }
 
-    #main .smb-Dropdown .smb-Select-trigger {
+    #main .smb-Dropdown .smb-Select-trigger,
+    .x-form-trigger {
         background-color: var(--control-background-color);
         border-color: var(--control-border-color);
         color: var(--control-color);
@@ -536,15 +608,21 @@
         color: var(--hover-color);
     }
 
-    #main .smb-DropdownList-listContentWrapper {
+    #main .smb-DropdownList-listContentWrapper,
+    .rally-group-header.multi-object-picker-header,
+    .x-boundlist .x-boundlist-item {
         background-color: var(--control-background-color);
         border-color: var(--control-border-color);
         color: var(--control-color);
     }
 
     #main .smb-DropdownList-footer {
-        background-color: var(--panel-background-color);
-        color: var(--panel-color);
+        background-color: var(--tertiary-background-color);
+        color: var(--tertiary-color);
+    }
+
+    #main .chr-ProjectPickerSelect .smb-DropdownList-footer {
+        background-color: var(--content-background-color);
     }
 
     #main .smb-DropdownItem {
@@ -590,7 +668,7 @@
     }
 
     .smbPanel--clear {
-        background-color: var(--panel-background-color);
+        background-color: var(--content-background-color);
     }
 
     #main .smb-PanelHeader {
@@ -605,7 +683,7 @@
     #main .smb-Popover>.smb-Popover-arrow,
     #main .smb-Popover>.smb-Popover-arrow::after,
     #main .smb-PopoverContent {
-        background-color: var(--panel-background-color);
+        background-color: var(--content-background-color);
     }
 
     #main .smb-Popover-header .smb-Popover-title {
@@ -614,24 +692,24 @@
 
     /* SMB > Tab List */
     .smb-TabList {
-        background-color: var(--panel-background-color);
+        background-color: var(--tab-list-background-color);
     }
 
     .smb-Tab {
-        background-color:  var(--button-background-color);
+        background-color: var(--button-background-color);
     }
 
     .smb-Tab.is-active {
-        background-color:  var(--active-background-color);
-        border-color:  var(--active-border-color);
-        color:  var(--active-color);
+        background-color: var(--active-background-color);
+        border-color: var(--active-border-color);
+        color: var(--active-color);
     }
 
     .smb-Tab:not(.is-active):hover,
     .smb-Tab.is-active:hover {
-        background-color:  var(--hover-background-color);
-        border-color:  var(--hover-border-color);
-        color:  var(--hover-color);
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+        color: var(--hover-color);
     }
 
     /*
@@ -647,8 +725,8 @@
 
     #main .chr-SavedViewsSelect .smb-DropdownList-footer,
     #main .chr-ToolbarChooseExistingModal-modalFooterMessage {
-        background-color: var(--panel-background-color);
-        color: var(--panel-color)
+        background-color: var(--tertiary-background-color);
+        color: var(--tertiary-color)
     }
 
     #main .chr-EditorsWorkItemEditor,
@@ -711,6 +789,7 @@
         border-color: var(--control-border-color);
         color: var(--control-background-color);
     }
+
     /* have to '*' and 'a' because cke_reset_all does */
     .cke_top div,
     .cke_top span,
@@ -847,6 +926,12 @@
         border-color: #555;
     }
 
+    .x-form-text {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+        color: var(--control-color);
+    }
+
 
     /* Text Editor */
     .smb-RichTextEditor-textArea,
@@ -900,4 +985,36 @@
     #main .chr-QuickDetailEntityFooter {
         background-color: var(--content-background-color);
     }
+
+    .cardboard .column-container .column-header {
+        color: var(--cardboard-color);
+    }
+
+    .cardboard .column-container td.card-column {
+        background-color: var(--cardboard-background-color);
+        color: var(--cardboard-color);
+    }
+
+    .rui-card {
+        background-color: var(--card-background-color);
+        border-color: var(--card-border-color);
+        color: var(--card-color);
+    }
+
+    .rui-card .field-content .rui-field-value {
+        color: var(--card-color);
+    }
+
+    .rui-card .field-content.editable:hover .rui-field-value {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+    }
+
+    .rui-card,
+    .cardboard .column-container .card-column.over-capacity .rui-card {
+        -webkit-box-shadow: var(--content-shadow-color) 2px 2px;
+        -moz-box-shadow: var(--content-shadow-color) 2px 2px;
+        box-shadow: var(--content-shadow-color) 2px 2px
+    }
+
 }

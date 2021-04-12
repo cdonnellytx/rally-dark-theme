@@ -12,14 +12,15 @@
     /* Global */
     :root.LIGHT_MODE {
         --main-background-color: #f5f7fa;
-        --main-color: #000;
         --main-border-color: #ddd;
+        --main-color: #000;
         --link-color: #3272d9;
 
         --content-background-color: #fff;
         --content-color: #333840;
 
-        --panel-background-color: #fff;
+        --tertiary-background-color: #f0f5fc;
+        --tertiary-color: #434a54;
 
         --control-background-color: #fff;
         --control-border-color: #333840;
@@ -30,7 +31,6 @@
         --smb-table-header-cell-background-color: #fff;
         --smb-table-header-cell-border-bottom-color: #c8d1e0;
         --smb-table-header-cell-color: #333840;
-
 
         --button-background-color: ???;
         --button-border-color: #c8d1e0;
@@ -56,5 +56,12 @@
         --navbar-section-selected-background-color: #f0f5fc;
 
         --viewport-button-background-color: #f0f5fc;
+
+        --cardboard-background-color: #f6f6f6;
+        --cardboard-color: #000;
+
+        --card-background-color: #fff;
+        --card-border-color: ???;
+        --card-color: ???;
     }
 }
