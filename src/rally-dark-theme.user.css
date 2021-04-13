@@ -24,6 +24,7 @@
         --tertiary-color: #bbb;
 
         --control-background-color: #444;
+        --control-alpha-background-color: #4446;
         --control-border-color: #777;
         --control-color: #bbb;
         --control-text-shadow-color: #44444480;
@@ -88,6 +89,9 @@
         --tag-background-color: #036490;
         --tag-color: #d7edf5;
         --tag-border-color: #035a81;
+
+        --banner-background-color: #223;
+        --banner-border-color: #000;
 
         --filter-bar-background-color: #223;
         --filter-bar-border-color: #444;
@@ -271,13 +275,16 @@
 
     /* Stats */
 
+    .chr-StatsBanner {
+        background-color: var(--banner-background-color);
+    }
+
     #main .chr-StatsBanner-panels,
     #main .chr-StatsBanner-toggle,
     #main .chr-StatsBannerProgressPanel,
     #main .chr-StatsBannerItemCountPanel,
     #main .chr-StatsBanner-launchChartsPanel {
-        background-color: #223;
-        border-color: #000;
+        border-color: var(--banner-border-color);
     }
 
     #main .chr-StatsBannerProgressPanel-title,
@@ -534,8 +541,7 @@
         border-color: var(--button-border-color);
     }
 
-    .smb-Button--primary,
-        {
+    .smb-Button--primary {
         background-color: var(--button-primary-background-color);
         color: var(--button-color);
     }
@@ -636,11 +642,15 @@
         color: var(--link-color);
     }
 
-    #main .smb-Dropdown .smb-Select-trigger,
+    .smb-Dropdown .smb-Select-trigger,
     .x-form-trigger {
         background-color: var(--control-background-color);
         border-color: var(--control-border-color);
         color: var(--control-color);
+    }
+
+    #main .smb-Dropdown .smb-Select-trigger {
+        background-color: var(--control-alpha-background-color);
     }
 
     #main .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger {
