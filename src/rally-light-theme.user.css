@@ -12,7 +12,7 @@
     /* Global */
     :root.LIGHT_MODE {
         --main-background-color: #f5f7fa;
-        --main-border-color: #ddd;
+        --main-border-color: #000;
         --main-color: #000;
         --link-color: #3272d9;
 
@@ -28,16 +28,29 @@
 
         --smb-panel-header-background-color: #f6f6f6;
 
-        --smb-table-header-cell-background-color: #fff;
-        --smb-table-header-cell-border-bottom-color: #c8d1e0;
-        --smb-table-header-cell-color: #333840;
+        --datatable-background-color: #f5f7fa;
+        --datatable-color: #222;
+
+        --datatable-header-background-color: #fff;
+        --datatable-header-color: #333840;
+        --datatable-header-border-color: #c8d1e0;
+        --datatable-header-resizer-color: #dde3ed;
+
+        --datatable-body-background-color: #fff;
+        --datatable-body-gripper-color: #707a8a;
+        --datatable-body-border-color: #f5f7fa;
+        --datatable-body-color: #333840;
+
+        --datatable-drag-color: #afbacc;
+
+        --toolbar-border-color: #dde3ed;
 
         --button-background-color: ???;
         --button-border-color: #c8d1e0;
 
-        --smb-table-cell-border-top-color: var(--main-background-color);
-
-        --smb-data-table-background-color: var(--main-background-color);
+        --datatable-background-color: #fff;
+        --datatable-border-bottom-color: #c8d1e0;
+        --datatable-color: #333840;
 
         --hover-background-color: #ebeff5;
         --hover-color: #333840;

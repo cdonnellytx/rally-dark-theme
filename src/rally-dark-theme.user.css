@@ -34,15 +34,23 @@
 
         --smb-panel-header-background-color: #111;
 
-        --smb-table-header-cell-background-color: #1f1f29;
-        --smb-table-header-cell-border-bottom-color: #555;
-        --smb-table-header-cell-color: #bbb;
+        --datatable-background-color: #111;
+        --datatable-color: #bbb;
 
-        --smb-table-cell-border-top-color: #112;
-        /* var(--main-background-color); */
+        --datatable-header-background-color: #1f1f29;
+        --datatable-header-border-color: #555;
+        --datatable-header-color: #bbb;
+        --datatable-header-resizer-color: #555;
+        --datatable-header-resizer-active-color: #445;
 
-        --smb-data-table-background-color: var(--smb-table-header-cell-background-color);
-        /* var(--main-background-color); */
+        --datatable-body-background-color: #1f1f29;
+        --datatable-body-gripper-color: #707a8a;
+        --datatable-body-border-color: #111;
+        --datatable-body-color: #bbb;
+
+        --datatable-drag-color: #aaa;
+
+        --toolbar-border-color: #445;
 
         --title-color: #ddd;
 
@@ -340,47 +348,114 @@
         border-color: #555 !important;
     }
 
-    /* Tables */
-    #main .smb-DataTable,
-    #main .smb-TableCell,
-    #main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped>.smb-DataTable-wrapper>.smb-DataTable>.smb-TableBody>.smb-TableRow,
-    #main .smb-TableRow,
-    #main .smb-Pagination,
-    #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow,
-    #main .chr-RollupRow-cell {
-        color: var(--smb-table-header-cell-color);
-        background-color: var(--smb-data-table-background-color);
+    /*
+     * Tables
+     */
+    .smb-DataTable {
+        background-color: var(--datatable-background-color);
+        color: var(--datatable-color);
     }
+
+    /* Table > Header */
 
     #main .smb-DataTableTableHeaderCellDragLayer,
     #main .smb-TableHeaderCell {
-        background-color: var(--smb-table-header-cell-background-color);
-        border-bottom-color: var(--smb-table-header-cell-border-bottom-color);
-        color: var(--smb-table-header-cell-color);
+        background-color: var(--datatable-header-background-color);
+        border-bottom-color: var(--datatable-header-border-color);
+        color: var(--datatable-header-color);
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
-    #main .smb-TableHeaderCell .smb-TableHeaderCell-sort .smb-TableHeaderCell-sortIcon,
+    #main .smb-TableHeaderCell .smb-TableHeaderCell-sort .smb-TableHeaderCell-sortIcon {
+        background-color: var(--datatable-header-background-color);
+    }
+
+    #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-colResizer,
+    #main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer {
+        border-right-color: var(--datatable-header-resizer-color);
+    }
+
+    #main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
+    #main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
+        border-right-color: var(--datatable-header-resizer-active-color);
+    }
+
+    /* Table > Body */
+
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow) {
+        background-color: var(--datatable-body-background-color);
+    }
+
+    .smb-TableCell {
+        background-color: var(--datatable-body-background-color);
+        color: var(--datatable-body-color);
+    }
+
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell {
+        background-color: var(--datatable-body-background-color);
+    }
+
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell.smb-TableCell--dragAndDropRank {
+        color: var(--datatable-drag-color);
+    }
+
+    .smb-TableCell--gripper {
+        color: var(--datatable-body-gripper-color);
+    }
+
+    .chr-GenericMessageRow {
+        background-color: var(--tertiary-background-color);
+    }
+
+    .chr-GenericMessageRow-cell {
+        border-top-color: var(--datatable-body-border-color);
+    }
+
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline:first-child .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging:first-child .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging + .smb-TableRow .smb-TableCell, .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging + .smb-TableRow .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging:first-child .smb-TableCell,
+    .chr-DataTable--comfortable .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
+    .chr-DataTable--comfortable .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+    .chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
+    .chr-DataTable--roomy .smb-TableCell,
+    .chr-DataTable--roomy .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+    .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell
+    {
+        border-top-color: var(--datatable-body-border-color);
+    }
+
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell:first-child,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell:first-child {
+        box-shadow: inset 2px 0 0 0 var(--datatable-drag-color),
+            inset 0 2px 0 0 var(--datatable-drag-color),
+            inset 0 -2px 0 0 var(--datatable-drag-color);
+    }
+
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell {
+        box-shadow: inset 0 2px 0 0 var(--datatable-drag-color),
+            inset 0 -2px 0 0 var(--datatable-drag-color);
+    }
+
+    #main .smb-Pagination,
+    #main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped>.smb-DataTable-wrapper>.smb-DataTable>.smb-TableBody>.smb-TableRow,
+    #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow,
+    #main .chr-RollupRow-cell {
+        background-color: var(--datatable-body-background-color);
+        color: var(--datatable-color);
+    }
+
     #main .smb-TableCell.smb-TableCell--rowActions,
-    #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>td,
-    #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>th {
-        background-color: var(--smb-table-header-cell-background-color);
-    }
-
-    #main .smb-SvgIcon--gear,
-    #main .smb-SvgIcon--help,
-    #main .smb-SvgIcon--feedback {
-        color: #999;
-    }
-
-    #main .smb-DataTable:not(.personalized-nav) .smb-Cutline:first-child .smb-TableCell,
-    #main .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
-    #main .smb-TableCell,
-    #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
-        border-top-color: var(--content-background-color);
+    #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>th,
+    #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>td {
+        background-color: var(--datatable-body-background-color);
     }
 
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable>thead th,
@@ -389,16 +464,12 @@
         color: #ddd;
     }
 
-    #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-colResizer,
-    #main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer,
-    #main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
-    #main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
-        background-color: #555;
-    }
+    /* ??? */
 
-    #main .smb-DataTableTableHeaderCellDragLayer.is-resizing,
-    #main .smb-TableHeaderCell.is-resizing {
-        background-color: #445;
+    #main .smb-SvgIcon--gear,
+    #main .smb-SvgIcon--help,
+    #main .smb-SvgIcon--feedback {
+        color: #999;
     }
 
     #main .smb-ChildPager-displayText {
@@ -830,6 +901,20 @@
     #main .is-disabled.smb-TextArea,
     #main [disabled].smb-TextArea {
         color: #444;
+    }
+
+    /* CHR > Toolbar */
+    #main .chr-Page,
+    #main .chr-PlanTeamPage,
+    #main .chr-BacklogPage,
+    #main .chr-ToolbarDefaultToolbar,
+    #main .chr-CollectionEditor {
+        background-color: var(--main-background-color);
+    }
+
+    .chr-ToolbarToolbar.chr-ToolbarDefaultToolbar--roomy:not(.is-trayOpen),
+    .chr-ToolbarToolbar.chr-TimeSheetEditor-toolbar--roomy {
+        border-color: var(--toolbar-border-color);
     }
 
 
