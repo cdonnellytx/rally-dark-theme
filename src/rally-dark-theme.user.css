@@ -21,18 +21,22 @@
         --content-shadow-color: rgba(0, 0, 0, 0.4);
 
         --tertiary-background-color: #223;
+        --tertiary-border-color: #555;
         --tertiary-color: #bbb;
 
         --control-background-color: #444;
         --control-alpha-background-color: #4446;
         --control-border-color: #777;
-        --control-color: #bbb;
+        --control-color: #ddd;
         --control-text-shadow-color: #44444480;
 
         --cke-editable-background-color: #1e1e1e;
         --cke-editable-color: #dcdcdc;
 
         --smb-panel-header-background-color: #111;
+
+        /* mask assumes opacity */
+        --mask-background-color: #000;
 
         --datatable-background-color: #111;
         --datatable-color: #bbb;
@@ -419,15 +423,15 @@
     .smb-DataTable:not(.personalized-nav) .smb-Cutline:first-child .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging:first-child .smb-TableCell,
-    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging + .smb-TableRow .smb-TableCell, .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging + .smb-TableRow .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging+.smb-TableRow .smb-TableCell,
+    .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging+.smb-TableRow .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging:first-child .smb-TableCell,
     .chr-DataTable--comfortable .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--comfortable .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     .chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--roomy .smb-TableCell,
     .chr-DataTable--roomy .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
-    .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell
-    {
+    .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
         border-top-color: var(--datatable-body-border-color);
     }
 
@@ -932,8 +936,7 @@
     .cke_reset_all *,
     .cke_reset_all a,
     .cke_reset_all textarea {
-        background-color: var(--main-background-color);
-        border-color: var(--main-border-color);
+        /* border-color: var(--main-border-color); */
         color: var(--main-color);
     }
 
@@ -988,6 +991,15 @@
         border-color: var(--link-color);
     }
 
+    input.cke_dialog_ui_input_text,
+    input.cke_dialog_ui_input_password,
+    textarea.cke_dialog_ui_input_textarea,
+    select.cke_dialog_ui_input_select {
+        background-color: var(--control-background-color);
+        border-color: var(--control-border-color);
+        color: var(--control-color)
+    }
+
     .cke_combo_text {
         color: var(--control-color);
         text-shadow: 0 1px 0 var(--control-text-shadow-color);
@@ -1020,7 +1032,63 @@
         border-color: var(--cke-editable-background-color);
         color: var(--active-color);
     }
+    .cke_dialog_background_cover {
+        /* note: CKE mask HARDCODES color */
+        background-color: var(--mask-background-color) !important;
+        /* note: opacity is 50% */
+    }
 
+    .cke_dialog_body {
+        background-color: var(--tertiary-background-color);
+        border-color: var(--tertiary-border-color);
+    }
+
+    .cke_dialog_title {
+        color: var(--title-color);
+        text-shadow: none;
+    }
+
+    .cke_dialog_contents {
+        background-color: var(--tertiary-background-color);
+    }
+
+    a.cke_dialog_ui_button {
+        background-color: var(--button-background-color);
+        border-color: var(--button-border-color);
+        color: var(--button-color);
+        background-image: none;
+        box-shadow: none;
+    }
+
+    a.cke_dialog_ui_button_ok {
+        background-color: var(--button-primary-background-color);
+    }
+
+    a.cke_dialog_ui_button:hover,
+    a.cke_dialog_ui_button_ok:hover {
+        background-color: var(--hover-background-color);
+        border-color: var(--hover-border-color);
+        background-image: none;
+    }
+
+    a.cke_dialog_ui_button:active,
+    a.cke_dialog_ui_button_ok:active {
+        background-color: var(--active-background-color);
+        border-color: var(--active-border-color);
+    }
+
+    a.cke_dialog_ui_button:focus,
+    a.cke_dialog_ui_button_ok:focus {
+        border-color: var(--focus-border-color);
+    }
+
+    a.cke_dialog_ui_button span {
+        text-shadow: none;
+    }
+
+    .cke_dialog_footer {
+        outline-color: var(--tertiary-border-color);
+    }
 }
 
 @-moz-document domain("rallydev.com") {

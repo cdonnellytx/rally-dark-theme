@@ -28,6 +28,9 @@
 
         --smb-panel-header-background-color: #f6f6f6;
 
+        /* mask assumes opacity 50% */
+        --mask-background-color: #fff;
+
         --datatable-background-color: #f5f7fa;
         --datatable-color: #222;
 
