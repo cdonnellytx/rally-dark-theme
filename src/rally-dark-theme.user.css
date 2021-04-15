@@ -81,11 +81,11 @@
         --active-color: #ddd;
         --hover-background-color: #50509F;
         --hover-border-color: #494991;
-        --hover-color: var(--active-color);
+        --hover-color: #ddd;
         --focus-border-color: #777;
-        --focus-color: var(--active-color);
+        --focus-color: #ddd;
         --selected-background-color: #4B4B85;
-        --selected-color: var(--active-color);
+        --selected-color: #ddd;
 
         --viewport-button-background-color: #223;
 
@@ -843,6 +843,10 @@
         background-color: var(--button-background-color);
     }
 
+    .smb-tab:focus {
+        border-top-color: var(--focus-border-color);
+    }
+
     .smb-Tab.is-active {
         background-color: var(--active-background-color);
         border-color: var(--active-border-color);
@@ -852,7 +856,6 @@
     .smb-Tab:not(.is-active):hover,
     .smb-Tab.is-active:hover {
         background-color: var(--hover-background-color);
-        border-color: var(--hover-border-color);
         color: var(--hover-color);
     }
 

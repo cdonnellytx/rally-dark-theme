@@ -18,13 +18,20 @@
 
         --content-background-color: #fff;
         --content-color: #333840;
+        --content-shadow-color: ???;
 
         --tertiary-background-color: #f0f5fc;
+        --tertiary-border-color: ???;
         --tertiary-color: #434a54;
 
         --control-background-color: #fff;
+        --control-alpha-background-color: ???;
         --control-border-color: #333840;
         --control-color: #434a54;
+        --control-text-shadow-color: ???;
+
+        --cke-editable-background-color: ???;
+        --cke-editable-color: ???;
 
         --smb-panel-header-background-color: #f6f6f6;
 
@@ -35,9 +42,10 @@
         --datatable-color: #222;
 
         --datatable-header-background-color: #fff;
-        --datatable-header-color: #333840;
         --datatable-header-border-color: #c8d1e0;
+        --datatable-header-color: #333840;
         --datatable-header-resizer-color: #dde3ed;
+        --datatable-header-resizer-active-color: ???;
 
         --datatable-body-background-color: #fff;
         --datatable-body-gripper-color: #707a8a;
@@ -48,28 +56,26 @@
 
         --toolbar-border-color: #dde3ed;
 
-        --button-background-color: ???;
-        --button-border-color: #c8d1e0;
-
-        --datatable-background-color: #fff;
-        --datatable-border-bottom-color: #c8d1e0;
-        --datatable-color: #333840;
-
-        --hover-background-color: #ebeff5;
-        --hover-color: #333840;
-
-        --selected-background-color: #c8d1e0;
-        --selected-color: #333840;
-
-        --active-background-color: #f0f5fc;
-        --active-color: #333840;
-
         --title-color: #58606e;
 
         --alm-border-color: #dde3ed;
+        --button-background-color: ???;
+        --button-border-color: #c8d1e0;
+
 
         --navbar-section-color: #58606e;
         --navbar-section-selected-background-color: #f0f5fc;
+
+        --active-background-color: #f0f5fc;
+        --active-border-color: ???;
+        --active-color: #333840;
+        --hover-background-color: #ebeff5;
+        --hover-border-color: #5691f0;
+        --hover-color: #333840;
+        --focus-border-color: ???;
+        --focus-color: ???;
+        --selected-background-color: #c8d1e0;
+        --selected-color: #333840;
 
         --viewport-button-background-color: #f0f5fc;
 
@@ -79,6 +85,8 @@
         --kanban-card-background-color: #fff;
         --kanban-card-border-color: ???;
         --kanban-card-color: ???;
+        --kanban-card-shadow-color: ???;
+        --kanban-card-box-shadow: ???;
 
         --tag-background-color: #eff8fb;
         --tag-color: #035a81;
