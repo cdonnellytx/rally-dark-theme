@@ -23,10 +23,25 @@
         --tertiary-border: #555;
         --tertiary-text: #bbb;
 
+        --active-bg: #2929c4;
+        --active-border: #2525B3;
+        --active-text: #ddd;
+        --hover-bg: #50509F;
+        --hover-border: #494991;
+        --hover-text: #ddd;
+        --focus-border: #777;
+        --focus-text: #ddd;
+        --selected-bg: #4B4B85;
+        --selected-text: #ddd;
+
         --control-bg: #444;
         --control-alpha-bg: #4446;
         --control-border: #777;
         --control-text: #ddd;
+
+        /* master disabled colors (border is not shared) */
+        --disabled-bg: #223;
+        --disabled-text: #555;
 
         --cke-editable-bg: #1e1e1e;
         --cke-editable-text: #dcdcdc;
@@ -63,28 +78,29 @@
         --alm-button-border: #555;
         --alm-button-text: #bbb;
 
-        --button-primary-bg: #3272d9;
-
-        --button-bg: #292929;
         --button-border: #555;
-        --button-disabled-bg: #223;
+        --button-disabled-bg: var(--disabled-bg);
         --button-disabled-border: #444;
-        --button-disabled-text: #555;
-        --button-text: #ddd;
+        --button-disabled-text: var(--disabled-text);
+
+        --button-primary-bg: #3272d9;
+        --button-primary-border: #3272d9;
+        --button-primary-text: #fff;
+        --button-primary-active-bg: #1d5bbf;
+        --button-primary-active-border: #1d5bbf;
+        --button-primary-hover-bg: #1d5bbf;
+        --button-primary-hover-border: #1d5bbf;
+        --button-primary-af-shadow: 0 0 0 0.1rem #555, 0 0 0 0.2rem #1d5bbf;
+
+        --button-secondary-bg: #292929;
+        --button-secondary-text: #ddd;
+
+        --group-button-bg: #292929;
 
         --navbar-section-text: #aaa;
         --navbar-section-selected-bg: #223;
 
-        --active-bg: #2929c4;
-        --active-border: #2525B3;
-        --active-text: #ddd;
-        --hover-bg: #50509F;
-        --hover-border: #494991;
-        --hover-text: #ddd;
-        --focus-border: #777;
-        --focus-text: #ddd;
-        --selected-bg: #4B4B85;
-        --selected-text: #ddd;
+        --tab-bg: #292929;
 
         --viewport-button-bg: #223;
 
@@ -613,23 +629,46 @@
     /* SMB > Button */
     .smb-Button {
         border-color: var(--button-border);
+        box-shadow: var(--button-shadow)
     }
 
-    .smb-Button--primary {
+    /* SMB > Button > Primary */
+    .smb-Button--primary,
+    .smb-Button--primary.is-active {
         background-color: var(--button-primary-bg);
-        color: var(--button-text);
+        border-color: var(--button-primary-border);
+        color: var(--button-primary-text);
     }
 
+    .smb-Button--primary:focus,
+    .smb-Button--primary.is-active:focus {
+        background-color: var(--button-primary-bg);
+        border-color: var(--button-primary-border);
+        box-shadow: var(--button-primary-af-shadow)
+    }
+    .smb-Button--primary:hover,
+    .smb-Button--primary.is-active:hover {
+        background-color: var(--button-primary-hover-bg);
+        border-color: var(--button-primary-hover-border)
+    }
+
+    .smb-Button--primary:active,
+    .smb-Button--primary.is-active:active {
+        background-color: var(--button-primary-active-bg);
+        border-color: var(--button-primary-active-border)
+    }
+
+    /* SMB > Button > Secondary */
     .smb-Button--secondary,
     .smb-Button--secondaryDark,
     .x-btn.secondary.secondary {
-        background-color: var(--button-bg);
+        background-color: var(--button-secondary-bg);
         border-color: var(--button-border);
-        color: var(--button-text);
+        color: var(--button-secondary-text);
     }
 
     .x-btn.secondary.secondary span {
-        color: var(--button-text);
+        color: var(--button-secondary-text);
     }
 
     .smb-Button--secondary:hover,
@@ -655,7 +694,7 @@
 
     #main .smb-ButtonGroup>.smb-Button,
     #main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button {
-        background-color: var(--button-bg);
+        background-color: var(--group-button-bg);
         border-color: var(--button-border);
     }
 
@@ -839,7 +878,7 @@
     }
 
     .smb-Tab {
-        background-color: var(--button-bg);
+        background-color: var(--tab-bg);
     }
 
     .smb-tab:focus {
@@ -1056,9 +1095,9 @@
     }
 
     a.cke_dialog_ui_button {
-        background-color: var(--button-bg);
+        background-color: var(--button-secondary-bg);
         border-color: var(--button-border);
-        color: var(--button-text);
+        color: var(--button-secondary-text);
         background-image: none;
         box-shadow: none;
     }
@@ -1106,12 +1145,9 @@
         color: var(--main-text);
     }
 
-    #main .x4-btn
-
-    /*,#main .smb-ButtonGroup .smb-PopoverTrigger .smb-Button*/
-        {
-        background-color: var(--button-bg);
-        border-color: #555;
+    #main .x4-btn {
+        background-color: var(--button-secondary-bg);
+        border-color: var(--button-border);
     }
 
     #main .x4-grid-body {
