@@ -1,0 +1,768 @@
+/* Global */
+:root {
+    /* rally color codes */
+    --rally-000000: #dddddd;
+    --rally-000099: LIME;
+    --rally-003333: LIME;
+    --rally-005eb8: LIME;
+    --rally-006488: LIME;
+    --rally-006600: LIME;
+    --rally-0085c3: LIME;
+    --rally-0092c8: LIME;
+    --rally-00a9e0: LIME;
+    --rally-035a81: LIME;
+    --rally-037a32: LIME;
+    --rally-04408c: LIME;
+    --rally-04468c: LIME;
+    --rally-044772: LIME;
+    --rally-051a2b: LIME;
+    --rally-076692: LIME;
+    --rally-083772: LIME;
+    --rally-085478: LIME;
+    --rally-09363b: LIME;
+    --rally-0f0f0f: LIME;
+    --rally-0f5167: LIME;
+    --rally-103570: LIME;
+    --rally-111111: LIME;
+    --rally-114599: LIME;
+    --rally-142f45: LIME;
+    --rally-143044: LIME;
+    --rally-15233b: LIME;
+    --rally-15428b: LIME;
+    --rally-15498b: LIME;
+    --rally-155724: LIME;
+    --rally-156d82: LIME;
+    --rally-17385b: LIME;
+    --rally-181818: LIME;
+    --rally-1b376c: LIME;
+    --rally-1d1f24: LIME;
+    --rally-1d5bbf: #777;
+    --rally-20465f: LIME;
+    --rally-20693d: LIME;
+    --rally-21516d: LIME;
+    --rally-222222: LIME;
+    --rally-222297: LIME;
+    --rally-233d6d: LIME;
+    --rally-254f62: LIME;
+    --rally-266795: LIME;
+    --rally-288892: LIME;
+    --rally-29beff: LIME;
+    --rally-2a854e: LIME;
+    --rally-30aac7: LIME;
+    --rally-317397: LIME;
+    --rally-31b2bf: LIME;
+    --rally-3272d9: #3eb9f8;
+    --rally-327c98: LIME;
+    --rally-333333: LIME;
+    --rally-333840: #ddd;
+    --rally-337ec6: LIME;
+    --rally-35b2e4: LIME;
+    --rally-36625a: LIME;
+    --rally-366ab7: LIME;
+    --rally-3764a0: LIME;
+    --rally-393939: LIME;
+    --rally-396095: LIME;
+    --rally-396295: LIME;
+    --rally-3a874f: LIME;
+    --rally-3b5a82: LIME;
+    --rally-3ba164: LIME;
+    --rally-3e6aaa: LIME;
+    --rally-3f84a4: LIME;
+    --rally-404040: LIME;
+    --rally-408492: LIME;
+    --rally-416aa3: LIME;
+    --rally-416da3: LIME;
+    --rally-434a54: LIME;
+    --rally-444444: LIME;
+    --rally-44525e: LIME;
+    --rally-464646: LIME;
+    --rally-48a23f: LIME;
+    --rally-499739: LIME;
+    --rally-4a90e2: LIME;
+    --rally-4c4c4c: LIME;
+    --rally-4e90aa: LIME;
+    --rally-515151: LIME;
+    --rally-535353: LIME;
+    --rally-5394af: LIME;
+    --rally-54809f: LIME;
+    --rally-5496b1: LIME;
+    --rally-5497ba: LIME;
+    --rally-555555: LIME;
+    --rally-5691f0: #365B97;
+    --rally-57c282: LIME;
+    --rally-58606e: #ddd;
+    --rally-5b5b5b: LIME;
+    --rally-5c9acb: LIME;
+    --rally-5cba49: LIME;
+    --rally-5d4000: LIME;
+    --rally-5f5f5f: LIME;
+    --rally-611535: LIME;
+    --rally-619cec: LIME;
+    --rally-61c6e5: LIME;
+    --rally-626262: LIME;
+    --rally-6593cf: LIME;
+    --rally-6594cf: LIME;
+    --rally-666666: LIME;
+    --rally-6678b2: LIME;
+    --rally-678ebf: LIME;
+    --rally-693d07: LIME;
+    --rally-696969: LIME;
+    --rally-698fb9: LIME;
+    --rally-6ab17d: LIME;
+    --rally-6ad17b: LIME;
+    --rally-6fa0df: LIME;
+    --rally-707a8a: LIME;
+    --rally-718bb7: LIME;
+    --rally-71cdd2: LIME;
+    --rally-71d3eb: LIME;
+    --rally-721c24: LIME;
+    --rally-73a3e0: LIME;
+    --rally-75a692: LIME;
+    --rally-76c10f: LIME;
+    --rally-777777: LIME;
+    --rally-77bc71: LIME;
+    --rally-793259: LIME;
+    --rally-799ac4: LIME;
+    --rally-7a92c2: LIME;
+    --rally-7a9ac4: LIME;
+    --rally-7b7b7b: LIME;
+    --rally-7ddba3: LIME;
+    --rally-7eadd9: LIME;
+    --rally-7f7f7f: LIME;
+    --rally-7fa9e4: LIME;
+    --rally-81a4d0: LIME;
+    --rally-82d3ed: LIME;
+    --rally-84a0c4: LIME;
+    --rally-84b1fa: LIME;
+    --rally-888888: LIME;
+    --rally-888d8e: LIME;
+    --rally-8a1244: LIME;
+    --rally-8a4d03: LIME;
+    --rally-8b9898: LIME;
+    --rally-8bb8f3: LIME;
+    --rally-8db2e3: LIME;
+    --rally-8db3e3: LIME;
+    --rally-8e99ab: LIME;
+    --rally-8f8f8f: LIME;
+    --rally-8facd0: LIME;
+    --rally-909090: LIME;
+    --rally-93cd8f: LIME;
+    --rally-94afd1: LIME;
+    --rally-96c8a4: LIME;
+    --rally-98c0f4: LIME;
+    --rally-98c8ff: LIME;
+    --rally-999999: LIME;
+    --rally-9999cc: LIME;
+    --rally-99a1a7: LIME;
+    --rally-99bbe8: LIME;
+    --rally-99bce8: LIME;
+    --rally-9ad1da: LIME;
+    --rally-9cbfee: LIME;
+    --rally-9dbbcb: LIME;
+    --rally-9e1e08: LIME;
+    --rally-9fc1d1: LIME;
+    --rally-a1311f: LIME;
+    --rally-a2b1c5: LIME;
+    --rally-a3bad9: LIME;
+    --rally-a3bae9: LIME;
+    --rally-a6d0b1: LIME;
+    --rally-a9a9a9: LIME;
+    --rally-a9bfd3: LIME;
+    --rally-aaaaaa: LIME;
+    --rally-aaccf6: LIME;
+    --rally-ababab: LIME;
+    --rally-abedc5: LIME;
+    --rally-aca899: LIME;
+    --rally-acacac: LIME;
+    --rally-accbfc: LIME;
+    --rally-ad5f00: LIME;
+    --rally-afbacc: #555;
+    --rally-b0b0b0: LIME;
+    --rally-b0ccf2: LIME;
+    --rally-b2d1f5: LIME;
+    --rally-b2e3b6: LIME;
+    --rally-b3b3b3: LIME;
+    --rally-b4b4b4: LIME;
+    --rally-b5b8c8: LIME;
+    --rally-b5d8eb: LIME;
+    --rally-b7c8d7: LIME;
+    --rally-b80d0d: #b80d0d;
+    --rally-b81b10: LIME;
+    --rally-b8cfee: LIME;
+    --rally-b8f1ff: LIME;
+    --rally-bbbbbb: LIME;
+    --rally-bbd2ef: LIME;
+    --rally-bedee6: LIME;
+    --rally-c0272b: LIME;
+    --rally-c0c0c0: LIME;
+    --rally-c2d8f0: LIME;
+    --rally-c2e39b: LIME;
+    --rally-c3b3b3: LIME;
+    --rally-c3daf9: LIME;
+    --rally-c3e6cb: LIME;
+    --rally-c4c4c4: LIME;
+    --rally-c4d8e8: LIME;
+    --rally-c50f18: LIME;
+    --rally-c5c5c5: LIME;
+    --rally-c5d2df: LIME;
+    --rally-c6c6c6: LIME;
+    --rally-c7c7c7: LIME;
+    --rally-c7d6e9: LIME;
+    --rally-c7dfe9: LIME;
+    --rally-c7dffc: LIME;
+    --rally-c8d1e0: #1B1C1F;
+    --rally-c9c9c9: LIME;
+    --rally-cad9ec: LIME;
+    --rally-cadda3: LIME;
+    --rally-cbdbef: LIME;
+    --rally-cbddf3: LIME;
+    --rally-cc0000: LIME;
+    --rally-cccccc: LIME;
+    --rally-cceef9: LIME;
+    --rally-cd0000: LIME;
+    --rally-ced9e7: LIME;
+    --rally-cedff5: LIME;
+    --rally-cf3f3f: LIME;
+    --rally-cf7911: LIME;
+    --rally-cf871b: LIME;
+    --rally-cfcedd: LIME;
+    --rally-cfe0fc: LIME;
+    --rally-d0021b: LIME;
+    --rally-d0d0d0: LIME;
+    --rally-d0dddf: LIME;
+    --rally-d0def0: LIME;
+    --rally-d0e4ec: LIME;
+    --rally-d1ddef: LIME;
+    --rally-d1e4fd: LIME;
+    --rally-d2e0f2: LIME;
+    --rally-d3e1f1: LIME;
+    --rally-d4eaf6: LIME;
+    --rally-d4edda: LIME;
+    --rally-d5d5d5: LIME;
+    --rally-d64796: LIME;
+    --rally-d69dc7: LIME;
+    --rally-d6d6d6: LIME;
+    --rally-d7d7d7: LIME;
+    --rally-d87166: LIME;
+    --rally-d8dae4: LIME;
+    --rally-d96c14: LIME;
+    --rally-d9e7f8: LIME;
+    --rally-d9e8fb: LIME;
+    --rally-dadee5: LIME;
+    --rally-dae5f3: LIME;
+    --rally-dce0e0: LIME;
+    --rally-dd7870: LIME;
+    --rally-dddddd: LIME;
+    --rally-dde3ed: LIME;
+    --rally-ddecfe: LIME;
+    --rally-de1b1b: #de1b1b;
+    --rally-deecfd: LIME;
+    --rally-dfe8f6: LIME;
+    --rally-dfe9f6: LIME;
+    --rally-dfecfb: LIME;
+    --rally-e0e0e0: LIME;
+    --rally-e0e8f3: LIME;
+    --rally-e1ecfa: LIME;
+    --rally-e3ebf5: LIME;
+    --rally-e3f9e9: LIME;
+    --rally-e4e4e4: LIME;
+    --rally-e4ecee: LIME;
+    --rally-e57e39: LIME;
+    --rally-e5e3de: LIME;
+    --rally-e6e4ea: LIME;
+    --rally-e6e6e6: LIME;
+    --rally-e6fde7: LIME;
+    --rally-e7e6b6: LIME;
+    --rally-e7e7e7: LIME;
+    --rally-e89c3f: LIME;
+    --rally-e8f2ff: LIME;
+    --rally-e99e99: LIME;
+    --rally-e9e9e9: LIME;
+    --rally-e9f8fe: LIME;
+    --rally-eaeaea: LIME;
+    --rally-eaecec: LIME;
+    --rally-eaf1fb: LIME;
+    --rally-ebeadb: LIME;
+    --rally-ebebd8: LIME;
+    --rally-ebebda: LIME;
+    --rally-ebebeb: LIME;
+    --rally-ebeff5: #223;
+    --rally-ebf3fd: LIME;
+    --rally-ec0000: LIME;
+    --rally-ecf2fb: LIME;
+    --rally-ecf8fb: LIME;
+    --rally-ededed: LIME;
+    --rally-edf8fb: LIME;
+    --rally-ee1c25: LIME;
+    --rally-eeeeee: LIME;
+    --rally-ef3e35: LIME;
+    --rally-ef3f35: LIME;
+    --rally-efd9d9: LIME;
+    --rally-efede7: LIME;
+    --rally-efefef: LIME;
+    --rally-eff1f1: LIME;
+    --rally-eff8fb: LIME;
+    --rally-f0f0f0: LIME;
+    --rally-f0f5fc: LIME;
+    --rally-f0f7f2: LIME;
+    --rally-f1f1f1: LIME;
+    --rally-f25147: LIME;
+    --rally-f2d3d0: LIME;
+    --rally-f3cfc7: LIME;
+    --rally-f3f7fb: LIME;
+    --rally-f4bf4b: LIME;
+    --rally-f4f0e8: LIME;
+    --rally-f4f4f4: LIME;
+    --rally-f4f7f8: LIME;
+    --rally-f55353: LIME;
+    --rally-f5c6cb: LIME;
+    --rally-f5f7fa: #111;
+    --rally-f5f8fd: LIME;
+    --rally-f66349: LIME;
+    --rally-f6a900: LIME;
+    --rally-f6f6f6: LIME;
+    --rally-f78bb8: LIME;
+    --rally-f7f7f7: LIME;
+    --rally-f7f8f8: LIME;
+    --rally-f8d7da: LIME;
+    --rally-f9a814: LIME;
+    --rally-f9f9f9: LIME;
+    --rally-fa8e8e: LIME;
+    --rally-fad200: LIME;
+    --rally-fad4e4: LIME;
+    --rally-fad800: LIME;
+    --rally-fad8af: LIME;
+    --rally-faedc8: LIME;
+    --rally-fafafa: LIME;
+    --rally-fbde98: LIME;
+    --rally-fbedca: LIME;
+    --rally-fbfbfb: LIME;
+    --rally-fcb5b1: LIME;
+    --rally-fcfcfc: LIME;
+    --rally-fdfecc: LIME;
+    --rally-fec2bd: LIME;
+    --rally-fec7c4: LIME;
+    --rally-fee276: LIME;
+    --rally-ff0000: LIME;
+    --rally-ff4545: LIME;
+    --rally-ff7870: LIME;
+    --rally-ff7f7f: LIME;
+    --rally-ffafaf: LIME;
+    --rally-ffc303: LIME;
+    --rally-ffc91c: LIME;
+    --rally-ffcccc: LIME;
+    --rally-ffd573: LIME;
+    --rally-ffe11a: LIME;
+    --rally-ffeeee: LIME;
+    --rally-ffffff: #112;
+
+    --black-05: rgba(0, 0, 0, 0.05);
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-15: rgba(0, 0, 0, 0.15);
+    --black-20: rgba(0, 0, 0, 0.2);
+    --black-40: rgba(0, 0, 0, 0.4);
+    --black-45: rgba(0, 0, 0, 0.45);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --black-80: rgba(0, 0, 0, 0.8);
+    --white-60: rgba(255, 255, 255, 0.6);
+    --white-100: #fff;
+
+    /*
+        * Main
+        */
+
+    --main-bg: #111;
+    --main-border: #555;
+    --main-text: #ddd;
+
+    --content-bg: #112;
+    --content-border: #555;
+    --content-text: var(--main-text);
+
+    --tertiary-bg: #223;
+    --tertiary-border: #555;
+    --tertiary-text: #bbb;
+
+    --header-border: #37383B;
+    --title-text: #CBDFFF;
+    --subtitle-text: #CBDFFF;
+
+    --link-text: #3eb9f8;
+
+    --invalid-color: #b80d0d;
+
+    /*
+        * Main > States
+        */
+    --disabled-bg: #161b22;
+    --disabled-text: #484f58;
+    --placeholder-text: var(--disabled-text);
+    --focus-border: #777;
+    --focus-text: #ddd;
+
+    --hover-bg: #212142
+        /* was #50509F*/
+    ;
+
+    --hover-border: #494991;
+    --hover-text: #ddd;
+
+    --mask-bg: #000
+        /* assumes opacity */
+    ;
+
+    /* selected: no commonalities */
+
+    /*
+        * Main > Colors
+        */
+
+    /*
+        * Controls
+        */
+    --control-bg: #444;
+    --control-border: #777;
+    --control-icon: var(--link-text);
+    --control-text: #ddd;
+    --control-disabled-bg: var(--disabled-bg);
+    --control-disabled-border: var(--control-border);
+    --control-disabled-icon: var(--control-disabled-text);
+    --control-disabled-text: var(--disabled-text);
+    --control-focus-shadow: 0 0 0 0.1rem var(--control-bg), 0 0 0 0.2rem #30353D;
+    --control-focus-border: var(--control-border);
+    --control-hover-border: #8b949e;
+
+    /*
+        * Button
+        */
+    --button-bg: #101010;
+    --button-border: #555;
+    --button-icon: var(--button-text);
+    --button-text: #c9d1d9;
+    --button-active-bg: #30353D;
+    --button-active-border: var(--button-border);
+    --button-active-text: var(--button-text);
+    --button-disabled-bg: var(--control-disabled-bg);
+    --button-disabled-border: #444;
+    --button-disabled-icon: var(--control-disabled-text);
+    --button-disabled-text: var(--control-disabled-text);
+    --button-focus-bg: var(--button-bg);
+    --button-focus-border: var(--button-border);
+    --button-focus-icon: var(--button-icon);
+    --button-focus-text: var(--button-text);
+    --button-focus-shadow: var(--control-focus-shadow);
+    --button-hover-bg: #323A44;
+    --button-hover-border: #8b949e;
+    --button-hover-icon: var(--button-hover-border);
+    --button-hover-text: var(--button-text);
+    --button-is_active-bg: #2C5597;
+    --button-is_active-border: #365B97;
+    --button-is_active-text: #c9d1d9;
+    --button-is_active-active-bg: var(--button-is_active-bg);
+    --button-is_active-active-border: var(--button-is_active-border);
+    --button-is_active-active-text: var(--button-text);
+    --button-is_active-focus-bg: #3465B5;
+    --button-is_active-focus-border: #406DB5;
+    --button-is_active-focus-text: #406DB5;
+    --button-is_active-hover-bg: var(--button-is_active-focus-bg);
+    --button-is_active-hover-border: var(--button-is_active-focus-border);
+    --button-is_active-hover-text: var(--button-is_active-focus-text);
+
+    --button-primary-bg: var(--rally-3272d9);
+    --button-primary-border: var(--rally-3272d9);
+    --button-primary-text: var(--rally-ffffff);
+    --button-primary-active-bg: var(--rally-1d5bbf);
+    --button-primary-active-border: var(--rally-1d5bbf);
+    --button-primary-focus-bg: var(--button-primary-bg);
+    --button-primary-focus-border: var(--button-primary-border);
+    --button-primary-focus-shadow: var(--button-focus-shadow);
+    --button-primary-hover-bg: var(--rally-5691f0);
+    --button-primary-hover-border: var(--rally-5691f0);
+    --button-primary-is_active-bg: var(--button-primary-bg);
+    --button-primary-is_active-border: var(--button-primary-border);
+    --button-primary-is_active-active-bg: var(--rally-1d5bbf);
+    --button-primary-is_active-active-border: var(--rally-1d5bbf);
+    --button-primary-is_active-focus-bg: var(--rally-3272d9);
+    --button-primary-is_active-focus-border: var(--rally-1d5bbf);
+    --button-primary-is_active-hover-bg: var(--rally-5691f0);
+    --button-primary-is_active-hover-border: var(--rally-5691f0);
+
+    --button-secondarydark-bg: var(--button-bg);
+    --button-secondarydark-border: var(--button-border);
+    --button-secondarydark-text: var(--button-text);
+    --button-secondarydark-active-bg: var(--button-active-bg);
+    --button-secondarydark-focus-bg: var(--button-secondarydark-bg);
+    --button-secondarydark-focus-border: var(--rally-1d5bbf);
+    --button-secondarydark-focus-shadow: var(--button-focus-shadow);
+    --button-secondarydark-focus-text: var(--button-secondarydark-text);
+    --button-secondarydark-hover-bg: var(--button-hover-bg);
+    --button-secondarydark-hover-border: var(--button-hover-border);
+    --button-secondarydark-hover-text: var(--button-hover-text);
+    --button-secondarydark-is_active-bg: var(--button-is_active-bg);
+    --button-secondarydark-is_active-border: var(--button-is_active-border);
+    --button-secondarydark-is_active-focus-bg: var(--button-is_active-focus-bg);
+    --button-secondarydark-is_active-focus-border: var(--button-is_active-focus-border);
+    --button-secondarydark-is_active-focus-text: var(--button-secondarydark-text);
+    --button-secondarydark-is_active-hover-bg: var(--button-is_active-hover-bg);
+    --button-secondarydark-is_active-hover-border: var(--button-is_active-hover-border);
+    --button-secondarydark-is_active-hover-text: var(--button-secondarydark-text);
+
+    --button-link-bg: transparent;
+    --button-link-border: var(--button-link-bg);
+    --button-link-icon: var(--button-link-text);
+    --button-link-text: var(--link-text);
+    --button-link-active-bg: var(--rally-ebeff5);
+    --button-link-focus-border: var(--rally-1d5bbf);
+    --button-link-hover-bg: var(--rally-f5f7fa);
+    --button-link-hover-border: var(--rally-f5f7fa);
+    --button-link-hover-text: var(--button-link-text);
+    --button-link-is_active-bg: var(--rally-ebeff5);
+    --button-link-is_active-border: var(--rally-1d5bbf);
+    --button-link-is_active-hover-bg: var(--button-link-hover-bg);
+    --button-link-is_active-hover-border: var(--button-link-is_active-border);
+
+    --button-jumboicon-bg: var(--button-link-bg);
+    --button-jumboicon-border: var(--button-link-border);
+    --button-jumboicon-text: var(--button-link-text);
+    --button-jumboicon-active-bg: var(--rally-dde3ed);
+    --button-jumboicon-focus-bg: var(--rally-ffffff);
+    --button-jumboicon-focus-border: var(--rally-1d5bbf);
+    --button-jumboicon-hover-bg: var(--rally-ebeff5);
+    --button-jumboicon-is_active-bg: var(--rally-dde3ed);
+    --button-jumboicon-is_active-border: var(--rally-1d5bbf);
+    --button-jumboicon-children: var(--rally-58606e);
+    --button-jumboicon-disabled-bg: var(--button-jumboicon-bg);
+    --button-jumboicon-disabled-border: var(--button-jumboicon-border);
+    --button-jumboicon-disabled-children: var(--button-disabled-text);
+    --button-jumboicon-disabled-text: var(--button-disabled-text);
+
+    --group-button-bg: var(--button-bg);
+    --group-button-border: var(--button-border);
+    --group-button-text: var(--button-text);
+    --group-button-active-bg: var(--button-active-bg);
+    --group-button-active-border: var(--button-active-border);
+    --group-button-active-text: var(--group-button-text);
+    --group-button-focus-bg: var(--group-button-bg);
+    --group-button-focus-border: var(--group-button-text);
+    --group-button-focus-text: var(--group-button-text);
+    --group-button-hover-bg: var(--button-hover-bg);
+    --group-button-hover-border: var(--button-hover-border);
+    --group-button-hover-text: var(--group-button-text);
+    --group-button-is_active-bg: var(--link-text);
+    --group-button-is_active-border: var(--link-text);
+    --group-button-is_active-text: #ffe;
+    --group-button-is_active-active-bg: var(--rally-1d5bbf);
+    --group-button-is_active-active-border: var(--rally-1d5bbf);
+    --group-button-is_active-active-text: var(--group-button-is_active-text);
+    --group-button-is_active-focus-bg: var(--rally-3272d9);
+    --group-button-is_active-focus-border: var(--rally-1d5bbf);
+    --group-button-is_active-focus-shadow: inset 0 0 0 0.1rem var(--button-bg);
+    --group-button-is_active-focus-text: var(--group-button-is_active-text);
+    --group-button-is_active-hover-bg: var(--rally-5691f0);
+    --group-button-is_active-hover-border: var(--rally-5691f0);
+    --group-button-is_active-hover-text: var(--group-button-is_active-text);
+
+    --button-failure-accent: #de1b1b;
+    --button-failure-accent-hover: #f55353;
+    --button-failure-accent-af: #b80d0d;
+    --button-failure-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-failure-accent-af);
+
+    --button-success-accent: #2a854e;
+    --button-success-accent-hover: #3ba164;
+    --button-success-accent-af: #20693d;
+    --button-success-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-success-accent-af);
+
+    --button-warning-accent: #ad5f00;
+    --button-warning-accent-hover: #cf7911;
+    --button-warning-accent-af: #8a4d03;
+    --button-warning-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-warning-accent-af);
+
+    --button-feedback-bg: #ffc91c;
+    --button-feedback-icon: #707a8a;
+    --button-feedback-text: #444444;
+    --button-feedback-focus-bg: #444444;
+    --button-feedback-focus-text: #ffc91c;
+    --button-feedback-hover-bg: #ffc303;
+
+    /*
+        * Checkbox
+        */
+    --checkbox-is_checked-bg: var(--link-text);
+    --checkbox-is_checked-focus-bg: var(--checkbox-is_checked-bg);
+    --checkbox-is_checked-hover-bg: #8b949e;
+    --checkbox-disabled-border: #84b1fa;
+    --checkbox-is_checked-disabled-bg: #84b1fa;
+    --checkbox-is_indeterminate-disabled-bg: #84b1fa;
+    --checkbox-is_indeterminate-color: var(--link-text);
+
+    /*
+        * Dropdown
+        */
+    --dropdown-bg: var(--control-bg);
+    --dropdown-border: var(--control-border);
+    --dropdown-text: var(--control-text);
+    --dropdown-disabled-bg: var(--control-disabled-bg);
+    --dropdown-disabled-border: var(--control-disabled-border);
+    --dropdown-disabled-text: var(--control-disabled-text);
+
+    --dropdown-divider-bg: var(--rally-ebeff5);
+
+    --dropdown-list-shadow: 0 0.2rem 0.2rem var(--dropdown-border) var(--black-10);
+
+    --dropdown-header-text: var(--dropdown-text);
+
+    --dropdown-footer-bg: var(--tertiary-bg);
+    --dropdown-footer-border: var(--dropdown-border);
+    --dropdown-footer-text: var(--tertiary-text);
+
+    --dropdown-match-bg: var(--rally-accbfc);
+
+    --dropdown-item-text: var(--dropdown-text);
+    --dropdown-item-subtext: var(--title-text);
+    --dropdown-item-hover-bg: var(--rally-ebeff5);
+    --dropdown-item-hover-text: var(--hover-text);
+    --dropdown-item-is_active-bg: #2929c4;
+
+    --dropdown-item-is_active-text: var(--dropdown-item-text);
+
+    --dropdown-item-checkbox-checked-bg: var(--rally-5691f0);
+    --dropdown-item-checkbox-checked-border: var(--rally-5691f0);
+    --dropdown-item-checkbox-checked-text-before: var(--rally-ffffff);
+
+    /*
+        * List
+        */
+    --listitem-is_active-bg: #4B4B85;
+
+    /*
+        * LoadingMask
+        */
+    --loadingmask-bg: var(--black-20);
+    --loadingmask-text: #ddd;
+
+    /*
+        * Menu
+        */
+    --menuitem-text: var(--popover-text);
+    --menuitem-is_active-bg: #4B4B85;
+    --menuitem-hover-bg: #212142;
+    /* --menuitem-hover-bg: #50509F; */
+
+    /*
+        * Panel
+        */
+    --panel-header-bg: #111;
+    --panel-app-border: #000;
+    --panel-app-text: #fff;
+    --panel-app-header-bg: #223;
+
+
+    /*
+        * Popover
+        */
+    --popover-bg: var(--content-bg);
+    --popover-shadow: 0 0 0 0.1rem var(--tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
+    --popover-title-text: var(--title-text);
+    --popover-text: var(--content-text);
+
+    /*
+        * Tab
+        */
+    --tablist-bg: #292929;
+    --tab-text: #ddd;
+    --tab-focus-bg: #292929;
+    --tab-focus-border: var(--link-text);
+    --tab-hover-bg: var(--main-bg);
+    --tab-is_active-bg: #2929c4;
+    --tab-is_active-border: #2525B3;
+    --tab-is_active-focus-bg: var(--main-bg);
+    --tab-is_active-text: #ddd;
+
+    /*
+        * TextInput
+        */
+    --textinput-bg: var(--control-bg);
+    --textinput-border: var(--control-border);
+    --textinput-icon: var(--control-icon);
+    --textinput-text: var(--control-text);
+    --textinput-disabled-bg: var(--control-disabled-bg);
+    --textinput-disabled-border: var(--control-disabled-border);
+    --textinput-disabled-icon: var(--textinput-disabled-text);
+    --textinput-disabled-text: var(--control-disabled-text);
+    --textinput-focus-icon: var(--link-text);
+    --textinput-focus-shadow: var(--control-focus-shadow);
+    --textinput-hover-accent: var(--link-text);
+    --textinput-invalid-border: var(--invalid-border);
+    --textinput-search-focus-border: var(--link-text);
+    --textinput-search-focus-icon: var(--link-text);
+    --textinput-search-focus-text: var(--link-text);
+
+    /*
+        * Toolbar
+        */
+    --toolbar-border: #445;
+
+    /*
+        * Tree
+        */
+    --treeitem-is_active-bg: #4B4B85;
+
+    /*
+        * HERE BE DRAGONS
+        */
+
+
+    --cke-editable-bg: #1e1e1e;
+    --cke-editable-text: #dcdcdc;
+    --cke-text-shadow: none;
+
+    --alm-border: #444;
+    --alm-button-bg: #1f1f29;
+    --alm-button-border: #555;
+    --alm-button-text: #bbb;
+
+    --datatable-bg: #111;
+    --datatable-text: #bbb;
+
+    --datatable-header-bg: #1f1f29;
+    --datatable-header-border: #555;
+    --datatable-header-text: #bbb;
+    --datatable-header-resizer-border: #555;
+    --datatable-header-resizer-active-border: #445;
+
+    --datatable-body-bg: #1f1f29;
+    --datatable-body-gripper-text: #707a8a;
+    --datatable-body-border: #111;
+    --datatable-body-text: #bbb;
+
+    --datatable-drag-text: #aaa;
+
+    --navbar-section-text: #aaa;
+    --navbar-section-is_active-bg: #223;
+
+    --viewport-button-bg: #223;
+
+    --kanban-column-bg: #223;
+    --kanban-column-text: #ddd;
+
+    --kanban-card-bg: var(--content-bg);
+    --kanban-card-border: #555;
+    --kanban-card-text: #bbb;
+    --kanban-card-box-shadow: 0 2px 3px 0 var(--black-40),
+        0 0 0 1px #555;
+
+    --tag-bg: #036490;
+    --tag-border: #035a81;
+    --tag-text: #d7edf5;
+
+    --banner-bg: #223;
+    --banner-border: #000;
+
+    --filter-bar-bg: #223;
+    --filter-bar-border: #444;
+
+    --disclaimer-bg: var(--tertiary-bg);
+    --disclaimer-text: var(--tertiary-text);
+
+}
+
