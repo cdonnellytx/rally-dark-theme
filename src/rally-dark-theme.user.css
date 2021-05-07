@@ -2346,9 +2346,24 @@
         background-color: var(--tablist-bg)
     }
 
+
     /*
      * SMB > TextInput
      */
+     .smb-TextInput {
+        transition-duration: .15s;
+        transition-property: border-color, box-shadow;
+        transition-timing-function: ease-in-out;
+        background-color: var(--textinput-bg);
+        border: 1px solid var(--textinput-border);
+        border-radius: 3px;
+        box-shadow: none;
+        color: var(--textinput-text);
+        font-size: 1.3rem;
+        line-height: 1.4;
+        padding: 0.8rem
+    }
+
     .smb-TextInput,
     .smb-SearchInput.smb-TextInput,
     .smb-Select-trigger,
@@ -2436,9 +2451,8 @@
     }
 
     /* SMB > TextInput : focus */
-
-    .smb-TextInput.is-focused:not(.is-disabled),
-    .smb-TextInput.is-focused:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
+    .is-focused.smb-TextInput:not(.is-disabled),
+    .is-focused.smb-TextInput:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
     .smb-TextInput:focus:not(.is-disabled),
     .smb-TextInput:focus:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
     .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):focus .smb-Select-trigger {
