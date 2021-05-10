@@ -400,13 +400,18 @@
 
         --link-text: #3eb9f8;
 
-        --invalid-color: #b80d0d;
+        --invalid-color-1: #b80d0d;
+        --invalid-color-2: #de1d1d;
+
+        --danger-border: #f55353;
+
+        --required-text: #de1b1b;
 
         /*
          * Main > States
          */
         --disabled-bg: #161b22;
-        --disabled-text: #484f58;
+        --disabled-text: #666e79;
         --placeholder-text: var(--disabled-text);
         --focus-border: #777;
         --focus-text: #ddd;
@@ -446,7 +451,7 @@
         /*
          * Button
          */
-        --button-bg: #101010;
+        --button-bg: #1f1f29;
         --button-border: #555;
         --button-icon: var(--button-text);
         --button-text: #c9d1d9;
@@ -640,6 +645,14 @@
         --dropdown-item-checkbox-checked-border: var(--rally-5691f0);
         --dropdown-item-checkbox-checked-text-before: var(--rally-ffffff);
 
+        --dropdown-item-multiselect-selected-bg: transparent;
+
+        /*
+         * Label
+         */
+        --label-text: #ddd;
+        --label-required-text: var(--required-text);
+
         /*
          * List
          */
@@ -675,6 +688,9 @@
         --popover-shadow: 0 0 0 0.1rem var(--tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
         --popover-title-text: var(--title-text);
         --popover-text: var(--content-text);
+        --popover-invalid-bg: #b80d0d;
+        --popover-invalid-border: #b80d0d;
+        --popover-invalid-shadow: 0 0 0 0.1rem var(--popover-invalid-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
 
         /*
          * Tab
@@ -703,7 +719,7 @@
         --textinput-focus-icon: var(--link-text);
         --textinput-focus-shadow: var(--control-focus-shadow);
         --textinput-hover-accent: var(--link-text);
-        --textinput-invalid-border: var(--invalid-border);
+        --textinput-invalid-border: #b80d0d;
         --textinput-search-focus-border: var(--link-text);
         --textinput-search-focus-icon: var(--link-text);
         --textinput-search-focus-text: var(--link-text);
@@ -728,9 +744,6 @@
         --cke-text-shadow: none;
 
         --alm-border: #444;
-        --alm-button-bg: #1f1f29;
-        --alm-button-border: #555;
-        --alm-button-text: #bbb;
 
         --datatable-bg: #111;
         --datatable-text: #bbb;
@@ -824,9 +837,14 @@
     }
 
     .alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton) {
-        background-color: var(--alm-button-bg);
-        border-color: var(--alm-button-border);
-        color: var(--alm-button-text);
+        background-color: var(--button-bg);
+        border-color: var(--button-border);
+        color: var(--button-text);
+    }
+
+    .alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton):hover, .alm-header-container .chr-ViewportAppModes-item:hover {
+        background-color: var(--button-hover-bg);
+        border-color: var(--button-border)
     }
 
     .chr-NavBar,
@@ -850,7 +868,8 @@
 
     #main .chr-NavBar .chr-NavSection:hover,
     #main .chr-NavBar-alt .chr-NavSection:hover {
-        background-color: var(--active-bg);
+        background-color: transparent;
+        border-color: transparent;
     }
 
     /* Disclaimer */
@@ -2025,7 +2044,22 @@
         box-shadow: var(--button-focus-shadow)
     }
 
-    /* SMB > Dropdown > TextInput */
+    /* SMB > Dropdown > Trigger */
+    .smb-Select-trigger,
+    .smb-Dropdown .smb-Select-trigger,
+    .x-form-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-readonly):not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+        background-color: var(--textinput-bg);
+        border-color: var(--textinput-border);
+        box-shadow: none;
+        color: var(--textinput-text)
+    }
+
+    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger {
+        background-color: var(--textinput-bg);
+        border-color: var(--textinput-border);
+    }
+
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-focused,
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-readOnly,
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput:focus,
@@ -2035,6 +2069,15 @@
 
     .smb-Dropdown.smb-Select .smb-DropdownList-footer .smb-Button--icon.is-disabled .smb-Button-icon .smb-SvgIcon {
         color: var(--button-disabled-text)
+    }
+
+    /* SMB > Dropdown > Trigger */
+    .smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select.is-disabled.is-disabled .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
+        background-color: var(--textinput-disabled-bg);
+        border-color: var(--textinput-disabled-border);
+        color: var(--textinput-disabled-text)
     }
 
     /* SMB > Dropdown > SvgIcon */
@@ -2073,8 +2116,13 @@
     /*
      * SMB > Label
      */
-    #main .smb-FieldLabel-text {
-        color: #ddd;
+    .smb-FieldLabel-text {
+        color: var(--label-color);
+    }
+
+    .smb-FieldLabel-requiredIndicator,
+    .chr-Tray .smb-FieldLabel-requiredIndicator {
+        color: var(--label-required-text);
     }
 
     /*
@@ -2351,25 +2399,15 @@
      */
     .smb-TextInput,
     .smb-SearchInput.smb-TextInput,
-    .smb-Select-trigger,
-    .smb-Dropdown .smb-Select-trigger,
-    .x-form-trigger,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsDateEditor:not(.is-open) .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
     .chr-QuickDetailQuickDetailEditor .chr-EditorsNumberEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
     .chr-QuickDetailQuickDetailEditor .chr-EditorsStringEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
-    .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer .chr-EditorsStringEditor .smb-TextInput {
         background-color: var(--textinput-bg);
         border-color: var(--textinput-border);
         box-shadow: none;
         color: var(--textinput-text)
     }
-
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger {
-        background-color: var(--textinput-bg);
-        border-color: var(--textinput-border);
-    }
-
 
     .smb-TextInput ::placeholder {
         color: var(--placeholder-text)
@@ -2428,11 +2466,11 @@
     /* SMB > TextInput : is-invalid */
     .smb-TextInput.is-invalid,
     .smb-Dropdown.smb-Select.is-invalid .smb-Select-trigger {
-        border-color: var(--textinput-invalid-accent) !important
+        border-color: var(--textinput-invalid-border) !important
     }
 
     .smb-TextInput.is-invalid .smb-Icon {
-        color: var(--textinput-invalid-accent)
+        color: var(--textinput-invalid-border)
     }
 
     /* SMB > TextInput : focus */
@@ -2466,8 +2504,6 @@
         box-shadow: none
     }
 
-    .smb-TextInput _::-webkit-:not(:root:root).is-disabled,
-    .smb-TextInput _::-webkit-:not(:root:root)[disabled],
     .smb-TextInput .smb-TextInput-input.is-disabled,
     .smb-TextInput .smb-TextInput-input[disabled] {
         background-color: var(--button-disabled-bg);
@@ -2479,13 +2515,13 @@
     }
 
     .smb-TextInput--danger:hover:not(.is-disabled):not(.is-readOnly) {
-        border-color: var(--textinput-invalid-accent)
+        border-color: var(--textinput-invalid-border)
     }
 
     .smb-TextInput--danger.is-focused:not(.is-disabled),
     .smb-TextInput--danger:focus:not(.is-disabled) {
         border-color: var(--danger-border);
-        box-shadow: 0 0 0 0.1rem var(--textinput-bg), 0 0 0 0.2rem var(--invalid-color-1)
+        box-shadow: 0 0 0 0.1rem var(--textinput-bg), 0 0 0 0.2rem var(--textinput-invalid-border)
     }
 
     /************************************************************************/
@@ -2594,11 +2630,6 @@
         background-color: transparent
     }
 
-    .chr-QuickDetailQuickDetailEditor .smb-DropdownItem:not(.is-active):not(.is-selected):not(.is-disabled):not(:hover) .smb-DropdownItem-text,
-    .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-disabled) .smb-Select-text {
-        color: var(--dropdown-text)
-    }
-
     .chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:focus-within {
         box-shadow: var(--textinput-focus-shadow)
     }
@@ -2613,6 +2644,11 @@
 
     .chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-EditorsStringEditor {
         box-shadow: none !important
+    }
+
+    .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-disabled) .smb-Select-text,
+    .chr-QuickDetailQuickDetailEditor .smb-DropdownItem:not(.is-active):not(.is-selected):not(.is-disabled):not(:hover) .smb-DropdownItem-text {
+        color: inherit;
     }
 
     /* CHR > QuickDetail > AttributeEditor */
@@ -2828,8 +2864,8 @@
 
     a.cke_dialog_ui_button:active,
     a.cke_dialog_ui_button_ok:active {
-        background-color: var(--active-bg);
-        border-color: var(--active-border);
+        background-color: var(--button-active-bg);
+        border-color: var(--button-active-border);
     }
 
     a.cke_dialog_ui_button:focus,
