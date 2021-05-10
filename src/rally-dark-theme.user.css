@@ -441,7 +441,7 @@
         --control-icon: var(--link-text);
         --control-text: #ddd;
         --control-disabled-bg: var(--disabled-bg);
-        --control-disabled-border: var(--control-border);
+        --control-disabled-border: #445;
         --control-disabled-icon: var(--control-disabled-text);
         --control-disabled-text: var(--disabled-text);
         --control-focus-shadow: 0 0 0 0.1rem var(--control-bg), 0 0 0 0.2rem #30353D;
@@ -842,7 +842,8 @@
         color: var(--button-text);
     }
 
-    .alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton):hover, .alm-header-container .chr-ViewportAppModes-item:hover {
+    .alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton):hover,
+    .alm-header-container .chr-ViewportAppModes-item:hover {
         background-color: var(--button-hover-bg);
         border-color: var(--button-border)
     }
@@ -2407,6 +2408,11 @@
         border-color: var(--textinput-border);
         box-shadow: none;
         color: var(--textinput-text)
+    }
+
+    /* because firefox is stupid */
+    .smb-TextInput input {
+        max-height: 100%
     }
 
     .smb-TextInput ::placeholder {
