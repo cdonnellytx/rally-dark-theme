@@ -484,24 +484,18 @@
         --button-is_active-hover-border: var(--button-is_active-focus-border);
         --button-is_active-hover-text: var(--button-is_active-focus-text);
 
-        --button-primary-bg: var(--rally-3272d9);
-        --button-primary-border: var(--rally-3272d9);
-        --button-primary-text: var(--rally-ffffff);
-        --button-primary-active-bg: var(--rally-1d5bbf);
-        --button-primary-active-border: var(--rally-1d5bbf);
+        --button-primary-bg: #00a9e0;
+        --button-primary-border: var(--button-primary-bg);
+        --button-primary-text: #fff;
+        --button-primary-active-bg: #1d5bbf;
+        --button-primary-active-border: var(--button-primary-active-border);
         --button-primary-focus-bg: var(--button-primary-bg);
         --button-primary-focus-border: var(--button-primary-border);
         --button-primary-focus-shadow: var(--button-focus-shadow);
-        --button-primary-hover-bg: var(--rally-5691f0);
-        --button-primary-hover-border: var(--rally-5691f0);
-        --button-primary-is_active-bg: var(--button-primary-bg);
-        --button-primary-is_active-border: var(--button-primary-border);
-        --button-primary-is_active-active-bg: var(--rally-1d5bbf);
-        --button-primary-is_active-active-border: var(--rally-1d5bbf);
-        --button-primary-is_active-focus-bg: var(--rally-3272d9);
-        --button-primary-is_active-focus-border: var(--rally-1d5bbf);
-        --button-primary-is_active-hover-bg: var(--rally-5691f0);
-        --button-primary-is_active-hover-border: var(--rally-5691f0);
+        --button-primary-hover-bg: #365B97;
+        --button-primary-hover-border: var(--button-primary-hover-bg);
+        --button-primary-active-bg: var(--button-primary-active-bg);
+        --button-primary-active-border: var(--button-primary-active-border);
 
         --button-secondarydark-bg: var(--button-bg);
         --button-secondarydark-border: var(--button-border);
@@ -638,6 +632,7 @@
         --dropdown-item-hover-bg: var(--rally-ebeff5);
         --dropdown-item-hover-text: var(--hover-text);
         --dropdown-item-is_active-bg: #2929c4;
+        --dropdown-item-is_primary-bg: var(--link-text);
 
         --dropdown-item-is_active-text: var(--dropdown-item-text);
 
@@ -753,6 +748,9 @@
         --datatable-header-text: #bbb;
         --datatable-header-resizer-border: #555;
         --datatable-header-resizer-active-border: #445;
+
+        --datatable-rollup-bg: var(--content-bg);
+        --datatable-rollup-text: var(--content-text);
 
         --datatable-body-bg: #1f1f29;
         --datatable-body-gripper-text: #707a8a;
@@ -1058,6 +1056,11 @@
         color: var(--datatable-header-text);
     }
 
+    #main .chr-RollupRow-cell {
+        background-color: var(--datatable-rollup-bg);
+        color: var(--datatable-rollup-text)
+    }
+
     #main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
@@ -1139,8 +1142,7 @@
 
     #main .smb-Pagination,
     #main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped>.smb-DataTable-wrapper>.smb-DataTable>.smb-TableBody>.smb-TableRow,
-    #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow,
-    #main .chr-RollupRow-cell {
+    #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow {
         background-color: var(--datatable-body-bg);
         color: var(--datatable-text);
     }
@@ -1314,54 +1316,37 @@
 
     /* Button > Primary */
     .smb-Button--primary,
-    .x-btn.primary.primary {
+    .smb-Button--primary.is-active,
+    .x-btn.primary.primary,
+    .x-btn.primary.rly-active {
         background-color: var(--button-primary-bg);
         border-color: var(--button-primary-border);
         color: var(--button-primary-text)
     }
 
     .smb-Button--primary:active,
-    .x-btn.primary.primary:active {
+    .smb-Button--primary.is-active:active,
+    .x-btn.primary.primary:active,
+    .x-btn.primary.rly-active:active {
         background-color: var(--button-primary-active-bg);
         border-color: var(--button-primary-active-border)
     }
 
     .smb-Button--primary:focus,
-    .x-btn.primary.primary:focus {
-        background-color: var(--button-primary-focus-bg);
+    .smb-Button--primary.is-active:focus,
+    .x-btn.primary.primary:focus,
+    .x-btn.primary.rly-active:focus {
+            background-color: var(--button-primary-focus-bg);
         border-color: var(--button-primary-focus-border);
         box-shadow: var(--button-primary-focus-shadow)
     }
 
     .smb-Button--primary:hover,
-    .x-btn.primary.primary:hover {
-        background-color: var(--button-primary-hover-bg);
-        border-color: var(--button-primary-hover-border)
-    }
-
-    .smb-Button--primary.is-active,
-    .x-btn.primary.rly-active {
-        background-color: var(--button-primary-is_active-active-bg);
-        border-color: var(--button-primary-is_active-active-border)
-    }
-
-    .smb-Button--primary.is-active:active,
-    .x-btn.primary.rly-active:active {
-        background-color: var(--button-primary-is_active-bg);
-        border-color: var(--button-primary-is_active-border)
-    }
-
-    .smb-Button--primary.is-active:focus,
-    .x-btn.primary.rly-active:focus {
-        background-color: var(--button-primary-is_active-focus-bg);
-        border-color: var(--button-primary-is_active-focus-border);
-        box-shadow: var(--button-primary-focus-shadow)
-    }
-
+    .x-btn.primary.primary:hover,
     .smb-Button--primary.is-active:hover,
     .x-btn.primary.rly-active:hover {
-        background-color: var(--button-primary-is_active-hover-bg);
-        border-color: var(--button-primary-is_active-hover-border)
+        background-color: var(--button-primary-hover-bg);
+        border-color: var(--button-primary-hover-border)
     }
 
     /* Button > Secondary */
@@ -1372,34 +1357,41 @@
         color: var(--button-text)
     }
 
-    .smb-Button--secondary:active {
-        background-color: var(--button-active-bg)
+    .smb-Button--secondary:active,
+    .x-btn.secondary.secondary:active {
+        background-color: var(--button-active-bg);
+        border-color: var(--button-active-border)
     }
 
     .smb-Button--secondary:focus,
     .x-btn.secondary.secondary:focus {
-        border-color: var(--button-border);
+        background-color: var(--button-focus-bg);
+        border-color: var(--button-focus-border);
         box-shadow: var(--button-focus-shadow)
     }
 
-    .smb-Button--secondary:hover {
+    .smb-Button--secondary:hover,
+    .x-btn.secondary.secondary:hover {
         background-color: var(--button-hover-bg);
         border-color: var(--button-hover-border)
     }
 
-    .smb-Button--secondary.is-active {
+    .smb-Button--secondary.is-active,
+    .x-btn.secondary.rly-active {
         background-color: var(--button-is_active-bg);
         border-color: var(--button-is_active-border)
     }
 
-    .smb-Button--secondary.is-active:focus {
+    .smb-Button--secondary.is-active:focus,
+    .x-btn.secondary.rly-active:focus {
         background-color: var(--button-is_active-focus-bg);
         border-color: var(--button-is_active-focus-border);
         box-shadow: var(--button-focus-shadow);
         color: var(--button-is_active-focus-text)
     }
 
-    .smb-Button--secondary.is-active:hover {
+    .smb-Button--secondary.is-active:hover,
+    .x-btn.secondary.rly-active:hover {
         background-color: var(--button-is_active-hover-bg);
         border-color: var(--button-is_active-hover-border);
         color: var(--button-is_active-hover-text)
@@ -1531,7 +1523,7 @@
     .smb-Button--secondaryDark.is-active:focus,
     .smb-Button--secondaryDark.is-active:hover {
         background-color: var(--button-secondarydark-is_active-focus-bg);
-        border-color: var(--button-primary-is_active-focus-border);
+        border-color: var(--button-secondarydark-is_active-focus-border);
         box-shadow: none;
         color: var(--button-secondarydark-is_active-focus-text)
     }
@@ -1986,7 +1978,7 @@
     }
 
     .smb-DropdownItem.is-primary .smb-DropdownItem-text {
-        color: var(--button-primary-bg) !important;
+        color: var(--dropdown-item-is_primary-bg) !important
     }
 
     .smb-DropdownItem.is-selected {
@@ -2048,8 +2040,9 @@
     /* SMB > Dropdown > Trigger */
     .smb-Select-trigger,
     .smb-Dropdown .smb-Select-trigger,
-    .x-form-trigger,
-    .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-readonly):not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+    .x-form-trigger
+    /*, .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-readonly):not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger  */
+    {
         background-color: var(--textinput-bg);
         border-color: var(--textinput-border);
         box-shadow: none;
@@ -2591,7 +2584,15 @@
 
     /*
      * CHR > Editor > ScheduleState
+     * (aka [I|D|P|C|A|R])
      */
+     .chr-EditorsScheduleStateEditor .smb-Select-trigger,
+     .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+     .chr-QuickDetailQuickDetailEditor .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+     .chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+        background-color: transparent
+     }
+
     .chr-EditorsScheduleStateEditor .smb-Select-text {
         color: transparent !important;
     }
@@ -2859,24 +2860,26 @@
 
     a.cke_dialog_ui_button_ok {
         background-color: var(--button-primary-bg);
+        border-color: var(--button-primary-border);
+        color: var(--button-primary-text)
     }
 
     a.cke_dialog_ui_button:hover,
     a.cke_dialog_ui_button_ok:hover {
-        background-color: var(--hover-bg);
-        border-color: var(--hover-border);
+        background-color: var(--button-primary-hover-bg);
+        border-color: var(--button-primary-hover-border);
         background-image: none;
     }
 
     a.cke_dialog_ui_button:active,
     a.cke_dialog_ui_button_ok:active {
-        background-color: var(--button-active-bg);
-        border-color: var(--button-active-border);
+        background-color: var(--button-primary-active-bg);
+        border-color: var(--button-primary-active-border);
     }
 
     a.cke_dialog_ui_button:focus,
     a.cke_dialog_ui_button_ok:focus {
-        border-color: var(--focus-border);
+        border-color: var(--button-primary-focus-border);
     }
 
     a.cke_dialog_ui_button span {
