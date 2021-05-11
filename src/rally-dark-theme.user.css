@@ -494,8 +494,6 @@
         --button-primary-focus-shadow: var(--button-focus-shadow);
         --button-primary-hover-bg: #365B97;
         --button-primary-hover-border: var(--button-primary-hover-bg);
-        --button-primary-active-bg: var(--button-primary-active-bg);
-        --button-primary-active-border: var(--button-primary-active-border);
 
         --button-secondarydark-bg: var(--button-bg);
         --button-secondarydark-border: var(--button-border);
@@ -985,7 +983,8 @@
     }
 
     /* Footer */
-    #main .chr-Footer {
+    .chr-Footer,
+    .chr-ResultsFooter {
         background-color: var(--content-bg);
         color: #aaa;
     }
@@ -1026,7 +1025,7 @@
     #main .chr-Tray,
     .advanced-filter-panel>.x-panel-body,
     .inline-filter-panel>.x-panel-body,
-    .advanced-filter-panel > .x-panel-body .filters-container .x-panel-body {
+    .advanced-filter-panel>.x-panel-body .filters-container .x-panel-body {
         background-color: var(--filter-bar-bg);
         border-color: var(--filter-bar-border);
     }
@@ -1042,8 +1041,8 @@
     }
 
     /*
-    * Tables
-    */
+     * Tables
+     */
     .smb-DataTable {
         background-color: var(--datatable-bg);
         color: var(--datatable-text);
@@ -1052,7 +1051,8 @@
     /* Table > Header */
 
     #main .smb-DataTableTableHeaderCellDragLayer,
-    #main .smb-TableHeaderCell {
+    #main .smb-TableHeaderCell,
+    .chr-EditorsWorkItemEditorPopover .grid-header .grid-header-labels {
         background-color: var(--datatable-header-bg);
         border-bottom-color: var(--datatable-header-border);
         color: var(--datatable-header-text);
@@ -1898,6 +1898,7 @@
     /*
      * SMB > Dropdown
      */
+
     /* SMB > Dropdown > List */
     .smb-DropdownList-list {
         box-shadow: var(--dropdown-list-shadow)
@@ -2042,21 +2043,44 @@
     /* SMB > Dropdown > Trigger */
     .smb-Select-trigger,
     .smb-Dropdown .smb-Select-trigger,
-    .x-form-trigger
-
-    /*, .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-readonly):not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger  */
-        {
+    .x-form-trigger,
+    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
         background-color: var(--textinput-bg);
         border-color: var(--textinput-border);
         box-shadow: none;
         color: var(--textinput-text)
     }
 
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger {
-        background-color: var(--textinput-bg);
-        border-color: var(--textinput-border);
+    /* SMB > Dropdown > Trigger > :disabled */
+    .smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select.is-disabled.is-disabled .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
+        background-color: var(--textinput-disabled-bg);
+        border-color: var(--textinput-disabled-border);
+        color: var(--textinput-disabled-text)
     }
 
+    /* SMB > Dropdown > Trigger > :hover */
+    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-Select-trigger,
+    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open:hover .smb-Select-trigger {
+        background-color: var(--textinput-bg);
+        border-color: var(--textinput-hover-accent);
+    }
+
+    /* SMB > Dropdown > Trigger > is-autosizing */
+    .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-trigger {
+        color: transparent
+    }
+
+    /* SMB > Dropdown > Trigger : is-invalid */
+    .smb-Dropdown.smb-Select.is-invalid .smb-Select-trigger {
+        border-color: var(--textinput-invalid-border) !important
+    }
+
+
+
+    /* SMB > Dropdown > TextInput */
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-focused,
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-readOnly,
     .smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput:focus,
@@ -2066,15 +2090,6 @@
 
     .smb-Dropdown.smb-Select .smb-DropdownList-footer .smb-Button--icon.is-disabled .smb-Button-icon .smb-SvgIcon {
         color: var(--button-disabled-text)
-    }
-
-    /* SMB > Dropdown > Trigger */
-    .smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
-    .chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select.is-disabled.is-disabled .smb-Select-trigger,
-    .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
-        background-color: var(--textinput-disabled-bg);
-        border-color: var(--textinput-disabled-border);
-        color: var(--textinput-disabled-text)
     }
 
     /* SMB > Dropdown > SvgIcon */
@@ -2087,11 +2102,6 @@
     .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-SvgIcon,
     .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-SvgIcon {
         color: var(--button-hover-icon)
-    }
-
-    .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-subtext,
-    .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-trigger {
-        color: transparent
     }
 
     .smb-Dropdown.smb-Select.is-disabled .smb-SvgIcon {
@@ -2109,6 +2119,11 @@
     .smb-Select-subtext {
         color: var(--dropdown-item-subtext)
     }
+
+    .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-subtext {
+        color: transparent
+    }
+
 
     /*
      * SMB > Label
@@ -2393,10 +2408,11 @@
     }
 
     /*
-     * SMB > TextInput
+     * TextInput
      */
     .smb-TextInput,
     .smb-SearchInput.smb-TextInput,
+    .x-form-text,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsDateEditor:not(.is-open) .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
     .chr-QuickDetailQuickDetailEditor .chr-EditorsNumberEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
     .chr-QuickDetailQuickDetailEditor .chr-EditorsStringEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
@@ -2429,7 +2445,6 @@
     /* SMB > TextInput : disabled */
     .smb-TextArea.is-disabled,
     .smb-TextInput.is-disabled,
-    .smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsDateEditor:not(.is-open) .smb-TextInput.is-disabled,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsNumberEditor .smb-TextInput.is-disabled,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsStringEditor .smb-TextInput.is-disabled {
@@ -2448,27 +2463,24 @@
     .smb-TextArea:not(.is-disabled):not(.is-readOnly):hover,
     .smb-TextInput:not(.is-disabled).is-readOnly:hover,
     .smb-TextInput:not(.is-disabled):not(.is-readOnly):hover,
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-Select-trigger,
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:hover .chr-EditorsStringEditor .smb-TextInput {
         background-color: var(--textinput-bg);
-        border-color: var(--textinput-hover-accent);
-        box-shadow: none;
-        color: var(--textinput-text)
+        border-color: var(--textinput-hover-accent)
+            /* box-shadow: none;
+        color: var(--textinput-text) */
     }
 
     .smb-TextArea:not(.is-disabled).is-readOnly:hover .smb-Icon,
     .smb-TextArea:not(.is-disabled):not(.is-readOnly):hover .smb-Icon,
     .smb-TextInput:not(.is-disabled).is-readOnly:hover .smb-Icon,
-    .smb-TextInput:not(.is-disabled):not(.is-readOnly):hover .smb-Icon,
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly) .smb-Select-trigger .smb-Icon,
-    .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger .smb-Icon {
+    .smb-TextInput:not(.is-disabled):not(.is-readOnly):hover .smb-Icon {
         color: var(--textinput-hover-accent)
     }
 
     /* SMB > TextInput : is-invalid */
     .smb-TextInput.is-invalid,
-    .smb-Dropdown.smb-Select.is-invalid .smb-Select-trigger {
+    .x-form-text.rally-invalid-field {
+        background-color: var(--textinput-bg);
         border-color: var(--textinput-invalid-border) !important
     }
 
@@ -2693,7 +2705,6 @@
 
     /* CHR > QuickDetail > ProfileImageEditor */
     /* CHR > QuickDetail > ResponsiveColumnView */
-    /* HERE BE DRAGONS */
 
     #main .chr-ProjectPickerSelect .smb-DropdownList-footer {
         background-color: var(--popover-bg);
@@ -2962,13 +2973,6 @@
         color: #ddd;
         border-color: #555;
     }
-
-    .x-form-text {
-        background-color: var(--control-bg);
-        border-color: var(--control-border);
-        color: var(--control-text);
-    }
-
 
     /* Text Editor */
     .smb-RichTextEditor-textArea,
