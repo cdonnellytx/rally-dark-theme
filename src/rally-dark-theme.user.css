@@ -1024,7 +1024,9 @@
     }
 
     #main .chr-Tray,
-    .inline-filter-panel>.x-panel-body {
+    .advanced-filter-panel>.x-panel-body,
+    .inline-filter-panel>.x-panel-body,
+    .advanced-filter-panel > .x-panel-body .filters-container .x-panel-body {
         background-color: var(--filter-bar-bg);
         border-color: var(--filter-bar-border);
     }
@@ -1336,7 +1338,7 @@
     .smb-Button--primary.is-active:focus,
     .x-btn.primary.primary:focus,
     .x-btn.primary.rly-active:focus {
-            background-color: var(--button-primary-focus-bg);
+        background-color: var(--button-primary-focus-bg);
         border-color: var(--button-primary-focus-border);
         box-shadow: var(--button-primary-focus-shadow)
     }
@@ -2041,8 +2043,9 @@
     .smb-Select-trigger,
     .smb-Dropdown .smb-Select-trigger,
     .x-form-trigger
+
     /*, .chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-readonly):not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger  */
-    {
+        {
         background-color: var(--textinput-bg);
         border-color: var(--textinput-border);
         box-shadow: none;
@@ -2110,8 +2113,9 @@
     /*
      * SMB > Label
      */
-    .smb-FieldLabel-text {
-        color: var(--label-color);
+    .smb-FieldLabel-text,
+    .x-form-item-label {
+        color: var(--label-text);
     }
 
     .smb-FieldLabel-requiredIndicator,
@@ -2560,6 +2564,7 @@
         background-color: #444;
     }
 
+    /* LATER: is this another schedule state? */
     #main .chr-TableCellStateBlocks-stateBlock--current {
         color: #ddd;
         background-color: #2929c4;
@@ -2586,23 +2591,32 @@
      * CHR > Editor > ScheduleState
      * (aka [I|D|P|C|A|R])
      */
-     .chr-EditorsScheduleStateEditor .smb-Select-trigger,
-     .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
-     .chr-QuickDetailQuickDetailEditor .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
-     .chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+    .chr-EditorsScheduleStateEditor .smb-Select-trigger,
+    .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+    .chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
         background-color: transparent
-     }
+    }
 
     .chr-EditorsScheduleStateEditor .smb-Select-text {
         color: transparent !important;
     }
 
-    .chr-EditorsScheduleStates-block--before {
+    .chr-EditorsScheduleStates-block,
+    .chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--after,
+    .schedule-state-wrapper .schedule-state.clickable-state {
+        /* rui one doesn't have an "after" class >:( */
+        background-color: hsl(217.5, 30.8%, 69.8%)
+    }
+
+    .chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--before,
+    .schedule-state-wrapper .schedule-state.before-state {
         background-color: hsl(216.8, 93%, 63.1%);
     }
 
-    .chr-EditorsScheduleStates-block--after {
-        background-color: hsl(217.5, 30.8%, 69.8%);
+    .chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--current,
+    .schedule-state-wrapper .schedule-state.current-state {
+        background-color: #3272d9
     }
 
     /*
@@ -2894,15 +2908,18 @@
 
 @-moz-document domain("rallydev.com") {
 
-    /* ExtJS 4 */
+    /* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
+     */
 
-    /* .x4-body class is on body, in main.
-    * Following rule is for any *nested* .x4-body elements (unlikely but not impossible).
-    */
 
-    #main .x4-body {
-        color: var(--main-text);
+    .x-body,
+    .x4-body,
+    .x-panel-body-default {
+        background-color: var(--main-bg);
+        color: var(--main-text)
     }
+
+
 
     #main .x4-btn {
         background-color: var(--button-bg);
