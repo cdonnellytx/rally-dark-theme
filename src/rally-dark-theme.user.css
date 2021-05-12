@@ -612,6 +612,9 @@
         --dropdown-disabled-bg: var(--control-disabled-bg);
         --dropdown-disabled-border: var(--control-disabled-border);
         --dropdown-disabled-text: var(--control-disabled-text);
+        --dropdown-focus-bg: var(--dropdown-bg);
+        --dropdown-focus-shadow: var(--control-focus-shadow);
+        --dropdown-focus-border: var(--control-focus-border);
 
         --dropdown-divider-bg: var(--rally-ebeff5);
 
@@ -622,8 +625,6 @@
         --dropdown-footer-bg: var(--tertiary-bg);
         --dropdown-footer-border: var(--dropdown-border);
         --dropdown-footer-text: var(--tertiary-text);
-
-        --dropdown-match-bg: var(--rally-accbfc);
 
         --dropdown-item-text: var(--dropdown-text);
         --dropdown-item-subtext: var(--title-text);
@@ -639,6 +640,9 @@
         --dropdown-item-checkbox-checked-text-before: var(--rally-ffffff);
 
         --dropdown-item-multiselect-selected-bg: transparent;
+
+        --dropdown-match-bg: var(--rally-accbfc);
+        --dropdown-match-text: var(--dropdown-item-text);
 
         /*
          * Label
@@ -1947,7 +1951,7 @@
 
     .smb-DropdownItem.is-active:not(.is-disabled) .smb-Match-match {
         background-color: var(--dropdown-match-bg);
-        color: var(--dropdown-item-text)
+        color: var(--dropdown-match-text)
     }
 
     .smb-DropdownItem.is-active .smb-Checkbox.is-checked:not(.is-disabled) {
@@ -2016,7 +2020,7 @@
 
     .smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-Match-match {
         background-color: var(--dropdown-match-bg);
-        color: var(--dropdown-item-text)
+        color: var(--dropdown-match-text)
     }
 
     .smb-DropdownList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled) {
@@ -2031,7 +2035,7 @@
     /* SMB > Dropdown > Match */
     .smb-Match-match {
         background-color: var(--dropdown-match-bg);
-        color: var(--dropdown-text)
+        color: var(--dropdown-match-text)
     }
 
     /* SMB > Dropdown > Button */
@@ -2040,7 +2044,7 @@
         box-shadow: var(--button-focus-shadow)
     }
 
-    /* SMB > Dropdown > Trigger */
+    /* SMB > Dropdown > SelectTrigger */
     .smb-Select-trigger,
     .smb-Dropdown .smb-Select-trigger,
     .x-form-trigger,
@@ -2052,7 +2056,7 @@
         color: var(--textinput-text)
     }
 
-    /* SMB > Dropdown > Trigger > :disabled */
+    /* SMB > Dropdown > SelectTrigger > :disabled */
     .smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select.is-disabled.is-disabled .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
@@ -2061,23 +2065,49 @@
         color: var(--textinput-disabled-text)
     }
 
-    /* SMB > Dropdown > Trigger > :hover */
+    /* SMB > Dropdown > SelectTrigger > :hover */
     .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-Select-trigger,
     .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open:hover .smb-Select-trigger {
         background-color: var(--textinput-bg);
         border-color: var(--textinput-hover-accent);
     }
 
-    /* SMB > Dropdown > Trigger > is-autosizing */
+    /* SMB > Dropdown > SelectTrigger > is-autosizing */
     .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-trigger {
         color: transparent
     }
 
-    /* SMB > Dropdown > Trigger : is-invalid */
+    /* SMB > Dropdown > SelectTrigger : is-invalid */
     .smb-Dropdown.smb-Select.is-invalid .smb-Select-trigger {
         border-color: var(--textinput-invalid-border) !important
     }
 
+    /* SMB > Dropdown > Trigger */
+
+    .smb-DropdownTrigger:focus {
+        background-color: var(--dropdown-focus-bg);
+        border-color: var(--dropdown-focus-border);
+        box-shadow: var(--dropdown-focus-shadow)
+    }
+
+    .smb-SearchInput.smb-DropdownTrigger:focus {
+        border-color: var(--dropdown-focus-border);
+        box-shadow: none
+    }
+
+    .smb-DropdownTrigger:focus .smb-Icon {
+        color: var(--dropdown-text)
+    }
+
+    .smb-DropdownTrigger {
+        background-color: var(--dropdown-bg);
+        border-color: var(--dropdown-border);
+        color: var(--dropdown-text)
+    }
+
+    .smb-DropdownTrigger .smb-DropdownTrigger-subtext {
+        color: var(--dropdown-item-subtext)
+    }
 
 
     /* SMB > Dropdown > TextInput */
@@ -2122,6 +2152,63 @@
 
     .smb-Dropdown.smb-Select.is-autoSizing .smb-Select-subtext {
         color: transparent
+    }
+
+    /* SMB > SelectList */
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover {
+        background-color: var(--dropdown-item-hover-bg);
+        color: var(--dropdown-item-hover-text)
+    }
+
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover {
+        background-color: var(--dropdown-item-hover-bg)
+    }
+
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-text,
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-subtext {
+        color: var(--dropdown-item-hover-text)
+    }
+
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-Match-match {
+        background-color: var(--dropdown-match-bg);
+        color: var(--dropdown-match-text)
+    }
+
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled) {
+        background-color: var(--dropdown-item-checkbox-checked-bg);
+        border-color: var(--dropdown-item-checkbox-checked-border)
+    }
+
+    .smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled):before {
+        color: var(--dropdown-item-checkbox-checked-text-before)
+    }
+
+    .smb-SelectList {
+        background-color: var(--dropdown-bg);
+        box-shadow: 0 0.2rem 0.4rem 0 var(--black-10);
+        border-color: var(--dropdown-border);
+        border-bottom-color: var(--dropdown-border)
+    }
+
+    .smb-SelectList .smb-SelectList-list {
+        box-shadow: 0 0.2rem 0.2rem var(--dropdown-border) var(--black-10);
+    }
+
+    .smb-SelectList .smb-SelectList-divider {
+        background-color: var(--dropdown-divider-bg);
+    }
+
+    .smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput.is-focused,
+    .smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput.is-readOnly,
+    .smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput:focus,
+    .smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput:hover {
+        box-shadow: none
+    }
+
+    .smb-SelectList .smb-SelectList-footer {
+        background-color: var(--dropdown-footer-bg);
+        border-top-color: var(--dropdown-footer-border);
+        color: var(--dropdown-footer-text)
     }
 
 
