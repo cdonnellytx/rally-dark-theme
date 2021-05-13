@@ -484,16 +484,12 @@
         --button-is_active-hover-border: var(--button-is_active-focus-border);
         --button-is_active-hover-text: var(--button-is_active-focus-text);
 
-        --button-primary-bg: #00a9e0;
-        --button-primary-border: var(--button-primary-bg);
+        --button-primary-bg: #3272d9;
         --button-primary-text: #fff;
         --button-primary-active-bg: #1d5bbf;
-        --button-primary-active-border: var(--button-primary-active-border);
         --button-primary-focus-bg: var(--button-primary-bg);
-        --button-primary-focus-border: var(--button-primary-border);
         --button-primary-focus-shadow: var(--button-focus-shadow);
         --button-primary-hover-bg: #365B97;
-        --button-primary-hover-border: var(--button-primary-hover-bg);
 
         --button-secondarydark-bg: var(--button-bg);
         --button-secondarydark-border: var(--button-border);
@@ -556,9 +552,9 @@
         --group-button-hover-bg: var(--button-hover-bg);
         --group-button-hover-border: var(--button-hover-border);
         --group-button-hover-text: var(--group-button-text);
-        --group-button-is_active-bg: var(--link-text);
-        --group-button-is_active-border: var(--link-text);
-        --group-button-is_active-text: #ffe;
+        --group-button-is_active-bg: #3272d9;
+        --group-button-is_active-border: var(--group-button-is_active-bg);
+        --group-button-is_active-text: #fff;
         --group-button-is_active-active-bg: var(--rally-1d5bbf);
         --group-button-is_active-active-border: var(--rally-1d5bbf);
         --group-button-is_active-active-text: var(--group-button-is_active-text);
@@ -859,8 +855,6 @@
         color: var(--navbar-section-text);
     }
 
-    #main .chr-NavBar .chr-NavSection.is-selected>div:first-child,
-    #main .chr-NavBar-alt .chr-NavSection.is-selected>div:first-child,
     #main .chr-NavBar .chr-NavSection.is-selected,
     #main .chr-NavBar-alt .chr-NavSection.is-selected {
         background-color: var(--navbar-section-is_active-bg);
@@ -1326,7 +1320,7 @@
     .x-btn.primary.primary,
     .x-btn.primary.rly-active {
         background-color: var(--button-primary-bg);
-        border-color: var(--button-primary-border);
+        border-color: var(--button-primary-bg);
         color: var(--button-primary-text)
     }
 
@@ -1335,7 +1329,7 @@
     .x-btn.primary.primary:active,
     .x-btn.primary.rly-active:active {
         background-color: var(--button-primary-active-bg);
-        border-color: var(--button-primary-active-border)
+        border-color: var(--button-primary-active-bg)
     }
 
     .smb-Button--primary:focus,
@@ -1343,7 +1337,7 @@
     .x-btn.primary.primary:focus,
     .x-btn.primary.rly-active:focus {
         background-color: var(--button-primary-focus-bg);
-        border-color: var(--button-primary-focus-border);
+        border-color: var(--button-primary-focus-bg);
         box-shadow: var(--button-primary-focus-shadow)
     }
 
@@ -1352,7 +1346,7 @@
     .smb-Button--primary.is-active:hover,
     .x-btn.primary.rly-active:hover {
         background-color: var(--button-primary-hover-bg);
-        border-color: var(--button-primary-hover-border)
+        border-color: var(--button-primary-hover-bg)
     }
 
     /* Button > Secondary */
@@ -2972,26 +2966,26 @@
 
     a.cke_dialog_ui_button_ok {
         background-color: var(--button-primary-bg);
-        border-color: var(--button-primary-border);
+        border-color: var(--button-primary-bg);
         color: var(--button-primary-text)
     }
 
     a.cke_dialog_ui_button:hover,
     a.cke_dialog_ui_button_ok:hover {
         background-color: var(--button-primary-hover-bg);
-        border-color: var(--button-primary-hover-border);
+        border-color: var(--button-primary-hover-bg);
         background-image: none;
     }
 
     a.cke_dialog_ui_button:active,
     a.cke_dialog_ui_button_ok:active {
         background-color: var(--button-primary-active-bg);
-        border-color: var(--button-primary-active-border);
+        border-color: var(--button-primary-active-bg);
     }
 
     a.cke_dialog_ui_button:focus,
     a.cke_dialog_ui_button_ok:focus {
-        border-color: var(--button-primary-focus-border);
+        border-color: var(--button-primary-focus-bg);
     }
 
     a.cke_dialog_ui_button span {
