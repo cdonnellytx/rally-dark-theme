@@ -427,13 +427,19 @@
             /* assumes opacity */
         ;
 
+
         /* selected: no commonalities */
 
         /*
          * Main > Colors
          */
+         --blocked-bg: #323030;
+         --blocked-border: #de1b1b;
 
-        /*
+         --ready-bg: #2D322F;
+         --ready-border: #2a854e;
+
+         /*
          * Controls
          */
         --control-bg: #444;
@@ -555,15 +561,15 @@
         --group-button-is_active-bg: #3272d9;
         --group-button-is_active-border: var(--group-button-is_active-bg);
         --group-button-is_active-text: #fff;
-        --group-button-is_active-active-bg: var(--rally-1d5bbf);
-        --group-button-is_active-active-border: var(--rally-1d5bbf);
+        --group-button-is_active-active-bg: #777;
+        --group-button-is_active-active-border: var(--group-button-is_active-active-bg);
         --group-button-is_active-active-text: var(--group-button-is_active-text);
-        --group-button-is_active-focus-bg: var(--rally-3272d9);
-        --group-button-is_active-focus-border: var(--rally-1d5bbf);
+        --group-button-is_active-focus-bg: var(--link-text);
+        --group-button-is_active-focus-border: var(--group-button-is_active-active-bg);
         --group-button-is_active-focus-shadow: inset 0 0 0 0.1rem var(--button-bg);
         --group-button-is_active-focus-text: var(--group-button-is_active-text);
-        --group-button-is_active-hover-bg: var(--rally-5691f0);
-        --group-button-is_active-hover-border: var(--rally-5691f0);
+        --group-button-is_active-hover-bg: #365B97;
+        --group-button-is_active-hover-border: var(--group-button-is_active-hover-bg);
         --group-button-is_active-hover-text: var(--group-button-is_active-text);
 
         --button-failure-accent: #de1b1b;
@@ -649,6 +655,8 @@
         /*
          * List
          */
+        --listitem-text: var(--content-text);
+        --listitem-hover-bg: var(--hover-bg);
         --listitem-is_active-bg: #4B4B85;
 
         /*
@@ -718,6 +726,39 @@
         --textinput-search-focus-text: var(--link-text);
 
         /*
+         * Toggle
+         */
+        --toggle-bg: var(--group-button-bg);
+        --toggle-border: var(--group-button-border);
+        --toggle-shadow: inset 0 0 0 2px var(--toggle-bg);
+        --toggle-text: var(--group-button-text);
+
+        --toggle-focus-bg: var(--group-button-focus-bg);
+        --toggle-focus-border: var(--group-button-focus-border);
+        --toggle-focus-shadow: 0 0 0 0.1rem var(--toggle-focus-border), 0 0 0 0.2rem var(--toggle-on-focus-bg);
+
+        --toggle-hover-bg: var(--button-hover-bg);
+        --toggle-hover-border: var(--button-hover-border);
+
+        --toggle-on-bg: var(--group-button-is_active-bg);
+        --toggle-on-border: var(--group-button-is_active-border);
+        --toggle-on-text: var(--group-button-is_active-text);
+
+        --toggle-on-focus-bg: var(--group-button-is_active-focus-bg);
+        --toggle-on-focus-border: var(--group-button-is_active-focus-border);
+        --toggle-on-focus-text: var(--group-button-is_active-focus-text);
+
+        --toggle-on-hover-bg: var(--group-button-is_active-hover-bg);
+        --toggle-on-hover-border: var(--group-button-is_active-hover-border);
+
+        /*
+         * Toggle > Handle
+         */
+        --toggle-handle-bg: #707a8a;
+        --toggle-handle-on-bg: #fff;
+
+
+        /*
          * Toolbar
          */
         --toolbar-border: #445;
@@ -725,7 +766,9 @@
         /*
          * Tree
          */
-        --treeitem-is_active-bg: #4B4B85;
+        --treeitem-text: var(--listitem-text);
+        --treeitem-hover-bg: var(--listitem-hover-bg);
+        --treeitem-is_active-bg: var(--listitem-is_active-bg);
 
         /*
          * HERE BE DRAGONS
@@ -920,11 +963,24 @@
         background-color: var(--popover-bg);
     }
 
-    #main .chr-ViewportProjectPickerTreeItem:hover {
-        background-color: var(--hover-bg);
+    /* Viewport > List */
+
+    .chr-ViewportProjectPickerListItem,
+    .chr-ViewportRecentProjects .chr-ViewportProjectPickerListItem {
+        color: var(--listitem-text);
     }
 
-    #main .chr-ViewportProjectPickerTreeItem--current {
+    .chr-ViewportProjectPickerListItem:hover,
+    .chr-ViewportRecentProjects .chr-ViewportProjectPickerListItem:hover {
+        background-color: var(--listitem-hover-bg);
+    }
+
+    /* Viewport > Tree */
+    .chr-ViewportProjectPickerTreeItem:hover {
+        background-color: var(--treeitem-hover-bg)
+    }
+
+    .chr-ViewportProjectPickerTreeItem--current {
         background-color: var(--treeitem-is_active-bg);
     }
 
@@ -1205,6 +1261,16 @@
 
     #main .chr-BoardField {
         color: var(--kanban-card-text);
+    }
+
+    .chr-StatusFieldRenderer.chr-StatusFieldRenderer--ready {
+        background-color: var(--ready-bg);
+        border-color: var(--ready-border)
+    }
+
+    .chr-BoardField.chr-BoardField--blockedReason {
+        background-color: var(--blocked-bg);
+        border-color: var(--blocked-border)
     }
 
     #main .chr-BoardTitle {
@@ -2620,6 +2686,91 @@
         box-shadow: 0 0 0 0.1rem var(--textinput-bg), 0 0 0 0.2rem var(--textinput-invalid-border)
     }
 
+    /*
+     * SMB > Toggle
+     */
+     .smb-ToggleButton {
+        background-color: var(--toggle-bg);
+        border-color: var(--toggle-border);
+        box-shadow: var(--toggle-shadow);
+        color: var(--toggle-text);
+        transition: background-color .25s;
+    }
+
+    .smb-ToggleButton .smb-ToggleButton-toggleHandle {
+        background-color: var(--toggle-handle-bg);
+        transition: margin-left .25s ease-in
+    }
+
+    .smb-ToggleButton.is-disabled,
+    .smb-ToggleButton[disabled],
+    .smb-ToggleButton[disabled]:active,
+    .smb-ToggleButton[disabled]:focus,
+    .smb-ToggleButton[disabled]:hover {
+        background-color: var(--disabled-bg);
+        border-color: var(--disabled-bg);
+        color: var(--disabled-text)
+    }
+
+    .smb-ToggleButton.is-toggleStateOn {
+        background-color: var(--toggle-on-bg);
+        border-color: var(--toggle-on-border);
+        color: var(--toggle-on-text);
+        box-shadow: none
+    }
+
+    .smb-ToggleButton.is-toggleStateOn .smb-ToggleButton-toggleHandle {
+        background-color: var(--toggle-handle-on-bg);
+    }
+
+    .smb-ToggleButton.is-toggleStateOn .smb-ToggleButton-toggleHandle::before {
+        color: var(--toggle-handle-on-bg);
+    }
+
+    .smb-ToggleButton.is-toggleStateOn:hover,
+    .smb-ToggleButton.is-toggleStateOn:hover:active {
+        background-color: var(--toggle-on-hover-bg);
+        border-color: var(--toggle-on-hover-border)
+    }
+
+    .smb-ToggleButton.is-toggleStateOn:focus,
+    .smb-ToggleButton.is-toggleStateOn:focus:active {
+        background-color: var(--toggle-on-focus-bg);
+        border-color: var(--toggle-on-focus-border);
+        box-shadow: var(--toggle-focus-shadow);
+    }
+
+    .smb-ToggleButton.is-toggleStateOn:active {
+        background-color: var(--toggle-on-active-bg);
+        box-shadow: var(--toggle-focus-shadow)
+    }
+
+    .smb-ToggleButton.is-toggleStateOff .smb-ToggleButton-toggleHandle::after {
+        color: var(--toggle-bg)
+    }
+
+    .smb-ToggleButton.is-toggleStateOff:hover {
+        background-color: var(--toggle-hover-bg);
+        border-color: var(--toggle-hover-border)
+    }
+
+    .smb-ToggleButton.is-toggleStateOff:focus,
+    .smb-ToggleButton.is-toggleStateOff:focus:active {
+        background-color: var(--toggle-focus-bg);
+        box-shadow: var(--toggle-focus-shadow)
+    }
+
+    .smb-ToggleButton.is-toggleStateOff:active {
+        background-color: var(--toggle-focus-bg)
+    }
+
+    .smb-ToggleButton:hover,
+    .smb-ToggleButton:focus {}
+
+    .smb-ToggleButton:active {
+        box-shadow: none
+    }
+
     /************************************************************************/
     /************************************************************************/
     /************************************************************************/
@@ -2736,6 +2887,10 @@
         border-color: var(--toolbar-border);
     }
 
+    .chr-ToolbarExitAgreementsToggle {
+        color: var(--label-text)
+    }
+
     /*
      * CHR > QuickDetail
      */
@@ -2819,6 +2974,10 @@
 
     .chr-Page.chr-IterationStatusPage .chr-IterationStatusPage-iterationPicker .chr-IterationPicker-label {
         color: var(--title-text)
+    }
+
+    .chr-StatusFieldRenderer .chr-StatusFieldRenderer-text {
+        color: var(--dropdown-item-subtext)
     }
 }
 
@@ -3082,6 +3241,7 @@
         border-color: var(--control-border);
         color: var(--control-text);
     }
+
 
 
 }
