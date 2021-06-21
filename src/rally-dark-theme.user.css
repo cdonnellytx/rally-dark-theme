@@ -2926,6 +2926,10 @@
         color: var(--header-text)
     }
 
+    .chr-QuickDetailEntityHeader .chr-QuickDetailEntityHeader-topContainer .chr-QuickDetailEntityHeader-middleContainer .chr-QuickDetailAttributeEditorWrapper--name .smb-TextInput-input {
+        background-color: var(--textinput-bg);
+    }
+
     /* CHR > QuickDetail > ConcurrencyFlare */
     /* CHR > QuickDetail > Droppable */
     /* CHR > QuickDetail > EntityFooter */
