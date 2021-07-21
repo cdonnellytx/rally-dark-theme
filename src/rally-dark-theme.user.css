@@ -2145,6 +2145,12 @@
 
     /* SMB > Dropdown > Trigger */
 
+    .smb-DropdownTrigger {
+        background-color: var(--dropdown-bg);
+        border-color: var(--dropdown-border);
+        color: var(--dropdown-text)
+    }
+
     .smb-DropdownTrigger:focus {
         background-color: var(--dropdown-focus-bg);
         border-color: var(--dropdown-focus-border);
@@ -2157,12 +2163,6 @@
     }
 
     .smb-DropdownTrigger:focus .smb-Icon {
-        color: var(--dropdown-text)
-    }
-
-    .smb-DropdownTrigger {
-        background-color: var(--dropdown-bg);
-        border-color: var(--dropdown-border);
         color: var(--dropdown-text)
     }
 
