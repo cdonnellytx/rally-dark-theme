@@ -1174,10 +1174,11 @@
     .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging+.smb-TableRow .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging+.smb-TableRow .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging:first-child .smb-TableCell,
+    .chr-DataTable--comfortable .smb-TableCell,
     .chr-DataTable--comfortable .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--comfortable .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
-    .chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--roomy .smb-TableCell,
+    .chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--roomy .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
         border-top-color: var(--datatable-body-border);
@@ -2382,7 +2383,10 @@
         color: var(--header-text)
     }
 
-    .smb-PageHeader--roomy .smb-Header {
+    .smb-Header,
+    .smb-PageHeader--roomy .smb-Header,
+    .smb-PageHeader--comfortable .smb-Header,
+    .smb-PageHeader--compact .smb-Header {
         border-bottom-color: var(--header-border)
     }
 
