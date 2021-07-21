@@ -624,6 +624,8 @@
 
         --dropdown-header-text: var(--dropdown-text);
 
+        --dropdown-trigger-bg: var(--content-bg);
+
         --dropdown-footer-bg: var(--tertiary-bg);
         --dropdown-footer-border: var(--dropdown-border);
         --dropdown-footer-text: var(--tertiary-text);
@@ -781,24 +783,28 @@
 
         --alm-border: #444;
 
-        --datatable-bg: #111;
+        /* Data Table */
+
+        --datatable-bg: var(--main-bg);
         --datatable-text: #bbb;
 
-        --datatable-header-bg: #1f1f29;
-        --datatable-header-border: #555;
-        --datatable-header-text: #bbb;
-        --datatable-header-resizer-border: #555;
-        --datatable-header-resizer-active-border: #445;
+        --datatable-row-bg: #1f1f29;
+        --datatable-row-border: #111;
+        --datatable-row-text: #bbb;
+
+        --datatable-cell-bg: var(--datatable-row-bg);
+        --datatable-cell-border: var(--datatable-bg);
+        --datatable-cell-text: var(--datatable-row-text);
+
+        --datatable-drag-text: #aaa;
+
+        --datatable-gripper-text: #707a8a;
+
+        --datatable-resizer-border: #555;
+        --datatable-resizer-active-border: #445;
 
         --datatable-rollup-bg: var(--content-bg);
         --datatable-rollup-text: var(--content-text);
-
-        --datatable-body-bg: #1f1f29;
-        --datatable-body-gripper-text: #707a8a;
-        --datatable-body-border: #111;
-        --datatable-body-text: #bbb;
-
-        --datatable-drag-text: #aaa;
 
         --navbar-section-text: #aaa;
         --navbar-section-is_active-bg: #223;
@@ -1107,9 +1113,9 @@
     #main .smb-DataTableTableHeaderCellDragLayer,
     #main .smb-TableHeaderCell,
     .chr-EditorsWorkItemEditorPopover .grid-header .grid-header-labels {
-        background-color: var(--datatable-header-bg);
-        border-bottom-color: var(--datatable-header-border);
-        color: var(--datatable-header-text);
+        background-color: var(--datatable-row-bg);
+        border-bottom-color: var(--datatable-cell-border);
+        color: var(--datatable-cell-text);
     }
 
     #main .chr-RollupRow-cell {
@@ -1122,34 +1128,34 @@
     #main .smb-TableHeaderCell .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
     #main .smb-TableHeaderCell .smb-TableHeaderCell-sort .smb-TableHeaderCell-sortIcon {
-        background-color: var(--datatable-header-bg);
+        background-color: var(--datatable-row-bg);
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-colResizer,
     #main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer {
-        border-right-color: var(--datatable-header-resizer-border);
+        border-right-color: var(--datatable-resizer-border);
     }
 
     #main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
     #main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
-        border-right-color: var(--datatable-header-resizer-active-border);
+        border-right-color: var(--datatable-resizer-active-border);
     }
 
     /* Table > Body */
 
     .smb-DataTable:not(.personalized-nav) .smb-Cutline,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow) {
-        background-color: var(--datatable-body-bg);
+        background-color: var(--datatable-row-bg);
     }
 
     .smb-TableCell {
-        background-color: var(--datatable-body-bg);
-        color: var(--datatable-body-text);
+        background-color: var(--datatable-row-bg);
+        color: var(--datatable-row-text);
     }
 
     .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell,
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell {
-        background-color: var(--datatable-body-bg);
+        background-color: var(--datatable-row-bg);
     }
 
     .smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell.smb-TableCell--dragAndDropRank {
@@ -1157,7 +1163,7 @@
     }
 
     .smb-TableCell--gripper {
-        color: var(--datatable-body-gripper-text);
+        color: var(--datatable-gripper-text);
     }
 
     .chr-GenericMessageRow {
@@ -1165,7 +1171,7 @@
     }
 
     .chr-GenericMessageRow-cell {
-        border-top-color: var(--datatable-body-border);
+        border-top-color: var(--datatable-cell-border);
     }
 
     .smb-DataTable:not(.personalized-nav) .smb-Cutline:first-child .smb-TableCell,
@@ -1181,7 +1187,7 @@
     .chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
     .chr-DataTable--roomy .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
     .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
-        border-top-color: var(--datatable-body-border);
+        border-top-color: var(--datatable-cell-border);
     }
 
     .smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell:first-child,
@@ -1200,14 +1206,14 @@
     #main .smb-Pagination,
     #main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped>.smb-DataTable-wrapper>.smb-DataTable>.smb-TableBody>.smb-TableRow,
     #main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow {
-        background-color: var(--datatable-body-bg);
+        background-color: var(--datatable-row-bg);
         color: var(--datatable-text);
     }
 
     #main .smb-TableCell.smb-TableCell--rowActions,
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>th,
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable tbody tr.is-groupByRow>td {
-        background-color: var(--datatable-body-bg);
+        background-color: var(--datatable-row-bg);
     }
 
     #main .chr-PlanTeamIterationsPanel .smb-PanelBody>.smb-DataTable-wrapper>.smb-DataTable>thead th,
@@ -2146,7 +2152,7 @@
     /* SMB > Dropdown > Trigger */
 
     .smb-DropdownTrigger {
-        background-color: var(--dropdown-bg);
+        background-color: var(--dropdown-trigger-bg);
         border-color: var(--dropdown-border);
         color: var(--dropdown-text)
     }
@@ -2155,6 +2161,11 @@
         background-color: var(--dropdown-focus-bg);
         border-color: var(--dropdown-focus-border);
         box-shadow: var(--dropdown-focus-shadow)
+    }
+
+    .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover,
+    .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly).is-open {
+        background-color: var(--dropdown-trigger-bg);
     }
 
     .smb-SearchInput.smb-DropdownTrigger:focus {
@@ -2842,7 +2853,10 @@
     .chr-EditorsScheduleStateEditor .smb-Select-trigger,
     .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
     .chr-QuickDetailQuickDetailEditor .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
-    .chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+    .chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+    .chr-EditorsScheduleStateEditor .smb-DropdownTrigger,
+    .chr-EditorsScheduleStateEditor .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover {
+        /* inherit the background, the "dropdown" is supposed to blend in. */
         background-color: transparent
     }
 
