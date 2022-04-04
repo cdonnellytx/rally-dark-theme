@@ -812,6 +812,39 @@
 
     --disclaimer-bg: var(--tertiary-bg);
     --disclaimer-text: var(--tertiary-text);
+
+    /* Gray scale from github */
+    --color-auto-gray-0: #0d1117;
+    --color-auto-gray-1: #161b22;
+    --color-auto-gray-2: #21262d;
+    --color-auto-gray-3: #30363d;
+    --color-auto-gray-4: #484f58;
+    --color-auto-gray-5: #6e7681;
+    --color-auto-gray-6: #8b949e;
+    --color-auto-gray-7: #b1bac4;
+    --color-auto-gray-8: #c9d1d9;
+    --color-auto-gray-9: #f0f6fc;
+
+    /* SCSS vars (guessing at values) */
+    --mnrl-danger-border: var(--danger-border);
+    --mnrl-border: var(--main-border);
+
+    --mnrl-borderColor-brand-focus: var(--focus-border);
+    --mnrl-borderColor-brand-hover: var(--hover-border);
+    --mnrl-color-brand-focus: var(--focus-text);
+    --mnrl-color-brand-hover: var(--hover-text);
+
+    --mnrl-gray-00: var(--color-auto-gray-0);
+    --mnrl-gray-10: var(--color-auto-gray-1);
+    --mnrl-gray-20: var(--color-auto-gray-2);
+    --mnrl-gray-30: var(--color-auto-gray-3);
+    --mnrl-gray-40: var(--color-auto-gray-4);
+    --mnrl-gray-50: var(--color-auto-gray-5);
+    --mnrl-gray-60: var(--color-auto-gray-6);
+    --mnrl-gray-70: var(--color-auto-gray-7);
+    --mnrl-gray-80: var(--color-auto-gray-8);
+    --mnrl-gray-90: var(--color-auto-gray-9);
+    --mnrl-white: var(--white-100);
 }
 
 /****************************************************/

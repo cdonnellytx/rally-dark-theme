@@ -1,0 +1,90 @@
+@import "../../styles/index-variables";
+@import "node_modules/@mineral/tokens/build/light/index.scss";
+
+.chr-QuickDetailAttributeEditorWrapper.is-invalid {
+    border-color: var(--danger-border);
+}
+
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .chr-EditorsMultiItemEditor,
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .chr-ProjectsEditor,
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-Select-trigger,
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-SingleItemDropdown .smb-DropdownTrigger,
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-RichTextEditor,
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput {
+    border-color: var(--danger-border) !important;
+}
+
+.chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput.smb-SearchInput {
+    border-color: var(--main-border) !important; /* mnrl-border */
+}
+
+.chr-QuickDetailAttributeEditorWrapper .smb-ProgressBar--progress.readable {
+    background-color: var(--mnrl-gray-20);
+}
+
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) {
+    border-color: var(--mnrl-borderColor-brand-hover);
+    box-shadow: none;
+}
+
+.chr-QuickDetailAttributeEditorWrapper
+    .chr-QuickDetailAttributeEditorWrapper-editorContainer
+    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly)
+    .smb-PopoverTrigger
+    .smb-Button:hover,
+.chr-QuickDetailAttributeEditorWrapper
+    .chr-QuickDetailAttributeEditorWrapper-editorContainer
+    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly)
+    .chr-ProjectsEditor-trigger.smb-Button:hover {
+    color: var(--mnrl-color-brand-hover);
+}
+
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within {
+    box-shadow: 0 0 0 0.1rem var(--mnrl-white), 0 0 0 0.2rem var(--mnrl-borderColor-brand-focus);
+}
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:hover {
+    border-color: var(--mnrl-borderColor);
+}
+
+.chr-QuickDetailAttributeEditorWrapper
+    .chr-QuickDetailAttributeEditorWrapper-editorContainer
+    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active
+    .smb-PopoverTrigger
+    .smb-Button:active,
+.chr-QuickDetailAttributeEditorWrapper
+    .chr-QuickDetailAttributeEditorWrapper-editorContainer
+    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active
+    .chr-ProjectsEditor-trigger.smb-Button:active {
+    color: var(--mnrl-color-brand-active);
+}
+
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .smb-PopoverTrigger .smb-Button,
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .chr-ProjectsEditor-trigger.smb-Button,
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within .smb-PopoverTrigger .smb-Button,
+.chr-QuickDetailAttributeEditorWrapper
+    .chr-QuickDetailAttributeEditorWrapper-editorContainer
+    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within
+    .chr-ProjectsEditor-trigger.smb-Button {
+    background-color: transparent;
+}
+
+.chr-DragAndDropField-dragHandle:hover {
+    opacity: 1;
+}
+
+.chr-DragAndDropField-dragHandle .smb-SvgIcon {
+    color: var(--mnrl-color-brand);
+}
+
+.chr-QuickDetailAttributeEditorWrapper-editorContainer {
+    line-height: 1;
+}
+
+h2 .chr-QuickDetailAttributeEditorWrapper-label,
+h3 .chr-QuickDetailAttributeEditorWrapper-label {
+    color: var(--mnrl-gray-80);
+}
+
+.chr-QuickDetailAttributeEditorWrapper-requiredIndicator {
+    color: var(--mnrl-color-danger);
+}
