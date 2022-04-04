@@ -1,8 +1,8 @@
-@import "../../styles/index-variables";
-@import "node_modules/@mineral/tokens/build/light/index.scss";
+/* @import "../../styles/index-variables";
+@import "node_modules/@mineral/tokens/build/light/index.scss"; */
 
 .chr-QuickDetailAttributeEditorWrapper.is-invalid {
-    border-color: var(--danger-border);
+    border-color: var(--mnrl-danger-border);
 }
 
 .chr-QuickDetailAttributeEditorWrapper.is-invalid .chr-EditorsMultiItemEditor,
@@ -11,11 +11,11 @@
 .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-SingleItemDropdown .smb-DropdownTrigger,
 .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-RichTextEditor,
 .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput {
-    border-color: var(--danger-border) !important;
+    border-color: var(--mnrl-danger-border) !important;
 }
 
 .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput.smb-SearchInput {
-    border-color: var(--main-border) !important; /* mnrl-border */
+    border-color: var(--mnrl-borderColor) !important;
 }
 
 .chr-QuickDetailAttributeEditorWrapper .smb-ProgressBar--progress.readable {
@@ -27,15 +27,8 @@
     box-shadow: none;
 }
 
-.chr-QuickDetailAttributeEditorWrapper
-    .chr-QuickDetailAttributeEditorWrapper-editorContainer
-    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly)
-    .smb-PopoverTrigger
-    .smb-Button:hover,
-.chr-QuickDetailAttributeEditorWrapper
-    .chr-QuickDetailAttributeEditorWrapper-editorContainer
-    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly)
-    .chr-ProjectsEditor-trigger.smb-Button:hover {
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) .smb-PopoverTrigger .smb-Button:hover,
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) .chr-ProjectsEditor-trigger.smb-Button:hover {
     color: var(--mnrl-color-brand-hover);
 }
 
@@ -46,25 +39,15 @@
     border-color: var(--mnrl-borderColor);
 }
 
-.chr-QuickDetailAttributeEditorWrapper
-    .chr-QuickDetailAttributeEditorWrapper-editorContainer
-    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active
-    .smb-PopoverTrigger
-    .smb-Button:active,
-.chr-QuickDetailAttributeEditorWrapper
-    .chr-QuickDetailAttributeEditorWrapper-editorContainer
-    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active
-    .chr-ProjectsEditor-trigger.smb-Button:active {
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active .smb-PopoverTrigger .smb-Button:active,
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active .chr-ProjectsEditor-trigger.smb-Button:active {
     color: var(--mnrl-color-brand-active);
 }
 
 .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .smb-PopoverTrigger .smb-Button,
 .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .chr-ProjectsEditor-trigger.smb-Button,
 .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within .smb-PopoverTrigger .smb-Button,
-.chr-QuickDetailAttributeEditorWrapper
-    .chr-QuickDetailAttributeEditorWrapper-editorContainer
-    > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within
-    .chr-ProjectsEditor-trigger.smb-Button {
+.chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within .chr-ProjectsEditor-trigger.smb-Button {
     background-color: transparent;
 }
 

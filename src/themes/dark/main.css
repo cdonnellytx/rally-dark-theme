@@ -367,15 +367,24 @@
     --white-60: rgba(255, 255, 255, 0.6);
     --white-100: #fff;
 
+    --gray-80: #cbdfff;
+    --gray-100: #b0c1dd /* was #ddd */;
+
     /*
-        * Main
-        */
+     * Rally variable names
+     */
+    --white: #112; /* yes, the var is named 'white' */
+    --error: #b80d0d;
+
+    /*
+     * Main
+     */
 
     --main-bg: #111;
     --main-border: #555;
     --main-text: #ddd;
 
-    --content-bg: #112;
+    --content-bg: var(--white);
     --content-border: #555;
     --content-text: var(--main-text);
 
@@ -384,8 +393,8 @@
     --tertiary-text: #bbb;
 
     --header-border: #37383b;
-    --title-text: #cbdfff;
-    --subtitle-text: #cbdfff;
+    --title-text: var(--gray-80);
+    --subtitle-text: var(--gray-80);
 
     --link-text: #3eb9f8;
 
@@ -397,8 +406,8 @@
     --required-text: #de1b1b;
 
     /*
-        * Main > States
-        */
+     * Main > States
+     */
     --disabled-bg: #161b22;
     --disabled-text: #666e79;
     --placeholder-text: var(--disabled-text);
@@ -415,8 +424,8 @@
     /* selected: no commonalities */
 
     /*
-        * Main > Colors
-        */
+     * Main > Colors
+     */
     --blocked-bg: #323030;
     --blocked-border: #de1b1b;
 
@@ -424,23 +433,24 @@
     --ready-border: #2a854e;
 
     /*
-        * Controls
-        */
+     * Controls
+     */
+
     --control-bg: #444;
     --control-border: #777;
     --control-icon: var(--link-text);
-    --control-text: #ddd;
+    --control-text: var(--gray-100);
     --control-disabled-bg: var(--disabled-bg);
     --control-disabled-border: #445;
     --control-disabled-icon: var(--control-disabled-text);
     --control-disabled-text: var(--disabled-text);
     --control-focus-shadow: 0 0 0 0.1rem var(--control-bg), 0 0 0 0.2rem #30353d;
-    --control-focus-border: var(--control-border);
+    --control-focus-border: var(--contorl-border);
     --control-hover-border: #8b949e;
 
     /*
-        * Button
-        */
+     * Button
+     */
     --button-bg: #1f1f29;
     --button-border: #555;
     --button-icon: var(--button-text);
@@ -579,8 +589,8 @@
     --button-feedback-hover-bg: #ffc303;
 
     /*
-        * Checkbox
-        */
+     * Checkbox
+     */
     --checkbox-is_checked-bg: var(--link-text);
     --checkbox-is_checked-focus-bg: var(--checkbox-is_checked-bg);
     --checkbox-is_checked-hover-bg: #8b949e;
@@ -590,11 +600,10 @@
     --checkbox-is_indeterminate-color: var(--link-text);
 
     /*
-        * Dropdown
-        */
+     * Dropdown
+     */
     --dropdown-bg: var(--control-bg);
-    --dropdown-border: var(--control-border);
-    --dropdown-text: var(--control-text);
+    --dropdown-text: var(--gray-100);
     --dropdown-disabled-bg: var(--control-disabled-bg);
     --dropdown-disabled-border: var(--control-disabled-border);
     --dropdown-disabled-text: var(--control-disabled-text);
@@ -604,18 +613,18 @@
 
     --dropdown-divider-bg: var(--rally-ebeff5);
 
-    --dropdown-list-shadow: 0 0.2rem 0.2rem var(--dropdown-border) var(--black-10);
+    --dropdown-list-shadow: 0 0.2rem 0.2rem var(--control-border) var(--black-10);
 
     --dropdown-header-text: var(--dropdown-text);
 
-    --dropdown-trigger-bg: var(--content-bg);
+    --dropdown-trigger-bg: var(--content-bg) /* white */;
 
     --dropdown-footer-bg: var(--tertiary-bg);
-    --dropdown-footer-border: var(--dropdown-border);
+    --dropdown-footer-border: var(--control-border);
     --dropdown-footer-text: var(--tertiary-text);
 
-    --dropdown-item-text: var(--dropdown-text);
-    --dropdown-item-subtext: var(--title-text);
+    --dropdown-item-text: var(--gray-100);
+    --dropdown-item-subtext: var(--gray-80);
     --dropdown-item-hover-bg: var(--rally-ebeff5);
     --dropdown-item-hover-text: var(--hover-text);
     --dropdown-item-is_active-bg: #2929c4;
@@ -633,43 +642,43 @@
     --dropdown-match-text: var(--dropdown-item-text);
 
     /*
-        * Label
-        */
+     * Label
+     */
     --label-text: #ddd;
     --label-required-text: var(--required-text);
 
     /*
-        * List
-        */
+     * List
+     */
     --listitem-text: var(--content-text);
     --listitem-hover-bg: var(--hover-bg);
     --listitem-is_active-bg: #4b4b85;
 
     /*
-        * LoadingMask
-        */
+     * LoadingMask
+     */
     --loadingmask-bg: var(--black-20);
     --loadingmask-text: #ddd;
 
     /*
-        * Menu
-        */
+     * Menu
+     */
     --menuitem-text: var(--popover-text);
     --menuitem-is_active-bg: #4b4b85;
     --menuitem-hover-bg: #212142;
     /* --menuitem-hover-bg: #50509f; */
 
     /*
-        * Panel
-        */
+     * Panel
+     */
     --panel-header-bg: #111;
     --panel-app-border: #000;
     --panel-app-text: #fff;
     --panel-app-header-bg: #223;
 
     /*
-        * Popover
-        */
+     * Popover
+     */
     --popover-bg: var(--content-bg);
     --popover-shadow: 0 0 0 0.1rem var(--tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
     --popover-title-text: var(--title-text);
@@ -679,8 +688,8 @@
     --popover-invalid-shadow: 0 0 0 0.1rem var(--popover-invalid-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
 
     /*
-        * Tab
-        */
+     * Tab
+     */
     --tablist-bg: #292929;
     --tab-text: #ddd;
     --tab-focus-bg: #292929;
@@ -692,8 +701,8 @@
     --tab-is_active-text: #ddd;
 
     /*
-        * TextInput
-        */
+     * TextInput
+     */
     --textinput-bg: var(--control-bg);
     --textinput-border: var(--control-border);
     --textinput-icon: var(--control-icon);
@@ -705,14 +714,14 @@
     --textinput-focus-icon: var(--link-text);
     --textinput-focus-shadow: var(--control-focus-shadow);
     --textinput-hover-accent: var(--link-text);
-    --textinput-invalid-border: #b80d0d;
+    --textinput-invalid-border: var(--error);
     --textinput-search-focus-border: var(--link-text);
     --textinput-search-focus-icon: var(--link-text);
     --textinput-search-focus-text: var(--link-text);
 
     /*
-        * Toggle
-        */
+     * Toggle
+     */
     --toggle-bg: var(--group-button-bg);
     --toggle-border: var(--group-button-border);
     --toggle-shadow: inset 0 0 0 2px var(--toggle-bg);
@@ -737,26 +746,26 @@
     --toggle-on-hover-border: var(--group-button-is_active-hover-border);
 
     /*
-        * Toggle > Handle
-        */
+     * Toggle > Handle
+     */
     --toggle-handle-bg: #707a8a;
     --toggle-handle-on-bg: #fff;
 
     /*
-        * Toolbar
-        */
+     * Toolbar
+     */
     --toolbar-border: #445;
 
     /*
-        * Tree
-        */
+     * Tree
+     */
     --treeitem-text: var(--listitem-text);
     --treeitem-hover-bg: var(--listitem-hover-bg);
     --treeitem-is_active-bg: var(--listitem-is_active-bg);
 
     /*
-        * HERE BE DRAGONS
-        */
+     * HERE BE DRAGONS
+     */
 
     --cke-editable-bg: #1e1e1e;
     --cke-editable-text: #dcdcdc;
@@ -825,9 +834,20 @@
     --color-auto-gray-8: #c9d1d9;
     --color-auto-gray-9: #f0f6fc;
 
-    /* SCSS vars (guessing at values) */
+    /*
+     * @mineral SCSS colors
+     */
+    --mnrl-backgroundColor-disabled: var(--disabled-bg);
+    --mnrl-color-disabled: var(--disabled-text);
+    --mnrl-input-color-placeholder: var(--placeholder-text);
+
+    --mnrl-borderColor: var(--control-border);
+
+    --mnrl-gray-80: var(--gray-80);
+    --mnrl-gray-100: var(--gray-100);
+
     --mnrl-danger-border: var(--danger-border);
-    --mnrl-border: var(--main-border);
+    --mnrl-color-brand-active: var(--button-active-text);
 
     --mnrl-borderColor-brand-focus: var(--focus-border);
     --mnrl-borderColor-brand-hover: var(--hover-border);
@@ -842,7 +862,6 @@
     --mnrl-gray-50: var(--color-auto-gray-5);
     --mnrl-gray-60: var(--color-auto-gray-6);
     --mnrl-gray-70: var(--color-auto-gray-7);
-    --mnrl-gray-80: var(--color-auto-gray-8);
     --mnrl-gray-90: var(--color-auto-gray-9);
     --mnrl-white: var(--white-100);
 }
@@ -1924,7 +1943,7 @@ span[style^="color:black"] {
  */
 .smb-Checkbox {
     background-color: var(--control-bg);
-    border-color: var(--control-border);
+    border-color: var(--mnrl-borderColor);
     box-shadow: 0 0.1rem 0.2rem var(--black-05);
 }
 
@@ -1981,7 +2000,7 @@ span[style^="color:black"] {
 
 .smb-DropdownList-listContentWrapper {
     background-color: var(--dropdown-bg);
-    border-color: var(--dropdown-border);
+    border-color: var(--mnrl-borderColor);
     box-shadow: var(--dropdown-shadow);
 }
 
@@ -2154,35 +2173,9 @@ span[style^="color:black"] {
 }
 
 /* SMB > Dropdown > Trigger */
-
-.smb-DropdownTrigger {
-    background-color: var(--dropdown-trigger-bg);
-    border-color: var(--dropdown-border);
-    color: var(--dropdown-text);
-}
-
-.smb-DropdownTrigger:focus {
-    background-color: var(--dropdown-focus-bg);
-    border-color: var(--dropdown-focus-border);
-    box-shadow: var(--dropdown-focus-shadow);
-}
-
-.smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover,
-.smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly).is-open {
-    background-color: var(--dropdown-trigger-bg);
-}
-
 .smb-SearchInput.smb-DropdownTrigger:focus {
     border-color: var(--dropdown-focus-border);
     box-shadow: none;
-}
-
-.smb-DropdownTrigger:focus .smb-Icon {
-    color: var(--dropdown-text);
-}
-
-.smb-DropdownTrigger .smb-DropdownTrigger-subtext {
-    color: var(--dropdown-item-subtext);
 }
 
 /* SMB > Dropdown > TextInput */
@@ -2261,12 +2254,12 @@ span[style^="color:black"] {
 .smb-SelectList {
     background-color: var(--dropdown-bg);
     box-shadow: 0 0.2rem 0.4rem 0 var(--black-10);
-    border-color: var(--dropdown-border);
-    border-bottom-color: var(--dropdown-border);
+    border-color: var(--mnrl-borderColor);
+    border-bottom-color: var(--mnrl-borderColor);
 }
 
 .smb-SelectList .smb-SelectList-list {
-    box-shadow: 0 0.2rem 0.2rem var(--dropdown-border) var(--black-10);
+    box-shadow: 0 0.2rem 0.2rem var(--mnrl-borderColor) var(--black-10);
 }
 
 .smb-SelectList .smb-SelectList-divider {
@@ -2780,6 +2773,7 @@ span[style^="color:black"] {
     background-color: var(--toggle-focus-bg);
 }
 
+/*
 .smb-ToggleButton:hover,
 .smb-ToggleButton:focus {
 }
@@ -2971,7 +2965,7 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 }
 
 .alm-header-container .smb-DropdownList .smb-DropdownList-list {
-    box-shadow: 0 0.4rem 0.8rem 0 var(--black-20), 0 0.2rem 0.4rem 0 var(--black-20), 0 0 0 0.1rem var(--dropdown-border);
+    box-shadow: 0 0.4rem 0.8rem 0 var(--black-20), 0 0.2rem 0.4rem 0 var(--black-20), 0 0 0 0.1rem var(--mnrl-borderColor);
 }
 
 .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
