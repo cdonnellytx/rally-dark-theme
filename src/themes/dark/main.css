@@ -87,7 +87,6 @@
     --rally-5497ba: LIME;
     --rally-555555: LIME;
     --rally-57c282: LIME;
-    --rally-58606e: #ddd;
     --rally-5b5b5b: LIME;
     --rally-5c9acb: LIME;
     --rally-5cba49: LIME;
@@ -370,12 +369,16 @@
     --gray-90: #c9d1d9;
     --gray-100: #f0f6fc /* was #ddd */;
 
-    --mineralBlue-10: LIME;
-    --mineralBlue-20: LIME;
-    --mineralBlue-30: LIME;
-    --mineralBlue-40: #494991;
-    --mineralBlue-50: #365b97;
-    --mineralBlue-60: #3eb9f8;
+    --mineralBlue-100: #15233b;
+    --mineralBlue-90: #103570;
+    --mineralBlue-80: #114599;
+    --mineralBlue-70: #1d5bbf;
+    --mineralBlue-60: #3272d9;
+    --mineralBlue-50: #5691f0;
+    --mineralBlue-40: #84b1fa;
+    --mineralBlue-30: #accbfc;
+    --mineralBlue-20: #cfe0fc;
+    --mineralBlue-10: #f0f5fc;
 
     --brand-10: var(--mineralBlue-10);
     --brand-20: var(--mineralBlue-20);
@@ -383,6 +386,10 @@
     --brand-40: var(--mineralBlue-40);
     --brand-50: var(--mineralBlue-50);
     --brand-60: var(--mineralBlue-60);
+    --brand-70: var(--mineralBlue-70);
+    --brand-80: var(--mineralBlue-80);
+    --brand-90: var(--mineralBlue-90);
+    --brand-100: var(--mineralBlue-100);
 
     --h1-color: var(--gray-100);
     --h2-color: var(--gray-80);
@@ -403,7 +410,9 @@
 
     --main-bg: #111;
     --main-border: #555;
-    --main-text: #ddd;
+    --main-text: var(--gray-100);
+
+    --header-text: var(--gray-100);
 
     --content-bg: #112;
     --content-border: #555;
@@ -555,7 +564,7 @@
     --button-jumboicon-hover-bg: var(--rally-ebeff5);
     --button-jumboicon-is_active-bg: var(--rally-dde3ed);
     --button-jumboicon-is_active-border: var(--rally-1d5bbf);
-    --button-jumboicon-children: var(--rally-58606e);
+    --button-jumboicon-children: var(--gray-80);
     --button-jumboicon-disabled-bg: var(--button-jumboicon-bg);
     --button-jumboicon-disabled-border: var(--button-jumboicon-border);
     --button-jumboicon-disabled-children: var(--button-disabled-text);
@@ -3002,7 +3011,7 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayDescription {
-    color: var(--rally-58606e);
+    color: var(--gray-80);
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayExamples h3 {
