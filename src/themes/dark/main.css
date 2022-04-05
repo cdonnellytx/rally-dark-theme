@@ -53,6 +53,7 @@
 
     --main-bg: #111;
     --main-border: #555;
+    --main-shadow: #444;
     --main-text: var(--gray-100);
 
     --header-text: var(--gray-100);

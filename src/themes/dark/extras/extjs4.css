@@ -1,10 +1,280 @@
 /* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
  * This is ExtJS 4.x.
 */
-.x4-body {
-    background-color: var(--main-bg);
-    color: var(--main-text);
+:root {
+    --x4-ie-shadow: #777777;
+    --x4-bg: var(--main-bg);
+    --x4-text: var(--main-text);
+
+    --x4-control-border: var(--control-border);
+
+    --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
+
+    /* FIXME */
+    --x4-proxy-bg: #b4b4b4;
+    --x4-focus-frame-border: #15428b;
 }
+
+.x4-ie-shadow {
+    background-color: var(--x4-ie-shadow);
+}
+.x4-proxy-el {
+    background-color: var(--x4-proxy-bg);
+}
+.x4-dd-drag-ghost {
+    color: var(--x4-text);
+    border-color: var(--x4-dd-drag-border);
+    background-color: var(--x4-bg);
+}
+.x4-resizable-overlay {
+    background-color: var(--x4-bg);
+}
+.x4-body {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.x4-focus-frame-top,
+.x4-focus-frame-bottom {
+    border-top-color: var(--x4-focus-frame-border);
+}
+.x4-focus-frame-left,
+.x4-focus-frame-right {
+    border-left-color: var(--x4-focus-frame-border);
+}
+.x4-panel-body-default {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.x4-panel-body-default-framed {
+    color: var(--x4-text);
+}
+.x4-tip-form-invalid {
+    background-color: var(--x4-bg);
+}
+.x4-tip-form-invalid-mc {
+    background-color: var(--x4-bg);
+}
+.x4-window-body-default {
+    color: var(--x4-text);
+}
+.x4-form-item-label {
+    color: var(--x4-text);
+}
+.x4-form-field {
+    color: var(--x4-text);
+}
+.x4-form-type-text textarea.x4-form-invalid-field,
+.x4-form-type-text input.x4-form-invalid-field,
+.x4-form-type-password textarea.x4-form-invalid-field,
+.x4-form-type-password input.x4-form-invalid-field,
+.x4-form-type-number textarea.x4-form-invalid-field,
+.x4-form-type-number input.x4-form-invalid-field,
+.x4-form-type-email textarea.x4-form-invalid-field,
+.x4-form-type-email input.x4-form-invalid-field,
+.x4-form-type-search textarea.x4-form-invalid-field,
+.x4-form-type-search input.x4-form-invalid-field,
+.x4-form-type-tel textarea.x4-form-invalid-field,
+.x4-form-type-tel input.x4-form-invalid-field {
+    background-color: var(--x4-bg);
+}
+.x4-form-text {
+    color: var(--x4-text);
+    background-color: var(--x4-bg);
+    border-color: var(--x4-control-border);
+}
+.x4-form-display-field {
+    color: var(--x4-text);
+}
+.x4-form-check-group-label {
+    color: var(--x4-text);
+}
+.x4-form-trigger {
+    border-color: var(--x4-control-border);
+}
+div.x4-form-spinner-up,
+div.x4-form-spinner-down {
+    background-color: var(--x4-bg);
+}
+.x4-boundlist {
+    border-color: var(--x4-control-border);
+}
+.x4-datepicker {
+    border-color: var(--x4-control-border);
+    background-color: var(--x4-bg);
+}
+.x4-datepicker-date {
+    color: var(--x4-text);
+}
+a.x4-datepicker-date:hover {
+    color: var(--x4-text);
+}
+.x4-datepicker-footer,
+.x4-monthpicker-buttons {
+    background-color: var(--x4-bg);
+}
+.x4-monthpicker {
+    border-color: var(--x4-control-border);
+    background-color: var(--x4-bg);
+}
+.x4-monthpicker-months {
+    border-color: var(--x4-control-border);
+}
+.x4-monthpicker-yearnav-button {
+    background-color: var(--x4-bg);
+}
+.x4-color-picker {
+    background-color: var(--x4-bg);
+}
+.x4-color-picker-item {
+    background-color: var(--x4-bg);
+}
+.x4-html-editor-wrap textarea {
+    background-color: var(--x4-bg);
+}
+.x4-grid-body {
+    background-color: var(--x4-bg);
+}
+.x4-grid-empty {
+    background-color: var(--x4-bg);
+}
+.x4-grid-cell {
+    color: "none";
+    background-color: var(--x4-bg);
+    border-color: var(--x4-control-border);
+}
+.x4-grid-cell-special {
+    border-color: var(--x4-control-border);
+}
+.x4-column-header {
+    color: var(--x4-text);
+    background-image: none;
+}
+.x4-grid-group-hd {
+    background-color: var(--x4-bg);
+}
+.x4-grid-rowwrap {
+    border-color: var(--x4-control-border);
+}
+.x4-grid-row-summary .x4-grid-cell,
+.x4-grid-row-summary .x4-grid-rowwrap,
+.x4-grid-row-summary .x4-grid-cell-rowbody {
+    border-color: var(--x4-control-border);
+    background-color: transparent !important;
+}
+.x4-accordion-layout-ct {
+    background-color: var(--x4-bg);
+}
+.x4-accordion-hd .x4-panel-header-text-container {
+    color: var(--x4-text);
+}
+.x4-menu-icon-separator {
+    background-color: var(--x4-bg);
+}
+.x4-menu-item-separator {
+    background-color: var(--x4-bg);
+}
+.x4-resizable-handle {
+    background-color: var(--x4-bg);
+}
+.x4-html-editor-wrap .x4-toolbar {
+    border-left-color: var(--x4-control-border);
+    border-top-color: var(--x4-control-border);
+    border-right-color: var(--x4-control-border);
+}
+.x4-html-editor-input {
+    border-color: var(--x4-control-border);
+}
+.x4-boundlist {
+    background-color: var(--x4-bg);
+}
+.x4-boundlist .x4-boundlist-item {
+    background-color: var(--x4-bg);
+}
+.x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-bg);
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
+    background-color: var(--x4-bg);
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected {
+    background-color: var(--x4-bg);
+}
+.x4-btn.toggle {
+    background-color: var(--x4-bg);
+}
+.x4-btn.primary.secondary,
+.x4-btn.primary.secondary tr td,
+.x4-btn.secondary.secondary,
+.x4-btn.secondary.secondary tr td,
+.x4-btn.tertiary.secondary,
+.x4-btn.tertiary.secondary tr td,
+.x4-btn.highlight.secondary,
+.x4-btn.highlight.secondary tr td {
+    background-image: none;
+    background-color: var(--x4-bg);
+}
+.rui-card {
+    background-color: var(--x4-bg);
+}
+.cardboard .column-container .column-header .editableField:hover {
+    background-color: var(--x4-bg);
+}
+.cardboard .column-container .column-header .policy {
+    background-color: var(--x4-bg);
+}
+.cardboard .column-container .row-header .expand-collapse {
+    background-color: var(--x4-bg);
+}
+.rally-blocked-reason-content .rally-blocked-reason-template,
+.rally-blocked-reason-content .editor-container,
+.rally-blocked-reason-content-popover .rally-blocked-reason-template,
+.rally-blocked-reason-content-popover .editor-container {
+    color: var(--x4-text);
+    border-color: transparent;
+}
+.rally-blocked-reason-content .rally-blocked-reason-template:hover,
+.rally-blocked-reason-content .editor-container:hover,
+.rally-blocked-reason-content-popover .rally-blocked-reason-template:hover,
+.rally-blocked-reason-content-popover .editor-container:hover {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.rally-blocked-reason-content-popover .rally-blocked-reason-template {
+    background-color: var(--x4-bg);
+}
+.rui-card .field-content.editable:hover .rui-field-value {
+    background-color: var(--x4-bg);
+}
+.rui-card .field-content.rally-invalid-card-field .rui-field-value {
+    background-color: var(--x4-bg);
+}
+.rui-card .rui-card-right-side .card-estimate-field .field-content.editable:hover {
+    background-color: var(--x4-bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #main .x4-btn {
     background-color: var(--button-bg);
@@ -27,8 +297,7 @@
     background-color: #555;
 }
 
-#main .x4-field-label-cell,
-#main .page-size-label {
+#main .x4-field-label-cell {
     color: #ddd;
 }
 
