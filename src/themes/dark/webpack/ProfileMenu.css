@@ -3,14 +3,8 @@
 @import 'node_modules/@mineral/tokens/build/light/index.scss';
 */
 
-.chr-ViewportProfileMenu-dropdown {
-    align-items: center;
-    display: flex;
-    height: 4rem;
-}
-
 .chr-ViewportProfileMenu-dropdown:focus .smb-DropdownMenu {
-    border: solid 0.1rem var(--mnrl-borderColor-brand-focus);
+    border-color: var(--mnrl-borderColor-brand-focus);
 }
 
 .chr-ViewportProfileMenu-dropdown:hover .smb-DropdownMenu {
@@ -18,21 +12,9 @@
 }
 
 .chr-ViewportProfileMenu-dropdown .smb-DropdownMenu {
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: var(--mnrl-borderRadius-1);
-    display: flex;
-    padding: 0.4rem;
+    border-color: transparent;
+}
 
-    .chr-ViewportProfileMenu-avatar {
-        cursor: pointer;
-        border-radius: 50%;
-        margin-right: 0.4rem;
-        width: 3.2rem;
-        height: 3.2rem;
-    }
-
-    .smb-SvgIcon {
-        color: var(--mnrl-color-brand);
-    }
+.chr-ViewportProfileMenu-dropdown .smb-DropdownMenu .smb-SvgIcon {
+    color: var(--mnrl-color-brand);
 }
