@@ -168,3 +168,18 @@ a.cke_dialog_ui_button span {
 .cke_dialog_footer {
     outline-color: var(--tertiary-border);
 }
+
+/* Text Editor */
+.cke_editable {
+    background-color: var(--cke-editable-bg);
+    color: var(--cke-editable-text);
+}
+
+.cke_editable a {
+    color: var(--link-text);
+}
+
+.cke_bottom {
+    background-color: #bbb;
+}
+

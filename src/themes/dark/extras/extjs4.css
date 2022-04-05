@@ -1,8 +1,7 @@
 /* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
+ * This is ExtJS 4.x.
 */
-.x-body,
-.x4-body,
-.x-panel-body-default {
+.x4-body {
     background-color: var(--main-bg);
     color: var(--main-text);
 }
@@ -47,32 +46,4 @@
     background-color: #111;
     color: #ddd;
     border-color: #555;
-}
-
-/* Text Editor */
-.smb-RichTextEditor-textArea,
-.cke_editable {
-    background-color: var(--cke-editable-bg);
-    color: var(--cke-editable-text);
-}
-
-.chr-FormattedId .chr-FormattedId-idText,
-.cke_editable a {
-    color: var(--link-text);
-}
-
-.cke_bottom {
-    background-color: #bbb;
-}
-
-/* Images so they don't POP white (they'll still be white because they are.) */
-.style_4 {
-    background-color: #000;
-}
-
-.rally-group-header.multi-object-picker-header,
-.x-boundlist .x-boundlist-item {
-    background-color: var(--control-bg);
-    border-color: var(--control-border);
-    color: var(--control-text);
 }

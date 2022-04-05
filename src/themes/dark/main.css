@@ -2664,3 +2664,30 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 .chr-StatusFieldRenderer .chr-StatusFieldRenderer-text {
     color: var(--dropdown-item-subtext);
 }
+
+
+/* former extjs stuff, probably not extjs, but something else */
+#main .page-size-label {
+    color: #ddd;
+}
+
+/* Text Editor */
+.smb-RichTextEditor-textArea {
+    background-color: var(--cke-editable-bg);
+    color: var(--cke-editable-text);
+}
+
+.chr-FormattedId .chr-FormattedId-idText {
+    color: var(--link-text);
+}
+
+/* Images so they don't POP white (they'll still be white because they are.) */
+.style_4 {
+    background-color: #000;
+}
+
+.rally-group-header.multi-object-picker-header {
+    background-color: var(--control-bg);
+    border-color: var(--control-border);
+    color: var(--control-text);
+}
