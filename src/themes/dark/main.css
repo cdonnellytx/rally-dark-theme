@@ -1,343 +1,5 @@
 /* Global */
 :root {
-    /* rally color codes */
-    --rally-000000: #dddddd;
-    --rally-000099: LIME;
-    --rally-003333: LIME;
-    --rally-005eb8: LIME;
-    --rally-006488: LIME;
-    --rally-006600: LIME;
-    --rally-0085c3: LIME;
-    --rally-0092c8: LIME;
-    --rally-00a9e0: LIME;
-    --rally-035a81: LIME;
-    --rally-037a32: LIME;
-    --rally-04408c: LIME;
-    --rally-04468c: LIME;
-    --rally-044772: LIME;
-    --rally-051a2b: LIME;
-    --rally-076692: LIME;
-    --rally-083772: LIME;
-    --rally-085478: LIME;
-    --rally-09363b: LIME;
-    --rally-0f0f0f: LIME;
-    --rally-0f5167: LIME;
-    --rally-103570: LIME;
-    --rally-111111: LIME;
-    --rally-114599: LIME;
-    --rally-142f45: LIME;
-    --rally-143044: LIME;
-    --rally-15233b: LIME;
-    --rally-15428b: LIME;
-    --rally-15498b: LIME;
-    --rally-155724: LIME;
-    --rally-156d82: LIME;
-    --rally-17385b: LIME;
-    --rally-181818: LIME;
-    --rally-1b376c: LIME;
-    --rally-1d1f24: LIME;
-    --rally-20465f: LIME;
-    --rally-20693d: LIME;
-    --rally-21516d: LIME;
-    --rally-222222: LIME;
-    --rally-222297: LIME;
-    --rally-233d6d: LIME;
-    --rally-254f62: LIME;
-    --rally-266795: LIME;
-    --rally-288892: LIME;
-    --rally-29beff: LIME;
-    --rally-2a854e: LIME;
-    --rally-30aac7: LIME;
-    --rally-317397: LIME;
-    --rally-31b2bf: LIME;
-    --rally-327c98: LIME;
-    --rally-333333: LIME;
-    --rally-333840: #ddd;
-    --rally-337ec6: LIME;
-    --rally-35b2e4: LIME;
-    --rally-36625a: LIME;
-    --rally-366ab7: LIME;
-    --rally-3764a0: LIME;
-    --rally-393939: LIME;
-    --rally-396095: LIME;
-    --rally-396295: LIME;
-    --rally-3a874f: LIME;
-    --rally-3b5a82: LIME;
-    --rally-3ba164: LIME;
-    --rally-3e6aaa: LIME;
-    --rally-3f84a4: LIME;
-    --rally-404040: LIME;
-    --rally-408492: LIME;
-    --rally-416aa3: LIME;
-    --rally-416da3: LIME;
-    --rally-444444: LIME;
-    --rally-44525e: LIME;
-    --rally-464646: LIME;
-    --rally-48a23f: LIME;
-    --rally-499739: LIME;
-    --rally-4a90e2: LIME;
-    --rally-4c4c4c: LIME;
-    --rally-4e90aa: LIME;
-    --rally-515151: LIME;
-    --rally-535353: LIME;
-    --rally-5394af: LIME;
-    --rally-54809f: LIME;
-    --rally-5496b1: LIME;
-    --rally-5497ba: LIME;
-    --rally-555555: LIME;
-    --rally-57c282: LIME;
-    --rally-5b5b5b: LIME;
-    --rally-5c9acb: LIME;
-    --rally-5cba49: LIME;
-    --rally-5d4000: LIME;
-    --rally-5f5f5f: LIME;
-    --rally-611535: LIME;
-    --rally-619cec: LIME;
-    --rally-61c6e5: LIME;
-    --rally-626262: LIME;
-    --rally-6593cf: LIME;
-    --rally-6594cf: LIME;
-    --rally-666666: LIME;
-    --rally-6678b2: LIME;
-    --rally-678ebf: LIME;
-    --rally-693d07: LIME;
-    --rally-696969: LIME;
-    --rally-698fb9: LIME;
-    --rally-6ab17d: LIME;
-    --rally-6ad17b: LIME;
-    --rally-6fa0df: LIME;
-    --rally-707a8a: LIME;
-    --rally-718bb7: LIME;
-    --rally-71cdd2: LIME;
-    --rally-71d3eb: LIME;
-    --rally-721c24: LIME;
-    --rally-73a3e0: LIME;
-    --rally-75a692: LIME;
-    --rally-76c10f: LIME;
-    --rally-777777: LIME;
-    --rally-77bc71: LIME;
-    --rally-793259: LIME;
-    --rally-799ac4: LIME;
-    --rally-7a92c2: LIME;
-    --rally-7a9ac4: LIME;
-    --rally-7b7b7b: LIME;
-    --rally-7ddba3: LIME;
-    --rally-7eadd9: LIME;
-    --rally-7f7f7f: LIME;
-    --rally-7fa9e4: LIME;
-    --rally-81a4d0: LIME;
-    --rally-82d3ed: LIME;
-    --rally-84a0c4: LIME;
-    --rally-888888: LIME;
-    --rally-888d8e: LIME;
-    --rally-8a1244: LIME;
-    --rally-8a4d03: LIME;
-    --rally-8b9898: LIME;
-    --rally-8bb8f3: LIME;
-    --rally-8db2e3: LIME;
-    --rally-8db3e3: LIME;
-    --rally-8e99ab: LIME;
-    --rally-8f8f8f: LIME;
-    --rally-8facd0: LIME;
-    --rally-909090: LIME;
-    --rally-93cd8f: LIME;
-    --rally-94afd1: LIME;
-    --rally-96c8a4: LIME;
-    --rally-98c0f4: LIME;
-    --rally-98c8ff: LIME;
-    --rally-999999: LIME;
-    --rally-9999cc: LIME;
-    --rally-99a1a7: LIME;
-    --rally-99bbe8: LIME;
-    --rally-99bce8: LIME;
-    --rally-9ad1da: LIME;
-    --rally-9cbfee: LIME;
-    --rally-9dbbcb: LIME;
-    --rally-9e1e08: LIME;
-    --rally-9fc1d1: LIME;
-    --rally-a1311f: LIME;
-    --rally-a2b1c5: LIME;
-    --rally-a3bad9: LIME;
-    --rally-a3bae9: LIME;
-    --rally-a6d0b1: LIME;
-    --rally-a9a9a9: LIME;
-    --rally-a9bfd3: LIME;
-    --rally-aaaaaa: LIME;
-    --rally-aaccf6: LIME;
-    --rally-ababab: LIME;
-    --rally-abedc5: LIME;
-    --rally-aca899: LIME;
-    --rally-acacac: LIME;
-    --rally-ad5f00: LIME;
-    --rally-afbacc: #555;
-    --rally-b0b0b0: LIME;
-    --rally-b0ccf2: LIME;
-    --rally-b2d1f5: LIME;
-    --rally-b2e3b6: LIME;
-    --rally-b3b3b3: LIME;
-    --rally-b4b4b4: LIME;
-    --rally-b5b8c8: LIME;
-    --rally-b5d8eb: LIME;
-    --rally-b7c8d7: LIME;
-    --rally-b81b10: LIME;
-    --rally-b8cfee: LIME;
-    --rally-b8f1ff: LIME;
-    --rally-bbbbbb: LIME;
-    --rally-bbd2ef: LIME;
-    --rally-bedee6: LIME;
-    --rally-c0272b: LIME;
-    --rally-c0c0c0: LIME;
-    --rally-c2d8f0: LIME;
-    --rally-c2e39b: LIME;
-    --rally-c3b3b3: LIME;
-    --rally-c3daf9: LIME;
-    --rally-c3e6cb: LIME;
-    --rally-c4c4c4: LIME;
-    --rally-c4d8e8: LIME;
-    --rally-c50f18: LIME;
-    --rally-c5c5c5: LIME;
-    --rally-c5d2df: LIME;
-    --rally-c6c6c6: LIME;
-    --rally-c7c7c7: LIME;
-    --rally-c7d6e9: LIME;
-    --rally-c7dfe9: LIME;
-    --rally-c7dffc: LIME;
-    --rally-c8d1e0: #1b1c1f;
-    --rally-c9c9c9: LIME;
-    --rally-cad9ec: LIME;
-    --rally-cadda3: LIME;
-    --rally-cbdbef: LIME;
-    --rally-cbddf3: LIME;
-    --rally-cc0000: LIME;
-    --rally-cccccc: LIME;
-    --rally-cceef9: LIME;
-    --rally-cd0000: LIME;
-    --rally-ced9e7: LIME;
-    --rally-cedff5: LIME;
-    --rally-cf3f3f: LIME;
-    --rally-cf7911: LIME;
-    --rally-cf871b: LIME;
-    --rally-cfcedd: LIME;
-    --rally-d0021b: LIME;
-    --rally-d0d0d0: LIME;
-    --rally-d0dddf: LIME;
-    --rally-d0def0: LIME;
-    --rally-d0e4ec: LIME;
-    --rally-d1ddef: LIME;
-    --rally-d1e4fd: LIME;
-    --rally-d2e0f2: LIME;
-    --rally-d3e1f1: LIME;
-    --rally-d4eaf6: LIME;
-    --rally-d4edda: LIME;
-    --rally-d5d5d5: LIME;
-    --rally-d64796: LIME;
-    --rally-d69dc7: LIME;
-    --rally-d6d6d6: LIME;
-    --rally-d7d7d7: LIME;
-    --rally-d87166: LIME;
-    --rally-d8dae4: LIME;
-    --rally-d96c14: LIME;
-    --rally-d9e7f8: LIME;
-    --rally-d9e8fb: LIME;
-    --rally-dadee5: LIME;
-    --rally-dae5f3: LIME;
-    --rally-dce0e0: LIME;
-    --rally-dd7870: LIME;
-    --rally-dddddd: LIME;
-    --rally-ddecfe: LIME;
-    --rally-deecfd: LIME;
-    --rally-dfe8f6: LIME;
-    --rally-dfe9f6: LIME;
-    --rally-dfecfb: LIME;
-    --rally-e0e0e0: LIME;
-    --rally-e0e8f3: LIME;
-    --rally-e1ecfa: LIME;
-    --rally-e3ebf5: LIME;
-    --rally-e3f9e9: LIME;
-    --rally-e4e4e4: LIME;
-    --rally-e4ecee: LIME;
-    --rally-e57e39: LIME;
-    --rally-e5e3de: LIME;
-    --rally-e6e4ea: LIME;
-    --rally-e6e6e6: LIME;
-    --rally-e6fde7: LIME;
-    --rally-e7e6b6: LIME;
-    --rally-e7e7e7: LIME;
-    --rally-e89c3f: LIME;
-    --rally-e8f2ff: LIME;
-    --rally-e99e99: LIME;
-    --rally-e9e9e9: LIME;
-    --rally-e9f8fe: LIME;
-    --rally-eaeaea: LIME;
-    --rally-eaecec: LIME;
-    --rally-eaf1fb: LIME;
-    --rally-ebeadb: LIME;
-    --rally-ebebd8: LIME;
-    --rally-ebebda: LIME;
-    --rally-ebebeb: LIME;
-    --rally-ebf3fd: LIME;
-    --rally-ec0000: LIME;
-    --rally-ecf2fb: LIME;
-    --rally-ecf8fb: LIME;
-    --rally-ededed: LIME;
-    --rally-edf8fb: LIME;
-    --rally-ee1c25: LIME;
-    --rally-eeeeee: LIME;
-    --rally-ef3e35: LIME;
-    --rally-ef3f35: LIME;
-    --rally-efd9d9: LIME;
-    --rally-efede7: LIME;
-    --rally-efefef: LIME;
-    --rally-eff1f1: LIME;
-    --rally-eff8fb: LIME;
-    --rally-f0f0f0: LIME;
-    --rally-f0f7f2: LIME;
-    --rally-f1f1f1: LIME;
-    --rally-f25147: LIME;
-    --rally-f2d3d0: LIME;
-    --rally-f3cfc7: LIME;
-    --rally-f3f7fb: LIME;
-    --rally-f4bf4b: LIME;
-    --rally-f4f0e8: LIME;
-    --rally-f4f4f4: LIME;
-    --rally-f4f7f8: LIME;
-    --rally-f5c6cb: LIME;
-    --rally-f5f8fd: LIME;
-    --rally-f66349: LIME;
-    --rally-f6a900: LIME;
-    --rally-f6f6f6: LIME;
-    --rally-f78bb8: LIME;
-    --rally-f7f7f7: LIME;
-    --rally-f7f8f8: LIME;
-    --rally-f8d7da: LIME;
-    --rally-f9a814: LIME;
-    --rally-f9f9f9: LIME;
-    --rally-fad200: LIME;
-    --rally-fad4e4: LIME;
-    --rally-fad800: LIME;
-    --rally-fad8af: LIME;
-    --rally-faedc8: LIME;
-    --rally-fafafa: LIME;
-    --rally-fbde98: LIME;
-    --rally-fbedca: LIME;
-    --rally-fbfbfb: LIME;
-    --rally-fcb5b1: LIME;
-    --rally-fcfcfc: LIME;
-    --rally-fdfecc: LIME;
-    --rally-fec2bd: LIME;
-    --rally-fec7c4: LIME;
-    --rally-fee276: LIME;
-    --rally-ff0000: LIME;
-    --rally-ff4545: LIME;
-    --rally-ff7870: LIME;
-    --rally-ff7f7f: LIME;
-    --rally-ffafaf: LIME;
-    --rally-ffc303: LIME;
-    --rally-ffc91c: LIME;
-    --rally-ffcccc: LIME;
-    --rally-ffd573: LIME;
-    --rally-ffe11a: LIME;
-
     --black-05: rgba(0, 0, 0, 0.05);
     --black-10: rgba(0, 0, 0, 0.1);
     --black-15: rgba(0, 0, 0, 0.15);
@@ -356,7 +18,7 @@
     --gray-70: #8b949e;
     --gray-60: #6e7681;
     --gray-50: #484f58;
-    --gray-40: #30363d;
+    --gray-40: #30363d /* was #1b1c1f */;
     --gray-30: #21262d;
     --gray-20: #161b22 /* some were #223 */;
     --gray-10: #0d1117;
@@ -593,7 +255,7 @@
     --button-warning-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-warning-accent-af);
 
     --button-feedback-bg: #ffc91c;
-    --button-feedback-icon: #707a8a;
+    --button-feedback-icon: var(--gray-70);
     --button-feedback-text: #444444;
     --button-feedback-focus-bg: #444444;
     --button-feedback-focus-text: #ffc91c;
@@ -759,7 +421,7 @@
     /*
      * Toggle > Handle
      */
-    --toggle-handle-bg: #707a8a;
+    --toggle-handle-bg: var(--gray-70);
     --toggle-handle-on-bg: #fff;
 
     /*
@@ -799,7 +461,7 @@
 
     --datatable-drag-text: #aaa;
 
-    --datatable-gripper-text: #707a8a;
+    --datatable-gripper-text: var(--gray-70);
 
     --datatable-resizer-border: #555;
     --datatable-resizer-active-border: #445;
@@ -2336,16 +1998,16 @@ span[style^="color:black"] {
 }
 
 .smb-Modal-title.smb-Modal-success {
-    color: var(--rally-2a854e);
+    color: var(--mnrl-successGreen-60);
 }
 
 .smb-Modal-title.smb-Modal--warning {
-    color: var(--rally-ad5f00);
+    color: var(--button-warning-accent);
 }
 
 .smb-Modal--feedback .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
-    background-color: var(--rally-ffc91c);
-    border-bottom-color: var(--rally-ffc91c);
+    background-color: var(--button-feedback-bg);
+    border-bottom-color: var(--button-feedback-bg);
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
@@ -2353,7 +2015,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
-    color: var(--rally-ad5f00);
+    color: var(--button-warning-accent);
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
@@ -2361,8 +2023,8 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
-    background-color: var(--rally-ad5f00);
-    border-color: var(--rally-ad5f00);
+    background-color: var(--button-warning-accent);
+    border-color: var(--button-warning-accent);
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
@@ -2443,20 +2105,20 @@ span[style^="color:black"] {
 
 .smb-Panel--default {
     background-color: var(--content-bg);
-    border-color: var(--rally-e6e6e6);
+    border-color: var(--content-border);
 }
 
 .smb-Panel--default > .smb-PanelHeader {
-    background-color: var(--rally-f6f6f6);
+    background-color: var(--content-bg);
 }
 
 .smb-Panel--default .smb-PanelBody {
-    border-top-color: var(--rally-e6e6e6);
+    border-top-color: var(--content-border);
 }
 
 .smb-Panel--well {
-    background-color: var(--rally-f6f6f6);
-    border-color: var(--rally-e6e6e6);
+    background-color: var(--content-bg);
+    border-color: var(--content-border);
 }
 
 /*
