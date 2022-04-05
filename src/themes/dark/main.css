@@ -51,7 +51,6 @@
     --rally-30aac7: LIME;
     --rally-317397: LIME;
     --rally-31b2bf: LIME;
-    --rally-3272d9: #3eb9f8;
     --rally-327c98: LIME;
     --rally-333333: LIME;
     --rally-333840: #ddd;
@@ -72,7 +71,6 @@
     --rally-408492: LIME;
     --rally-416aa3: LIME;
     --rally-416da3: LIME;
-    --rally-434a54: LIME;
     --rally-444444: LIME;
     --rally-44525e: LIME;
     --rally-464646: LIME;
@@ -88,7 +86,6 @@
     --rally-5496b1: LIME;
     --rally-5497ba: LIME;
     --rally-555555: LIME;
-    --rally-5691f0: #365b97;
     --rally-57c282: LIME;
     --rally-58606e: #ddd;
     --rally-5b5b5b: LIME;
@@ -133,7 +130,6 @@
     --rally-81a4d0: LIME;
     --rally-82d3ed: LIME;
     --rally-84a0c4: LIME;
-    --rally-84b1fa: LIME;
     --rally-888888: LIME;
     --rally-888d8e: LIME;
     --rally-8a1244: LIME;
@@ -174,7 +170,6 @@
     --rally-abedc5: LIME;
     --rally-aca899: LIME;
     --rally-acacac: LIME;
-    --rally-accbfc: LIME;
     --rally-ad5f00: LIME;
     --rally-afbacc: #555;
     --rally-b0b0b0: LIME;
@@ -226,7 +221,6 @@
     --rally-cf7911: LIME;
     --rally-cf871b: LIME;
     --rally-cfcedd: LIME;
-    --rally-cfe0fc: LIME;
     --rally-d0021b: LIME;
     --rally-d0d0d0: LIME;
     --rally-d0dddf: LIME;
@@ -303,7 +297,6 @@
     --rally-eff1f1: LIME;
     --rally-eff8fb: LIME;
     --rally-f0f0f0: LIME;
-    --rally-f0f5fc: LIME;
     --rally-f0f7f2: LIME;
     --rally-f1f1f1: LIME;
     --rally-f25147: LIME;
@@ -354,7 +347,6 @@
     --rally-ffd573: LIME;
     --rally-ffe11a: LIME;
     --rally-ffeeee: LIME;
-    --rally-ffffff: #112;
 
     --black-05: rgba(0, 0, 0, 0.05);
     --black-10: rgba(0, 0, 0, 0.1);
@@ -367,13 +359,42 @@
     --white-60: rgba(255, 255, 255, 0.6);
     --white-100: #fff;
 
-    --gray-80: #cbdfff;
-    --gray-100: #b0c1dd /* was #ddd */;
+    --gray-10: #0d1117;
+    --gray-20: #161b22;
+    --gray-30: #21262d;
+    --gray-40: #30363d;
+    --gray-50: #484f58;
+    --gray-60: #6e7681;
+    --gray-70: #8b949e;
+    --gray-80: #b1bac4 /* was #cbdfff */;
+    --gray-90: #c9d1d9;
+    --gray-100: #f0f6fc /* was #ddd */;
+
+    --mineralBlue-10: LIME;
+    --mineralBlue-20: LIME;
+    --mineralBlue-30: LIME;
+    --mineralBlue-40: #494991;
+    --mineralBlue-50: #365b97;
+    --mineralBlue-60: #3eb9f8;
+
+    --brand-10: var(--mineralBlue-10);
+    --brand-20: var(--mineralBlue-20);
+    --brand-30: var(--mineralBlue-30);
+    --brand-40: var(--mineralBlue-40);
+    --brand-50: var(--mineralBlue-50);
+    --brand-60: var(--mineralBlue-60);
+
+    --h1-color: var(--gray-100);
+    --h2-color: var(--gray-80);
+    --h3-color: var(--gray-80);
+    --h4-color: var(--gray-80);
+    --h5-color: var(--gray-100);
+    --h6-color: var(--gray-80);
 
     /*
      * Rally variable names
      */
-    --white: #112; /* yes, the var is named 'white' */
+    --white: var(--content-bg); /* yes, the var is named 'white' */
     --error: #b80d0d;
 
     /*
@@ -384,7 +405,7 @@
     --main-border: #555;
     --main-text: #ddd;
 
-    --content-bg: var(--white);
+    --content-bg: #112;
     --content-border: #555;
     --content-text: var(--main-text);
 
@@ -396,7 +417,7 @@
     --title-text: var(--gray-80);
     --subtitle-text: var(--gray-80);
 
-    --link-text: #3eb9f8;
+    --link-text: var(--brand-60);
 
     --invalid-color-1: #b80d0d;
     --invalid-color-2: #de1d1d;
@@ -416,7 +437,7 @@
 
     --hover-bg: #212142 /* was #50509f*/;
 
-    --hover-border: #494991;
+    --hover-border: var(--brand-50);
     --hover-text: #ddd;
 
     --mask-bg: #000 /* assumes opacity */;
@@ -529,7 +550,7 @@
     --button-jumboicon-border: var(--button-link-border);
     --button-jumboicon-text: var(--button-link-text);
     --button-jumboicon-active-bg: var(--rally-dde3ed);
-    --button-jumboicon-focus-bg: var(--rally-ffffff);
+    --button-jumboicon-focus-bg: var(--content-bg);
     --button-jumboicon-focus-border: var(--rally-1d5bbf);
     --button-jumboicon-hover-bg: var(--rally-ebeff5);
     --button-jumboicon-is_active-bg: var(--rally-dde3ed);
@@ -632,13 +653,13 @@
 
     --dropdown-item-is_active-text: var(--dropdown-item-text);
 
-    --dropdown-item-checkbox-checked-bg: var(--rally-5691f0);
-    --dropdown-item-checkbox-checked-border: var(--rally-5691f0);
-    --dropdown-item-checkbox-checked-text-before: var(--rally-ffffff);
+    --dropdown-item-checkbox-checked-bg: var(--mineralBlue-50);
+    --dropdown-item-checkbox-checked-border: var(--mineralBlue-50);
+    --dropdown-item-checkbox-checked-text-before: var(--content-bg);
 
     --dropdown-item-multiselect-selected-bg: transparent;
 
-    --dropdown-match-bg: var(--rally-accbfc);
+    --dropdown-match-bg: var(--mineralBlue-30);
     --dropdown-match-text: var(--dropdown-item-text);
 
     /*
@@ -822,18 +843,6 @@
     --disclaimer-bg: var(--tertiary-bg);
     --disclaimer-text: var(--tertiary-text);
 
-    /* Gray scale from github */
-    --color-auto-gray-0: #0d1117;
-    --color-auto-gray-1: #161b22;
-    --color-auto-gray-2: #21262d;
-    --color-auto-gray-3: #30363d;
-    --color-auto-gray-4: #484f58;
-    --color-auto-gray-5: #6e7681;
-    --color-auto-gray-6: #8b949e;
-    --color-auto-gray-7: #b1bac4;
-    --color-auto-gray-8: #c9d1d9;
-    --color-auto-gray-9: #f0f6fc;
-
     /*
      * @mineral SCSS colors
      */
@@ -843,27 +852,42 @@
 
     --mnrl-borderColor: var(--control-border);
 
-    --mnrl-gray-80: var(--gray-80);
-    --mnrl-gray-100: var(--gray-100);
 
     --mnrl-danger-border: var(--danger-border);
+
+    --mnrl-borderColor-brand-active: var(--button-active-border);
     --mnrl-color-brand-active: var(--button-active-text);
 
     --mnrl-borderColor-brand-focus: var(--focus-border);
-    --mnrl-borderColor-brand-hover: var(--hover-border);
     --mnrl-color-brand-focus: var(--focus-text);
+
+
+    --mnrl-brand-10: var(--brand-10);
+    --mnrl-brand-40: var(--brand-40);
+    --mnrl-brand-50: var(--brand-50);
+
+    --mnrl-borderColor-brand-hover: var(--mnrl-brand-50);
     --mnrl-color-brand-hover: var(--hover-text);
 
-    --mnrl-gray-00: var(--color-auto-gray-0);
-    --mnrl-gray-10: var(--color-auto-gray-1);
-    --mnrl-gray-20: var(--color-auto-gray-2);
-    --mnrl-gray-30: var(--color-auto-gray-3);
-    --mnrl-gray-40: var(--color-auto-gray-4);
-    --mnrl-gray-50: var(--color-auto-gray-5);
-    --mnrl-gray-60: var(--color-auto-gray-6);
-    --mnrl-gray-70: var(--color-auto-gray-7);
-    --mnrl-gray-90: var(--color-auto-gray-9);
+    /*--mnrl-gray-00: var(--gray-00);*/
+    --mnrl-gray-10: var(--gray-10);
+    --mnrl-gray-20: var(--gray-20);
+    --mnrl-gray-30: var(--gray-30);
+    --mnrl-gray-40: var(--gray-40);
+    --mnrl-gray-50: var(--gray-50);
+    --mnrl-gray-60: var(--gray-60);
+    --mnrl-gray-70: var(--gray-70);
+    --mnrl-gray-80: var(--gray-80);
+    --mnrl-gray-90: var(--gray-90);
+    --mnrl-gray-100: var(--gray-100);
     --mnrl-white: var(--white-100);
+
+    --mnrl-h6-color: var(--mnrl-gray-80);
+    --mnrl-h5-color: var(--mnrl-gray-100);
+    --mnrl-h4-color: var(--mnrl-gray-80);
+    --mnrl-h3-color: var(--mnrl-gray-80);
+    --mnrl-h2-color: var(--mnrl-gray-80);
+    --mnrl-h1-color: var(--mnrl-gray-100);
 }
 
 /****************************************************/
@@ -1024,11 +1048,6 @@ span[style^="color:black"] {
 #main .chr-ViewportProjectPickerTray a,
 #main .chr-WorkspacePicker-listItem .chr-WorkspacePicker-workspaceLink {
     color: var(--main-text);
-}
-
-.chr-ViewportProjectPickerHierarchy .chr-ViewportProjectPickerHierarchy-header > .smb-Button,
-.chr-ViewportProjectPickerHierarchy .chr-ViewportProjectPickerHierarchy-header > .chr-ViewportProjectPickerHierarchy-search > .smb-Button {
-    background-color: var(--viewport-button-bg);
 }
 
 .chr-WorkspacePicker-listItem.chr-WorkspacePicker-listItem--active {
@@ -1943,7 +1962,7 @@ span[style^="color:black"] {
  */
 .smb-Checkbox {
     background-color: var(--control-bg);
-    border-color: var(--mnrl-borderColor);
+    border-color: var(--control-border);
     box-shadow: 0 0.1rem 0.2rem var(--black-05);
 }
 
@@ -2000,7 +2019,7 @@ span[style^="color:black"] {
 
 .smb-DropdownList-listContentWrapper {
     background-color: var(--dropdown-bg);
-    border-color: var(--mnrl-borderColor);
+    border-color: var(--control-border);
     box-shadow: var(--dropdown-shadow);
 }
 
@@ -2254,12 +2273,12 @@ span[style^="color:black"] {
 .smb-SelectList {
     background-color: var(--dropdown-bg);
     box-shadow: 0 0.2rem 0.4rem 0 var(--black-10);
-    border-color: var(--mnrl-borderColor);
-    border-bottom-color: var(--mnrl-borderColor);
+    border-color: var(--control-border);
+    border-bottom-color: var(--control-border);
 }
 
 .smb-SelectList .smb-SelectList-list {
-    box-shadow: 0 0.2rem 0.2rem var(--mnrl-borderColor) var(--black-10);
+    box-shadow: 0 0.2rem 0.2rem var(--control-border) var(--black-10);
 }
 
 .smb-SelectList .smb-SelectList-divider {
@@ -2344,7 +2363,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
-    background-color: var(--rally-ffffff);
+    background-color: var(--content-bg);
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
@@ -2352,7 +2371,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
-    color: var(--rally-3272d9);
+    color: var(--mineralBlue-60);
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
@@ -2361,7 +2380,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
-    background-color: var(--rally-ffffff);
+    background-color: var(--content-bg);
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
@@ -2369,7 +2388,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
-    color: var(--rally-3272d9);
+    color: var(--mineralBlue-60);
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
@@ -2437,7 +2456,7 @@ span[style^="color:black"] {
 }
 
 .smb-Panel--default {
-    background-color: var(--rally-ffffff);
+    background-color: var(--content-bg);
     border-color: var(--rally-e6e6e6);
 }
 
@@ -2965,7 +2984,7 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 }
 
 .alm-header-container .smb-DropdownList .smb-DropdownList-list {
-    box-shadow: 0 0.4rem 0.8rem 0 var(--black-20), 0 0.2rem 0.4rem 0 var(--black-20), 0 0 0 0.1rem var(--mnrl-borderColor);
+    box-shadow: 0 0.4rem 0.8rem 0 var(--black-20), 0 0.2rem 0.4rem 0 var(--black-20), 0 0 0 0.1rem var(--control-border);
 }
 
 .chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
