@@ -36,7 +36,6 @@
     --rally-181818: LIME;
     --rally-1b376c: LIME;
     --rally-1d1f24: LIME;
-    --rally-1d5bbf: #777;
     --rally-20465f: LIME;
     --rally-20693d: LIME;
     --rally-21516d: LIME;
@@ -180,7 +179,6 @@
     --rally-b5b8c8: LIME;
     --rally-b5d8eb: LIME;
     --rally-b7c8d7: LIME;
-    --rally-b80d0d: #b80d0d;
     --rally-b81b10: LIME;
     --rally-b8cfee: LIME;
     --rally-b8f1ff: LIME;
@@ -246,9 +244,7 @@
     --rally-dce0e0: LIME;
     --rally-dd7870: LIME;
     --rally-dddddd: LIME;
-    --rally-dde3ed: LIME;
     --rally-ddecfe: LIME;
-    --rally-de1b1b: #de1b1b;
     --rally-deecfd: LIME;
     --rally-dfe8f6: LIME;
     --rally-dfe9f6: LIME;
@@ -279,7 +275,6 @@
     --rally-ebebd8: LIME;
     --rally-ebebda: LIME;
     --rally-ebebeb: LIME;
-    --rally-ebeff5: #223;
     --rally-ebf3fd: LIME;
     --rally-ec0000: LIME;
     --rally-ecf2fb: LIME;
@@ -306,9 +301,7 @@
     --rally-f4f0e8: LIME;
     --rally-f4f4f4: LIME;
     --rally-f4f7f8: LIME;
-    --rally-f55353: LIME;
     --rally-f5c6cb: LIME;
-    --rally-f5f7fa: #111;
     --rally-f5f8fd: LIME;
     --rally-f66349: LIME;
     --rally-f6a900: LIME;
@@ -319,7 +312,6 @@
     --rally-f8d7da: LIME;
     --rally-f9a814: LIME;
     --rally-f9f9f9: LIME;
-    --rally-fa8e8e: LIME;
     --rally-fad200: LIME;
     --rally-fad4e4: LIME;
     --rally-fad800: LIME;
@@ -345,7 +337,6 @@
     --rally-ffcccc: LIME;
     --rally-ffd573: LIME;
     --rally-ffe11a: LIME;
-    --rally-ffeeee: LIME;
 
     --black-05: rgba(0, 0, 0, 0.05);
     --black-10: rgba(0, 0, 0, 0.1);
@@ -358,38 +349,28 @@
     --white-60: rgba(255, 255, 255, 0.6);
     --white-100: #fff;
 
-    --gray-10: #0d1117;
-    --gray-20: #161b22;
-    --gray-30: #21262d;
-    --gray-40: #30363d;
-    --gray-50: #484f58;
-    --gray-60: #6e7681;
-    --gray-70: #8b949e;
-    --gray-80: #b1bac4 /* was #cbdfff */;
-    --gray-90: #c9d1d9;
+    /* dark mode grays are reversed (100 ~= white, 0 ~= black) */
     --gray-100: #f0f6fc /* was #ddd */;
+    --gray-90: #c9d1d9;
+    --gray-80: #b1bac4 /* was #cbdfff */;
+    --gray-70: #8b949e;
+    --gray-60: #6e7681;
+    --gray-50: #484f58;
+    --gray-40: #30363d;
+    --gray-30: #21262d;
+    --gray-20: #161b22 /* some were #223 */;
+    --gray-10: #0d1117;
 
-    --mineralBlue-100: #15233b;
-    --mineralBlue-90: #103570;
-    --mineralBlue-80: #114599;
-    --mineralBlue-70: #1d5bbf;
-    --mineralBlue-60: #3272d9;
-    --mineralBlue-50: #5691f0;
-    --mineralBlue-40: #84b1fa;
-    --mineralBlue-30: #accbfc;
-    --mineralBlue-20: #cfe0fc;
-    --mineralBlue-10: #f0f5fc;
-
-    --brand-10: var(--mineralBlue-10);
-    --brand-20: var(--mineralBlue-20);
-    --brand-30: var(--mineralBlue-30);
-    --brand-40: var(--mineralBlue-40);
-    --brand-50: var(--mineralBlue-50);
-    --brand-60: var(--mineralBlue-60);
-    --brand-70: var(--mineralBlue-70);
-    --brand-80: var(--mineralBlue-80);
-    --brand-90: var(--mineralBlue-90);
-    --brand-100: var(--mineralBlue-100);
+    --brand-10: var(--mnrl-mineralBlue-10);
+    --brand-20: var(--mnrl-mineralBlue-20);
+    --brand-30: var(--mnrl-mineralBlue-30);
+    --brand-40: var(--mnrl-mineralBlue-40);
+    --brand-50: var(--mnrl-mineralBlue-50);
+    --brand-60: var(--mnrl-mineralBlue-60);
+    --brand-70: var(--mnrl-mineralBlue-70);
+    --brand-80: var(--mnrl-mineralBlue-80);
+    --brand-90: var(--mnrl-mineralBlue-90);
+    --brand-100: var(--mnrl-mineralBlue-100);
 
     --h1-color: var(--gray-100);
     --h2-color: var(--gray-80);
@@ -402,7 +383,7 @@
      * Rally variable names
      */
     --white: var(--content-bg); /* yes, the var is named 'white' */
-    --error: #b80d0d;
+    --error: var(--mnrl-dangerRed-70);
 
     /*
      * Main
@@ -428,17 +409,17 @@
 
     --link-text: var(--brand-60);
 
-    --invalid-color-1: #b80d0d;
-    --invalid-color-2: #de1d1d;
+    --invalid-color-1: var(--mnrl-dangerRed-70);
+    --invalid-color-2: var(--mnrl-dangerRed-60);
 
-    --danger-border: #f55353;
+    --danger-border: var(--mnrl-dangerRed-50);
 
-    --required-text: #de1b1b;
+    --required-text: var(--mnrl-dangerRed-60);
 
     /*
      * Main > States
      */
-    --disabled-bg: #161b22;
+    --disabled-bg: var(--gray-20);
     --disabled-text: #666e79;
     --placeholder-text: var(--disabled-text);
     --focus-border: #777;
@@ -457,7 +438,7 @@
      * Main > Colors
      */
     --blocked-bg: #323030;
-    --blocked-border: #de1b1b;
+    --blocked-border: var(--mnrl-dangerRed-60);
 
     --ready-bg: #2d322f;
     --ready-border: #2a854e;
@@ -526,7 +507,7 @@
     --button-secondarydark-text: var(--button-text);
     --button-secondarydark-active-bg: var(--button-active-bg);
     --button-secondarydark-focus-bg: var(--button-secondarydark-bg);
-    --button-secondarydark-focus-border: var(--rally-1d5bbf);
+    --button-secondarydark-focus-border: var(--mnrl-mineralBlue-70);
     --button-secondarydark-focus-shadow: var(--button-focus-shadow);
     --button-secondarydark-focus-text: var(--button-secondarydark-text);
     --button-secondarydark-hover-bg: var(--button-hover-bg);
@@ -545,25 +526,25 @@
     --button-link-border: var(--button-link-bg);
     --button-link-icon: var(--button-link-text);
     --button-link-text: var(--link-text);
-    --button-link-active-bg: var(--rally-ebeff5);
-    --button-link-focus-border: var(--rally-1d5bbf);
-    --button-link-hover-bg: var(--rally-f5f7fa);
-    --button-link-hover-border: var(--rally-f5f7fa);
+    --button-link-active-bg: var(--gray-20);
+    --button-link-focus-border: var(--mnrl-mineralBlue-70);
+    --button-link-hover-bg: var(--gray-10);
+    --button-link-hover-border: var(--gray-10);
     --button-link-hover-text: var(--button-link-text);
-    --button-link-is_active-bg: var(--rally-ebeff5);
-    --button-link-is_active-border: var(--rally-1d5bbf);
+    --button-link-is_active-bg: var(--gray-20);
+    --button-link-is_active-border: var(--mnrl-mineralBlue-70);
     --button-link-is_active-hover-bg: var(--button-link-hover-bg);
     --button-link-is_active-hover-border: var(--button-link-is_active-border);
 
     --button-jumboicon-bg: var(--button-link-bg);
     --button-jumboicon-border: var(--button-link-border);
     --button-jumboicon-text: var(--button-link-text);
-    --button-jumboicon-active-bg: var(--rally-dde3ed);
+    --button-jumboicon-active-bg: var(--gray-30);
     --button-jumboicon-focus-bg: var(--content-bg);
-    --button-jumboicon-focus-border: var(--rally-1d5bbf);
-    --button-jumboicon-hover-bg: var(--rally-ebeff5);
-    --button-jumboicon-is_active-bg: var(--rally-dde3ed);
-    --button-jumboicon-is_active-border: var(--rally-1d5bbf);
+    --button-jumboicon-focus-border: var(--mnrl-mineralBlue-70);
+    --button-jumboicon-hover-bg: var(--gray-20);
+    --button-jumboicon-is_active-bg: var(--gray-30);
+    --button-jumboicon-is_active-border: var(--mnrl-mineralBlue-70);
     --button-jumboicon-children: var(--gray-80);
     --button-jumboicon-disabled-bg: var(--button-jumboicon-bg);
     --button-jumboicon-disabled-border: var(--button-jumboicon-border);
@@ -596,9 +577,9 @@
     --group-button-is_active-hover-border: var(--group-button-is_active-hover-bg);
     --group-button-is_active-hover-text: var(--group-button-is_active-text);
 
-    --button-failure-accent: #de1b1b;
-    --button-failure-accent-hover: #f55353;
-    --button-failure-accent-af: #b80d0d;
+    --button-failure-accent: var(--mnrl-dangerRed-60);
+    --button-failure-accent-hover: var(--mnrl-dangerRed-50);
+    --button-failure-accent-af: var(--mnrl-dangerRed-70);
     --button-failure-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-failure-accent-af);
 
     --button-success-accent: #2a854e;
@@ -641,7 +622,7 @@
     --dropdown-focus-shadow: var(--control-focus-shadow);
     --dropdown-focus-border: var(--control-focus-border);
 
-    --dropdown-divider-bg: var(--rally-ebeff5);
+    --dropdown-divider-bg: var(--gray-20);
 
     --dropdown-list-shadow: 0 0.2rem 0.2rem var(--control-border) var(--black-10);
 
@@ -655,20 +636,20 @@
 
     --dropdown-item-text: var(--gray-100);
     --dropdown-item-subtext: var(--gray-80);
-    --dropdown-item-hover-bg: var(--rally-ebeff5);
+    --dropdown-item-hover-bg: var(--gray-20);
     --dropdown-item-hover-text: var(--hover-text);
     --dropdown-item-is_active-bg: #2929c4;
     --dropdown-item-is_primary-bg: var(--link-text);
 
     --dropdown-item-is_active-text: var(--dropdown-item-text);
 
-    --dropdown-item-checkbox-checked-bg: var(--mineralBlue-50);
-    --dropdown-item-checkbox-checked-border: var(--mineralBlue-50);
+    --dropdown-item-checkbox-checked-bg: var(--mnrl-mineralBlue-50);
+    --dropdown-item-checkbox-checked-border: var(--mnrl-mineralBlue-50);
     --dropdown-item-checkbox-checked-text-before: var(--content-bg);
 
     --dropdown-item-multiselect-selected-bg: transparent;
 
-    --dropdown-match-bg: var(--mineralBlue-30);
+    --dropdown-match-bg: var(--mnrl-mineralBlue-30);
     --dropdown-match-text: var(--dropdown-item-text);
 
     /*
@@ -713,8 +694,8 @@
     --popover-shadow: 0 0 0 0.1rem var(--tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
     --popover-title-text: var(--title-text);
     --popover-text: var(--content-text);
-    --popover-invalid-bg: #b80d0d;
-    --popover-invalid-border: #b80d0d;
+    --popover-invalid-bg: var(--mnrl-dangerRed-70);
+    --popover-invalid-border: var(--mnrl-dangerRed-70);
     --popover-invalid-shadow: 0 0 0 0.1rem var(--popover-invalid-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
 
     /*
@@ -853,14 +834,13 @@
     --disclaimer-text: var(--tertiary-text);
 
     /*
-     * @mineral SCSS colors
+     * @mineral overrides
      */
     --mnrl-backgroundColor-disabled: var(--disabled-bg);
     --mnrl-color-disabled: var(--disabled-text);
     --mnrl-input-color-placeholder: var(--placeholder-text);
 
     --mnrl-borderColor: var(--control-border);
-
 
     --mnrl-danger-border: var(--danger-border);
 
@@ -870,15 +850,19 @@
     --mnrl-borderColor-brand-focus: var(--focus-border);
     --mnrl-color-brand-focus: var(--focus-text);
 
-
-    --mnrl-brand-10: var(--brand-10);
-    --mnrl-brand-40: var(--brand-40);
-    --mnrl-brand-50: var(--brand-50);
-
-    --mnrl-borderColor-brand-hover: var(--mnrl-brand-50);
     --mnrl-color-brand-hover: var(--hover-text);
 
-    /*--mnrl-gray-00: var(--gray-00);*/
+    --mnrl-brand-10: var(--brand-10);
+    --mnrl-brand-20: var(--brand-20);
+    --mnrl-brand-30: var(--brand-30);
+    --mnrl-brand-40: var(--brand-40);
+    --mnrl-brand-50: var(--brand-50);
+    --mnrl-brand-60: var(--brand-60);
+    --mnrl-brand-70: var(--brand-70);
+    --mnrl-brand-80: var(--brand-80);
+    --mnrl-brand-90: var(--brand-90);
+    --mnrl-brand-100: var(--brand-100);
+
     --mnrl-gray-10: var(--gray-10);
     --mnrl-gray-20: var(--gray-20);
     --mnrl-gray-30: var(--gray-30);
@@ -890,13 +874,6 @@
     --mnrl-gray-90: var(--gray-90);
     --mnrl-gray-100: var(--gray-100);
     --mnrl-white: var(--white-100);
-
-    --mnrl-h6-color: var(--mnrl-gray-80);
-    --mnrl-h5-color: var(--mnrl-gray-100);
-    --mnrl-h4-color: var(--mnrl-gray-80);
-    --mnrl-h3-color: var(--mnrl-gray-80);
-    --mnrl-h2-color: var(--mnrl-gray-80);
-    --mnrl-h1-color: var(--mnrl-gray-100);
 }
 
 /****************************************************/
@@ -2355,7 +2332,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal-title.smb-Modal-danger {
-    color: var(--rally-de1b1b);
+    color: var(--mnrl-dangerRed-60);
 }
 
 .smb-Modal-title.smb-Modal-success {
@@ -2380,7 +2357,7 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
-    color: var(--mineralBlue-60);
+    color: var(--mnrl-mineralBlue-60);
 }
 
 .smb-Modal--warning .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
@@ -2393,16 +2370,16 @@ span[style^="color:black"] {
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
-    color: var(--rally-de1b1b);
+    color: var(--mnrl-dangerRed-60);
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
-    color: var(--mineralBlue-60);
+    color: var(--mnrl-mineralBlue-60);
 }
 
 .smb-Modal--danger .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
-    background-color: var(--rally-de1b1b);
-    border-color: var(--rally-de1b1b);
+    background-color: var(--mnrl-dangerRed-60);
+    border-color: var(--mnrl-dangerRed-60);
 }
 
 /*
@@ -2710,7 +2687,7 @@ span[style^="color:black"] {
 }
 
 .smb-TextInput--danger {
-    border-color: var(--rally-de1b1b);
+    border-color: var(--mnrl-dangerRed-60);
 }
 
 .smb-TextInput--danger:hover:not(.is-disabled):not(.is-readOnly) {
@@ -3007,7 +2984,7 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 /****************************************************/
 /****************************************************/
 .chr-DisplayPreferencesModal .smb-Panel .smb-PanelBody {
-    background-color: var(--rally-ebeff5);
+    background-color: var(--gray-20);
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayDescription {
