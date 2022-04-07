@@ -2565,6 +2565,8 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 /* Images so they don't POP white (they'll still be white because they are.) */
 .style_4 {
     background-color: #000;
+    /* make glare tolerable */
+    opacity: 0.5;
 }
 
 .rally-group-header.multi-object-picker-header {
