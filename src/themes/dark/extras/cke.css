@@ -4,16 +4,16 @@
 
 /* CKE's rules are... ugh. */
 .cke_reset_all {
-    background-color: var(--main-bg);
-    border-color: var(--main-border);
-    color: var(--main-text);
+    background-color: var(--main-primary-bg);
+    border-color: var(--main-primary-border);
+    color: var(--main-primary-text);
 }
 
 .cke_reset_all *,
 .cke_reset_all a,
 .cke_reset_all textarea {
-    /* border-color: var(--main-border); */
-    color: var(--main-text);
+    /* border-color: var(--main-primary-border); */
+    color: var(--main-primary-text);
 }
 
 /* Text Editor : Toolbar -- icons limit what we can do here... */
@@ -121,7 +121,7 @@ select.cke_dialog_ui_input_select {
 }
 
 .cke_dialog_title {
-    color: var(--title-text);
+    color: var(--main-title-text);
     text-shadow: none;
 }
 

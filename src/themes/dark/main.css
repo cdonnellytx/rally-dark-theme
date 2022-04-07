@@ -1,70 +1,8 @@
 /* Global */
 :root {
-    --black-05: rgba(0, 0, 0, 0.05);
-    --black-10: rgba(0, 0, 0, 0.1);
-    --black-15: rgba(0, 0, 0, 0.15);
-    --black-20: rgba(0, 0, 0, 0.2);
-    --black-40: rgba(0, 0, 0, 0.4);
-    --black-45: rgba(0, 0, 0, 0.45);
-    --black-50: rgba(0, 0, 0, 0.5);
-    --black-80: rgba(0, 0, 0, 0.8);
-
-    /* dark mode grays are reversed (100 ~= white, 0 ~= black)
-     * x % 10 == 5 are interpolated
-     */
-    --mnrl-gray-100: #f0f6fc /* was #dddddd */;
-    --mnrl-gray-95: #dce3ea;
-    --mnrl-gray-90: #c9d1d9;
-    --mnrl-gray-85: #bcc5ce;
-    --mnrl-gray-80: #b1bac4 /* was #cbdfff */;
-    --mnrl-gray-75: #9da6b0;
-    --mnrl-gray-70: #8b949e;
-    --mnrl-gray-65: #7c848f;
-    --mnrl-gray-60: #6e7681;
-    --mnrl-gray-55: #5a626c;
-    --mnrl-gray-50: #484f58;
-    --mnrl-gray-45: #3b424a;
-    --mnrl-gray-40: #30363d /* was #1b1c1f */;
-    --mnrl-gray-35: #282d34;
-    --mnrl-gray-30: #21262d;
-    --mnrl-gray-25: #1b2027;
-    --mnrl-gray-20: #161b22 /* some were #222233 */;
-    --mnrl-gray-15: #12161c;
-    --mnrl-gray-10: #0d1117;
-    --mnrl-gray-05: #0b080c;
-
-    --h1-color: var(--mnrl-gray-100);
-    --h2-color: var(--mnrl-gray-80);
-    --h3-color: var(--mnrl-gray-80);
-    --h4-color: var(--mnrl-gray-80);
-    --h5-color: var(--mnrl-gray-100);
-    --h6-color: var(--mnrl-gray-80);
-
     /*
      * Main
      */
-
-    --main-bg: #111;
-    --main-border: #555;
-    --main-shadow: #444;
-    --main-text: var(--mnrl-gray-100);
-
-    --header-text: var(--mnrl-gray-100);
-
-    --content-bg: #112;
-    --content-border: #555;
-    --content-text: var(--main-text);
-
-    --tertiary-bg: #223;
-    --tertiary-border: #555;
-    --tertiary-text: var(--mnrl-gray-70);
-
-    --header-border: #37383b;
-    --title-text: var(--mnrl-gray-80);
-    --subtitle-text: var(--mnrl-gray-80);
-
-    --link-text: var(--mnrl-brand-60);
-
     --invalid-color-1: var(--mnrl-dangerRed-70);
     --invalid-color-2: var(--mnrl-dangerRed-60);
 
@@ -75,18 +13,8 @@
     /*
      * Main > States
      */
-    --disabled-bg: var(--mnrl-gray-20);
-    --disabled-text: #666e79;
-    --placeholder-text: var(--disabled-text);
-    --focus-border: #777;
-    --focus-text: #ddd;
 
-    --hover-bg: #212142 /* was #50509f*/;
 
-    --hover-border: var(--mnrl-brand-50);
-    --hover-text: #ddd;
-
-    --mask-bg: #000 /* assumes opacity */;
 
     /* selected: no commonalities */
 
@@ -348,7 +276,7 @@
      */
     --popover-bg: var(--content-bg);
     --popover-shadow: 0 0 0 0.1rem var(--tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
-    --popover-title-text: var(--title-text);
+    --popover-title-text: var(--main-title-text);
     --popover-text: var(--content-text);
     --popover-invalid-bg: var(--mnrl-dangerRed-70);
     --popover-invalid-border: var(--mnrl-dangerRed-70);
@@ -361,10 +289,10 @@
     --tab-text: #ddd;
     --tab-focus-bg: #292929;
     --tab-focus-border: var(--link-text);
-    --tab-hover-bg: var(--main-bg);
+    --tab-hover-bg: var(--main-primary-bg);
     --tab-is_active-bg: #2929c4;
     --tab-is_active-border: #2525b3;
-    --tab-is_active-focus-bg: var(--main-bg);
+    --tab-is_active-focus-bg: var(--main-primary-bg);
     --tab-is_active-text: #ddd;
 
     /*
@@ -442,7 +370,7 @@
 
     /* Data Table */
 
-    --datatable-bg: var(--main-bg);
+    --datatable-bg: var(--main-primary-bg);
     --datatable-text: #bbb;
 
     --datatable-row-bg: #1f1f29;
@@ -516,8 +444,8 @@
 
 body,
 #main {
-    background-color: var(--main-bg);
-    color: var(--main-text);
+    background-color: var(--main-primary-bg);
+    color: var(--main-primary-text);
 }
 
 a,
@@ -535,7 +463,7 @@ span[style^="color:black"] {
 
 #main #content,
 #main #content .page {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 ::-webkit-scrollbar {
@@ -668,7 +596,7 @@ span[style^="color:black"] {
 
 #main .chr-ViewportProjectPickerTray a,
 #main .chr-WorkspacePicker-listItem .chr-WorkspacePicker-workspaceLink {
-    color: var(--main-text);
+    color: var(--main-primary-text);
 }
 
 .chr-WorkspacePicker-listItem.chr-WorkspacePicker-listItem--active {
@@ -723,7 +651,7 @@ span[style^="color:black"] {
 #main .chr-PlanTeamPage,
 #main .chr-BacklogPage,
 #main .chr-CollectionEditor {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 #main .chr-PlanTeamPage > .smb-Header {
@@ -732,7 +660,7 @@ span[style^="color:black"] {
 
 .project-picker .project-nav-button,
 .smb-HeaderTitle {
-    color: var(--header-text);
+    color: var(--main-header-text);
 }
 
 #main .chr-PlanTeamPage .chr-PlanTeamPage-columnDivider {
@@ -757,7 +685,7 @@ span[style^="color:black"] {
 }
 
 #main .chr-FullDetailOverlay {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 #main .chr-FullDetailPage {
@@ -920,7 +848,7 @@ span[style^="color:black"] {
 
 /* Team Board */
 #main .chr-BoardRow {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 #main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-column,
@@ -2025,14 +1953,14 @@ span[style^="color:black"] {
 .smb-PageHeader--roomy .smb-HeaderTitle,
 .smb-PageHeader--comfortable .smb-HeaderTitle,
 .smb-PageHeader--compact .smb-HeaderTitle {
-    color: var(--header-text);
+    color: var(--main-header-text);
 }
 
 .smb-Header,
 .smb-PageHeader--roomy .smb-Header,
 .smb-PageHeader--comfortable .smb-Header,
 .smb-PageHeader--compact .smb-Header {
-    border-bottom-color: var(--header-border);
+    border-bottom-color: var(--main-header-border);
 }
 
 /*
@@ -2115,15 +2043,15 @@ span[style^="color:black"] {
 }
 
 .smb-Popover.smb-Popover--datatable {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 .smb-Popover.smb-Popover--datatable > .smb-Popover-arrow {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 .smb-Popover.smb-Popover--datatable > .smb-Popover-arrow:after {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 .smb-Popover-header .smb-Popover-title {
@@ -2433,7 +2361,7 @@ span[style^="color:black"] {
 
 #main .chr-SavedViewsCollectionsDataTable-title,
 #main .chr-SavedViewsSelect-label {
-    color: var(--title-text);
+    color: var(--main-title-text);
 }
 
 #main .chr-SavedViewsSelect .smb-DropdownList-footer,
@@ -2478,7 +2406,7 @@ span[style^="color:black"] {
 #main .chr-PlanTeamPage,
 #main .chr-BacklogPage,
 #main .chr-CollectionEditor {
-    background-color: var(--main-bg);
+    background-color: var(--main-primary-bg);
 }
 
 /*
@@ -2572,7 +2500,7 @@ span[style^="color:black"] {
 /* CHR > QuickDetail > AttributeEditor */
 h2 .chr-QuickDetailAttributeEditorWrapper-label,
 h3 .chr-QuickDetailAttributeEditorWrapper-label {
-    color: var(--header-text);
+    color: var(--main-header-text);
 }
 
 .chr-QuickDetailEntityHeader .chr-QuickDetailEntityHeader-topContainer .chr-QuickDetailEntityHeader-middleContainer .chr-QuickDetailAttributeEditorWrapper--name .smb-TextInput-input {
@@ -2622,11 +2550,11 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayExamples h3 {
-    color: var(--title-text);
+    color: var(--main-title-text);
 }
 
 .chr-Page.chr-IterationStatusPage .chr-IterationStatusPage-iterationPicker .chr-IterationPicker-label {
-    color: var(--title-text);
+    color: var(--main-title-text);
 }
 
 .chr-StatusFieldRenderer .chr-StatusFieldRenderer-text {

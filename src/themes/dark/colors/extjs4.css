@@ -40,8 +40,8 @@
     /* ExtJS name equivalents */
     --x4-ie-shadow: #777777;
 
-    --x4-bg: var(--main-bg);
-    --x4-text: var(--main-text);
+    --x4-primary-bg: var(--main-primary-bg);
+    --x4-primary-text: var(--main-primary-text);
 
     --x4-secondary-text: var(--x4-gray-99);
 
@@ -51,7 +51,7 @@
     --x4-control-border: var(--x4-gray-40);
     --x4-control-text: var(--x4-gray-99);
 
-    --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
+    --x4-dd-drag-border: var(--main-primary-border) var(--main-primary-shadow) var(--main-primary-shadow) var(--main-primary-border);
 
     --x4-form-invalid-text: var(--x4-muted-text);
 

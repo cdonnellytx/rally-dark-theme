@@ -5,9 +5,9 @@
     background-color: var(--x4-proxy-bg);
 }
 .x4-dd-drag-ghost {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
     border-color: var(--x4-dd-drag-border);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-dd-drop-ok .x4-dd-drop-icon {
 }
@@ -16,10 +16,10 @@
 .x4-dd-drop-nodrop div.x4-dd-drop-icon {
 }
 .x4-resizable-overlay {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-body {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-focus-frame-top,
 .x4-focus-frame-bottom {
@@ -840,8 +840,8 @@
 .x4-panel-header-text-container-default {
 }
 .x4-panel-body-default {
-    background-color: var(--x4-bg);
-    color: var(--x4-text);
+    background-color: var(--x4-primary-bg);
+    color: var(--x4-primary-text);
 }
 .x4-panel-header-default {
     background-image: none;
@@ -886,7 +886,7 @@
 .x4-panel-header-text-container-default-framed {
 }
 .x4-panel-body-default-framed {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-panel-default-framed {
 }
@@ -1187,11 +1187,11 @@
 }
 .x4-tip-form-invalid {
     background-image: none;
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     background-image: linear-gradient(top, #ffffff, var(--x4-gray-10));
 }
 .x4-tip-form-invalid-mc {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-nlg .x4-tip-form-invalid {
 }
@@ -1303,7 +1303,7 @@
 .x4-window-default:after {
 }
 .x4-window-body-default {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-window-header-default {
 }
@@ -1500,10 +1500,10 @@
 .x4-form-invalid-icon {
 }
 .x4-form-item-label {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-form-field {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-form-type-text textarea.x4-form-invalid-field,
 .x4-form-type-text input.x4-form-invalid-field,
@@ -1517,11 +1517,11 @@
 .x4-form-type-search input.x4-form-invalid-field,
 .x4-form-type-tel textarea.x4-form-invalid-field,
 .x4-form-type-tel input.x4-form-invalid-field {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-form-text {
-    color: var(--x4-text);
-    background-color: var(--x4-bg);
+    color: var(--x4-primary-text);
+    background-color: var(--x4-primary-bg);
     border-color: var(--x4-control-border);
 }
 .x4-form-focus {
@@ -1531,7 +1531,7 @@ textarea.x4-form-empty-field {
     color: var(--x4-gray-75);
 }
 .x4-form-display-field {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-message-box .x4-window-body {
 }
@@ -1550,7 +1550,7 @@ textarea.x4-form-empty-field {
 .x4-check-group-alt {
 }
 .x4-form-check-group-label {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-fieldset {
 }
@@ -1578,7 +1578,7 @@ textarea.x4-form-empty-field {
 }
 div.x4-form-spinner-up,
 div.x4-form-spinner-down {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-toolbar-item div.x4-form-spinner-up,
 .x4-toolbar-item div.x4-form-spinner-down {
@@ -1614,7 +1614,7 @@ div.x4-form-spinner-down {
 }
 .x4-datepicker {
     border-color: var(--x4-control-border);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-datepicker-header {
     background-image: none;
@@ -1647,10 +1647,10 @@ div.x4-form-spinner-down {
 .x4-datepicker-cell {
 }
 .x4-datepicker-date {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 a.x4-datepicker-date:hover {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-datepicker-selected {
 }
@@ -1672,11 +1672,11 @@ a.x4-datepicker-date:hover {
 .x4-datepicker-footer,
 .x4-monthpicker-buttons {
     background-image: none;
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-monthpicker {
     border-color: var(--x4-control-border);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-monthpicker-months {
     border-color: var(--x4-control-border);
@@ -1688,7 +1688,7 @@ a.x4-monthpicker-item-inner:hover {
 .x4-monthpicker-selected {
 }
 .x4-monthpicker-yearnav-button {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-monthpicker-yearnav-next {
 }
@@ -1700,10 +1700,10 @@ a.x4-monthpicker-item-inner:hover {
     color: var(--x4-gray-75);
 }
 .x4-color-picker {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-color-picker-item {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 a.x4-color-picker-item:hover {
 }
@@ -1757,18 +1757,18 @@ a.x4-color-picker-item:hover {
 .x4-menu-item div.x4-edit-createlink {
 }
 .x4-html-editor-wrap textarea {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-grid-body {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-grid-empty {
     color: var(--x4-gray-75);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-grid-cell {
     color: transparent;
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     border-color: var(--x4-control-border);
 }
 .x4-grid-row-alt .x4-grid-td {
@@ -1871,7 +1871,7 @@ a.x4-color-picker-item:hover {
 }
 .x4-column-header {
     border-right-color: var(--x4-gray-45);
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
     background-image: none;
 }
 .x4-group-sub-header {
@@ -1907,7 +1907,7 @@ a.x4-color-picker-item:hover {
 .x4-grid-checkcolumn {
 }
 .x4-grid-group-hd {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-grid-group-hd-collapsible .x4-grid-group-title {
 }
@@ -1989,10 +1989,10 @@ a.x4-color-picker-item:hover {
 .x4-grid-cell-inner-property-name {
 }
 .x4-accordion-layout-ct {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-accordion-hd .x4-panel-header-text-container {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
 }
 .x4-accordion-item .x4-accordion-hd {
 }
@@ -2027,7 +2027,7 @@ a.x4-color-picker-item:hover {
 }
 .x4-menu-icon-separator {
     border-left-color: var(--x4-gray-25);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-menu-item-active {
     background-image: none;
@@ -2053,7 +2053,7 @@ a.x4-color-picker-item:hover {
 }
 .x4-menu-item-separator {
     border-top-color: var(--x4-gray-25);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-menu-item-arrow {
 }
@@ -2075,7 +2075,7 @@ a.x4-color-picker-item:hover {
 .x4-tool-img {
 }
 .x4-resizable-handle {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-resizable-proxy {
 }
@@ -2668,16 +2668,16 @@ div.banner {
 div.banner .dismiss-btn {
 }
 .x4-boundlist {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-boundlist .x4-boundlist-item {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     border-left-color: var(--x4-gray-35);
     border-right-color: var(--x4-gray-35);
     color: var(--x4-muted-text);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     border-color: var(--x4-gray-35);
     color: var(--x4-control-text);
 }
@@ -2689,11 +2689,11 @@ div.banner .dismiss-btn {
     color: var(--x4-gray-70);
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     border-color: var(--x4-gray-35);
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-item-over {
 }
@@ -2848,7 +2848,7 @@ div.banner .dismiss-btn {
 }
 .x4-btn.toggle {
     border-color: var(--x4-gray-35);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .x4-btn.toggle.rly-active,
 .x4-btn.toggle.rly-active:hover {
@@ -2934,7 +2934,7 @@ div.banner .dismiss-btn {
 .x4-btn.highlight.secondary,
 .x4-btn.highlight.secondary tr td {
     background-image: none;
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     border-color: var(--x4-gray-35);
 }
 .x4-btn.primary.secondary span,
@@ -3186,7 +3186,7 @@ div.banner .dismiss-btn {
 }
 .rui-card {
     box-shadow: var(--x4-gray-35) 2px 2px;
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .rui-card .artifact-color {
     background-color: var(--x4-gray-65);
@@ -3246,13 +3246,13 @@ div.banner .dismiss-btn {
 }
 .cardboard .column-container .column-header .editableField:hover {
     border-color: var(--x4-gray-25);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .cardboard .column-container .column-header .column-card-count {
     color: var(--x4-gray-70);
 }
 .cardboard .column-container .column-header .policy {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     color: var(--x4-gray-70);
     border-top-color: var(--x4-gray-70);
 }
@@ -3266,7 +3266,7 @@ div.banner .dismiss-btn {
     color: var(--x4-muted-text);
 }
 .cardboard .column-container .row-header .expand-collapse {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
     color: var(--x4-silver);
 }
 .cardboard .card-column .column-content .rally-drop-indicator {
@@ -3286,15 +3286,15 @@ div.banner .dismiss-btn {
 .rally-blocked-reason-content .editor-container,
 .rally-blocked-reason-content-popover .rally-blocked-reason-template,
 .rally-blocked-reason-content-popover .editor-container {
-    color: var(--x4-text);
+    color: var(--x4-primary-text);
     border-color: transparent;
 }
 .rally-blocked-reason-content .rally-blocked-reason-template:hover,
 .rally-blocked-reason-content .editor-container:hover,
 .rally-blocked-reason-content-popover .rally-blocked-reason-template:hover,
 .rally-blocked-reason-content-popover .editor-container:hover {
-    background-color: var(--x4-bg);
-    color: var(--x4-text);
+    background-color: var(--x4-primary-bg);
+    color: var(--x4-primary-text);
 }
 .rally-blocked-reason-content .empty,
 .rally-blocked-reason-content-popover .empty {
@@ -3308,7 +3308,7 @@ div.banner .dismiss-btn {
     background-color: var(--x4-muted-bg);
 }
 .rally-blocked-reason-content-popover .rally-blocked-reason-template {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .rally-card-editor .rally-textarea-component.blocked-reason-editor textarea.x4-form-text {
 }
@@ -3361,10 +3361,10 @@ div.banner .dismiss-btn {
 }
 .rui-card .field-content.editable:hover .rui-field-value {
     border-color: var(--x4-gray-25);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .rui-card .field-content.rally-invalid-card-field .rui-field-value {
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .rui-card .field-content.rally-invalid-card-field .rui-field-value:hover {
 }
@@ -3386,7 +3386,7 @@ div.banner .dismiss-btn {
 }
 .rui-card .rui-card-right-side .card-estimate-field .field-content.editable:hover {
     border-color: var(--x4-gray-25);
-    background-color: var(--x4-bg);
+    background-color: var(--x4-primary-bg);
 }
 .rally-card-icons-ct .rally-card-icon {
     background-color: var(--x4-gray-65);
