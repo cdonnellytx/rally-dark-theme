@@ -1,7 +1,7 @@
 /* @import '~styles/color-variables'; */
 
 .chr-App .chr-App-resizeFrame {
-    background-color: var(--white);
+    background-color: var(--main-primary-bg);
     border: 1px dashed var(--grey8);
 }
 

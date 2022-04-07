@@ -134,11 +134,11 @@
     --portfolio-item4: lighten(var(--ocean), 45%);
 
     /* Shared component variables */
-    --form-element-background: var(--white);
-    --form-element-border: var(--grey3);
-    --form-element-color: var(--grey9);
+    --form-element-background: var(--main-control-bg);
+    --form-element-border: var(--main-control-border);
+    --form-element-color: var(--main-control-text);
     --form-element-transparent-active-background: rgba(var(--black), 0.1);
-    --form-element-transparent-disabled-background: rgba(255, 255, 255, 0.6);
+    --form-element-transparent-disabled-background: var(--main-control-disabled-bg);
 
     --disabled-background: var(--main-disabled-bg);
     --disabled-border: var(--main-disabled-border);
@@ -154,7 +154,7 @@
     --box-shadow-2: rgba(0, 0, 0, 0.125);
     --box-shadow-3: rgba(0, 0, 0, 0.15);
     --box-shadow-4: rgba(0, 0, 0, 0.5);
-    --box-shadow-4-inverse: rgba(var(--white), 0.5);
+    --box-shadow-4-inverse: rgba(255, 255, 255, 0.5);
 
     --update-success: var(--mnrl-green-20);
 }

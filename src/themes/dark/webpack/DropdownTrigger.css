@@ -5,9 +5,9 @@
 @import "node_modules/@mineral/tokens/build/light/index.scss"; */
 
 #main .smb-DropdownTrigger {
-    background-color: var(--white);
-    border-color: var(--mnrl-borderColor);
-    color: var(--mnrl-gray-100);
+    background-color: var(--main-control-bg);
+    border-color: var(--main-control-border);
+    color: var(--main-control-text);
 }
 
 #main .smb-DropdownTrigger:focus {
@@ -26,7 +26,7 @@
 #main .smb-DropdownTrigger.is-disabled {
     background-color: var(--mnrl-backgroundColor-disabled);
     border-color: var(--mnrl-borderColor);
-    color: var(--mnrl-gray-80);
+    color: var(--mnrl-gray-80-text);
 }
 #main .smb-DropdownTrigger.is-disabled .smb-SvgIcon {
     color: var(--mnrl-color-disabled);
@@ -37,7 +37,7 @@
 }
 
 #main .smb-DropdownTrigger .smb-DropdownTrigger-subtext {
-    color: var(--mnrl-gray-80);
+    color: var(--mnrl-gray-80-text);
 }
 
 #main .smb-DropdownTrigger .smb-DropdownTrigger-placeholderText {

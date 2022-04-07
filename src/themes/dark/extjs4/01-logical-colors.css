@@ -18,7 +18,7 @@
 
     --x4-control-readonly-text: var(--main-control-text);
 
-    --x4-label-text: var(--main-control-text);
+    --x4-label-text: var(--main-label-text);
 
     --x4-dd-drag-border: var(--main-primary-border) var(--main-primary-shadow) var(--main-primary-shadow) var(--main-primary-border);
 

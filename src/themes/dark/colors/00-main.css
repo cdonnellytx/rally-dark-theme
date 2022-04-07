@@ -39,15 +39,17 @@
     /*
      * Controls
      */
-     --main-control-bg: #444;
-     --main-control-border: #777;
-     --main-control-icon: var(--main-link-text);
-     --main-control-text: #ddd;
-     --main-control-disabled-bg: var(--main-disabled-bg);
-     --main-control-disabled-border: #445;
-     --main-control-disabled-icon: var(--main-control-disabled-text);
-     --main-control-disabled-text: var(--main-disabled-text);
-     --main-control-focus-shadow: 0 0 0 0.1rem var(--main-control-bg), 0 0 0 0.2rem #30353d;
-     --main-control-focus-border: var(--contorl-border);
-     --main-control-hover-border: #8b949e;
+    --main-control-bg: #444;
+    --main-control-border: #777;
+    --main-control-icon: var(--main-link-text);
+    --main-control-text: #ddd;
+    --main-control-disabled-bg: var(--main-disabled-bg);
+    --main-control-disabled-border: #445;
+    --main-control-disabled-icon: var(--main-control-disabled-text);
+    --main-control-disabled-text: var(--main-disabled-text);
+    --main-control-focus-shadow: 0 0 0 0.1rem var(--main-control-bg), 0 0 0 0.2rem #30353d;
+    --main-control-focus-border: var(--contorl-border);
+    --main-control-hover-border: #8b949e;
+
+    --main-label-text: var(--main-control-text);
 }

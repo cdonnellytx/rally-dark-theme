@@ -12,15 +12,15 @@
 }
 
 #main .chr-ViewportProjectPickerTree-wrapper .chr-ViewportProjectPickerTree::-webkit-scrollbar-thumb {
-    background-color: var(--mnrl-gray-60);
+    background-color: var(--mnrl-gray-60-bg);
 }
 
 #main .chr-ViewportProjectPickerTree-wrapper .chr-ViewportProjectPickerTree::-webkit-scrollbar-thumb:hover {
-    background-color: var(--mnrl-gray-100);
+    background-color: var(--mnrl-gray-100-bg);
 }
 
 #main .chr-ViewportProjectPickerTree-wrapper .chr-ViewportProjectPickerListItem-navLink:focus {
-    background-color: var(--mnrl-gray-20);
+    background-color: var(--mnrl-gray-20-bg);
 }
 
 #main .chr-ViewportProjectPickerHierarchy-search > .smb-Button {
@@ -32,14 +32,14 @@
 }
 
 #main .chr-ViewportProjectPickerTreeItem--current {
-    background-color: var(--mnrl-gray-40);
+    background-color: var(--mnrl-gray-40-bg);
 }
 
 #main .chr-ViewportProjectPickerListItem--inScope {
-    background-color: var(--mnrl-gray-30);
+    background-color: var(--mnrl-gray-30-bg);
 }
 #main .chr-ViewportProjectPickerTreeItem:hover {
-    background-color: var(--mnrl-gray-20);
+    background-color: var(--mnrl-gray-20-bg);
 }
 #main .chr-ViewportProjectPickerListItem .match {
     background-color: var(--mnrl-brand-30);
@@ -64,7 +64,7 @@
 }
 
 #main .chr-ViewportProjectPickerHierarchy .divider {
-    border-top-color: var(--mnrl-gray-40);
+    border-top-color: var(--mnrl-gray-40-border);
 }
 
 #main .chr-ViewportProjectPickerHierarchy .chr-ViewportProjectPickerHierarchy-header > .smb-Button,

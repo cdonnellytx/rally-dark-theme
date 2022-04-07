@@ -4064,7 +4064,7 @@ div.banner .dismiss-btn {
     color: #21516d;
 }
 .rui-card {
-    box-shadow: var(--x4-gray-35-shadow) 2px 2px;
+    box-shadow: var(--x4-gray-35-bg) 2px 2px;
     background-color: var(--x4-primary-bg);
 }
 .rui-card .artifact-color {
@@ -4086,7 +4086,7 @@ div.banner .dismiss-btn {
     border-color: #b81b10 !important;
 }
 .cardboard .x4-dd-drag-ghost .rui-card {
-    box-shadow: var(--x4-gray-40-shadow) 0 0;
+    box-shadow: var(--x4-gray-40-bg) 0 0;
 }
 .cardboard .column-container th.card-column {
     border-bottom-color: var(--x4-gray-70-border);

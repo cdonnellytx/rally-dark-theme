@@ -3184,7 +3184,7 @@ div.banner .dismiss-btn {
 .rui-button-slider .x4-btn-icon:hover .x4-btn-icon-el {
 }
 .rui-card {
-    box-shadow: var(--x4-gray-35-shadow) 2px 2px;
+    box-shadow: var(--x4-gray-35-bg) 2px 2px;
     background-color: var(--x4-primary-bg);
 }
 .rui-card .artifact-color {
@@ -3202,7 +3202,7 @@ div.banner .dismiss-btn {
 .rui-card.blocked .card-table-ct {
 }
 .cardboard .x4-dd-drag-ghost .rui-card {
-    box-shadow: var(--x4-gray-40-shadow) 0 0;
+    box-shadow: var(--x4-gray-40-bg) 0 0;
 }
 .cardboard .column-container th.card-column {
     border-bottom-color: var(--x4-gray-70-border);
