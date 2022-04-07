@@ -12,7 +12,7 @@
     --white-100: #fff;
 
     /* dark mode grays are reversed (100 ~= white, 0 ~= black) */
-    --gray-100: #f0f6fc /* was #ddd */;
+    --gray-100: #f0f6fc /* was #dddddd */;
     --gray-90: #c9d1d9;
     --gray-80: #b1bac4 /* was #cbdfff */;
     --gray-70: #8b949e;
@@ -20,7 +20,7 @@
     --gray-50: #484f58;
     --gray-40: #30363d /* was #1b1c1f */;
     --gray-30: #21262d;
-    --gray-20: #161b22 /* some were #223 */;
+    --gray-20: #161b22 /* some were #222233 */;
     --gray-10: #0d1117;
 
     --brand-10: var(--mnrl-mineralBlue-10);
@@ -64,7 +64,7 @@
 
     --tertiary-bg: #223;
     --tertiary-border: #555;
-    --tertiary-text: #bbb;
+    --tertiary-text: var(--gray-70);
 
     --header-border: #37383b;
     --title-text: var(--gray-80);

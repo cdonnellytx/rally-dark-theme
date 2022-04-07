@@ -1,0 +1,19 @@
+:root {
+    --x4-ie-shadow: #777777;
+
+    --x4-bg: #ffffff;
+    --x4-text: #000000;
+
+    --x4-muted-bg: #e6e6e6;
+    --x4-muted-text: #444444;
+
+    --x4-control-border: #c6c6c6;
+
+    --x4-dd-drag-border: #dddddd #bbbbbb #bbbbbb #dddddd;
+
+    --x4-form-invalid-text: var(--x4-muted-text);
+
+    /* THIS IS FINE */
+    --x4-proxy-bg: #b4b4b4;
+    --x4-focus-frame-border: #15428b;
+}

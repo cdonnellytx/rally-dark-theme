@@ -1,15 +1,3 @@
-:root {
-    --x4-ie-shadow: #777777;
-    --x4-bg: #ffffff;
-    --x4-text: #000000;
-
-    --x4-control-border: #c6c6c6;
-
-    --x4-dd-drag-border: #dddddd #bbbbbb #bbbbbb #dddddd;
-    --x4-proxy-bg: #b4b4b4;
-    --x4-focus-frame-border: #15428b;
-}
-
 .x4-ie-shadow {
     background-color: var(--x4-ie-shadow);
 }
@@ -1532,10 +1520,10 @@
     border-color: #ababab;
 }
 .x4-tip-header-text-container-default {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .x4-tip-body-default {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .x4-tip-body-default a {
     color: #327c98;
@@ -1574,10 +1562,10 @@
     box-shadow: #d87166 0 1px 0 0 inset, #d87166 0 -1px 0 0 inset, #d87166 -1px 0 0 0 inset, #d87166 1px 0 0 0 inset;
 }
 .x4-tip-header-text-container-form-invalid {
-    color: #444444;
+    color: var(--x4-form-invalid-text);
 }
 .x4-tip-body-form-invalid {
-    color: #444444;
+    color: var(--x4-form-invalid-text);
 }
 .x4-tip-body-form-invalid a {
     color: #327c98;
@@ -2303,7 +2291,7 @@ a.x4-color-picker-item:hover {
     background-color: var(--x4-bg);
 }
 .x4-grid-cell {
-    color: "none";
+    color: transparent;
     background-color: var(--x4-bg);
     border-color: var(--x4-control-border);
 }
@@ -2386,7 +2374,7 @@ a.x4-color-picker-item:hover {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dirty.gif);
 }
 .x4-grid-row .x4-grid-cell-selected {
-    color: "none";
+    color: transparent;
     background-color: #b8cfee;
 }
 .x4-grid-resize-marker {
@@ -3475,21 +3463,21 @@ a:visited {
     color: #c0c0c0;
 }
 .app-menu:hover {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .app-settings {
-    background-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
 }
 .app-settings .x4-panel-body-default {
-    background-color: #e6e6e6;
-    color: #444444;
+    background-color: var(--x4-muted-bg);
+    color: var(--x4-muted-text);
 }
 .app-settings .settings-title {
     color: #181818;
 }
 div.banner {
     background-color: #fbedca;
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 div.banner .dismiss-btn {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/close-b5d8eb.png);
@@ -3501,7 +3489,7 @@ div.banner .dismiss-btn {
     background-color: var(--x4-bg);
     border-left-color: #d6d6d6;
     border-right-color: #d6d6d6;
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-bg);
@@ -3533,7 +3521,7 @@ div.banner .dismiss-btn {
     color: #666666;
 }
 .x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected {
-    background-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
 }
 .x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected.x4-boundlist-item-over {
     background-color: #30aac7;
@@ -3756,7 +3744,7 @@ div.banner .dismiss-btn {
 .x4-btn.tertiary.highlight tr td span,
 .x4-btn.highlight.highlight span,
 .x4-btn.highlight.highlight tr td span {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .x4-btn.primary.highlight:hover,
 .x4-btn.primary.highlight:hover tr td,
@@ -3793,7 +3781,7 @@ div.banner .dismiss-btn {
 .x4-btn.highlight.highlight:hover tr td span,
 .x4-btn.highlight.highlight tr td:hover span,
 .x4-btn.highlight.highlight tr td:hover tr td span {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .x4-btn.primary.secondary,
 .x4-btn.primary.secondary tr td,
@@ -4066,7 +4054,7 @@ div.banner .dismiss-btn {
 }
 .dark-container .x4-btn.x4-item-disabled span,
 .dark-container .x4-btn.x4-item-disabled:hover span {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .rui-button-slider .x4-btn-icon .x4-btn-icon-el {
     color: #327c98;
@@ -4163,7 +4151,7 @@ div.banner .dismiss-btn {
     color: #333333;
 }
 .cardboard .column-container .row-header:hover .expand-collapse {
-    color: #444444;
+    color: var(--x4-muted-text);
 }
 .cardboard .column-container .row-header .expand-collapse {
     background-color: var(--x4-bg);
@@ -4207,7 +4195,7 @@ div.banner .dismiss-btn {
     border-color: transparent;
 }
 .rally-blocked-reason-content {
-    background-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
 }
 .rally-blocked-reason-content-popover .rally-blocked-reason-template {
     background-color: var(--x4-bg);
@@ -4217,8 +4205,8 @@ div.banner .dismiss-btn {
 }
 .rui-card .rui-card-content .status-content > .status-field {
     color: #222222;
-    background-color: #e6e6e6;
-    border-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
+    border-color: var(--x4-muted-bg);
 }
 .rui-card .rui-card-content .status-content > .status-field.Discussion {
     background-color: transparent;
@@ -4239,13 +4227,13 @@ div.banner .dismiss-btn {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-succ-icon.png);
 }
 .rui-card .rui-card-content .userstories-template {
-    background-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
 }
 .rui-card .rui-card-content .userstories-template .icon-story {
     color: #888888;
 }
 .rui-card .rui-card-content .dependencies-template {
-    background-color: #e6e6e6;
+    background-color: var(--x4-muted-bg);
 }
 .rui-card .rui-card-content .dependencies-template .icon-predecessor {
     color: #222222;

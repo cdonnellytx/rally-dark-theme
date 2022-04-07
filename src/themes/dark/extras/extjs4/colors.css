@@ -1,0 +1,22 @@
+/* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
+ * This is ExtJS 4.x.
+*/
+:root {
+    --x4-ie-shadow: #777777;
+
+    --x4-bg: var(--main-bg);
+    --x4-text: var(--main-text);
+
+    --x4-muted-bg: var(--tertiary-bg);
+    --x4-muted-text: var(--tertiary-text);
+
+    --x4-control-border: var(--control-border);
+
+    --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
+
+    --x4-form-invalid-text: var(--x4-muted-text);
+
+    /* FIXME */
+    --x4-proxy-bg: #b4b4b4;
+    --x4-focus-frame-border: #15428b;
+}

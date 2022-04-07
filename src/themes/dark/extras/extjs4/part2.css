@@ -1,20 +1,3 @@
-/* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
- * This is ExtJS 4.x.
-*/
-:root {
-    --x4-ie-shadow: #777777;
-    --x4-bg: var(--main-bg);
-    --x4-text: var(--main-text);
-
-    --x4-control-border: var(--control-border);
-
-    --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
-
-    /* FIXME */
-    --x4-proxy-bg: #b4b4b4;
-    --x4-focus-frame-border: #15428b;
-}
-
 .x4-ie-shadow {
     background-color: var(--x4-ie-shadow);
 }
@@ -47,6 +30,12 @@
 }
 .x4-panel-body-default-framed {
     color: var(--x4-text);
+}
+.x4-tip-header-text-container-default {
+    color: var(--x4-muted-text);
+}
+.x4-tip-body-default {
+    color: var(--x4-muted-text);
 }
 .x4-tip-form-invalid {
     background-color: var(--x4-bg);
@@ -138,7 +127,7 @@ a.x4-datepicker-date:hover {
     background-color: var(--x4-bg);
 }
 .x4-grid-cell {
-    color: "none";
+    color: transparent;
     background-color: var(--x4-bg);
     border-color: var(--x4-control-border);
 }
@@ -184,11 +173,25 @@ a.x4-datepicker-date:hover {
 .x4-html-editor-input {
     border-color: var(--x4-control-border);
 }
+.app-menu:hover {
+    color: var(--x4-muted-text);
+}
+.app-settings {
+    background-color: var(--x4-muted-bg);
+}
+.app-settings .x4-panel-body-default {
+    background-color: var(--x4-muted-bg);
+    color: var(--x4-muted-text);
+}
+div.banner {
+    color: var(--x4-muted-text);
+}
 .x4-boundlist {
     background-color: var(--x4-bg);
 }
 .x4-boundlist .x4-boundlist-item {
     background-color: var(--x4-bg);
+    color: var(--x4-muted-text);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-bg);
@@ -199,8 +202,39 @@ a.x4-datepicker-date:hover {
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected {
     background-color: var(--x4-bg);
 }
+.x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-muted-bg);
+}
 .x4-btn.toggle {
     background-color: var(--x4-bg);
+}
+.x4-btn.primary.highlight span,
+.x4-btn.primary.highlight tr td span,
+.x4-btn.secondary.highlight span,
+.x4-btn.secondary.highlight tr td span,
+.x4-btn.tertiary.highlight span,
+.x4-btn.tertiary.highlight tr td span,
+.x4-btn.highlight.highlight span,
+.x4-btn.highlight.highlight tr td span {
+    color: var(--x4-muted-text);
+}
+.x4-btn.primary.highlight:hover span,
+.x4-btn.primary.highlight:hover tr td span,
+.x4-btn.primary.highlight tr td:hover span,
+.x4-btn.primary.highlight tr td:hover tr td span,
+.x4-btn.secondary.highlight:hover span,
+.x4-btn.secondary.highlight:hover tr td span,
+.x4-btn.secondary.highlight tr td:hover span,
+.x4-btn.secondary.highlight tr td:hover tr td span,
+.x4-btn.tertiary.highlight:hover span,
+.x4-btn.tertiary.highlight:hover tr td span,
+.x4-btn.tertiary.highlight tr td:hover span,
+.x4-btn.tertiary.highlight tr td:hover tr td span,
+.x4-btn.highlight.highlight:hover span,
+.x4-btn.highlight.highlight:hover tr td span,
+.x4-btn.highlight.highlight tr td:hover span,
+.x4-btn.highlight.highlight tr td:hover tr td span {
+    color: var(--x4-muted-text);
 }
 .x4-btn.primary.secondary,
 .x4-btn.primary.secondary tr td,
@@ -213,6 +247,10 @@ a.x4-datepicker-date:hover {
     background-image: none;
     background-color: var(--x4-bg);
 }
+.dark-container .x4-btn.x4-item-disabled span,
+.dark-container .x4-btn.x4-item-disabled:hover span {
+    color: var(--x4-muted-text);
+}
 .rui-card {
     background-color: var(--x4-bg);
 }
@@ -221,6 +259,9 @@ a.x4-datepicker-date:hover {
 }
 .cardboard .column-container .column-header .policy {
     background-color: var(--x4-bg);
+}
+.cardboard .column-container .row-header:hover .expand-collapse {
+    color: var(--x4-muted-text);
 }
 .cardboard .column-container .row-header .expand-collapse {
     background-color: var(--x4-bg);
@@ -239,8 +280,21 @@ a.x4-datepicker-date:hover {
     background-color: var(--x4-bg);
     color: var(--x4-text);
 }
+.rally-blocked-reason-content {
+    background-color: var(--x4-muted-bg);
+}
 .rally-blocked-reason-content-popover .rally-blocked-reason-template {
     background-color: var(--x4-bg);
+}
+.rui-card .rui-card-content .status-content > .status-field {
+    background-color: var(--x4-muted-bg);
+    border-color: var(--x4-muted-bg);
+}
+.rui-card .rui-card-content .userstories-template {
+    background-color: var(--x4-muted-bg);
+}
+.rui-card .rui-card-content .dependencies-template {
+    background-color: var(--x4-muted-bg);
 }
 .rui-card .field-content.editable:hover .rui-field-value {
     background-color: var(--x4-bg);
