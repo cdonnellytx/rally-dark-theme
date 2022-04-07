@@ -197,8 +197,6 @@
 
     --dropdown-header-text: var(--dropdown-text);
 
-    --dropdown-trigger-bg: var(--main-content-bg) /* white */;
-
     --dropdown-footer-bg: var(--main-tertiary-bg);
     --dropdown-footer-border: var(--main-control-border);
     --dropdown-footer-text: var(--main-tertiary-text);
@@ -220,6 +218,10 @@
 
     --dropdown-match-bg: var(--mnrl-mineralBlue-30);
     --dropdown-match-text: var(--dropdown-item-text);
+
+    --dropdown-trigger-hover-bg: var(--mnrl-gray-20-bg);
+    --dropdown-trigger-hover-border: var(--main-hover-border);
+    --dropdown-trigger-hover-text: var(--main-hover-text);
 
     /*
      * Label

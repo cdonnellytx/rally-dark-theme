@@ -46,5 +46,5 @@
 
 #main .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover,
 #main .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly).is-open {
-    background-color: var(--dropdown-trigger-bg);
+    background-color: var(--dropdown-trigger-hover-bg);
 }
