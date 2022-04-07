@@ -34,22 +34,17 @@
     border-bottom-color: var(--x4-gray-70);
 }
 .cardboard.has-rows .column-container .card-column.collapsible.collapsed .collapsed-title-fade {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/collapsed-title-fade.png);
 }
 .cardboard .scroll-button {
     background-color: transparent;
 }
 .cardboard .scroll-button:hover.scroll-backwards {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/plugin/scroll-backwards-hover.png);
 }
 .cardboard .scroll-button:hover.scroll-forwards {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/plugin/scroll-forwards-hover.png);
 }
 .cardboard .scroll-button.scroll-backwards {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/plugin/scroll-backwards.png);
 }
 .cardboard .scroll-button.scroll-forwards {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/plugin/scroll-forwards.png);
 }
 .rly-carousel .carousel-header .title span.title-text {
 }
@@ -62,6 +57,7 @@
     background-color: transparent;
 }
 .rly-carousel .carousel-controls .carousel-dot {
+    color: var(--x4-silver);
     background-color: transparent;
 }
 .rly-carousel .carousel-controls .carousel-dot.rly-active,
@@ -99,27 +95,32 @@
     background-color: var(--x4-bg);
 }
 .discussion-richtext-stream-view .list .list-item {
+    border-top-color: var(--x4-silver);
     color: var(--x4-muted-text);
 }
 .discussion-richtext-stream-view .list-item-info .inactive {
     color: var(--x4-gray-75);
 }
 .discussion-richtext-stream-view .list-item-user .profile {
+    border-color: var(--x4-silver);
 }
 .discussion-richtext-stream-view .list-item-details .status {
+    color: var(--x4-gray-68);
 }
 .discussion-richtext-stream-view .show-more-ct {
+    border-top-color: var(--x4-silver);
 }
 .discussion-richtext-stream-view .delete-comment {
     background-color: transparent;
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/trash-icon.png);
 }
 .chart .empty {
+    color: var(--x4-gray-78);
 }
 .chart .yaxis-title {
     color: var(--x4-text);
 }
 .detailView .detailContentWrapper fieldset {
+    border-color: var(--x4-gray-34);
     background-color: var(--x4-bg);
 }
 .detailView .detailContentWrapper .invalidField {
@@ -150,6 +151,7 @@
 }
 .fieldBucket {
     background-color: var(--x4-gray-05);
+    border-color: var(--x4-silver);
 }
 .fieldBucket div.icon-chevron-down.focused,
 .fieldBucket div.icon-chevron-right.focused {
@@ -372,6 +374,7 @@
     color: var(--x4-muted-text);
 }
 .ready-blocked-status .tertiary:hover {
+    background-color: var(--x4-silver);
     color: var(--x4-secondary-text);
 }
 .ready-blocked-status .x4-blocked {
@@ -399,6 +402,7 @@
     background-color: transparent;
 }
 .rally-detail-schedulestate-field .rally-detail-schedulestate-meter .rally-detail-schedulestate-chevron {
+    color: var(--x4-silver);
 }
 .rally-detail-schedulestate-field.readonly .rally-detail-schedulestate-chevron {
     color: var(--x4-gray-20);
@@ -458,6 +462,7 @@
 .discussionSubPage .rally-textfield-component input:hover {
 }
 .commentsMetaField .discussion-richtext-stream-view {
+    border-color: var(--x4-gray-38);
 }
 .detailPage {
     background-color: var(--x4-bg);
@@ -489,11 +494,15 @@
     background-color: transparent;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger-wrap:hover .x4-form-field {
+    border-top-color: var(--x4-gray-40) !important;
+    border-bottom-color: var(--x4-gray-40) !important;
+    border-left-color: var(--x4-gray-40) !important;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger {
     border-color: var(--x4-control-border) !important;
 }
 .detailSubPage .rally-grid .rui-triggerfield .x4-form-field[role="spinbutton"] {
+    border-right-color: var(--x4-gray-40) !important;
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer {
     border-top-color: var(--x4-gray-20);
@@ -515,6 +524,7 @@
 .detailPage .detailView .detailContentRightPanel .edp-help:focus {
 }
 .detailPage .detailView .detailContentRightPanel .edp-help span {
+    color: var(--x4-silver);
 }
 .detailPage .detailView .detailContentRightPanel .edp-help span:hover {
     color: var(--x4-muted-text);
@@ -572,6 +582,7 @@
 }
 .detailPage .detailView .qdpmetafield .quick-view {
     background-color: var(--x4-bg);
+    border-color: var(--x4-gray-38);
 }
 .detailPage .detailView .qdpmetafield .quick-view:hover {
 }
@@ -586,7 +597,6 @@
 .detailList .x4-progress .x4-progress-text {
 }
 .detailList .detailListItemContainer .deleteDetailListItem {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/detail/chosen-sprite.png);
 }
 .detailPage .detailTagContainer .loading a {
     color: var(--x4-gray-35);
@@ -605,6 +615,7 @@
     color: var(--x4-muted-text);
 }
 .detail-ready-button:hover {
+    background-color: var(--x4-silver);
     color: var(--x4-secondary-text);
 }
 .detail-ready-button.x4-ready {
@@ -650,6 +661,7 @@
     border-color: var(--x4-gray-35);
 }
 .x4-window-header-body-rally .icon-cancel {
+    color: var(--x4-silver);
 }
 .x4-window-header-body-rally .icon-cancel:hover {
     color: var(--x4-muted-text);
@@ -678,11 +690,9 @@
 .x4-window-rally-bc,
 .x4-window-rally-ml,
 .x4-window-rally-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-corners.gif);
 }
 .x4-window-rally-ml,
 .x4-window-rally-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-sides.gif);
 }
 .x4-window-rally:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-sides.gif";
@@ -716,11 +726,9 @@
 .x4-window-header-rally-top-bc,
 .x4-window-header-rally-top-ml,
 .x4-window-header-rally-top-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-corners.gif);
 }
 .x4-window-header-rally-top-ml,
 .x4-window-header-rally-top-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-sides.gif);
 }
 .x4-window-header-rally-top:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-sides.gif";
@@ -740,11 +748,9 @@
 .x4-window-header-rally-right-bc,
 .x4-window-header-rally-right-ml,
 .x4-window-header-rally-right-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-corners.gif);
 }
 .x4-window-header-rally-right-ml,
 .x4-window-header-rally-right-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-sides.gif);
 }
 .x4-window-header-rally-right:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-sides.gif";
@@ -764,11 +770,9 @@
 .x4-window-header-rally-bottom-bc,
 .x4-window-header-rally-bottom-ml,
 .x4-window-header-rally-bottom-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-corners.gif);
 }
 .x4-window-header-rally-bottom-ml,
 .x4-window-header-rally-bottom-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-sides.gif);
 }
 .x4-window-header-rally-bottom:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-sides.gif";
@@ -788,11 +792,9 @@
 .x4-window-header-rally-left-bc,
 .x4-window-header-rally-left-ml,
 .x4-window-header-rally-left-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-corners.gif);
 }
 .x4-window-header-rally-left-ml,
 .x4-window-header-rally-left-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-sides.gif);
 }
 .x4-window-header-rally-left:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-sides.gif";
@@ -812,11 +814,9 @@
 .x4-window-header-rally-collapsed-top-bc,
 .x4-window-header-rally-collapsed-top-ml,
 .x4-window-header-rally-collapsed-top-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-corners.gif);
 }
 .x4-window-header-rally-collapsed-top-ml,
 .x4-window-header-rally-collapsed-top-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-sides.gif);
 }
 .x4-window-header-rally-collapsed-top:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-sides.gif";
@@ -836,11 +836,9 @@
 .x4-window-header-rally-collapsed-right-bc,
 .x4-window-header-rally-collapsed-right-ml,
 .x4-window-header-rally-collapsed-right-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-corners.gif);
 }
 .x4-window-header-rally-collapsed-right-ml,
 .x4-window-header-rally-collapsed-right-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-sides.gif);
 }
 .x4-window-header-rally-collapsed-right:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-sides.gif";
@@ -860,11 +858,9 @@
 .x4-window-header-rally-collapsed-bottom-bc,
 .x4-window-header-rally-collapsed-bottom-ml,
 .x4-window-header-rally-collapsed-bottom-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-corners.gif);
 }
 .x4-window-header-rally-collapsed-bottom-ml,
 .x4-window-header-rally-collapsed-bottom-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-sides.gif);
 }
 .x4-window-header-rally-collapsed-bottom:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-sides.gif";
@@ -884,11 +880,9 @@
 .x4-window-header-rally-collapsed-left-bc,
 .x4-window-header-rally-collapsed-left-ml,
 .x4-window-header-rally-collapsed-left-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-corners.gif);
 }
 .x4-window-header-rally-collapsed-left-ml,
 .x4-window-header-rally-collapsed-left-mr {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-sides.gif);
 }
 .x4-window-header-rally-collapsed-left:after {
     content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-sides.gif";
@@ -919,15 +913,17 @@
     color: var(--x4-secondary-text);
 }
 .x4-window.print-dialog .print-details-radio {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/print_detail.png);
 }
 .x4-window.print-dialog .print-summary-radio {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/print_summary.png);
 }
 .x4-window.chooser-dialog .x4-toolbar-docked-top {
     background-color: var(--x4-bg);
 }
 .x4-window.chooser-dialog .chooser-search-icon {
+    color: var(--x4-gray-40);
+    border-top-color: var(--x4-gray-40);
+    border-bottom-color: var(--x4-gray-40);
+    border-right-color: var(--x4-gray-40);
 }
 .x4-window.chooser-dialog .rui-triggerfield:hover .chooser-search-icon,
 .x4-window.chooser-dialog .rui-triggerfield:hover input,
@@ -950,19 +946,14 @@
     color: var(--x4-secondary-text);
 }
 .discussionBubble {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/discussion_icon.png);
 }
 .discussionBubble.recent {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/discussion-recent.png);
 }
 .discussionBubble.less_recent {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/discussion-less-recent.png);
 }
 .discussionBubble.least_recent {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/discussion-least-recent.png);
 }
 .discussionBubble.stale {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/discussion_icon.png);
 }
 .bulkier-edit-dialog .x4-btn.row-btn {
     background-color: transparent;
@@ -984,6 +975,7 @@
     border-color: var(--x4-gray-70);
 }
 .feedback-dialog .x4-window-body .circle {
+    background-color: var(--x4-silver);
 }
 .feedback-dialog .x4-window-body .circle:hover {
     background-color: var(--x4-gray-65);
@@ -1009,24 +1001,21 @@
 .new-ux.feedback-dialog .x4-window-body .form .footer-right a:hover {
 }
 .source-code pre {
+    background-color: var(--x4-gray-10);
     color: var(--x4-muted-text);
 }
 .rally-move-to-position-dialog .x4-grid-row-selected {
 }
 .rally-move-to-position-dialog .x4-grid-row-selected .x4-grid-cell-first div {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_right.png);
     background-color: transparent;
 }
 .rally-move-to-position-dialog .x4-grid-row-selected .x4-grid-cell-last div {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_left.png);
     background-color: transparent;
 }
 .rally-move-to-position-dialog .x4-grid-row-selected + tr .x4-grid-cell-first div {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_right.png);
     background-color: transparent -5px;
 }
 .rally-move-to-position-dialog .x4-grid-row-selected + tr .x4-grid-cell-last div {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_left.png);
     background-color: transparent -5px;
 }
 .rally-move-to-position-dialog .rally-grid .x4-grid-row-selected .x4-grid-cell {
@@ -1072,32 +1061,28 @@
 }
 .edit-mode-button.rly-disabled,
 .edit-mode-button.rly-disabled:hover {
+    background-color: var(--x4-silver);
 }
 .edit-mode-button.rly-disabled .x4-btn-wrap,
 .edit-mode-button.rly-disabled:hover .x4-btn-wrap {
     border-color: transparent;
 }
 .filterInfo a {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/filter-blue-on-white.png);
 }
 .filterInfoTooltip .scopeUp {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-up-ffffff.png);
 }
 .filterInfoTooltip .scopeDown {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-down-ffffff.png);
 }
 .filterInfoTooltip .scopeUpAndDown {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-both-ffffff.png);
 }
 .x4-container .filter-popover.rly-popover .filter-container .filter-label {
     color: var(--x4-control-text);
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/large_checkbox_not_selected.png);
+    border-color: var(--x4-silver);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-cb-checked .x4-form-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/large_checkbox_selected.png);
 }
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon {
     background-color: transparent;
@@ -1116,18 +1101,15 @@
     border-bottom-color: var(--x4-gray-80);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container .checkbox-container .rally-checkboxfield-component .x4-form-cb-wrap .x4-form-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked.png);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container .checkbox-container .rally-checkboxfield-component .x4-form-cb-wrap .x4-form-checkbox:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked-hover.png);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container .checkbox-container .rally-checkboxfield-component.x4-form-cb-checked .x4-form-cb-wrap .x4-form-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked.png);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container .checkbox-container .rally-checkboxfield-component.x4-form-cb-checked .x4-form-cb-wrap .x4-form-checkbox:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked-hover.png);
 }
 .x4-container .duplicate-field-model-name {
+    color: var(--x4-silver);
 }
 .x4-container .x4-boundlist-item-over .duplicate-field-model-name {
 }
@@ -1136,6 +1118,7 @@
 }
 .rui-checkbox {
     background-color: var(--x4-gray-05);
+    border-color: var(--x4-silver);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .rui-checkbox:active {
@@ -1154,17 +1137,18 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
 }
 .rui-checkbox.rly-disabled:before {
+    color: var(--x4-silver);
 }
 .rui-checkbox-label {
     color: var(--x4-muted-text);
 }
 .rally-always-expanded-combobox input.x4-form-field {
     border-right-color: var(--x4-gray-35);
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/search_gray.png);
     background-color: var(--x4-bg);
 }
 .combobox-left-arrow,
 .combobox-right-arrow {
+    color: var(--x4-silver);
 }
 .combobox-left-arrow:hover,
 .combobox-right-arrow:hover {
@@ -1182,17 +1166,14 @@
     color: var(--x4-gray-65);
 }
 .rally-checkbox-boundlist.x4-boundlist .x4-boundlist-item .rally-checkbox-image {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_unselected.png);
 }
 .rally-checkbox-boundlist.x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-bg);
 }
 .rally-checkbox-boundlist.x4-boundlist .x4-boundlist-item.x4-boundlist-selected .rally-checkbox-image {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_selected.png);
 }
 .x4-form-trigger {
     background-color: var(--x4-bg);
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/harmonized-down.png);
     border-color: var(--x4-control-border);
 }
 .x4-form-invalid .x4-form-trigger {
@@ -1229,12 +1210,13 @@
 }
 .rui-triggerfield .icon-search {
     background-image: none;
+    color: var(--x4-silver);
 }
 .rui-triggerfield .x4-form-date-trigger {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/date.png);
 }
 .rui-triggerfield .icon-calendar {
     background-image: none;
+    color: var(--x4-silver);
 }
 .x4-item-disabled.rui-triggerfield ::-webkit-input-placeholder {
 }
@@ -1256,11 +1238,9 @@
 .x4-grid-drop-indicator {
 }
 .x4-grid-drop-indicator .x4-grid-drop-indicator-right {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_left.png);
     background-color: transparent;
 }
 .x4-grid-drop-indicator .x4-grid-drop-indicator-left {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dragArrow_right.png);
     background-color: transparent;
 }
 .drag-ghost {
@@ -1268,11 +1248,9 @@
 .drag-ghost .icon-five-dots {
 }
 .rally-grid .rank-enabled .rank-cell {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gripper/gripper-inactive.png);
     background-color: transparent;
 }
 .rally-grid .rank-enabled .x4-grid-row-over .rank-cell {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gripper/gripper-active.png);
     background-color: transparent;
 }
 .rally-grid .rank-enabled .x4-grid-row-selected.drag-active .x4-grid-cell {
@@ -1300,6 +1278,7 @@
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell .x4-grid-cell-inner .row-action-icon,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div .x4-grid-cell-inner .row-action-icon,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special .x4-grid-cell-inner .row-action-icon {
+    color: var(--x4-silver);
 }
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over:last-child .x4-grid-cell {
     border-bottom-color: var(--x4-gray-35);
@@ -1313,7 +1292,6 @@
     background-color: var(--x4-gray-05);
 }
 img.checked {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/check.gif);
     background-color: transparent;
 }
 .rally-grid .x4-panel-header-default-top {
@@ -1353,10 +1331,8 @@ img.checked {
     background-color: var(--x4-gray-05);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC .x4-column-header-inner .x4-column-header-text {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/sort-asc-triangle.png);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-DESC .x4-column-header-inner .x4-column-header-text {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/sort-desc-triangle.png);
 }
 .rally-grid .x4-grid-body {
 }
@@ -1364,6 +1340,7 @@ img.checked {
     color: var(--x4-gray-80);
 }
 .rally-grid .x4-grid-body .x4-grid-view-empty {
+    color: var(--x4-gray-78);
 }
 .rally-grid .x4-grid-row .x4-grid-cell.rally-grid-cell-predecessorsandsuccessors .x4-grid-cell-inner .predecessorsandsuccessors-cnt {
 }
@@ -1371,20 +1348,16 @@ img.checked {
     color: var(--x4-gray-70);
 }
 .rally-grid .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .status-value.pred-suc .predecessors {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-icon.png);
 }
 .rally-grid .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .status-value.pred-suc .successors {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/succ-icon.png);
 }
 .rally-grid .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .status-value.pred-suc .both {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-succ-icon.png);
 }
 .rally-grid .x4-grid-row .x4-grid-cell-special {
     background-image: none;
     background-color: inherit;
 }
 .rally-grid .x4-grid-row .x4-grid-row-single-checker {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/radiounchecked.gif);
     background-color: transparent;
 }
 .rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-cell,
@@ -1401,7 +1374,6 @@ img.checked {
     color: var(--x4-gray-65);
 }
 .rally-grid .x4-grid-row-selected .x4-grid-row-single-checker {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/radiochecked.gif);
 }
 .rally-grid .x4-grid-row-selected .x4-grid-cell,
 .rally-grid .x4-grid-row-selected .x4-grid-rowwrap-div {
@@ -1427,7 +1399,6 @@ img.checked {
 .rally-grid .x4-grid-row-over .x4-grid-rowwrap-div {
 }
 .rally-grid .x4-grid-row-over .editable.rally-edit-cell:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/editIcon.png);
 }
 .rally-grid .x4-grid-row .x4-grid-cell.rally-invalid-cell,
 .rally-grid .x4-grid-row .x4-grid-cell.rally-invalid-cell:hover,
@@ -1435,7 +1406,6 @@ img.checked {
 .rally-grid .x4-grid-row-selected .x4-grid-cell.rally-invalid-cell:hover,
 .rally-grid .x4-grid-row-over .x4-grid-cell.rally-invalid-cell,
 .rally-grid .x4-grid-row-over .x4-grid-cell.rally-invalid-cell:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/red-triangle.png);
 }
 .rally-grid .x4-grid-row-focused .x4-grid-cell .row-action-icon,
 .rally-grid .x4-grid-row-over .x4-grid-cell .row-action-icon {
@@ -1450,25 +1420,19 @@ img.checked {
     border-color: var(--x4-gray-70);
 }
 .rally-grid .x4-grid-group-hd-collapsible .x4-grid-group-title {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanded.png);
 }
 .rally-grid .x4-grid-group-hd-collapsed .x4-grid-group-title {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-collapsed.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-header-ct {
     border-color: transparent;
 }
 .x4-tree-panel.rally-grid .x4-grid-header-ct .x4-column-header.x4-column-header-checkbox .x4-column-header-text {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-header-ct .x4-column-header.x4-column-header-checkbox .x4-column-header-text:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-header-ct .x4-column-header.x4-column-header-checkbox.x4-grid-hd-checker-on .x4-column-header-text {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-header-ct .x4-column-header.x4-column-header-checkbox.x4-grid-hd-checker-on .x4-column-header-text:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-docked-summary {
     border-color: transparent;
@@ -1489,10 +1453,8 @@ img.checked {
     border-color: transparent;
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-grid-row-checker {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-grid-row-checker:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-unchecked-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .row-action-icon {
     color: var(--x4-gray-80);
@@ -1501,11 +1463,9 @@ img.checked {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-collapsed.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-collapsed-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.x4-grid-cell-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-cell-row-action {
@@ -1519,19 +1479,15 @@ img.checked {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanded.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanded-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanding.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanding.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child.x4-grid-row-over .x4-grid-cell {
 }
@@ -1544,27 +1500,21 @@ img.checked {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row .x4-grid-cell .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row .x4-grid-cell .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-collapsed.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row .x4-grid-cell .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row .x4-grid-cell .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-collapsed-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanded.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-node-expanded .x4-grid-cell .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanded-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-plus,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-end-plus {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanding.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-plus:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-end-plus:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/node-expanding.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell {
     background-color: var(--x4-gray-05);
@@ -1621,11 +1571,9 @@ img.checked {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected .x4-grid-cell .x4-grid-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected.x4-grid-row-highlighted .x4-grid-cell .x4-grid-row-checker {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected .x4-grid-cell .x4-grid-row-checker:hover,
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected.x4-grid-row-highlighted .x4-grid-cell .x4-grid-row-checker:hover {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked-hover.png);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected .x4-grid-cell.x4-grid-cell-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected .x4-grid-cell.rally-cell-row-action,
@@ -1712,14 +1660,17 @@ img.checked {
     background-color: transparent;
 }
 .advanced-filter-panel > .x4-panel-body .advanced-filter-rows .advanced-filter-row .filter-row-control.x4-disabled {
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .advanced-filter-rows .advanced-filter-row .filter-row-control.x4-disabled:hover {
     background-color: transparent;
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .filters-container .x4-panel-body {
     background-color: var(--x4-gray-05);
 }
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help {
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:hover,
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:focus {
@@ -1741,12 +1692,12 @@ img.checked {
     box-shadow: rgba(192, 192, 192, 0.5) 2px 2px;
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status {
+    border-right-color: var(--x4-silver);
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status .empty-status {
     background-color: var(--x4-gray-90);
 }
 .rally-help-icon a {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/help/icon_help.gif);
 }
 .rally-icon-combobox .rally-icon-combo-wrap .rally-icon-combo-icon {
     color: var(--x4-gray-70);
@@ -1778,6 +1729,7 @@ img.checked {
     background-color: transparent;
 }
 .rui-leftright .rly-right .filterInfo {
+    border-right-color: var(--x4-silver);
 }
 div.rallyListView #addNewContainer .error {
     background-color: var(--x4-bg);
@@ -1787,6 +1739,7 @@ div.rallyListView #addNewContainer .error {
 }
 .rally-list-paging-toolbar .x4-btn {
     background-color: var(--x4-bg);
+    color: var(--x4-silver);
 }
 .x4-menu .x4-menu-body {
     background-color: var(--x4-bg) !important;
@@ -1820,6 +1773,7 @@ div.rallyListView #addNewContainer .error {
 .milestone-pill {
     background-color: var(--x4-muted-bg);
     color: var(--x4-secondary-text);
+    border-color: var(--x4-silver);
 }
 .milestone-pill .icon-milestone {
     color: var(--x4-gray-70);
@@ -1881,6 +1835,7 @@ div.rallyListView #addNewContainer .error {
 .rui-tag-picker-add-new {
 }
 .rui-tag-picker-add-new-component {
+    border-top-color: var(--x4-gray-60);
 }
 .rui-multi-object-list {
     border-color: var(--x4-gray-35) !important;
@@ -1889,6 +1844,7 @@ div.rallyListView #addNewContainer .error {
     border-color: var(--x4-gray-20);
 }
 .rally-date-picker .x4-datepicker-header {
+    background-color: var(--x4-silver);
 }
 .rally-date-picker .x4-datepicker-header .x4-datepicker-arrow {
 }
@@ -1954,17 +1910,15 @@ div.rallyListView #addNewContainer .error {
 .rui-multiobject-picker .rally-search-button {
 }
 .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected .rui-picker-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_selected.png);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled {
+    color: var(--x4-gray-68);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled .rui-picker-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_disabled.png);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled .rui-picker-checkbox.rui-picker-cb-checked {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_disabled_selected.png);
 }
 .rui-multi-object-list .rui-multi-object-picker-close-button {
     color: var(--x4-gray-65);
@@ -1976,10 +1930,8 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-gray-65);
 }
 .rui-picker-checkbox {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_unselected.png);
 }
 .rui-picker-cb-checked {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_selected.png);
 }
 .x4-form-invalid .rui-multi-object-picker-no-trigger {
 }
@@ -1998,10 +1950,13 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-gray-65);
 }
 .rui-project-picker-container {
+    border-color: var(--x4-silver);
 }
 .rui-project-picker-container .mostRecentlyUsedProjects .mostRecentlyUsedProjectsContent {
+    border-bottom-color: var(--x4-silver);
 }
 .rui-project-picker-container .projectScopeUpDownField {
+    border-top-color: var(--x4-silver);
 }
 .rui-project-picker-container .rallytree .treeItem .treeItemContent.treeItemSelected {
 }
@@ -2016,11 +1971,9 @@ div.rallyListView #addNewContainer .error {
 .mostRecentlyUsedProjects ul li {
 }
 .projectScopeUpDownField .scopeUp .project-scope-icon {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-up-ffffff.png);
     background-color: transparent;
 }
 .projectScopeUpDownField .scopeDown .project-scope-icon {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-down-ffffff.png);
     background-color: transparent;
 }
 .simple-picker {
@@ -2030,7 +1983,6 @@ div.rallyListView #addNewContainer .error {
 .simple-picker .sp-picker.selectable:hover {
 }
 .simple-picker .sp-picker.selectable .sp-trigger-img {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/down.png);
     background-color: transparent;
 }
 .simple-picker .sp-active {
@@ -2048,6 +2000,7 @@ div.rallyListView #addNewContainer .error {
 }
 .tagfilter .x4-trigger-cell .icon-search {
     background-color: var(--x4-bg);
+    color: var(--x4-gray-60);
 }
 .tagfilter.tagfilter-hover,
 .tagfilter.tagfilter-focus {
@@ -2107,7 +2060,6 @@ div.rallyListView #addNewContainer .error {
     background-color: var(--x4-muted-bg);
 }
 .rly-popover.percentDonePopover .dangerNotification {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/caution-icon.png);
     background-color: transparent;
 }
 .x4-container .rly-popover {
@@ -2198,6 +2150,7 @@ span.formatted-id-template span.artifact-icon a.formatted-id-link {
 span.formatted-id-template:hover .formatted-id-link {
 }
 span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
+    color: var(--x4-silver);
 }
 .icon-builder-template.NONE .icon-empty {
     color: var(--x4-gray-35);
@@ -2301,16 +2254,16 @@ span.formatted-id-template span.artifact-icon a.formatted-id-link {
 span.formatted-id-template:hover .formatted-id-link {
 }
 span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
+    color: var(--x4-silver);
 }
 .rallyRichTextEditor {
+    border-color: var(--x4-silver);
     background-color: var(--x4-bg);
 }
 .rallyRichTextEditor .x4-resizable-handle-south {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gripper/bottom-gripper-inactive.png);
     background-color: var(--x4-bg);
 }
 .rallyRichTextEditor .richTextToolbar .goog-toolbar-select .goog-toolbar-menu-button-dropdown {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/down.png);
     background-color: transparent;
 }
 .rich-text-readonly {
@@ -2332,6 +2285,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-outer-box,
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-inner-box {
+    border-color: var(--x4-silver) !important;
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-inner-box {
 }
@@ -2403,14 +2357,17 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-gray-80);
 }
 .unfinished-story-splitting-panel {
+    border-right-color: var(--x4-gray-40) !important;
 }
 .rally-search-field:hover input {
 }
 .rally-search-field:hover .icon-search {
 }
 .rally-search-field .rally-search-button {
+    color: var(--x4-silver);
 }
 .rally-shared-view-list .default-items {
+    border-bottom-color: var(--x4-gray-40);
 }
 .rally-shared-view-list .default-items .default-item:hover {
 }
@@ -2475,6 +2432,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled span,
 .dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled:hover span {
+    color: var(--x4-silver);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-tags .x4-grid-cell-inner:hover {
 }
@@ -2522,6 +2480,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled span,
 .dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled:hover span {
+    color: var(--x4-silver);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-mvcfs .x4-grid-cell-inner:hover {
 }
@@ -2552,11 +2511,9 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-gray-80);
 }
 .x4-tip .x4-tip-body .tooltip-demo a {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/mediatype-demo.png);
     background-color: transparent;
 }
 .x4-tip .x4-tip-header .x4-tool img {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/tool-sprites-b5d8eb.png);
 }
 .x4-tip-anchor {
     border-color: var(--x4-gray-20);
@@ -2591,14 +2548,13 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: var(--x4-bg);
     background-image: linear-gradient(var(--x4-bg) 70%, var(--x4-bg));
     color: var(--x4-muted-text);
+    border-bottom-color: var(--x4-gray-53);
 }
 .treeItem .treeItemContent:hover {
 }
 .treeItem .treeItemContent:hover .row-action {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gear/gear-hover-icon.png);
 }
 .treeItem .treeItemContent:hover .drag {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gripper/gripper-active.png);
 }
 .treeItem .treeItemContent:hover.tree-item-drop-allowed,
 .treeItem .treeItemContent.tree-item-drop-allowed {
@@ -2606,11 +2562,9 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .treeItem .treeItemContent.treeItemSelected {
 }
 .treeItem .treeItemContent .row-action {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gear/gear-icon.png);
     background-color: transparent;
 }
 .treeItem .treeItemContent .drag {
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/gripper/gripper-inactive.png);
 }
 .tps-ext4-filter-ct .icon-search {
     color: var(--x4-gray-80);
@@ -2620,7 +2574,6 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .rally-invalid .rally-invalid-field {
     background-color: var(--x4-bg);
-    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/red-triangle.png);
 }
 .rally-invalid .rally-invalid-field:hover {
 }
