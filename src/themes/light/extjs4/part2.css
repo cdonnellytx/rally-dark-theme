@@ -3473,7 +3473,7 @@ a:visited {
     color: var(--x4-muted-text);
 }
 .app-settings .settings-title {
-    color: var(--x4-gray-103);
+    color: var(--x4-gray-100);
 }
 div.banner {
     background-color: #fbedca;
@@ -4041,8 +4041,8 @@ div.banner .dismiss-btn {
     color: var(--x4-gray-35);
 }
 .dark-container .x4-btn.secondary:hover {
-    background-color: var(--x4-gray-100);
-    border-color: var(--x4-gray-100);
+    background-color: var(--x4-gray-99);
+    border-color: var(--x4-gray-99);
 }
 .dark-container .x4-btn.secondary:hover span {
     color: var(--x4-gray-20);

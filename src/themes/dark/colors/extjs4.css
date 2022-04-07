@@ -1,7 +1,7 @@
 :root {
     /* LIGHT: 100=dark, 0=light */
-    --x4-gray-103: #0c0c0c;
-    --x4-gray-100: #101010;
+    --x4-gray-100: #0c0c0c;
+    --x4-gray-99: #101010;
     --x4-gray-95: #1a1a1a;
     --x4-gray-93: #1d1d1d;
     --x4-gray-90: #242424;
@@ -43,13 +43,13 @@
     --x4-bg: var(--main-bg);
     --x4-text: var(--main-text);
 
-    --x4-secondary-text: var(--x4-gray-100);
+    --x4-secondary-text: var(--x4-gray-99);
 
     --x4-muted-bg: var(--x4-gray-20);
     --x4-muted-text: var(--x4-gray-90);
 
     --x4-control-border: var(--x4-gray-40);
-    --x4-control-text: var(--x4-gray-100);
+    --x4-control-text: var(--x4-gray-99);
 
     --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
 
