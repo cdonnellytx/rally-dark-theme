@@ -33,7 +33,7 @@
     border-left-color: var(--x4-focus-frame-border);
 }
 .x4-mask {
-    background-color: var(--x4-gray-39);
+    background-color: var(--x4-gray-39-bg);
 }
 .x4-mask-msg {
     border-color: transparent;
@@ -42,7 +42,7 @@
 .x4-mask-msg-inner {
     border-color: transparent;
     background-color: #eff8fb;
-    color: var(--x4-gray-95);
+    color: var(--x4-gray-95-text);
 }
 .x4-mask-msg-text {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/loading.gif);
@@ -109,12 +109,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-small-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-small-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-small-focus {
     border-color: #44525e;
@@ -199,7 +199,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-disabled-sides.gif);
 }
 .x4-btn-default-small-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-small {
     background-image: none;
@@ -270,12 +270,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-medium-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-medium-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-medium-focus {
     border-color: #44525e;
@@ -360,7 +360,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-disabled-sides.gif);
 }
 .x4-btn-default-medium-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-medium {
     background-image: none;
@@ -431,12 +431,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-large-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-large-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-large-focus {
     border-color: #44525e;
@@ -521,7 +521,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-disabled-sides.gif);
 }
 .x4-btn-default-large-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-large {
     background-image: none;
@@ -592,12 +592,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-toolbar-small-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-toolbar-small-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-toolbar-small-focus {
     border-color: #81a4d0;
@@ -682,7 +682,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-disabled-sides.gif);
 }
 .x4-btn-default-toolbar-small-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-toolbar-small {
     background-image: none;
@@ -753,12 +753,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-toolbar-medium-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-toolbar-medium-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-toolbar-medium-focus {
     border-color: #81a4d0;
@@ -843,7 +843,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-disabled-sides.gif);
 }
 .x4-btn-default-toolbar-medium-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-toolbar-medium {
     background-image: none;
@@ -914,12 +914,12 @@
     color: #9fc1d1;
 }
 .x4-btn-default-toolbar-large-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-default-toolbar-large-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-default-toolbar-large-focus {
     border-color: #81a4d0;
@@ -1004,7 +1004,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-sides.gif);
 }
 .x4-btn-default-toolbar-large-disabled .x4-frame-mc {
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-nbr .x4-btn-default-toolbar-large {
     background-image: none;
@@ -1034,7 +1034,7 @@
     content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-sides.gif";
 }
 .x4-toolbar-text {
-    color: var(--x4-gray-83);
+    color: var(--x4-gray-83-text);
 }
 .x4-toolbar-separator-horizontal {
     border-left-color: #98c8ff;
@@ -1461,7 +1461,7 @@
     color: #678ebf;
 }
 .x4-tip-anchor {
-    border-color: var(--x4-gray-59);
+    border-color: var(--x4-gray-59-border);
 }
 .x4-tip-anchor-top {
     border-top-color: transparent;
@@ -1485,12 +1485,12 @@
 }
 .x4-tip-default {
     background-image: none;
-    background-color: var(--x4-gray-10);
-    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10));
+    background-color: var(--x4-gray-10-bg);
+    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10-bg));
 }
 .x4-tip-default-mc {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-fbg.gif);
-    background-color: var(--x4-gray-10);
+    background-color: var(--x4-gray-10-bg);
 }
 .x4-nlg .x4-tip-default {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-bg.gif);
@@ -1517,7 +1517,7 @@
     content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-sides.gif";
 }
 .x4-tip-default {
-    border-color: var(--x4-gray-59);
+    border-color: var(--x4-gray-59-border);
 }
 .x4-tip-header-text-container-default {
     color: var(--x4-muted-text);
@@ -1531,7 +1531,7 @@
 .x4-tip-form-invalid {
     background-image: none;
     background-color: var(--x4-primary-bg);
-    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10));
+    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10-bg));
 }
 .x4-tip-form-invalid-mc {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-fbg.gif);
@@ -1967,7 +1967,7 @@
 }
 .x4-form-empty-field,
 textarea.x4-form-empty-field {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
 }
 .x4-form-display-field {
     color: var(--x4-primary-text);
@@ -2152,14 +2152,14 @@ a.x4-datepicker-date:hover {
 }
 .x4-datepicker-prevday .x4-datepicker-date,
 .x4-datepicker-nextday .x4-datepicker-date {
-    color: var(--x4-gray-60);
+    color: var(--x4-gray-60-text);
 }
 .x4-datepicker-disabled a.x4-datepicker-date {
-    background-color: var(--x4-gray-15);
-    color: var(--x4-gray-50);
+    background-color: var(--x4-gray-15-bg);
+    color: var(--x4-gray-50-text);
 }
 .x4-datepicker-disabled a.x4-datepicker-date:hover {
-    background-color: var(--x4-gray-15);
+    background-color: var(--x4-gray-15-bg);
 }
 .x4-datepicker-footer,
 .x4-monthpicker-buttons {
@@ -2198,7 +2198,7 @@ a.x4-monthpicker-item-inner:hover {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/date-trigger.gif);
 }
 .x4-form-file-wrap .x4-form-text {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
 }
 .x4-color-picker {
     background-color: var(--x4-primary-bg);
@@ -2287,7 +2287,7 @@ a.x4-color-picker-item:hover {
     border-color: #99bce8;
 }
 .x4-grid-empty {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
     background-color: var(--x4-primary-bg);
 }
 .x4-grid-cell {
@@ -2296,13 +2296,13 @@ a.x4-color-picker-item:hover {
     border-color: var(--x4-control-border);
 }
 .x4-grid-row-alt .x4-grid-td {
-    background-color: var(--x4-gray-03);
+    background-color: var(--x4-gray-03-bg);
 }
 .x4-grid-row-before-over .x4-grid-td {
-    border-bottom-color: var(--x4-gray-30);
+    border-bottom-color: var(--x4-gray-30-border);
 }
 .x4-grid-row-over .x4-grid-td {
-    border-bottom-color: var(--x4-gray-30);
+    border-bottom-color: var(--x4-gray-30-border);
 }
 .x4-grid-row-before-selected .x4-grid-td {
     border-bottom-color: #a3bae9;
@@ -2311,10 +2311,10 @@ a.x4-color-picker-item:hover {
     border-bottom-color: #a3bae9;
 }
 .x4-grid-row-before-focused .x4-grid-td {
-    border-bottom-color: var(--x4-gray-85);
+    border-bottom-color: var(--x4-gray-85-border);
 }
 .x4-grid-row-focused .x4-grid-td {
-    background-color: var(--x4-gray-14);
+    background-color: var(--x4-gray-14-bg);
 }
 .x4-grid-row-over .x4-grid-td {
     background-color: #ecf8fb;
@@ -2323,34 +2323,34 @@ a.x4-color-picker-item:hover {
     background-color: #b5d8eb;
 }
 .x4-grid-row-focused .x4-grid-td {
-    border-bottom-color: var(--x4-gray-85);
+    border-bottom-color: var(--x4-gray-85-border);
 }
 .x4-grid-table .x4-grid-row-focused-first .x4-grid-td {
-    border-top-color: var(--x4-gray-85);
+    border-top-color: var(--x4-gray-85-border);
 }
 .x4-grid-row-selected .x4-grid-row-summary .x4-grid-td {
     border-bottom-color: #b5d8eb;
 }
 .x4-grid-row-focused .x4-grid-row-summary .x4-grid-td {
-    border-bottom-color: var(--x4-gray-14);
+    border-bottom-color: var(--x4-gray-14-border);
 }
 .x4-grid-with-row-lines .x4-grid-table {
     border-top-color: #ffffff;
 }
 .x4-grid-with-row-lines .x4-grid-table-over-first {
-    border-top-color: var(--x4-gray-30);
+    border-top-color: var(--x4-gray-30-border);
 }
 .x4-grid-with-row-lines .x4-grid-table-selected-first {
     border-top-color: #a3bae9;
 }
 .x4-grid-body .x4-grid-table-focused-first {
-    border-top-color: var(--x4-gray-85);
+    border-top-color: var(--x4-gray-85-border);
 }
 .x4-grid-cell-special {
     border-color: var(--x4-control-border);
     background-image: none;
-    background-color: var(--x4-gray-05);
-    background-image: linear-gradient(top, var(--x4-gray-05), var(--x4-gray-18));
+    background-color: var(--x4-gray-05-bg);
+    background-image: linear-gradient(top, var(--x4-gray-05-bg), var(--x4-gray-18-bg));
 }
 .x4-grid-row-selected .x4-grid-cell-special {
     border-right-color: var(--x4-control-border) #aaccf6;
@@ -2409,7 +2409,7 @@ a.x4-color-picker-item:hover {
     background-color: transparent;
 }
 .x4-grid-body {
-    border-top-color: var(--x4-gray-45);
+    border-top-color: var(--x4-gray-45-border);
 }
 .x4-hmenu-sort-asc {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/hmenu-asc.gif);
@@ -2421,12 +2421,12 @@ a.x4-color-picker-item:hover {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/columns.gif);
 }
 .x4-column-header {
-    border-right-color: var(--x4-gray-45);
+    border-right-color: var(--x4-gray-45-border);
     color: var(--x4-primary-text);
     background-image: none;
 }
 .x4-group-sub-header {
-    border-top-color: var(--x4-gray-45);
+    border-top-color: var(--x4-gray-45-border);
 }
 .x4-column-header-over,
 .x4-column-header-sort-ASC,
@@ -2618,7 +2618,7 @@ a.x4-color-picker-item:hover {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-top.gif);
 }
 .x4-splitter-active {
-    background-color: var(--x4-gray-52);
+    background-color: var(--x4-gray-52-bg);
 }
 .x4-border-layout-ct {
     background-color: #dfe8f6;
@@ -2627,7 +2627,7 @@ a.x4-color-picker-item:hover {
     background-color: #eff8fb;
 }
 .x4-menu-icon-separator {
-    border-left-color: var(--x4-gray-25);
+    border-left-color: var(--x4-gray-25-border);
     background-color: var(--x4-primary-bg);
 }
 .x4-menu-item-active {
@@ -2662,7 +2662,7 @@ a.x4-color-picker-item:hover {
     background-image: none;
 }
 .x4-menu-item-separator {
-    border-top-color: var(--x4-gray-25);
+    border-top-color: var(--x4-gray-25-border);
     background-color: var(--x4-primary-bg);
 }
 .x4-menu-item-arrow {
@@ -3367,9 +3367,9 @@ a.x4-color-picker-item:hover {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/l.gif);
 }
 .x4-box-mc {
-    background-color: var(--x4-gray-15);
+    background-color: var(--x4-gray-15-bg);
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/tb.gif);
-    color: var(--x4-gray-93);
+    color: var(--x4-gray-93-text);
 }
 .x4-box-mr {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/r.gif);
@@ -3473,7 +3473,7 @@ a:visited {
     color: var(--x4-muted-text);
 }
 .app-settings .settings-title {
-    color: var(--x4-gray-100);
+    color: var(--x4-gray-100-text);
 }
 div.banner {
     background-color: #fbedca;
@@ -3487,13 +3487,13 @@ div.banner .dismiss-btn {
 }
 .x4-boundlist .x4-boundlist-item {
     background-color: var(--x4-primary-bg);
-    border-left-color: var(--x4-gray-35);
-    border-right-color: var(--x4-gray-35);
+    border-left-color: var(--x4-gray-35-border);
+    border-right-color: var(--x4-gray-35-border);
     color: var(--x4-muted-text);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: var(--x4-control-text);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-item-over {
@@ -3505,11 +3505,11 @@ div.banner .dismiss-btn {
     color: #ffffff;
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled {
-    color: var(--x4-gray-70);
+    color: var(--x4-gray-70-text);
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected {
     background-color: var(--x4-primary-bg);
@@ -3518,7 +3518,7 @@ div.banner .dismiss-btn {
     background-color: #30aac7;
 }
 .x4-boundlist .rally-group-header {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-muted-bg);
@@ -3551,12 +3551,12 @@ div.banner .dismiss-btn {
     color: #ff0000;
 }
 .x4-btn-link-small-disabled {
-    border-color: var(--x4-gray-55);
+    border-color: var(--x4-gray-55-border);
     background-image: none;
     background-color: transparent;
 }
 .x4-btn-link-small-disabled .x4-btn-inner {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-btn-link-small-focus {
     border-color: #44525e;
@@ -3672,7 +3672,7 @@ div.banner .dismiss-btn {
 }
 .x4-btn-default-toolbar-small-disabled {
     background-image: none;
-    background-color: var(--x4-gray-40);
+    background-color: var(--x4-gray-40-bg);
 }
 .x4-btn-link-small-small .x4-btn-inner {
     color: #085478;
@@ -3681,19 +3681,19 @@ div.banner .dismiss-btn {
     border-color: transparent !important;
 }
 .x4-btn-focus .x4-btn-button {
-    border-color: var(--x4-gray-25) !important;
+    border-color: var(--x4-gray-25-border) !important;
 }
 .x4-ie7m .x4-btn-focus .x4-btn-mc {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
 }
 .x4-ie7m .x4-btn-icon {
     border-color: transparent;
 }
 .x4-ie7m .x4-btn-focus .x4-btn-icon {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
 }
 .x4-btn.toggle {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: #327c98;
     background-color: var(--x4-primary-bg);
 }
@@ -3709,8 +3709,8 @@ div.banner .dismiss-btn {
     color: #ffffff;
 }
 .x4-btn.toggle.center {
-    border-top-color: var(--x4-gray-35);
-    border-bottom-color: var(--x4-gray-35);
+    border-top-color: var(--x4-gray-35-border);
+    border-bottom-color: var(--x4-gray-35-border);
 }
 .x4-btn.secondary.control.button {
     background-color: transparent;
@@ -3722,7 +3722,7 @@ div.banner .dismiss-btn {
     background-color: transparent;
 }
 .x4-btn.tertiary.controls.button span {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .x4-btn.primary.highlight,
 .x4-btn.primary.highlight tr td,
@@ -3793,7 +3793,7 @@ div.banner .dismiss-btn {
 .x4-btn.highlight.secondary tr td {
     background-image: none;
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-btn.primary.secondary span,
 .x4-btn.primary.secondary tr td span,
@@ -3850,8 +3850,8 @@ div.banner .dismiss-btn {
 .x4-btn.tertiary.secondary.dark tr td,
 .x4-btn.highlight.secondary.dark,
 .x4-btn.highlight.secondary.dark tr td {
-    background-color: var(--x4-gray-80);
-    border-color: var(--x4-gray-80);
+    background-color: var(--x4-gray-80-bg);
+    border-color: var(--x4-gray-80-border);
 }
 .x4-btn.primary.secondary.dark span,
 .x4-btn.primary.secondary.dark tr td span,
@@ -3969,8 +3969,8 @@ div.banner .dismiss-btn {
 .x4-btn.highlight.x4-item-disabled tr td,
 .x4-btn.toggle.x4-item-disabled,
 .x4-btn.toggle.x4-item-disabled tr td {
-    background-color: var(--x4-gray-35);
-    border-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-btn.primary.x4-item-disabled span,
 .x4-btn.primary.x4-item-disabled tr td span,
@@ -4004,8 +4004,8 @@ div.banner .dismiss-btn {
 .x4-btn.toggle.x4-item-disabled:hover tr td,
 .x4-btn.toggle.x4-item-disabled tr td:hover,
 .x4-btn.toggle.x4-item-disabled tr td:hover tr td {
-    background-color: var(--x4-gray-35);
-    border-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-btn.primary.x4-item-disabled:hover span,
 .x4-btn.primary.x4-item-disabled:hover tr td span,
@@ -4038,19 +4038,19 @@ div.banner .dismiss-btn {
     border-color: #000000;
 }
 .dark-container .x4-btn.secondary span {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .dark-container .x4-btn.secondary:hover {
-    background-color: var(--x4-gray-99);
-    border-color: var(--x4-gray-99);
+    background-color: var(--x4-gray-99-bg);
+    border-color: var(--x4-gray-99-border);
 }
 .dark-container .x4-btn.secondary:hover span {
-    color: var(--x4-gray-20);
+    color: var(--x4-gray-20-text);
 }
 .dark-container .x4-btn.x4-item-disabled,
 .dark-container .x4-btn.x4-item-disabled:hover {
-    background-color: var(--x4-gray-80);
-    border-color: var(--x4-gray-80);
+    background-color: var(--x4-gray-80-bg);
+    border-color: var(--x4-gray-80-border);
 }
 .dark-container .x4-btn.x4-item-disabled span,
 .dark-container .x4-btn.x4-item-disabled:hover span {
@@ -4064,14 +4064,14 @@ div.banner .dismiss-btn {
     color: #21516d;
 }
 .rui-card {
-    box-shadow: var(--x4-gray-35) 2px 2px;
+    box-shadow: var(--x4-gray-35-shadow) 2px 2px;
     background-color: var(--x4-primary-bg);
 }
 .rui-card .artifact-color {
-    background-color: var(--x4-gray-65);
+    background-color: var(--x4-gray-65-bg);
 }
 .rui-card .card-table-ct {
-    border-color: var(--x4-gray-65);
+    border-color: var(--x4-gray-65-border);
 }
 .rui-card.dndItemBefore {
     border-top-color: #6ad17b;
@@ -4086,10 +4086,10 @@ div.banner .dismiss-btn {
     border-color: #b81b10 !important;
 }
 .cardboard .x4-dd-drag-ghost .rui-card {
-    box-shadow: var(--x4-gray-40) 0 0;
+    box-shadow: var(--x4-gray-40-shadow) 0 0;
 }
 .cardboard .column-container th.card-column {
-    border-bottom-color: var(--x4-gray-70);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .cardboard .column-container th.card-column.over-capacity {
     background-color: #b81b10;
@@ -4098,11 +4098,11 @@ div.banner .dismiss-btn {
     color: #ffffff;
 }
 .cardboard .column-container td.card-column {
-    background-color: var(--x4-gray-05);
-    border-bottom-color: var(--x4-gray-70);
+    background-color: var(--x4-gray-05-bg);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .cardboard .column-container .card-column {
-    border-left-color: var(--x4-gray-70);
+    border-left-color: var(--x4-gray-70-border);
 }
 .cardboard .column-container .card-column:first-child {
     border-left-color: transparent;
@@ -4120,35 +4120,35 @@ div.banner .dismiss-btn {
     box-shadow: rgba(192, 192, 192, 0.5) 2px 2px;
 }
 .cardboard .column-container .card-column.dnd-over {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .cardboard .column-container .card-column.dnd-over.no-drop,
 .cardboard .column-container .card-column.dnd-over.over-capacity {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .cardboard .column-container .column-header {
-    color: var(--x4-gray-95);
+    color: var(--x4-gray-95-text);
 }
 .cardboard .column-container .column-header .editableField {
     border-color: transparent;
 }
 .cardboard .column-container .column-header .editableField:hover {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
     background-color: var(--x4-primary-bg);
 }
 .cardboard .column-container .column-header .column-card-count {
-    color: var(--x4-gray-70);
+    color: var(--x4-gray-70-text);
 }
 .cardboard .column-container .column-header .policy {
     background-color: var(--x4-primary-bg);
-    color: var(--x4-gray-70);
-    border-top-color: var(--x4-gray-70);
+    color: var(--x4-gray-70-text);
+    border-top-color: var(--x4-gray-70-border);
 }
 .cardboard .column-container .row-header .row-header-cell {
-    border-bottom-color: var(--x4-gray-70);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .cardboard .column-container .row-header .row-header-cell .row-header-title {
-    color: var(--x4-gray-95);
+    color: var(--x4-gray-95-text);
 }
 .cardboard .column-container .row-header:hover .expand-collapse {
     color: var(--x4-muted-text);
@@ -4158,14 +4158,14 @@ div.banner .dismiss-btn {
     color: var(--x4-silver);
 }
 .cardboard .card-column .column-content .rally-drop-indicator {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .boardprint .column {
-    border-bottom-color: var(--x4-gray-70);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .boardprint th,
 .boardprint td {
-    border-right-color: var(--x4-gray-70);
+    border-right-color: var(--x4-gray-70-border);
 }
 .rally-blocked-reason-content,
 .rally-blocked-reason-content-popover {
@@ -4188,7 +4188,7 @@ div.banner .dismiss-btn {
 }
 .rally-blocked-reason-content .empty,
 .rally-blocked-reason-content-popover .empty {
-    color: var(--x4-gray-70);
+    color: var(--x4-gray-70-text);
 }
 .rally-blocked-reason-content.required div:hover,
 .rally-blocked-reason-content-popover.required div:hover {
@@ -4215,7 +4215,7 @@ div.banner .dismiss-btn {
     color: #ffffff;
 }
 .rui-card .rui-card-content .status-content > .status-field .status-value.tasks .icon-to-do {
-    color: var(--x4-gray-70);
+    color: var(--x4-gray-70-icon);
 }
 .rui-card .rui-card-content .status-content > .status-field .status-value.pred-suc .predecessors {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-icon.png);
@@ -4230,7 +4230,7 @@ div.banner .dismiss-btn {
     background-color: var(--x4-muted-bg);
 }
 .rui-card .rui-card-content .userstories-template .icon-story {
-    color: var(--x4-gray-70);
+    color: var(--x4-gray-70-icon);
 }
 .rui-card .rui-card-content .dependencies-template {
     background-color: var(--x4-muted-bg);
@@ -4242,10 +4242,10 @@ div.banner .dismiss-btn {
     background-color: transparent;
 }
 .rui-card .field-content .rui-field-label {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rui-card .field-content .rui-field-value {
-    color: var(--x4-gray-95);
+    color: var(--x4-gray-95-text);
 }
 .rui-card .field-content.ScheduleState.editable:hover .rui-field-value {
     border-color: transparent;
@@ -4255,7 +4255,7 @@ div.banner .dismiss-btn {
     border-color: transparent;
 }
 .rui-card .field-content.editable:hover .rui-field-value {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
     background-color: var(--x4-primary-bg);
 }
 .rui-card .field-content.rally-invalid-card-field .rui-field-value {
@@ -4287,11 +4287,11 @@ div.banner .dismiss-btn {
     color: var(--x4-control-text);
 }
 .rui-card .rui-card-right-side .card-estimate-field .field-content.editable:hover {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
     background-color: var(--x4-primary-bg);
 }
 .rally-card-icons-ct .rally-card-icon {
-    background-color: var(--x4-gray-65);
+    background-color: var(--x4-gray-65-bg);
     color: var(--x4-control-text);
 }
 .rally-card-icons-ct .rally-card-icon:hover {

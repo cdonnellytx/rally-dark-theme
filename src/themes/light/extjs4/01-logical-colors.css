@@ -1,0 +1,29 @@
+:root {
+    /* ExtJS name equivalents */
+    --x4-ie-shadow: #777777;
+
+    --x4-primary-bg: #ffffff;
+    --x4-primary-text: #000000;
+
+    --x4-secondary-text: var(--x4-gray-99-text);
+
+    --x4-muted-bg: var(--x4-gray-20-bg);
+    --x4-muted-text: var(--x4-gray-90-text);
+    --x4-collapsed-text: var(--x4-gray-90-text);
+
+    --x4-control-border: var(--x4-gray-40-border);
+    --x4-control-icon: var(--x4-gray-70-icon);
+    --x4-control-text: var(--x4-gray-99-text);
+
+    --x4-control-readonly-text: var(--x4-gray-70-text);
+
+    --x4-label-text: var(--x4-gray-90-text);
+
+    --x4-dd-drag-border: var(--x4-gray-30-border) var(--x4-gray-50-border) var(--x4-gray-50-border) #var(--x4-gray-30-border);
+
+    --x4-form-invalid-text: var(--x4-muted-text);
+
+    /* FIXME */
+    --x4-proxy-bg: #b4b4b4;
+    --x4-focus-frame-border: #15428b;
+}

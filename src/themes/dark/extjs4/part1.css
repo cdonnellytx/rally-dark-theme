@@ -1,19 +1,19 @@
 .cardboard .column-container .card-column.collapsible .expand-collapse {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
     background-color: transparent;
 }
 .cardboard .column-container .card-column.collapsible .expand-collapse:hover {
-    color: var(--x4-muted-text);
+    color: var(--x4-collapsed-text);
 }
 .cardboard .column-container .card-column.collapsible.over-capacity .expand-collapse {
 }
 .cardboard .column-container .card-column.collapsible.over-capacity .expand-collapse:hover {
 }
 .cardboard .column-container .card-column.collapsible .collapsed-title {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .cardboard .column-container .card-column.collapsible.collapsed {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .cardboard .column-container .card-column.collapsible.collapsed.over-capacity {
 }
@@ -21,7 +21,7 @@
 }
 .cardboard .column-container .card-column.collapsible.collapsed.mouseover .expand-collapse,
 .cardboard .column-container .card-column.collapsible.collapsed.mouseover .collapsed-title {
-    color: var(--x4-muted-text);
+    color: var(--x4-collapsed-text);
 }
 .cardboard .column-container .card-column.collapsible.collapsed.mouseover.over-capacity .expand-collapse,
 .cardboard .column-container .card-column.collapsible.collapsed.mouseover.over-capacity .collapsed-title {
@@ -31,7 +31,7 @@
 .cardboard .column-container th.card-column.collapsible.over-capacity .collapsed-title {
 }
 .cardboard.has-rows .column-container .card-column.collapsible.collapsed {
-    border-bottom-color: var(--x4-gray-70);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .cardboard.has-rows .column-container .card-column.collapsible.collapsed .collapsed-title-fade {
 }
@@ -68,7 +68,7 @@
     border-color: transparent;
 }
 .rly-popover.color-popover.x4-window-rally .palette-color.selected {
-    border-color: var(--x4-gray-65);
+    border-color: var(--x4-gray-65-border);
 }
 .rly-popover.color-popover.x4-window-rally .palette-color.selected.no-color-container {
 }
@@ -79,6 +79,7 @@
     border-left-color: transparent;
 }
 .rly-popover.color-popover.x4-window-rally .palette-color.no-color-container .line-color {
+    border-bottom-color: var(--x4-red);
 }
 .rly-popover.color-popover.x4-window-rally .palette-color.no-color-container .background-color {
 }
@@ -87,7 +88,7 @@
     color: var(--x4-primary-text);
 }
 .inline-discussion-reply .rally-textfield-component input {
-    border-color: var(--x4-gray-25);
+    border-color: var(--x4-gray-25-border);
 }
 .inline-discussion-reply .rally-textfield-component input.x4-form-focus {
 }
@@ -96,16 +97,16 @@
 }
 .discussion-richtext-stream-view .list .list-item {
     border-top-color: var(--x4-silver);
-    color: var(--x4-muted-text);
+    color: var(--x4-label-text);
 }
 .discussion-richtext-stream-view .list-item-info .inactive {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
 }
 .discussion-richtext-stream-view .list-item-user .profile {
     border-color: var(--x4-silver);
 }
 .discussion-richtext-stream-view .list-item-details .status {
-    color: var(--x4-gray-68);
+    color: var(--x4-gray-68-text);
 }
 .discussion-richtext-stream-view .show-more-ct {
     border-top-color: var(--x4-silver);
@@ -114,19 +115,20 @@
     background-color: transparent;
 }
 .chart .empty {
-    color: var(--x4-gray-78);
+    color: var(--x4-dimgray);
 }
 .chart .yaxis-title {
     color: var(--x4-primary-text);
 }
 .detailView .detailContentWrapper fieldset {
-    border-color: var(--x4-gray-34);
+    border-color: var(--x4-gray-34-border);
     background-color: var(--x4-primary-bg);
 }
 .detailView .detailContentWrapper .invalidField {
+    border-color: var(--x4-red);
 }
 .detailView .fieldsetContainerLabel {
-    color: var(--x4-muted-text);
+    color: var(--x4-label-text);
 }
 .detailPage .detailFieldEditor.detail-attachments-field .rally-grid .x4-grid-header-ct {
     background-color: transparent;
@@ -150,7 +152,7 @@
 .detailMessageContainer.error a {
 }
 .fieldBucket {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
     border-color: var(--x4-silver);
 }
 .fieldBucket div.icon-chevron-down.focused,
@@ -163,7 +165,7 @@
     color: var(--x4-control-text);
 }
 .fieldBucket .control {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .fieldBucket .control:hover,
 .fieldBucket .control.focused {
@@ -180,18 +182,18 @@
 }
 .detailPage .detailField .detailFieldContainer.readonly .fieldContainerView,
 .detailPage .detailField .detailFieldContainer.readonly:hover .fieldContainerView {
-    color: var(--x4-control-readonly-text);
-    border-color: var(--x4-gray-20);
+    color: var(--x4-gray-70-text);
+    border-color: var(--x4-gray-20-border);
 }
 .detailPage .detailField .detailFieldContainer.readonly .x4-form-trigger-wrap .x4-form-spinner-down,
 .detailPage .detailField .detailFieldContainer.readonly .x4-form-trigger-wrap .x4-form-spinner-up,
 .detailPage .detailField .detailFieldContainer.readonly:hover .x4-form-trigger-wrap .x4-form-spinner-down,
 .detailPage .detailField .detailFieldContainer.readonly:hover .x4-form-trigger-wrap .x4-form-spinner-up {
-    color: var(--x4-gray-20);
+    color: var(--x4-gray-20-text);
 }
 .detailPage .detailField .detailFieldContainer.readonly .x4-form-trigger-wrap .icon-calendar,
 .detailPage .detailField .detailFieldContainer.readonly:hover .x4-form-trigger-wrap .icon-calendar {
-    color: var(--x4-gray-20);
+    color: var(--x4-gray-20-text);
 }
 .detailPage .rui-triggerfield .x4-form-trigger-wrap {
     background-color: var(--x4-primary-bg);
@@ -201,7 +203,7 @@
 }
 .detailPage .x4-item-disabled .focused .x4-form-trigger-wrap,
 .detailPage .x4-item-disabled .x4-form-trigger-wrap:hover {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .detailPage legend {
     color: var(--x4-muted-text);
@@ -216,7 +218,7 @@
 .detailPage .detailView .detailContentWrapper fieldset .rally-grid input:focus {
 }
 .detailPage .detailFieldEditor {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detailPage .detailFieldEditor .rally-grid .rally-grid-cell-description:hover {
     background-image: none !important;
@@ -229,7 +231,7 @@
 .detailPage .detailFieldEditor.pre-save.is-saving {
 }
 .detailPage .detailFieldEditor.readonly {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .detailPage .detailFieldEditor.focused,
 .detailPage .detailFieldEditor:hover,
@@ -238,7 +240,7 @@
 .detailPage .detailFieldEditor.focused.readonly,
 .detailPage .detailFieldEditor:hover.readonly,
 .detailPage .detailFieldEditor:focus.readonly {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .detailPage .detailFieldEditor.focused.is-saving,
 .detailPage .detailFieldEditor:hover.is-saving,
@@ -248,10 +250,10 @@
 .detailPage .focused .rallyRichTextEditor {
 }
 .detailPage .readonly .simpleTextDetailField {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .detailPage .readonly .x4-form-text {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .detailPage fieldset {
     background-color: transparent !important;
@@ -290,8 +292,8 @@
     color: var(--x4-muted-text);
 }
 .detailpagetitlebar .menu-gear.selected span {
-    color: var(--x4-gray-20) !important;
-    background-color: var(--x4-gray-90);
+    color: var(--x4-gray-20-text) !important;
+    background-color: var(--x4-gray-90-bg);
 }
 .detailpagetitlebar .menu-gear span:hover {
     color: var(--x4-secondary-text);
@@ -304,17 +306,17 @@
 }
 .detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly div {
     color: var(--x4-secondary-text);
 }
 .detailpagetitlebar .cancel-btn {
-    background-color: var(--x4-gray-90) !important;
+    background-color: var(--x4-gray-90-bg) !important;
     border-color: transparent !important;
 }
 .detailpagetitlebar .cancel-btn:hover {
-    background-color: var(--x4-gray-80) !important;
+    background-color: var(--x4-gray-80-bg) !important;
 }
 .ext-gecko .detailpagetitlebar.phantom .detailFieldEditor.focused input,
 .ext-gecko .detailpagetitlebar.phantom .detailFieldEditor:hover input,
@@ -340,7 +342,7 @@
     background-color: var(--x4-muted-bg);
 }
 .ribbon-navigation .ribbon-item:hover {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .ribbon-navigation .ribbon-item .rly-label {
     color: var(--x4-muted-text);
@@ -350,7 +352,7 @@
 }
 .ribbon-navigation .ribbon-item.rly-disabled .rly-label,
 .ribbon-navigation .ribbon-item.rly-disabled .picto {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .ribbon-navigation .ribbon-item.rly-disabled:hover {
     background-color: var(--x4-muted-bg);
@@ -370,7 +372,7 @@
 .ready-blocked-status .button:focus {
 }
 .ready-blocked-status .tertiary {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
     color: var(--x4-muted-text);
 }
 .ready-blocked-status .tertiary:hover {
@@ -390,7 +392,7 @@
 .ready-blocked-status .x4-ready:hover {
 }
 .ready-blocked-status .readonly.tertiary:hover {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
     color: var(--x4-muted-text);
 }
 .ready-blocked-status .readonly.x4-blocked:hover {
@@ -405,14 +407,14 @@
     color: var(--x4-silver);
 }
 .rally-detail-schedulestate-field.readonly .rally-detail-schedulestate-chevron {
-    color: var(--x4-gray-20);
+    color: var(--x4-gray-20-text);
 }
 .detail-link-field {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detail-link-field .edit-button {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .detail-link-field:hover {
 }
@@ -425,7 +427,7 @@
     color: var(--x4-muted-text);
 }
 .detailView .northfields fieldset .detailFieldEditor.pre-save {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detailView .northfields fieldset .detailFieldEditor.pre-save.is-saving {
 }
@@ -440,7 +442,7 @@
 .detailView .northfields fieldset .detailFieldEditor.focused.readonly,
 .detailView .northfields fieldset .detailFieldEditor:hover.readonly,
 .detailView .northfields fieldset .detailFieldEditor:focus.readonly {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .detailView .northfields fieldset .detailFieldEditor.focused.is-saving,
 .detailView .northfields fieldset .detailFieldEditor:hover.is-saving,
@@ -462,7 +464,7 @@
 .discussionSubPage .rally-textfield-component input:hover {
 }
 .commentsMetaField .discussion-richtext-stream-view {
-    border-color: var(--x4-gray-38);
+    border-color: var(--x4-lightgray);
 }
 .detailPage {
     background-color: var(--x4-primary-bg);
@@ -471,7 +473,7 @@
     background-color: var(--x4-primary-bg);
 }
 .detailWrapper .detailNavigation a {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .detailWrapper .detailNavigation a:hover,
 .detailWrapper .detailNavigation a:visited:hover {
@@ -482,7 +484,7 @@
     color: var(--x4-primary-text);
 }
 .discussion-reply-toolbar .rly-disabled {
-    background-color: var(--x4-gray-35) !important;
+    background-color: var(--x4-gray-35-bg) !important;
 }
 .detailSubPage .sub-page-header {
     color: var(--x4-secondary-text);
@@ -494,21 +496,21 @@
     background-color: transparent;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger-wrap:hover .x4-form-field {
-    border-top-color: var(--x4-gray-40) !important;
-    border-bottom-color: var(--x4-gray-40) !important;
-    border-left-color: var(--x4-gray-40) !important;
+    border-top-color: var(--x4-gray-40-border) !important;
+    border-bottom-color: var(--x4-gray-40-border) !important;
+    border-left-color: var(--x4-gray-40-border) !important;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger {
     border-color: var(--x4-control-border) !important;
 }
 .detailSubPage .rally-grid .rui-triggerfield .x4-form-field[role="spinbutton"] {
-    border-right-color: var(--x4-gray-40) !important;
+    border-right-color: var(--x4-gray-40-border) !important;
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer {
-    border-top-color: var(--x4-gray-20);
+    border-top-color: var(--x4-gray-20-border);
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer .readonly {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer .readonly.tagPill {
     color: var(--x4-secondary-text);
@@ -530,33 +532,33 @@
     color: var(--x4-muted-text);
 }
 .detailPage .detailView .owner-meta-field .readonly a.parentLink {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
 }
 .detailPage .detailView .owner-meta-field .readonly .rally-user-combobox,
 .detailPage .detailView .owner-meta-field .readonly .rally-user-combobox:hover,
 .detailPage .detailView .owner-meta-field .readonly .rui-project-picker,
 .detailPage .detailView .owner-meta-field .readonly .rui-project-picker:hover {
-    border-color: var(--x4-gray-20) !important;
-    color: var(--x4-gray-65) !important;
+    border-color: var(--x4-gray-20-border) !important;
+    color: var(--x4-gray-65-text) !important;
 }
 .detailPage .detailView .owner-meta-field .readonly .rally-user-combobox .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .readonly .rally-user-combobox:hover .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .readonly .rui-project-picker .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .readonly .rui-project-picker:hover .x4-form-trigger {
-    color: var(--x4-gray-20) !important;
+    color: var(--x4-gray-20-text) !important;
 }
 .detailPage .detailView .owner-meta-field .rally-user-combobox,
 .detailPage .detailView .owner-meta-field .rally-user-combobox:hover,
 .detailPage .detailView .owner-meta-field .rui-project-picker,
 .detailPage .detailView .owner-meta-field .rui-project-picker:hover {
-    border-color: var(--x4-gray-20) !important;
-    color: var(--x4-gray-65) !important;
+    border-color: var(--x4-gray-20-border) !important;
+    color: var(--x4-gray-65-text) !important;
 }
 .detailPage .detailView .owner-meta-field .rally-user-combobox .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .rally-user-combobox:hover .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .rui-project-picker .x4-form-trigger,
 .detailPage .detailView .owner-meta-field .rui-project-picker:hover .x4-form-trigger {
-    color: var(--x4-gray-20) !important;
+    color: var(--x4-gray-20-text) !important;
 }
 .detailPage .detailView .owner-meta-field .metaFieldLinks a:focus,
 .detailPage .detailView .owner-meta-field .detailTagContainer a:focus,
@@ -565,7 +567,7 @@
 .detailPage .detailView .owner-meta-field .detailField-discussion a:focus {
 }
 .detailPage .detailView .owner-meta-field .detailFieldEditor {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detailPage .detailView .owner-meta-field .detailFieldEditor.focused,
 .detailPage .detailView .owner-meta-field .detailFieldEditor:hover,
@@ -574,7 +576,7 @@
 .detailPage .detailView .owner-meta-field .detailFieldEditor.focused.readonly,
 .detailPage .detailView .owner-meta-field .detailFieldEditor:hover.readonly,
 .detailPage .detailView .owner-meta-field .detailFieldEditor:focus.readonly {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .detailPage .detailView .owner-meta-field .detailFieldEditor.focused.is-saving,
 .detailPage .detailView .owner-meta-field .detailFieldEditor:hover.is-saving,
@@ -582,7 +584,7 @@
 }
 .detailPage .detailView .qdpmetafield .quick-view {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-38);
+    border-color: var(--x4-lightgray);
 }
 .detailPage .detailView .qdpmetafield .quick-view:hover {
 }
@@ -599,7 +601,7 @@
 .detailList .detailListItemContainer .deleteDetailListItem {
 }
 .detailPage .detailTagContainer .loading a {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .namefieldtag {
 }
@@ -608,10 +610,10 @@
 .detail-project-tree .x4-grid-cell-inner {
 }
 .detail-project-tree .not-selectable {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .detail-ready-button {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
     color: var(--x4-muted-text);
 }
 .detail-ready-button:hover {
@@ -625,32 +627,32 @@
 .detail-ready-button.x4-ready:hover {
 }
 .detail-ready-button.readonly:hover {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
     color: var(--x4-muted-text);
 }
 .detail-ready-button.readonly.x4-ready:hover {
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor .x4-form-trigger-input-cell input {
-    border-color: var(--x4-gray-35) !important;
+    border-color: var(--x4-gray-35-border) !important;
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor .x4-form-trigger-input-cell .icon-search {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor .x4-form-trigger-input-cell:hover .icon-search {
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor .x4-form-trigger-input-cell:hover input {
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor.readonly .x4-form-trigger-input-cell .icon-search {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .detailPage .rally-detail-milestones-field.detailFieldEditor.readonly .x4-form-trigger-input-cell input {
-    border-color: var(--x4-gray-35) !important;
+    border-color: var(--x4-gray-35-border) !important;
 }
 .detailPage .rally-detail-multi-value-field {
     background-color: var(--x4-primary-bg);
 }
 .detailPage .rally-detail-multi-value-field .icon-search {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .detailPage .rally-detail-multi-value-field:hover .icon-search {
 }
@@ -658,7 +660,7 @@
     color: var(--x4-muted-text);
 }
 .easelchart-ct .easelchart-controls-ct .rui-triggerfield .x4-form-trigger-wrap {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-window-header-body-rally .icon-cancel {
     color: var(--x4-silver);
@@ -668,10 +670,10 @@
 }
 .x4-window-rally {
     background-color: var(--x4-primary-bg);
-    box-shadow: var(--x4-gray-70) 0 2px 2px;
+    box-shadow: var(--x4-gray-70-shadow) 0 2px 2px;
 }
 .x4-window-rally {
-    border-color: var(--x4-gray-80);
+    border-color: var(--x4-gray-80-border);
 }
 .x4-window-rally {
     background-color: var(--x4-primary-bg);
@@ -701,7 +703,7 @@
     color: var(--x4-primary-text);
 }
 .x4-window-header-rally {
-    border-color: var(--x4-gray-80);
+    border-color: var(--x4-gray-80-border);
 }
 .x4-window-header-rally .x4-tool-img {
 }
@@ -897,7 +899,7 @@
 }
 .x4-window .x4-window-header-rally-top {
     background-color: var(--x4-primary-bg) !important;
-    border-color: var(--x4-gray-35) !important;
+    border-color: var(--x4-gray-35-border) !important;
     box-shadow: none;
 }
 .x4-window .x4-window-header-rally-top .x4-window-header-text-rally {
@@ -911,10 +913,10 @@
     background-color: var(--x4-primary-bg);
 }
 .x4-window.chooser-dialog .chooser-search-icon {
-    color: var(--x4-gray-40);
-    border-top-color: var(--x4-gray-40);
-    border-bottom-color: var(--x4-gray-40);
-    border-right-color: var(--x4-gray-40);
+    color: var(--x4-gray-40-text);
+    border-top-color: var(--x4-gray-40-border);
+    border-bottom-color: var(--x4-gray-40-border);
+    border-right-color: var(--x4-gray-40-border);
 }
 .x4-window.chooser-dialog .rui-triggerfield:hover .chooser-search-icon,
 .x4-window.chooser-dialog .rui-triggerfield:hover input,
@@ -922,7 +924,7 @@
 .x4-window.chooser-dialog .x4-form-trigger-wrap-focus input {
 }
 .chooser-search-icon {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .x4-ie8m .x4-window .x4-window-header-rally-top {
     background-color: var(--x4-primary-bg) !important;
@@ -931,7 +933,7 @@
     background-color: var(--x4-primary-bg) !important;
 }
 .kanbanPolicyRichTextEditorHeader {
-    color: var(--x4-gray-75);
+    color: var(--x4-gray);
 }
 .rally-confirm-dialog .icon-warning {
     color: var(--x4-secondary-text);
@@ -950,7 +952,7 @@
     background-color: transparent;
 }
 .bulkier-edit-dialog .x4-btn.row-btn.minus {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .bulkier-edit-dialog .x4-btn.row-btn.plus {
 }
@@ -958,24 +960,24 @@
 }
 .bulkier-edit-dialog .x4-btn.row-btn.plus.x4-item-disabled span,
 .bulkier-edit-dialog .x4-btn.row-btn.plus.x4-item-disabled:hover span {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .csv-import-dialog .advanced {
 }
 .csv-import-dialog .new-csv-import-header {
-    border-color: var(--x4-gray-70);
+    border-color: var(--x4-gray-70-border);
 }
 .feedback-dialog .x4-window-body .circle {
     background-color: var(--x4-silver);
 }
 .feedback-dialog .x4-window-body .circle:hover {
-    background-color: var(--x4-gray-65);
+    background-color: var(--x4-gray-65-bg);
 }
 .feedback-dialog .x4-window-body .circle-selected,
 .feedback-dialog .x4-window-body .circle-selected:hover {
 }
 .feedback-dialog .x4-window-body .dashed-line {
-    border-color: var(--x4-gray-65);
+    border-color: var(--x4-gray-65-border);
 }
 .new-ux.feedback-dialog .x4-window-header {
 }
@@ -983,7 +985,7 @@
 }
 .new-ux.feedback-dialog .x4-window-body .form textarea {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .new-ux.feedback-dialog .x4-window-body .form .footer-left a,
 .new-ux.feedback-dialog .x4-window-body .form .footer-right a {
@@ -992,7 +994,7 @@
 .new-ux.feedback-dialog .x4-window-body .form .footer-right a:hover {
 }
 .source-code pre {
-    background-color: var(--x4-gray-10);
+    background-color: var(--x4-gray-10-bg);
     color: var(--x4-muted-text);
 }
 .rally-move-to-position-dialog .x4-grid-row-selected {
@@ -1023,13 +1025,13 @@
     color: var(--x4-control-icon);
 }
 .new-ux.warning-dialog .x4-window-body .message-secondary {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .new-ux.warning-dialog .x4-window-body .watches-message-warning {
 }
 .new-ux.warning-dialog .x4-window-body .form textarea {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .new-ux.warning-dialog .x4-window-body .form .footer-left a,
 .new-ux.warning-dialog .x4-window-body .form .footer-right a {
@@ -1040,12 +1042,12 @@
 .rally-drop-indicator {
 }
 .edit-mode-button {
-    background-color: var(--x4-gray-80);
+    background-color: var(--x4-gray-80-bg);
 }
 .edit-mode-button:focus {
 }
 .edit-mode-button:hover {
-    background-color: var(--x4-gray-90);
+    background-color: var(--x4-gray-90-bg);
 }
 .edit-mode-button .x4-btn-arrow {
     background-image: none;
@@ -1084,11 +1086,11 @@
 }
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled span,
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled:hover span {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container {
-    border-top-color: var(--x4-gray-80);
-    border-bottom-color: var(--x4-gray-80);
+    border-top-color: var(--x4-gray-80-border);
+    border-bottom-color: var(--x4-gray-80-border);
 }
 .x4-container .custom-filter-popover.rly-popover .model-filter-container .checkbox-container .rally-checkboxfield-component .x4-form-cb-wrap .x4-form-checkbox {
 }
@@ -1107,7 +1109,7 @@
     background-color: var(--x4-primary-bg);
 }
 .rui-checkbox {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
     border-color: var(--x4-silver);
 }
 .rui-checkbox:active {
@@ -1120,7 +1122,7 @@
 }
 .rui-checkbox.rly-disabled {
     background-color: var(--x4-primary-bg);
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .rui-checkbox.rly-disabled:before {
     color: var(--x4-silver);
@@ -1129,7 +1131,7 @@
     color: var(--x4-muted-text);
 }
 .rally-always-expanded-combobox input.x4-form-field {
-    border-right-color: var(--x4-gray-35);
+    border-right-color: var(--x4-gray-35-border);
     background-color: var(--x4-primary-bg);
 }
 .combobox-left-arrow,
@@ -1142,14 +1144,14 @@
 }
 .combobox-left-arrow.rly-disabled,
 .combobox-right-arrow.rly-disabled {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .combobox-left-arrow.rly-disabled:hover,
 .combobox-right-arrow.rly-disabled:hover {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .rally-empty-boundlist .x4-boundlist-list-ct {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rally-checkbox-boundlist.x4-boundlist .x4-boundlist-item .rally-checkbox-image {
 }
@@ -1245,12 +1247,12 @@
 .rally-grid .rank-enabled.grid-view-bulk-edit .x4-grid-row-highlighted.drag-active .x4-grid-cell {
 }
 .rally-grid .rank-enabled.grid-view-bulk-edit .x4-grid-row-highlighted.drag-active .x4-grid-cell.row-action-icon {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special {
-    border-top-color: var(--x4-gray-35);
+    border-top-color: var(--x4-gray-35-border);
     background-color: var(--x4-primary-bg);
 }
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell.x4-grid-cell-row-checker,
@@ -1267,15 +1269,15 @@
     color: var(--x4-silver);
 }
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over:last-child .x4-grid-cell {
-    border-bottom-color: var(--x4-gray-35);
+    border-bottom-color: var(--x4-gray-35-border);
 }
 .rally-grid.grabbing .x4-grid-body .x4-grid-data-row.x4-grid-row-over + .x4-grid-row .x4-grid-cell {
-    border-top-color: var(--x4-gray-35);
+    border-top-color: var(--x4-gray-35-border);
 }
 .rally-grid.grabbing .x4-grid-body .x4-grid-tree-node-child.x4-grid-data-row.x4-grid-row-over .x4-grid-cell,
 .rally-grid.grabbing .x4-grid-body .x4-grid-tree-node-child.x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div,
 .rally-grid.grabbing .x4-grid-body .x4-grid-tree-node-child.x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 img.checked {
     background-color: transparent;
@@ -1287,7 +1289,7 @@ img.checked {
     background-color: var(--x4-primary-bg);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner {
-    border-bottom-color: var(--x4-gray-70);
+    border-bottom-color: var(--x4-gray-70-border);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header {
 }
@@ -1299,7 +1301,7 @@ img.checked {
     background-image: none;
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover.row-action-column-header,
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover.rank-drag-handle-column-header {
@@ -1314,7 +1316,7 @@ img.checked {
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC:hover,
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-DESC:hover {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC .x4-column-header-inner .x4-column-header-text {
 }
@@ -1323,10 +1325,10 @@ img.checked {
 .rally-grid .x4-grid-body {
 }
 .rally-grid .x4-grid-body .row-action-icon {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-grid .x4-grid-body .x4-grid-view-empty {
-    color: var(--x4-gray-78);
+    color: var(--x4-dimgray);
 }
 .rally-grid .x4-grid-row .x4-grid-cell.rally-grid-cell-predecessorsandsuccessors .x4-grid-cell-inner .predecessorsandsuccessors-cnt {
 }
@@ -1357,7 +1359,7 @@ img.checked {
 }
 .rally-grid .disabled-row .artifact-icon,
 .rally-grid .disabled-row .x4-grid-cell {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rally-grid .x4-grid-row-selected .x4-grid-row-single-checker {
 }
@@ -1376,10 +1378,10 @@ img.checked {
 .rally-grid .grid-view-bulk-edit .x4-grid-row-selected .x4-grid-rowwrap-div,
 .rally-grid .grid-view-bulk-edit .x4-grid-row-selected.x4-grid-row-highlighted .x4-grid-cell,
 .rally-grid .grid-view-bulk-edit .x4-grid-row-selected.x4-grid-row-highlighted .x4-grid-rowwrap-div {
-    border-color: var(--x4-gray-65);
+    border-color: var(--x4-gray-65-border);
 }
 .rally-grid .grid-view-bulk-edit .x4-grid-row-selected .row-action-icon {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-grid .x4-grid-row-over .x4-grid-cell,
 .rally-grid .x4-grid-row-over .x4-grid-rowwrap-div {
@@ -1403,7 +1405,7 @@ img.checked {
     color: var(--x4-secondary-text);
 }
 .rally-grid .x4-grid-group-hd {
-    border-color: var(--x4-gray-70);
+    border-color: var(--x4-gray-70-border);
 }
 .rally-grid .x4-grid-group-hd-collapsible .x4-grid-group-title {
 }
@@ -1427,13 +1429,13 @@ img.checked {
     background-color: var(--x4-muted-bg);
 }
 .x4-tree-panel.rally-grid .x4-docked-summary .x4-grid-row-summary .rollup {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row:last-child .x4-grid-cell {
-    border-bottom-color: var(--x4-gray-35);
+    border-bottom-color: var(--x4-gray-35-border);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell {
-    border-top-color: var(--x4-gray-35);
+    border-top-color: var(--x4-gray-35-border);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner {
     border-color: transparent;
@@ -1443,7 +1445,7 @@ img.checked {
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .x4-grid-row-checker:hover {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .row-action-icon {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .row-action-icon:hover {
 }
@@ -1458,7 +1460,7 @@ img.checked {
     background-color: var(--x4-muted-bg);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rank-cell {
-    background-color: var(--x4-gray-65);
+    background-color: var(--x4-gray-65-bg);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rank-cell .x4-grid-cell-inner .rank-cell-handle {
     color: transparent;
@@ -1478,7 +1480,7 @@ img.checked {
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child.x4-grid-row-over .x4-grid-cell {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child .x4-grid-cell {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child .x4-grid-cell.x4-grid-cell-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child .x4-grid-cell.rally-cell-row-action {
@@ -1503,7 +1505,7 @@ img.checked {
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.x4-grid-tree-loading .x4-grid-cell .x4-tree-elbow-end-plus:hover {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.x4-grid-cell-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.rally-cell-row-action {
@@ -1567,10 +1569,10 @@ img.checked {
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected.x4-grid-row-highlighted .x4-grid-cell.rally-cell-row-action {
 }
 .x4-tree-panel.rally-grid .x4-grid-body .grid-view-bulk-edit .x4-grid-row.x4-grid-row-selected .x4-grid-cell .row-action-icon {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-grid.x4-tree-panel .load-more-children-row {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rally-grid.x4-tree-panel .load-more-children-row.x4-grid-row-highlighted .left-cell {
 }
@@ -1579,21 +1581,21 @@ img.checked {
 .rally-grid.x4-tree-panel .load-more-children-row.x4-grid-row-highlighted + .x4-grid-row .x4-grid-cell {
 }
 .rally-grid.x4-tree-panel .load-more-children-row .left-cell {
-    background-color: var(--x4-gray-05);
-    border-top-color: var(--x4-gray-20);
+    background-color: var(--x4-gray-05-bg);
+    border-top-color: var(--x4-gray-20-border);
 }
 .rally-grid.x4-tree-panel .load-more-children-row .x4-grid-cell.pager-cell {
-    border-top-color: var(--x4-gray-35);
-    background-color: var(--x4-gray-05);
+    border-top-color: var(--x4-gray-35-border);
+    background-color: var(--x4-gray-05-bg);
 }
 .x4-window.print-dialog .x4-window-body {
     color: var(--x4-secondary-text);
 }
 .x4-window.print-dialog .x4-form-checkboxgroup-body {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .x4-window.print-dialog .print-warning {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .x4-window.print-dialog .print-warning .alert {
 }
@@ -1604,17 +1606,17 @@ img.checked {
     background-color: transparent;
 }
 .inline-filter-panel .inline-filter-chevron {
-    background-color: var(--x4-gray-05);
-    border-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-05-bg);
+    border-color: var(--x4-gray-35-border);
     border-bottom-color: transparent;
     border-right-color: transparent;
 }
 .inline-filter-panel .inline-filter-panel-close {
     background-color: transparent;
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .inline-filter-panel .inline-filter-panel-close:hover {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .inline-filter-panel .tag-filter-label.x4-btn:focus,
 .inline-filter-panel .x4-form-item-label.x4-btn:focus,
@@ -1625,19 +1627,19 @@ img.checked {
 .inline-filter-panel .x4-toolbar-item.x4-btn:focus span {
 }
 .inline-filter-panel > .x4-panel-body {
-    background-color: var(--x4-gray-05);
-    border-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-05-bg);
+    border-color: var(--x4-gray-35-border);
 }
 .inline-filter-panel > .x4-panel-body .quick-filter-panel .remove-quick-filter-icon {
     background-color: var(--x4-primary-bg);
 }
 .inline-filter-panel .x4-toolbar {
-    background-color: var(--x4-gray-05);
-    border-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-05-bg);
+    border-color: var(--x4-gray-35-border);
 }
 .advanced-filter-panel > .x4-panel-body {
-    background-color: var(--x4-gray-05);
-    border-top-color: var(--x4-gray-35) !important;
+    background-color: var(--x4-gray-05-bg);
+    border-top-color: var(--x4-gray-35-border) !important;
 }
 .advanced-filter-panel > .x4-panel-body .advanced-filter-rows .advanced-filter-row .filter-row-control {
 }
@@ -1653,7 +1655,7 @@ img.checked {
     color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .filters-container .x4-panel-body {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help {
     color: var(--x4-silver);
@@ -1672,7 +1674,7 @@ img.checked {
     color: var(--x4-muted-text);
 }
 .planning-board .cardboard .column-container .planning-column .timeboxDates {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .planning-board .cardboard .column-container .planning-column.current-timebox .rui-card {
 }
@@ -1680,7 +1682,7 @@ img.checked {
     border-right-color: var(--x4-silver);
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status .empty-status {
-    background-color: var(--x4-gray-90);
+    background-color: var(--x4-gray-90-bg);
 }
 .rally-help-icon a {
 }
@@ -1695,20 +1697,20 @@ img.checked {
 .inline-add-rowbody .inline-add-new .icon-cancel {
     background-color: transparent;
     border-color: transparent;
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .inline-add-rowbody .inline-add-new .icon-cancel:hover {
     background-color: transparent;
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .inline-add-rowbody.x4-grid-rowbody {
     background-color: var(--x4-muted-bg);
 }
 .x4-grid-cell-rowbody .inline-add-rowbody.x4-grid-rowbody {
-    border-top-color: var(--x4-gray-20);
+    border-top-color: var(--x4-gray-20-border);
 }
 .inline-add-rowbody.x4-grid-rowbody .inline-add-new {
-    border-left-color: var(--x4-gray-65);
+    border-left-color: var(--x4-gray-65-border);
 }
 .rui-leftright .x4-panel-body {
     background-color: transparent;
@@ -1736,13 +1738,13 @@ div.rallyListView #addNewContainer .error {
 .x4-menu .x4-menu-item-active .x4-menu-item-link .x4-menu-item-text {
 }
 .x4-menu .menu-item-read-only .x4-menu-item-text {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-nlg .x4-menu-item-active .x4-menu-item-link {
     background-image: none;
 }
 .x4-menu-item.x4-menu-item-separator {
-    border-top-color: var(--x4-gray-25);
+    border-top-color: var(--x4-gray-25-border);
 }
 .x4-menu-item.artifact-icon {
     color: var(--x4-control-icon);
@@ -1783,7 +1785,7 @@ div.rallyListView #addNewContainer .error {
 }
 .rui-notification .rui-notification-body {
     background-color: transparent;
-    color: var(--x4-gray-95);
+    color: var(--x4-gray-95-text);
 }
 .rui-notification .rui-notification-close-btn .icon-cancel {
 }
@@ -1801,7 +1803,7 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-secondary-text);
 }
 .progress-bar-background {
-    background-color: var(--x4-gray-90);
+    background-color: var(--x4-gray-90-bg);
 }
 .progress-bar-container {
     background-color: var(--x4-muted-bg);
@@ -1820,13 +1822,13 @@ div.rallyListView #addNewContainer .error {
 .rui-tag-picker-add-new {
 }
 .rui-tag-picker-add-new-component {
-    border-top-color: var(--x4-gray-60);
+    border-top-color: var(--x4-gray-60-border);
 }
 .rui-multi-object-list {
-    border-color: var(--x4-gray-35) !important;
+    border-color: var(--x4-gray-35-border) !important;
 }
 .rally-date-picker {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .rally-date-picker .x4-datepicker-header {
     background-color: var(--x4-silver);
@@ -1834,7 +1836,7 @@ div.rallyListView #addNewContainer .error {
 .rally-date-picker .x4-datepicker-header .x4-datepicker-arrow {
 }
 .rally-date-picker .x4-datepicker-header .x4-datepicker-arrow:hover {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-date-picker .x4-datepicker-header .x4-datepicker-month .x4-btn-inner-center {
     color: var(--x4-muted-text);
@@ -1849,10 +1851,10 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-control-text);
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell .x4-datepicker-date:hover {
-    background-color: var(--x4-gray-70);
+    background-color: var(--x4-gray-70-bg);
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-prevday .x4-datepicker-date {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-prevday .x4-datepicker-date:hover {
 }
@@ -1863,22 +1865,22 @@ div.rallyListView #addNewContainer .error {
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date {
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date:hover {
-    background-color: var(--x4-gray-70);
+    background-color: var(--x4-gray-70-bg);
 }
 .rally-date-picker .x4-datepicker-footer {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-yearnav .x4-monthpicker-yearnav-button-ct .x4-monthpicker-yearnav-prev,
 .rally-date-picker .x4-monthpicker .x4-monthpicker-yearnav .x4-monthpicker-yearnav-button-ct .x4-monthpicker-yearnav-next {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-yearnav .x4-monthpicker-yearnav-button-ct .x4-monthpicker-yearnav-prev:hover,
 .rally-date-picker .x4-monthpicker .x4-monthpicker-yearnav .x4-monthpicker-yearnav-button-ct .x4-monthpicker-yearnav-next:hover {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-months,
 .rally-date-picker .x4-monthpicker .x4-monthpicker-buttons {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner {
     color: var(--x4-control-text);
@@ -1886,7 +1888,7 @@ div.rallyListView #addNewContainer .error {
 .rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner.x4-monthpicker-selected {
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner:hover {
-    background-color: var(--x4-gray-70);
+    background-color: var(--x4-gray-70-bg);
 }
 .rally-date-picker.rally-date-picker-no-date-selected .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date {
     background-color: var(--x4-primary-bg);
@@ -1897,7 +1899,7 @@ div.rallyListView #addNewContainer .error {
 .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected .rui-picker-checkbox {
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled {
-    color: var(--x4-gray-68);
+    color: var(--x4-gray-68-text);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
 }
@@ -1906,13 +1908,13 @@ div.rallyListView #addNewContainer .error {
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled .rui-picker-checkbox.rui-picker-cb-checked {
 }
 .rui-multi-object-list .rui-multi-object-picker-close-button {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-multi-object-list .rui-multi-object-picker-close-button:hover {
     color: var(--x4-muted-text);
 }
 .rui-multi-object-picker-empty-text {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-picker-checkbox {
 }
@@ -1925,14 +1927,14 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-muted-text);
 }
 .rui-multi-object-placeholder {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-multi-object-input {
     background-color: var(--x4-primary-bg);
     color: var(--x4-muted-text);
 }
 .rui-multi-object-input.rui-multi-object-placeholder {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-project-picker-container {
     border-color: var(--x4-silver);
@@ -1985,7 +1987,7 @@ div.rallyListView #addNewContainer .error {
 }
 .tagfilter .x4-trigger-cell .icon-search {
     background-color: var(--x4-primary-bg);
-    color: var(--x4-gray-60);
+    color: var(--x4-gray-60-text);
 }
 .tagfilter.tagfilter-hover,
 .tagfilter.tagfilter-focus {
@@ -2009,10 +2011,10 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-secondary-text) !important;
 }
 .rly-popover.dependenciesPopover .x4-tab-inner:hover {
-    color: var(--x4-gray-80) !important;
+    color: var(--x4-gray-80-text) !important;
 }
 .rly-popover.dependenciesPopover .x4-tab-default {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .rly-popover.dependenciesPopover .x4-tab-active {
     background-color: var(--x4-primary-bg);
@@ -2022,10 +2024,10 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-primary-text) !important;
 }
 .rly-popover.dependenciesPopover .dependency-row {
-    border-bottom-color: var(--x4-gray-35);
+    border-bottom-color: var(--x4-gray-35-border);
 }
 .rly-popover.dependenciesPopover .dependency-row .field-label {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .rly-popover.percentDonePopover {
     color: var(--x4-secondary-text);
@@ -2035,13 +2037,13 @@ div.rallyListView #addNewContainer .error {
 .rly-popover.percentDonePopover a:visited {
 }
 .rly-popover.percentDonePopover h3 {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rly-popover.percentDonePopover .x4-window-item {
     background-color: var(--x4-primary-bg);
 }
 .rly-popover.percentDonePopover hr {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
     background-color: var(--x4-muted-bg);
 }
 .rly-popover.percentDonePopover .dangerNotification {
@@ -2049,7 +2051,7 @@ div.rallyListView #addNewContainer .error {
 }
 .x4-container .rly-popover {
     background-color: var(--x4-muted-bg);
-    box-shadow: var(--x4-gray-70) 0 0 0;
+    box-shadow: var(--x4-gray-70-shadow) 0 0 0;
     color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .x4-panel-body,
@@ -2062,13 +2064,13 @@ div.rallyListView #addNewContainer .error {
     background-color: var(--x4-muted-bg) !important;
 }
 .x4-container .rly-popover .x4-window-header-body-rally .icon-cancel {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-container .rly-popover .x4-window-header-body-rally .icon-cancel:hover {
     color: var(--x4-muted-text);
 }
 .x4-container .rly-popover .x4-window-header-text-container {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
 .x4-container .rly-popover .x4-window-header-text-container .x4-window-header-text-rally {
     color: var(--x4-secondary-text);
@@ -2077,14 +2079,14 @@ div.rallyListView #addNewContainer .error {
     background-color: var(--x4-muted-bg);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header {
-    border-right-color: var(--x4-gray-20);
+    border-right-color: var(--x4-gray-20-border);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover {
-    background-color: var(--x4-gray-70);
+    background-color: var(--x4-gray-70-bg);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC,
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-DESC {
-    background-color: var(--x4-gray-80);
+    background-color: var(--x4-gray-80-bg);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-inner {
     color: var(--x4-secondary-text);
@@ -2095,7 +2097,7 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-primary-text);
 }
 .x4-container .popover-chevron {
-    color: var(--x4-gray-20);
+    color: var(--x4-gray-20-text);
 }
 .rly-popover.new {
     color: var(--x4-secondary-text);
@@ -2138,17 +2140,17 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-silver);
 }
 .icon-builder-template.NONE .icon-empty {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .icon-builder-template.BLOCKED_READY_STATUS.BLOCKED .icon-blocked {
 }
 .icon-builder-template.BLOCKED_READY_STATUS.NOT_BLOCKED .icon-blocked {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .icon-builder-template.BLOCKED_READY_STATUS.READY .icon-ready {
 }
 .icon-builder-template.BLOCKED_READY_STATUS.NOT_READY .icon-ready {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .icon-builder-template.DEFECT_STATUS .icon-defect-status {
     color: var(--x4-control-icon);
@@ -2204,10 +2206,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .toggle-button-template.toggle-button-on {
 }
 .toggle-button-template.toggle-button-off {
-    background-color: var(--x4-gray-65);
+    background-color: var(--x4-gray-65-bg);
 }
 .toggle-button-template.toggle-button-disabled {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .rally-invalid-toggle-button-cell .toggle-button-template.toggle-button-on,
 .rally-invalid-toggle-button-cell .toggle-button-template.toggle-button-off {
@@ -2215,12 +2217,12 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .bulk-delete-progressBar-template .failure-container .failure-info {
 }
 .bulk-delete-progressBar-template .failure-container .failure-artifacts {
-    border-color: var(--x4-gray-70);
+    border-color: var(--x4-gray-70-border);
 }
 .bulk-delete-progressBar-template .failure-container .bulk-delete-failure-warning {
 }
 .bulk-delete-progressBar-template .bar {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
 }
 .bulk-delete-progressBar-template .segment.failures {
 }
@@ -2255,11 +2257,11 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: var(--x4-primary-bg);
 }
 .editor-wrap .x-resizable-handle {
-    color: var(--x4-gray-35);
+    color: var(--x4-gray-35-text);
 }
 .editor-wrap .x-resizable-handle:hover,
 .editor-wrap .x-resizable-handle:active {
-    background-color: var(--x4-gray-05);
+    background-color: var(--x4-gray-05-bg);
     color: var(--x4-muted-text);
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button {
@@ -2277,7 +2279,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button .goog-toolbar-button-inner-box {
 }
 .schedule-state-wrapper .schedule-state {
-    background-color: var(--x4-gray-35);
+    background-color: var(--x4-gray-35-bg);
 }
 .schedule-state-wrapper .schedule-state.before-state {
 }
@@ -2304,10 +2306,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     border-right-color: transparent;
 }
 .schedule-state-wrapper .editor-trigger {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .schedule-state-wrapper .editor-trigger:hover {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .rally-detail-schedulestate-meter.editable .schedule-state-wrapper .schedule-state.clickable-state:hover,
 .editable.rally-edit-cell .schedule-state-wrapper .schedule-state.clickable-state:hover {
@@ -2339,10 +2341,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: transparent;
 }
 .story-splitting-form-panel .story-splitting-helper-text {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .unfinished-story-splitting-panel {
-    border-right-color: var(--x4-gray-40) !important;
+    border-right-color: var(--x4-gray-40-border) !important;
 }
 .rally-search-field:hover input {
 }
@@ -2352,7 +2354,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-silver);
 }
 .rally-shared-view-list .default-items {
-    border-bottom-color: var(--x4-gray-40);
+    border-bottom-color: var(--x4-gray-40-border);
 }
 .rally-shared-view-list .default-items .default-item:hover {
 }
@@ -2360,7 +2362,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-secondary-text);
 }
 .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: var(--x4-muted-text);
 }
 .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field.x4-field-form-focus {
@@ -2368,13 +2370,13 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field:hover {
 }
 .rui-tag-chooser .rui-tag-chooser-list-ct {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .rui-tag-chooser .rui-tag-chooser-empty-list {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-tag-chooser .rui-tag-chooser-add-new {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .rui-tag-chooser .rui-tag-chooser-add-new .tag-add-new-item {
     color: var(--x4-muted-text);
@@ -2384,7 +2386,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-tag-chooser .rui-tag-chooser-add-new.tag-add-new-over .tag-add-new-item {
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: var(--x4-muted-text);
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field.x4-field-form-focus {
@@ -2392,14 +2394,14 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field:hover {
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-list-ct {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     background-color: var(--x4-primary-bg);
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-list-ct .rui-tag-bound-list .rui-list-header {
     color: var(--x4-muted-text);
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-add-new {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     background-color: var(--x4-primary-bg);
 }
 .rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-add-new .tag-add-new-item {
@@ -2422,7 +2424,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-tags .x4-grid-cell-inner:hover {
 }
 .rui-tag-bound-list .rui-list-header {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-tag-bound-list .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-primary-bg);
@@ -2431,7 +2433,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-tag-bound-list .x4-boundlist-item.x4-boundlist-item-over {
 }
 .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: var(--x4-muted-text);
 }
 .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field.x4-field-form-focus {
@@ -2439,13 +2441,13 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field:hover {
 }
 .rui-mvcf-chooser .rui-mvcf-chooser-list-ct {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .rui-mvcf-chooser .rui-mvcf-chooser-empty-list {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     color: var(--x4-muted-text);
 }
 .rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field.x4-field-form-focus {
@@ -2453,7 +2455,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field:hover {
 }
 .rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-list-ct {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     background-color: var(--x4-primary-bg);
 }
 .rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-list-ct .rui-mvcf-bound-list .rui-list-header {
@@ -2470,7 +2472,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-mvcfs .x4-grid-cell-inner:hover {
 }
 .rui-mvcf-bound-list .rui-list-header {
-    color: var(--x4-gray-65);
+    color: var(--x4-gray-65-text);
 }
 .rui-mvcf-bound-list .x4-boundlist-item.x4-boundlist-selected {
     background-color: var(--x4-primary-bg);
@@ -2493,7 +2495,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .x4-tip .x4-tip-body {
     background-color: var(--x4-muted-bg);
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .x4-tip .x4-tip-body .tooltip-demo a {
     background-color: transparent;
@@ -2501,7 +2503,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .x4-tip .x4-tip-header .x4-tool img {
 }
 .x4-tip-anchor {
-    border-color: var(--x4-gray-20);
+    border-color: var(--x4-gray-20-border);
 }
 .x4-tip-anchor-right {
     border-top-color: transparent;
@@ -2521,19 +2523,19 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .treeItem a.expander.expandTriangle {
     border-top-color: transparent;
-    border-left-color: var(--x4-gray-70);
+    border-left-color: var(--x4-gray-70-border);
     border-bottom-color: transparent;
 }
 .treeItem a.expander.collapseTriangle {
     border-left-color: transparent;
     border-right-color: transparent;
-    border-top-color: var(--x4-gray-70);
+    border-top-color: var(--x4-gray-70-border);
 }
 .treeItem .treeItemContent {
     background-color: var(--x4-primary-bg);
     background-image: linear-gradient(var(--x4-primary-bg) 70%, var(--x4-primary-bg));
     color: var(--x4-muted-text);
-    border-bottom-color: var(--x4-gray-53);
+    border-bottom-color: var(--x4-gray-53-border);
 }
 .treeItem .treeItemContent:hover {
 }
@@ -2552,7 +2554,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 .treeItem .treeItemContent .drag {
 }
 .tps-ext4-filter-ct .icon-search {
-    color: var(--x4-gray-80);
+    color: var(--x4-gray-80-text);
 }
 .tps-ext4-filter-ct-no-trigger .x4-form-trigger {
     background-image: none;
@@ -2569,34 +2571,34 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: var(--x4-muted-bg);
 }
 .x4-tab-bar .x4-tab-bar-body {
-    border-top-color: var(--x4-gray-20);
+    border-top-color: var(--x4-gray-20-border);
 }
 .x4-tab-bar .x4-tab-default {
     background-image: none;
-    background-color: var(--x4-gray-80);
-    border-color: var(--x4-gray-35) !important;
+    background-color: var(--x4-gray-80-bg);
+    border-color: var(--x4-gray-35-border) !important;
 }
 .x4-tab-bar .x4-tab-default .x4-tab-inner {
-    color: var(--x4-gray-05);
+    color: var(--x4-gray-05-text);
 }
 .x4-tab-bar .x4-tab-active {
     background-image: none;
     background-color: var(--x4-muted-bg);
-    border-bottom-color: var(--x4-gray-20) !important;
+    border-bottom-color: var(--x4-gray-20-border) !important;
 }
 .x4-tab-bar .x4-tab-active .x4-tab-inner {
     color: var(--x4-secondary-text);
 }
 .x4-panel-body-default {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
 }
 .x4-tab-bar-strip {
-    border-color: var(--x4-gray-35);
+    border-color: var(--x4-gray-35-border);
     background-color: var(--x4-muted-bg);
 }
 .no-data-container .primary-message {
     color: var(--x4-secondary-text);
 }
 .no-data-container .secondary-message {
-    color: var(--x4-control-readonly-text);
+    color: var(--x4-gray-70-text);
 }
