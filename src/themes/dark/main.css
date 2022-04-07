@@ -8,7 +8,6 @@
     --black-45: rgba(0, 0, 0, 0.45);
     --black-50: rgba(0, 0, 0, 0.5);
     --black-80: rgba(0, 0, 0, 0.8);
-    --white-100: #fff;
 
     /* dark mode grays are reversed (100 ~= white, 0 ~= black)
      * x % 10 == 5 are interpolated
@@ -237,17 +236,17 @@
     --button-failure-accent: var(--mnrl-dangerRed-60);
     --button-failure-accent-hover: var(--mnrl-dangerRed-50);
     --button-failure-accent-af: var(--mnrl-dangerRed-70);
-    --button-failure-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-failure-accent-af);
+    --button-failure-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-failure-accent-af);
 
     --button-success-accent: #2a854e;
     --button-success-accent-hover: #3ba164;
     --button-success-accent-af: #20693d;
-    --button-success-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-success-accent-af);
+    --button-success-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-success-accent-af);
 
     --button-warning-accent: #ad5f00;
     --button-warning-accent-hover: #cf7911;
     --button-warning-accent-af: #8a4d03;
-    --button-warning-af-shadow: 0 0 0 0.1rem var(--white-100), 0 0 0 0.2rem var(--button-warning-accent-af);
+    --button-warning-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-warning-accent-af);
 
     --button-feedback-bg: #ffc91c;
     --button-feedback-icon: var(--mnrl-gray-70);
@@ -510,7 +509,7 @@
     --mnrl-color-brand-hover: var(--hover-text);
 
 
-    --mnrl-white: var(--white-100);
+    --mnrl-white: var(--color-scale-white);
 }
 
 /****************************************************/
