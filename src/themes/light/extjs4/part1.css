@@ -12,7 +12,7 @@
     color: #ffffff;
 }
 .cardboard .column-container .card-column.collapsible .collapsed-title {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .cardboard .column-container .card-column.collapsible.collapsed {
     background-color: var(--x4-gray-05);
@@ -68,7 +68,7 @@
     color: #21516d;
 }
 .rly-carousel .carousel-panel .scroll-button {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
     background-color: transparent;
 }
 .rly-carousel .carousel-controls .carousel-dot {
@@ -77,7 +77,7 @@
 }
 .rly-carousel .carousel-controls .carousel-dot.rly-active,
 .rly-carousel .carousel-controls .carousel-dot:hover {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .rly-popover.color-popover.x4-window-rally .palette-color {
     border-color: transparent;
@@ -191,7 +191,7 @@
     color: var(--x4-control-text);
 }
 .fieldBucket .control {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .fieldBucket .control:hover,
 .fieldBucket .control.focused {
@@ -208,7 +208,7 @@
 }
 .detailPage .detailField .detailFieldContainer.readonly .fieldContainerView,
 .detailPage .detailField .detailFieldContainer.readonly:hover .fieldContainerView {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
     border-color: var(--x4-gray-20);
 }
 .detailPage .detailField .detailFieldContainer.readonly .x4-form-trigger-wrap .x4-form-spinner-down,
@@ -1191,10 +1191,10 @@
     color: var(--x4-secondary-text);
 }
 .new-ux.warning-dialog .x4-window-header .icon-cancel:hover {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .new-ux.warning-dialog .x4-window-body .message-secondary {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .new-ux.warning-dialog .x4-window-body .watches-message-warning {
     color: #ee1c25;
@@ -1373,7 +1373,7 @@
 .x4-grid-row-editor .x4-form-trigger-wrap .x4-form-spinner-down {
     background-image: none !important;
     border-color: var(--x4-control-border);
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .rui-triggerfield .x4-form-trigger-wrap-focus .x4-form-trigger-wrap .x4-form-spinner-up {
     border-top-color: #5c9acb;
@@ -1569,7 +1569,7 @@ img.checked {
     color: #327c98;
 }
 .rally-grid .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .status-value.tasks .icon-to-do {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .rally-grid .x4-grid-row .x4-grid-cell .x4-grid-cell-inner .status-value.pred-suc .predecessors {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-icon.png);
@@ -1892,7 +1892,7 @@ img.checked {
     border-color: var(--x4-gray-20);
 }
 .x4-window.print-dialog .print-warning {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .x4-window.print-dialog .print-warning .alert {
     color: #ffc91c;
@@ -1993,10 +1993,10 @@ img.checked {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/help/icon_help.gif);
 }
 .rally-icon-combobox .rally-icon-combo-wrap .rally-icon-combo-icon {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .x4-boundlist .x4-boundlist-item .rally-icon-combo-list-icon {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .x4-boundlist .x4-boundlist-item.x4-boundlist-item-over .rally-icon-combo-list-icon {
     color: #ffffff;
@@ -2059,7 +2059,7 @@ div.rallyListView #addNewContainer .error {
     border-top-color: var(--x4-gray-25);
 }
 .x4-menu-item.artifact-icon {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .x4-menu-item.artifact-icon span {
     color: var(--x4-secondary-text);
@@ -2068,7 +2068,7 @@ div.rallyListView #addNewContainer .error {
     color: #ffffff;
 }
 .x4-menu-item.x4-menu-item-disabled.artifact-icon:hover {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .milestone-pill {
     background-color: var(--x4-muted-bg);
@@ -2076,7 +2076,7 @@ div.rallyListView #addNewContainer .error {
     border-color: var(--x4-silver);
 }
 .milestone-pill .icon-milestone {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .rui-notification {
     background-color: #ffc91c;
@@ -2397,7 +2397,7 @@ div.rallyListView #addNewContainer .error {
     border-bottom-color: var(--x4-gray-35);
 }
 .rly-popover.dependenciesPopover .dependency-row .field-label {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .rly-popover.percentDonePopover {
     color: var(--x4-secondary-text);
@@ -2442,7 +2442,7 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-muted-text);
 }
 .x4-container .rly-popover .x4-window-header-text-container {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }
 .x4-container .rly-popover .x4-window-header-text-container .x4-window-header-text-rally {
     color: var(--x4-secondary-text);
@@ -2507,7 +2507,7 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-secondary-text);
 }
 span.formatted-id-template span.artifact-icon {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 span.formatted-id-template span.artifact-icon a.formatted-id-link {
     color: #327c98;
@@ -2534,7 +2534,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-gray-35);
 }
 .icon-builder-template.DEFECT_STATUS .icon-defect-status {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.DEFECT_STATUS.NONE_CLOSED .icon-defect {
     color: #b81b10;
@@ -2546,7 +2546,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: #037a32;
 }
 .icon-builder-template.DISCUSSION_STATUS.STALE .icon-comment {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.DISCUSSION_STATUS.RECENT .icon-comment {
     color: #156d82;
@@ -2558,10 +2558,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: #9ad1da;
 }
 .icon-builder-template.TASK_STATUS .icon-task-status {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.TASK_STATUS.DEFINED .icon-task {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.TASK_STATUS.IN_PROGRESS .icon-task-in-progress {
     color: #005eb8;
@@ -2576,10 +2576,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: #b81b10;
 }
 .icon-builder-template.TEST_CASE_STATUS .icon-test-status {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.TEST_CASE_STATUS.NONE_RUN .icon-test-case {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 .icon-builder-template.TEST_CASE_STATUS.SOME_RUN_SOME_NOT_PASSING .icon-task-in-progress {
     color: #b81b10;
@@ -2638,7 +2638,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: #5cba49;
 }
 span.formatted-id-template span.artifact-icon {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-icon);
 }
 span.formatted-id-template span.artifact-icon a.formatted-id-link {
     color: #327c98;
@@ -3075,5 +3075,5 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-secondary-text);
 }
 .no-data-container .secondary-message {
-    color: var(--x4-gray-70);
+    color: var(--x4-control-readonly-text);
 }

@@ -48,8 +48,11 @@
     --x4-muted-bg: var(--x4-gray-20);
     --x4-muted-text: var(--x4-gray-90);
 
-    --x4-control-border: var(--x4-gray-40);
-    --x4-control-text: var(--x4-gray-99);
+    --x4-control-border: var(--main-control-border);
+    --x4-control-icon: var(--main-control-icon);
+    --x4-control-text: var(--main-control-text);
+
+    --x4-control-readonly-text: var(--main-control-text);
 
     --x4-dd-drag-border: var(--main-primary-border) var(--main-primary-shadow) var(--main-primary-shadow) var(--main-primary-border);
 

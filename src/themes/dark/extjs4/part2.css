@@ -1817,7 +1817,6 @@ a.x4-color-picker-item:hover {
 }
 .x4-grid-cell-special {
     border-color: var(--x4-control-border);
-    background-image: none;
     background-color: var(--x4-gray-05);
     background-image: linear-gradient(top, var(--x4-gray-05), var(--x4-gray-18));
 }

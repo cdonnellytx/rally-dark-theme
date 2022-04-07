@@ -49,7 +49,10 @@
     --x4-muted-text: var(--x4-gray-90);
 
     --x4-control-border: var(--x4-gray-40);
-    --x4-control-text: #222222;
+    --x4-control-icon: var(--x4-gray-70);
+    --x4-control-text: var(--x4-gray-99);
+
+    --x4-control-readonly-text: var(--x4-gray-70);
 
     --x4-dd-drag-border: var(--x4-gray-30) var(--x4-gray-50) var(--x4-gray-50) #var(--x4-gray-30);
 

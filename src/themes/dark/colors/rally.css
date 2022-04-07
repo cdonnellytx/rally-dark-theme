@@ -156,7 +156,5 @@
     --box-shadow-4: rgba(0, 0, 0, 0.5);
     --box-shadow-4-inverse: rgba(var(--white), 0.5);
 
-    --feedback: var(--yellow);
-
     --update-success: var(--mnrl-green-20);
 }
