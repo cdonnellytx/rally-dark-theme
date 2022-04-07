@@ -1,0 +1,20 @@
+/*
+@import '~styles/index-variables';
+@import 'node_modules/@mineral/tokens/build/light/index.scss';
+*/
+
+.chr-ViewportProfileMenu-dropdown:focus .smb-DropdownMenu {
+    border-color: var(--mnrl-borderColor-brand-focus);
+}
+
+.chr-ViewportProfileMenu-dropdown:hover .smb-DropdownMenu {
+    background-color: var(--mnrl-backgroundColor-hover);
+}
+
+.chr-ViewportProfileMenu-dropdown .smb-DropdownMenu {
+    border-color: transparent;
+}
+
+.chr-ViewportProfileMenu-dropdown .smb-DropdownMenu .smb-SvgIcon {
+    color: var(--mnrl-color-brand);
+}

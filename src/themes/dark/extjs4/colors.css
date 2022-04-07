@@ -1,0 +1,48 @@
+/* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
+ * This is ExtJS 4.x.
+*/
+:root {
+    /* Making these up */
+    --x4-gray-100: var(--mnrl-gray-100);
+    --x4-gray-95: var(--mnrl-gray-95);
+    --x4-gray-90: var(--mnrl-gray-90);
+    --x4-gray-85: var(--mnrl-gray-85);
+    --x4-gray-80: var(--mnrl-gray-80);
+    --x4-gray-75: var(--mnrl-gray-75);
+    --x4-gray-70: var(--mnrl-gray-70);
+    --x4-gray-65: var(--mnrl-gray-65);
+    --x4-gray-60: var(--mnrl-gray-60);
+    --x4-gray-55: var(--mnrl-gray-55);
+    --x4-gray-50: var(--mnrl-gray-50);
+    --x4-gray-45: var(--mnrl-gray-45);
+    --x4-gray-40: var(--mnrl-gray-40);
+    --x4-gray-35: var(--mnrl-gray-35);
+    --x4-gray-30: var(--mnrl-gray-30);
+    --x4-gray-25: var(--mnrl-gray-25);
+    --x4-gray-20: var(--mnrl-gray-20);
+    --x4-gray-15: var(--mnrl-gray-15);
+    --x4-gray-10: var(--mnrl-gray-10);
+    --x4-gray-05: var(--mnrl-gray-05);
+
+    /* ExtJS name equivalents */
+    --x4-ie-shadow: #777777;
+
+    --x4-bg: var(--main-bg);
+    --x4-text: var(--main-text);
+
+    --x4-secondary-text: var(--x4-gray-100);
+
+    --x4-muted-bg: var(--x4-gray-20);
+    --x4-muted-text: var(--x4-gray-90);
+
+    --x4-control-border: var(--x4-gray-40);
+    --x4-control-text: var(--x4-gray-100);
+
+    --x4-dd-drag-border: var(--main-border) var(--main-shadow) var(--main-shadow) var(--main-border);
+
+    --x4-form-invalid-text: var(--x4-muted-text);
+
+    /* FIXME */
+    --x4-proxy-bg: #b4b4b4;
+    --x4-focus-frame-border: #15428b;
+}

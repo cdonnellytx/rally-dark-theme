@@ -108,7 +108,8 @@ function Get-CssContent
 
     process
     {
-        $LiteralPath | Get-ChildItem -Recurse -File | Get-CssFileContent
+        $LiteralPath | Get-ChildItem -Directory | Get-ChildItem -Recurse -File | Get-CssFileContent
+        $LiteralPath | Get-ChildItem -File | Get-CssFileContent
     }
 }
 

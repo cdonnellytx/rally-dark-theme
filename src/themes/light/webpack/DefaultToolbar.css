@@ -1,0 +1,4 @@
+/* REMINDER: #main helps to override the Rally rules if they come in "later" */
+#main .chr-ToolbarDefaultToolbar-itemCountTitle {
+    color: var(--mnrl-h2-color);
+}
