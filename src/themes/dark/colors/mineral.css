@@ -180,16 +180,17 @@
     --mnrl-successGreen-30: #7ddba3;
     --mnrl-successGreen-20: #abedc5;
     --mnrl-successGreen-10: #e1faeb;
-    --mnrl-gray-100: #13171f;
-    --mnrl-gray-90: #1d232d;
-    --mnrl-gray-80: #2c303b;
-    --mnrl-gray-70: #3d444f;
-    --mnrl-gray-60: #5c6474;
-    --mnrl-gray-50: #8891a5;
-    --mnrl-gray-40: #9ea6b7;
-    --mnrl-gray-30: #bbc3d1;
-    --mnrl-gray-20: #c7cfdb;
-    --mnrl-gray-10: #ecf2fb;
+    /* gray: is reversed */
+    --mnrl-gray-10: #333840;
+    --mnrl-gray-20: #434a54;
+    --mnrl-gray-30: #58606e;
+    --mnrl-gray-40: #707a8a;
+    --mnrl-gray-50: #8e99ab;
+    --mnrl-gray-60: #afbacc;
+    --mnrl-gray-70: #c8d1e0;
+    --mnrl-gray-80: #dde3ed;
+    --mnrl-gray-90: #ebeff5;
+    --mnrl-gray-100: #f5f7fa;
     --mnrl-mineralBlue-100: #15233b;
     --mnrl-mineralBlue-90: #103570;
     --mnrl-mineralBlue-80: #114599;

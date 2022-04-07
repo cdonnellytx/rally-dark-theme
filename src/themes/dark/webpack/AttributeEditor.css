@@ -19,7 +19,7 @@
 }
 
 #main .chr-QuickDetailAttributeEditorWrapper .smb-ProgressBar--progress.readable {
-    background-color: var(--mnrl-gray-20-bg);
+    background-color: var(--mnrl-gray-20);
 }
 
 #main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) {
@@ -65,7 +65,7 @@
 
 #main h2 .chr-QuickDetailAttributeEditorWrapper-label,
 #main h3 .chr-QuickDetailAttributeEditorWrapper-label {
-    color: var(--mnrl-gray-80-text);
+    color: var(--mnrl-gray-80);
 }
 
 #main .chr-QuickDetailAttributeEditorWrapper-requiredIndicator {

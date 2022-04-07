@@ -95,12 +95,12 @@
     --button-link-border: var(--button-link-bg);
     --button-link-icon: var(--button-link-text);
     --button-link-text: var(--main-link-text);
-    --button-link-active-bg: var(--mnrl-gray-20-bg);
+    --button-link-active-bg: var(--mnrl-gray-20);
     --button-link-focus-border: var(--mnrl-mineralBlue-70);
-    --button-link-hover-bg: var(--mnrl-gray-10-bg);
-    --button-link-hover-border: var(--mnrl-gray-10-border);
+    --button-link-hover-bg: var(--mnrl-gray-10);
+    --button-link-hover-border: var(--mnrl-gray-10);
     --button-link-hover-text: var(--button-link-text);
-    --button-link-is_active-bg: var(--mnrl-gray-20-bg);
+    --button-link-is_active-bg: var(--mnrl-gray-20);
     --button-link-is_active-border: var(--mnrl-mineralBlue-70);
     --button-link-is_active-hover-bg: var(--button-link-hover-bg);
     --button-link-is_active-hover-border: var(--button-link-is_active-border);
@@ -108,13 +108,13 @@
     --button-jumboicon-bg: var(--button-link-bg);
     --button-jumboicon-border: var(--button-link-border);
     --button-jumboicon-text: var(--button-link-text);
-    --button-jumboicon-active-bg: var(--mnrl-gray-30-bg);
+    --button-jumboicon-active-bg: var(--mnrl-gray-30);
     --button-jumboicon-focus-bg: var(--main-content-bg);
     --button-jumboicon-focus-border: var(--mnrl-mineralBlue-70);
-    --button-jumboicon-hover-bg: var(--mnrl-gray-20-bg);
-    --button-jumboicon-is_active-bg: var(--mnrl-gray-30-bg);
+    --button-jumboicon-hover-bg: var(--mnrl-gray-20);
+    --button-jumboicon-is_active-bg: var(--mnrl-gray-30);
     --button-jumboicon-is_active-border: var(--mnrl-mineralBlue-70);
-    --button-jumboicon-children-text: var(--mnrl-gray-80-text);
+    --button-jumboicon-children-text: var(--mnrl-gray-80);
     --button-jumboicon-disabled-bg: var(--button-jumboicon-bg);
     --button-jumboicon-disabled-border: var(--button-jumboicon-border);
     --button-jumboicon-disabled-children: var(--button-disabled-text);
@@ -162,7 +162,7 @@
     --button-warning-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-warning-accent-af);
 
     --button-feedback-bg: #ffc91c;
-    --button-feedback-icon: var(--mnrl-gray-70-icon);
+    --button-feedback-icon: var(--mnrl-gray-70);
     --button-feedback-text: #444444;
     --button-feedback-focus-bg: #444444;
     --button-feedback-focus-text: #ffc91c;
@@ -183,7 +183,7 @@
      * Dropdown
      */
     --dropdown-bg: var(--main-control-bg);
-    --dropdown-text: var(--mnrl-gray-100-text);
+    --dropdown-text: var(--mnrl-gray-100);
     --dropdown-disabled-bg: var(--main-control-disabled-bg);
     --dropdown-disabled-border: var(--main-control-disabled-border);
     --dropdown-disabled-text: var(--main-control-disabled-text);
@@ -191,7 +191,7 @@
     --dropdown-focus-shadow: var(--main-control-focus-shadow);
     --dropdown-focus-border: var(--main-control-focus-border);
 
-    --dropdown-divider-bg: var(--mnrl-gray-20-bg);
+    --dropdown-divider-bg: var(--mnrl-gray-20);
 
     --dropdown-list-shadow: 0 0.2rem 0.2rem var(--main-control-border) var(--black-10);
 
@@ -201,9 +201,9 @@
     --dropdown-footer-border: var(--main-control-border);
     --dropdown-footer-text: var(--main-tertiary-text);
 
-    --dropdown-item-text: var(--mnrl-gray-100-text);
-    --dropdown-item-subtext: var(--mnrl-gray-80-text);
-    --dropdown-item-hover-bg: var(--mnrl-gray-20-bg);
+    --dropdown-item-text: var(--mnrl-gray-100);
+    --dropdown-item-subtext: var(--mnrl-gray-80);
+    --dropdown-item-hover-bg: var(--mnrl-gray-20);
     --dropdown-item-hover-text: var(--main-hover-text);
     --dropdown-item-is_active-bg: #2929c4;
     --dropdown-item-is_primary-bg: var(--main-link-text);
@@ -219,7 +219,7 @@
     --dropdown-match-bg: var(--mnrl-mineralBlue-30);
     --dropdown-match-text: var(--dropdown-item-text);
 
-    --dropdown-trigger-hover-bg: var(--mnrl-gray-20-bg);
+    --dropdown-trigger-hover-bg: var(--mnrl-gray-20);
     --dropdown-trigger-hover-border: var(--main-hover-border);
     --dropdown-trigger-hover-text: var(--main-hover-text);
 
@@ -329,7 +329,7 @@
     /*
      * Toggle > Handle
      */
-    --toggle-handle-bg: var(--mnrl-gray-70-bg);
+    --toggle-handle-bg: var(--mnrl-gray-70);
     --toggle-handle-on-bg: #fff;
 
     /*
@@ -369,7 +369,7 @@
 
     --datatable-drag-text: #aaa;
 
-    --datatable-gripper-text: var(--mnrl-gray-70-text);
+    --datatable-gripper-text: var(--mnrl-gray-70);
 
     --datatable-resizer-border: #555;
     --datatable-resizer-active-border: #445;
@@ -2528,11 +2528,11 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
 /****************************************************/
 /****************************************************/
 .chr-DisplayPreferencesModal .smb-Panel .smb-PanelBody {
-    background-color: var(--mnrl-gray-20-bg);
+    background-color: var(--mnrl-gray-20);
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayDescription {
-    color: var(--mnrl-gray-80-text);
+    color: var(--mnrl-gray-80);
 }
 
 .chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayExamples h3 {
