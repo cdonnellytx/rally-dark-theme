@@ -1,3 +1,6 @@
+.cardboard .column-container .card-column.collapsible .expand-collapse {
+    background-color: transparent;
+}
 .cardboard .column-container .card-column.collapsible .expand-collapse:hover {
     color: var(--x4-muted-text);
 }
@@ -5,8 +8,23 @@
 .cardboard .column-container .card-column.collapsible.collapsed.mouseover .collapsed-title {
     color: var(--x4-muted-text);
 }
+.cardboard .scroll-button {
+    background-color: transparent;
+}
+.rly-carousel .carousel-panel .scroll-button {
+    background-color: transparent;
+}
+.rly-carousel .carousel-controls .carousel-dot {
+    background-color: transparent;
+}
+.rly-popover.color-popover.x4-window-rally .palette-color {
+    border-color: transparent;
+}
 .rly-popover.color-popover.x4-window-rally .palette-color.no-color-container {
     background-color: var(--x4-bg);
+}
+.rly-popover.color-popover.x4-window-rally .palette-color.no-color-container div {
+    border-left-color: transparent;
 }
 .rly-popover.description-popover .description-richtext-view .description {
     background-color: var(--x4-bg);
@@ -18,6 +36,9 @@
 .discussion-richtext-stream-view .list .list-item {
     color: var(--x4-muted-text);
 }
+.discussion-richtext-stream-view .delete-comment {
+    background-color: transparent;
+}
 .chart .yaxis-title {
     color: var(--x4-text);
 }
@@ -27,8 +48,27 @@
 .detailView .fieldsetContainerLabel {
     color: var(--x4-muted-text);
 }
+.detailPage .detailFieldEditor.detail-attachments-field .rally-grid .x4-grid-header-ct {
+    background-color: transparent;
+}
 .x4-ie9m .detailPage .detailFieldEditor.detail-attachments-field form.add-attachment .color-for-ie {
     color: var(--x4-text);
+}
+.fieldBucket .section-header:hover .control {
+    color: var(--x4-secondary-text);
+}
+.fieldBucket .head {
+    color: var(--x4-secondary-text);
+}
+.fieldBucket .control:hover,
+.fieldBucket .control.focused {
+    color: var(--x4-secondary-text);
+}
+.fieldBucket .detailFields .x4-panel-body {
+    background-color: transparent;
+}
+.fieldBucket .detailFields .x4-panel-body-default {
+    border-color: transparent;
 }
 .detailPage .detailField .fieldContainerView {
     background-color: var(--x4-bg);
@@ -39,17 +79,53 @@
 .detailPage legend {
     color: var(--x4-muted-text);
 }
+.detailPage .detailView .detailContentWrapper fieldset input.readonly,
+.detailPage .detailView .detailContentWrapper fieldset input.readonly:hover {
+    color: var(--x4-secondary-text);
+}
+.detailPage .detailView .detailContentWrapper fieldset.readonly input {
+    color: var(--x4-secondary-text);
+}
+.detailPage .detailFieldEditor .rally-grid .rally-grid-cell-description:hover {
+    background-image: none !important;
+}
+.detailPage .detailFieldEditor .rally-grid .rally-grid-cell-description div {
+    border-color: transparent;
+}
+.detailPage fieldset {
+    background-color: transparent !important;
+}
+.detailPage .requiredField.empty .requiredTriangle {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
 .detailpagetitlebar {
     background-color: var(--x4-muted-bg);
 }
 .detailpagetitlebar .menu-gear {
     color: var(--x4-muted-text);
 }
+.detailpagetitlebar .menu-gear span:hover {
+    color: var(--x4-secondary-text);
+}
 .detailpagetitlebar .formatted-id {
     color: var(--x4-muted-text);
 }
+.detailpagetitlebar .detailField-name .simpleTextDetailField input {
+    border-color: transparent;
+}
 .detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly {
     background-color: var(--x4-bg);
+}
+.detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly div {
+    color: var(--x4-secondary-text);
+}
+.detailpagetitlebar .cancel-btn {
+    border-color: transparent !important;
+}
+.fieldSaveIndicator {
+    background-color: transparent;
+    color: transparent;
 }
 .ribbon-navigation .ribbon-item {
     background-color: var(--x4-muted-bg);
@@ -67,14 +143,26 @@
 .ribbon-navigation .ribbon-item.rly-active .picto {
     color: var(--x4-muted-text);
 }
+.ribbon-navigation .ribbon-badge {
+    color: var(--x4-secondary-text);
+}
+.ready-blocked-status .button {
+    border-color: transparent;
+}
 .ready-blocked-status .tertiary {
     color: var(--x4-muted-text);
+}
+.ready-blocked-status .tertiary:hover {
+    color: var(--x4-secondary-text);
 }
 .ready-blocked-status .readonly.tertiary:hover {
     color: var(--x4-muted-text);
 }
 .detail-link-field {
     background-color: var(--x4-bg);
+}
+.detailweblinkpopover .x4-form-item-label {
+    color: var(--x4-secondary-text);
 }
 .detailView .northfields fieldset .fieldsetContainerLabel {
     color: var(--x4-muted-text);
@@ -91,11 +179,17 @@
 .detailWrapper .detailNavigation a.selected:visited {
     color: var(--x4-text);
 }
+.detailSubPage .sub-page-header {
+    color: var(--x4-secondary-text);
+}
 .detailSubPage .rui-triggerfield .x4-form-trigger-input-cell .x4-form-field {
     border-color: var(--x4-control-border) !important;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger {
     border-color: var(--x4-control-border) !important;
+}
+.detailPage .detailView .detailContentRightPanel .detailFieldContainer .readonly.tagPill {
+    color: var(--x4-secondary-text);
 }
 .detailPage .detailView .detailContentRightPanel .legend,
 .detailPage .detailView .detailContentRightPanel legend {
@@ -109,6 +203,9 @@
 }
 .detail-ready-button {
     color: var(--x4-muted-text);
+}
+.detail-ready-button:hover {
+    color: var(--x4-secondary-text);
 }
 .detail-ready-button.readonly:hover {
     color: var(--x4-muted-text);
@@ -144,6 +241,9 @@
 .x4-window .x4-window-header-rally-top {
     background-color: var(--x4-bg) !important;
 }
+.x4-window .x4-window-header-rally-top .x4-window-header-text-rally {
+    color: var(--x4-secondary-text);
+}
 .x4-window.chooser-dialog .x4-toolbar-docked-top {
     background-color: var(--x4-bg);
 }
@@ -153,14 +253,31 @@
 .x4-ie8m .x4-window .x4-window-header-rally-top .x4-window-header-rally-top-mc {
     background-color: var(--x4-bg) !important;
 }
+.rally-confirm-dialog .icon-warning {
+    color: var(--x4-secondary-text);
+}
 .new-ux.feedback-dialog .x4-window-body .form textarea {
     background-color: var(--x4-bg);
 }
 .source-code pre {
     color: var(--x4-muted-text);
 }
+.new-ux.warning-dialog .x4-window-header .icon-cancel {
+    color: var(--x4-secondary-text);
+}
 .new-ux.warning-dialog .x4-window-body .form textarea {
     background-color: var(--x4-bg);
+}
+.x4-container .filter-popover.rly-popover .filter-container .filter-label {
+    color: var(--x4-secondary-text);
+}
+.x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon {
+    background-color: transparent;
+    color: var(--x4-secondary-text);
+}
+.x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled,
+.x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled:hover {
+    background-color: transparent;
 }
 .x4-form-text.rally-invalid-field {
     background-color: var(--x4-bg);
@@ -213,10 +330,37 @@
 .rally-grid .x4-grid-header-ct {
     background-color: var(--x4-bg);
 }
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.picto {
+    color: var(--x4-secondary-text);
+}
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-over {
+    background-color: transparent;
+    background-image: none;
+}
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover.row-action-column-header,
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header:hover.rank-drag-handle-column-header {
+    background-color: transparent;
+}
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-inner {
+    color: var(--x4-secondary-text);
+}
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC,
+.rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-DESC {
+    background-color: transparent;
+}
 .rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-cell,
 .rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-rowwrap-div,
 .rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-cell-special {
     background-color: var(--x4-bg);
+}
+.rally-grid .x4-grid-dirty-cell {
+    background-image: none;
+}
+.rally-grid .x4-grid-group-title {
+    color: var(--x4-secondary-text);
+}
+.x4-tree-panel.rally-grid .x4-grid-header-ct {
+    border-color: transparent;
 }
 .x4-tree-panel.rally-grid .x4-docked-summary .x4-grid-row-summary {
     background-color: var(--x4-muted-bg);
@@ -232,6 +376,9 @@
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.x4-grid-cell-row-checker,
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.rally-cell-row-action {
     background-color: var(--x4-muted-bg);
+}
+.x4-window.print-dialog .x4-window-body {
+    color: var(--x4-secondary-text);
 }
 .inline-filter-panel > .x4-panel-body .quick-filter-panel .remove-quick-filter-icon {
     background-color: var(--x4-bg);
@@ -264,8 +411,18 @@ div.rallyListView #addNewContainer .error {
 .x4-menu .x4-menu-body {
     background-color: var(--x4-bg) !important;
 }
+.x4-menu-item.artifact-icon span {
+    color: var(--x4-secondary-text);
+}
 .milestone-pill {
     background-color: var(--x4-muted-bg);
+    color: var(--x4-secondary-text);
+}
+.rui-notification .rui-notification-body {
+    background-color: transparent;
+}
+.rly-popover.owner-popover .card-owner-name {
+    color: var(--x4-secondary-text);
 }
 .grid-pager .page-size-links {
     color: var(--x4-muted-text);
@@ -273,8 +430,14 @@ div.rallyListView #addNewContainer .error {
 .x4-panel-header-default {
     background-color: var(--x4-bg);
 }
+.x4-panel-header-text-container-default {
+    color: var(--x4-secondary-text);
+}
 .progress-bar-container {
     background-color: var(--x4-muted-bg);
+.progress-bar-container .progress-bar-label {
+    color: var(--x4-secondary-text);
+}
 }
 .rally-date-picker .x4-datepicker-header .x4-datepicker-month .x4-btn-inner-center {
     color: var(--x4-muted-text);
@@ -285,8 +448,15 @@ div.rallyListView #addNewContainer .error {
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-column-header .x4-datepicker-column-header-inner {
     color: var(--x4-muted-text);
 }
+.rally-date-picker .x4-datepicker-inner .x4-datepicker-cell .x4-datepicker-date {
+    color: var(--x4-secondary-text);
+}
+.rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner {
+    color: var(--x4-secondary-text);
+}
 .rally-date-picker.rally-date-picker-no-date-selected .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date {
     background-color: var(--x4-bg);
+    color: var(--x4-secondary-text);
 }
 .rui-multi-object-list .rui-multi-object-picker-close-button:hover {
     color: var(--x4-muted-text);
@@ -308,8 +478,14 @@ div.rallyListView #addNewContainer .error {
 .tagfilter .x4-trigger-cell .icon-search {
     background-color: var(--x4-bg);
 }
+.tagPill {
+    color: var(--x4-secondary-text);
+}
 .rly-popover.dependenciesPopover .x4-tab-bar {
     background-color: var(--x4-muted-bg);
+}
+.rly-popover.dependenciesPopover .x4-tab-inner {
+    color: var(--x4-secondary-text) !important;
 }
 .rly-popover.dependenciesPopover .x4-tab-active {
     background-color: var(--x4-bg);
@@ -317,6 +493,9 @@ div.rallyListView #addNewContainer .error {
 .rly-popover.dependenciesPopover .x4-panel-body {
     background-color: var(--x4-bg) !important;
     color: var(--x4-text) !important;
+}
+.rly-popover.percentDonePopover {
+    color: var(--x4-secondary-text);
 }
 .rly-popover.percentDonePopover .x4-window-item {
     background-color: var(--x4-bg);
@@ -326,9 +505,11 @@ div.rallyListView #addNewContainer .error {
 }
 .x4-container .rly-popover {
     background-color: var(--x4-muted-bg);
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .x4-window-body {
     background-color: var(--x4-muted-bg);
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .x4-window-header {
     background-color: var(--x4-muted-bg) !important;
@@ -336,16 +517,38 @@ div.rallyListView #addNewContainer .error {
 .x4-container .rly-popover .x4-window-header-body-rally .icon-cancel:hover {
     color: var(--x4-muted-text);
 }
+.x4-container .rly-popover .x4-window-header-text-container .x4-window-header-text-rally {
+    color: var(--x4-secondary-text);
+}
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct {
     background-color: var(--x4-muted-bg);
+}
+.x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-inner {
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-view,
 .x4-container .rly-popover .rally-grid .x4-tree-view {
     background-color: var(--x4-bg);
     color: var(--x4-text);
 }
+.rly-popover.new {
+    color: var(--x4-secondary-text);
+}
+.rly-popover.new .x4-window-header-body-rally .icon-cancel {
+    color: var(--x4-secondary-text);
+}
+.rly-popover.new .x4-window-header-text-container .x4-window-header-text-rally {
+    color: var(--x4-secondary-text);
+}
+.rly-popover.new p {
+    color: var(--x4-secondary-text);
+}
 .rly-popover.work-product-popover .work-product-popover-details {
     background-color: var(--x4-muted-bg);
+    color: var(--x4-secondary-text);
+}
+.rly-popover.work-product-popover .work-product-popover-details h3 {
+    color: var(--x4-secondary-text);
 }
 .toggle-button-template .toggle-button-handle {
     background-color: var(--x4-bg);
@@ -368,6 +571,9 @@ div.rallyListView #addNewContainer .error {
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover {
     background-color: var(--x4-bg);
+}
+.rui-tag-list-item {
+    color: var(--x4-secondary-text);
 }
 .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
     color: var(--x4-muted-text);
@@ -445,6 +651,12 @@ div.rallyListView #addNewContainer .error {
 .x4-tab-bar .x4-tab-active {
     background-color: var(--x4-muted-bg);
 }
+.x4-tab-bar .x4-tab-active .x4-tab-inner {
+    color: var(--x4-secondary-text);
+}
 .x4-tab-bar-strip {
     background-color: var(--x4-muted-bg);
+}
+.no-data-container .primary-message {
+    color: var(--x4-secondary-text);
 }

@@ -7,6 +7,8 @@
     --x4-bg: var(--main-bg);
     --x4-text: var(--main-text);
 
+    --x4-secondary-text: var(--content-text);
+
     --x4-muted-bg: var(--tertiary-bg);
     --x4-muted-text: var(--tertiary-text);
 

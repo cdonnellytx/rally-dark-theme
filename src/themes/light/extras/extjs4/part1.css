@@ -185,17 +185,17 @@
     border-color: #30aac7;
 }
 .fieldBucket .section-header:hover .control {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .fieldBucket .head {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .fieldBucket .control {
     color: #888888;
 }
 .fieldBucket .control:hover,
 .fieldBucket .control.focused {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .fieldBucket .detailFields .x4-panel-body {
     background-color: transparent;
@@ -237,10 +237,10 @@
 }
 .detailPage .detailView .detailContentWrapper fieldset input.readonly,
 .detailPage .detailView .detailContentWrapper fieldset input.readonly:hover {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailPage .detailView .detailContentWrapper fieldset.readonly input {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailPage .detailView .detailContentWrapper fieldset .rally-grid input:focus {
     border-color: #30aac7;
@@ -337,7 +337,7 @@
     background-color: #444444;
 }
 .detailpagetitlebar .menu-gear span:hover {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailpagetitlebar .formatted-id {
     color: var(--x4-muted-text);
@@ -350,7 +350,7 @@
     border-color: #d6d6d6;
 }
 .detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly div {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailpagetitlebar .cancel-btn {
     background-color: #444444 !important;
@@ -414,7 +414,7 @@
 }
 .ribbon-navigation .ribbon-badge {
     background-color: #ffc91c;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .ready-blocked-status .button {
     border-color: transparent;
@@ -428,7 +428,7 @@
 }
 .ready-blocked-status .tertiary:hover {
     background-color: #c0c0c0;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .ready-blocked-status .x4-blocked {
     background-color: #ee1c25;
@@ -482,7 +482,7 @@
     color: #30aac7;
 }
 .detailweblinkpopover .x4-form-item-label {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailView .northfields fieldset .fieldsetContainerLabel {
     color: var(--x4-muted-text);
@@ -555,7 +555,7 @@
     background-color: #d6d6d6 !important;
 }
 .detailSubPage .sub-page-header {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger-input-cell .x4-form-field {
     border-color: var(--x4-control-border) !important;
@@ -581,7 +581,7 @@
     color: #a9a9a9;
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer .readonly.tagPill {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detailPage .detailView .detailContentRightPanel .legend,
 .detailPage .detailView .detailContentRightPanel legend {
@@ -701,7 +701,7 @@
 }
 .detail-ready-button:hover {
     background-color: #c0c0c0;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .detail-ready-button.x4-ready {
     background-color: #5cba49;
@@ -1048,7 +1048,7 @@
     box-shadow: none;
 }
 .x4-window .x4-window-header-rally-top .x4-window-header-text-rally {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-window.print-dialog .print-details-radio {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/print_detail.png);
@@ -1084,7 +1084,7 @@
     color: #808080;
 }
 .rally-confirm-dialog .icon-warning {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .discussionBubble {
     color: #ffffff;
@@ -1188,7 +1188,7 @@
     background-color: #f6a900 !important;
 }
 .new-ux.warning-dialog .x4-window-header .icon-cancel {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .new-ux.warning-dialog .x4-window-header .icon-cancel:hover {
     color: #888888;
@@ -1249,7 +1249,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/projectpicker/scope-both-ffffff.png);
 }
 .x4-container .filter-popover.rly-popover .filter-container .filter-label {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-checkbox {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/large_checkbox_not_selected.png);
@@ -1261,7 +1261,7 @@
 }
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon {
     background-color: transparent;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled,
 .x4-container .custom-filter-popover.rly-popover .custom-filter-panel .remove-filter-icon.x4-item-disabled:hover {
@@ -1526,7 +1526,7 @@ img.checked {
     color: #085478;
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.picto {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-over {
     background-color: transparent;
@@ -1540,7 +1540,7 @@ img.checked {
     background-color: transparent;
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-inner {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-ASC,
 .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header.x4-column-header-sort-DESC {
@@ -1653,7 +1653,7 @@ img.checked {
     background-image: none;
 }
 .rally-grid .x4-grid-group-title {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rally-grid .x4-grid-group-hd {
     border-color: #888888;
@@ -1886,7 +1886,7 @@ img.checked {
     background-color: #f6f6f6;
 }
 .x4-window.print-dialog .x4-window-body {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-window.print-dialog .x4-form-checkboxgroup-body {
     border-color: #e6e6e6;
@@ -2062,7 +2062,7 @@ div.rallyListView #addNewContainer .error {
     color: #888888;
 }
 .x4-menu-item.artifact-icon span {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-menu-item.artifact-icon:hover {
     color: #ffffff;
@@ -2072,7 +2072,7 @@ div.rallyListView #addNewContainer .error {
 }
 .milestone-pill {
     background-color: var(--x4-muted-bg);
-    color: #222222;
+    color: var(--x4-secondary-text);
     border-color: #c0c0c0;
 }
 .milestone-pill .icon-milestone {
@@ -2112,7 +2112,7 @@ div.rallyListView #addNewContainer .error {
     color: #ffffff;
 }
 .rly-popover.owner-popover .card-owner-name {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .grid-pager .page-size-links {
     color: var(--x4-muted-text);
@@ -2122,7 +2122,7 @@ div.rallyListView #addNewContainer .error {
     background-color: var(--x4-bg);
 }
 .x4-panel-header-text-container-default {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .progress-bar-background {
     background-color: #444444;
@@ -2136,7 +2136,7 @@ div.rallyListView #addNewContainer .error {
     border-bottom-color: transparent;
 }
 .progress-bar-container .progress-bar-label {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .progress-bar-file-size-limit-error .x4-progress-bar {
     background-color: #b81b10 !important;
@@ -2176,7 +2176,7 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-muted-text);
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell .x4-datepicker-date {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rally-date-picker .x4-datepicker-inner .x4-datepicker-cell .x4-datepicker-date:hover {
     background-color: #888888;
@@ -2218,7 +2218,7 @@ div.rallyListView #addNewContainer .error {
     border-color: #e6e6e6;
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rally-date-picker .x4-monthpicker .x4-monthpicker-item .x4-monthpicker-item-inner.x4-monthpicker-selected {
     background-color: #30aac7;
@@ -2230,7 +2230,7 @@ div.rallyListView #addNewContainer .error {
 }
 .rally-date-picker.rally-date-picker-no-date-selected .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date {
     background-color: var(--x4-bg);
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rui-multiobject-picker .rally-search-button {
     color: #30aac7;
@@ -2362,7 +2362,7 @@ div.rallyListView #addNewContainer .error {
 .tagPill {
     background-color: #c4d8e8;
     border-color: #c4d8e8;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .tagPill.popoverEnabled:hover {
     background-color: #ecf8fb;
@@ -2377,7 +2377,7 @@ div.rallyListView #addNewContainer .error {
     background-color: var(--x4-muted-bg);
 }
 .rly-popover.dependenciesPopover .x4-tab-inner {
-    color: #222222 !important;
+    color: var(--x4-secondary-text) !important;
 }
 .rly-popover.dependenciesPopover .x4-tab-inner:hover {
     color: #666666 !important;
@@ -2400,7 +2400,7 @@ div.rallyListView #addNewContainer .error {
     color: #888888;
 }
 .rly-popover.percentDonePopover {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.percentDonePopover a,
 .rly-popover.percentDonePopover a:link,
@@ -2424,13 +2424,13 @@ div.rallyListView #addNewContainer .error {
 .x4-container .rly-popover {
     background-color: var(--x4-muted-bg);
     box-shadow: #888888 0 0 0;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .x4-panel-body,
 .x4-container .rly-popover .x4-window-body {
     background-color: var(--x4-muted-bg);
     border-color: transparent;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .x4-window-header {
     background-color: var(--x4-muted-bg) !important;
@@ -2445,7 +2445,7 @@ div.rallyListView #addNewContainer .error {
     color: #888888;
 }
 .x4-container .rly-popover .x4-window-header-text-container .x4-window-header-text-rally {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct {
     background-color: var(--x4-muted-bg);
@@ -2461,7 +2461,7 @@ div.rallyListView #addNewContainer .error {
     background-color: #666666;
 }
 .x4-container .rly-popover .rally-grid .x4-grid-header-ct .x4-box-inner .x4-column-header .x4-column-header-inner {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-container .rly-popover .rally-grid .x4-grid-view,
 .x4-container .rly-popover .rally-grid .x4-tree-view {
@@ -2473,19 +2473,19 @@ div.rallyListView #addNewContainer .error {
 }
 .rly-popover.new {
     background-color: #ffc91c;
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.new .x4-window-header {
     background-color: #ffc91c !important;
 }
 .rly-popover.new .x4-window-header-body-rally .icon-cancel {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.new .x4-window-header-text-container .x4-window-header-text-rally {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.new p {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.new a {
     color: #327c98;
@@ -2501,10 +2501,10 @@ div.rallyListView #addNewContainer .error {
 }
 .rly-popover.work-product-popover .work-product-popover-details {
     background-color: var(--x4-muted-bg);
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .rly-popover.work-product-popover .work-product-popover-details h3 {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 span.formatted-id-template span.artifact-icon {
     color: #888888;
@@ -2791,7 +2791,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .rui-tag-list-item {
     background-color: #c4d8e8;
-    color: #222222;
+    color: var(--x4-secondary-text);
     border-color: #c4d8e8;
 }
 .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
@@ -3062,7 +3062,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     border-bottom-color: #e6e6e6 !important;
 }
 .x4-tab-bar .x4-tab-active .x4-tab-inner {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .x4-panel-body-default {
     border-color: #d6d6d6;
@@ -3072,7 +3072,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: var(--x4-muted-bg);
 }
 .no-data-container .primary-message {
-    color: #222222;
+    color: var(--x4-secondary-text);
 }
 .no-data-container .secondary-message {
     color: #888888;
