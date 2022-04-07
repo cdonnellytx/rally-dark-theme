@@ -167,7 +167,18 @@ Search for `@media` queries first
 ### Empty selectors
 
 ```regex
-^((?:[\w.][^:,{]*,\n){0,10})((?:[\w.][^:,{]* \{\n\}\n))
+^((?:[\w.][^,{]*,\n){0,10})((?:[\w.][^,{]* \{\n\}\n))
 ```
 
 
+## Colors
+
+### `#rgb` short hex format
+
+```regex
+color: #(\w)(\w)(\w)\b
+```
+
+```replace
+color: #$1$1$2$2$3$3
+```
