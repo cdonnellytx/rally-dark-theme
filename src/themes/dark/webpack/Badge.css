@@ -1,0 +1,26 @@
+/* @import '../../../../styles/color-variables';
+@import '../../../../styles/font-variables'; */
+
+.chr-Badge {
+    color: var(--main-primary-text);
+}
+
+.chr-Badge--green {
+    background-color: var(--green);
+}
+
+.chr-Badge--pink {
+    background-color: var(--pink);
+}
+
+.chr-Badge--purple {
+    background-color: var(--purple-medium);
+}
+
+.chr-Badge--blue {
+    background-color: var(--sea-medium);
+}
+
+.chr-Badge--orange {
+    background-color: var(--orange-medium);
+}

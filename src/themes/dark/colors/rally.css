@@ -23,6 +23,8 @@
     --grey8: #e6e6e6;
     --grey9: #f6f6f6;
 
+    --white-text: #ffffff;
+
     --grey: var(--grey5); /* can be removed after churro commit for S136962 is released */
 
     /* Secondary color definition */
