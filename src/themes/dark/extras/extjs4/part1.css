@@ -1,0 +1,450 @@
+.cardboard .column-container .card-column.collapsible .expand-collapse:hover {
+    color: var(--x4-muted-text);
+}
+.cardboard .column-container .card-column.collapsible.collapsed.mouseover .expand-collapse,
+.cardboard .column-container .card-column.collapsible.collapsed.mouseover .collapsed-title {
+    color: var(--x4-muted-text);
+}
+.rly-popover.color-popover.x4-window-rally .palette-color.no-color-container {
+    background-color: var(--x4-bg);
+}
+.rly-popover.description-popover .description-richtext-view .description {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.discussion-richtext-stream-view {
+    background-color: var(--x4-bg);
+}
+.discussion-richtext-stream-view .list .list-item {
+    color: var(--x4-muted-text);
+}
+.chart .yaxis-title {
+    color: var(--x4-text);
+}
+.detailView .detailContentWrapper fieldset {
+    background-color: var(--x4-bg);
+}
+.detailView .fieldsetContainerLabel {
+    color: var(--x4-muted-text);
+}
+.x4-ie9m .detailPage .detailFieldEditor.detail-attachments-field form.add-attachment .color-for-ie {
+    color: var(--x4-text);
+}
+.detailPage .detailField .fieldContainerView {
+    background-color: var(--x4-bg);
+}
+.detailPage .rui-triggerfield .x4-form-trigger-wrap {
+    background-color: var(--x4-bg);
+}
+.detailPage legend {
+    color: var(--x4-muted-text);
+}
+.detailpagetitlebar {
+    background-color: var(--x4-muted-bg);
+}
+.detailpagetitlebar .menu-gear {
+    color: var(--x4-muted-text);
+}
+.detailpagetitlebar .formatted-id {
+    color: var(--x4-muted-text);
+}
+.detailpagetitlebar .detailFieldEditor.edp-name-renderer.readonly {
+    background-color: var(--x4-bg);
+}
+.ribbon-navigation .ribbon-item {
+    background-color: var(--x4-muted-bg);
+}
+.ribbon-navigation .ribbon-item .rly-label {
+    color: var(--x4-muted-text);
+}
+.ribbon-navigation .ribbon-item .picto {
+    color: var(--x4-muted-text);
+}
+.ribbon-navigation .ribbon-item.rly-disabled:hover {
+    background-color: var(--x4-muted-bg);
+}
+.ribbon-navigation .ribbon-item.rly-active .rly-label,
+.ribbon-navigation .ribbon-item.rly-active .picto {
+    color: var(--x4-muted-text);
+}
+.ready-blocked-status .tertiary {
+    color: var(--x4-muted-text);
+}
+.ready-blocked-status .readonly.tertiary:hover {
+    color: var(--x4-muted-text);
+}
+.detail-link-field {
+    background-color: var(--x4-bg);
+}
+.detailView .northfields fieldset .fieldsetContainerLabel {
+    color: var(--x4-muted-text);
+}
+.detailPage {
+    background-color: var(--x4-bg);
+}
+.detailPage .detailView {
+    background-color: var(--x4-bg);
+}
+.detailWrapper .detailNavigation a:visited:hover {
+    color: var(--x4-muted-text);
+}
+.detailWrapper .detailNavigation a.selected:visited {
+    color: var(--x4-text);
+}
+.detailSubPage .rui-triggerfield .x4-form-trigger-input-cell .x4-form-field {
+    border-color: var(--x4-control-border) !important;
+}
+.detailSubPage .rui-triggerfield .x4-form-trigger {
+    border-color: var(--x4-control-border) !important;
+}
+.detailPage .detailView .detailContentRightPanel .legend,
+.detailPage .detailView .detailContentRightPanel legend {
+    color: var(--x4-text);
+}
+.detailPage .detailView .detailContentRightPanel .edp-help span:hover {
+    color: var(--x4-muted-text);
+}
+.detailPage .detailView .qdpmetafield .quick-view {
+    background-color: var(--x4-bg);
+}
+.detail-ready-button {
+    color: var(--x4-muted-text);
+}
+.detail-ready-button.readonly:hover {
+    color: var(--x4-muted-text);
+}
+.detailPage .rally-detail-multi-value-field {
+    background-color: var(--x4-bg);
+}
+.easelchart-ct .easelchart-controls-ct .rui-triggerfield .x4-form-item-label {
+    color: var(--x4-muted-text);
+}
+.x4-window-header-body-rally .icon-cancel:hover {
+    color: var(--x4-muted-text);
+}
+.x4-window-rally {
+    background-color: var(--x4-bg);
+}
+.x4-window-rally {
+    background-color: var(--x4-bg);
+}
+.x4-window-rally-mc {
+    background-color: var(--x4-bg);
+}
+.x4-window-body-rally {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.x4-window-header-text-container-rally {
+    color: var(--x4-muted-text);
+}
+.x4-window {
+    background-color: var(--x4-bg);
+}
+.x4-window .x4-window-header-rally-top {
+    background-color: var(--x4-bg) !important;
+}
+.x4-window.chooser-dialog .x4-toolbar-docked-top {
+    background-color: var(--x4-bg);
+}
+.x4-ie8m .x4-window .x4-window-header-rally-top {
+    background-color: var(--x4-bg) !important;
+}
+.x4-ie8m .x4-window .x4-window-header-rally-top .x4-window-header-rally-top-mc {
+    background-color: var(--x4-bg) !important;
+}
+.new-ux.feedback-dialog .x4-window-body .form textarea {
+    background-color: var(--x4-bg);
+}
+.source-code pre {
+    color: var(--x4-muted-text);
+}
+.new-ux.warning-dialog .x4-window-body .form textarea {
+    background-color: var(--x4-bg);
+}
+.x4-form-text.rally-invalid-field {
+    background-color: var(--x4-bg);
+}
+.rui-checkbox.rly-disabled {
+    background-color: var(--x4-bg);
+}
+.rui-checkbox-label {
+    color: var(--x4-muted-text);
+}
+.rally-always-expanded-combobox input.x4-form-field {
+    background-color: var(--x4-bg);
+}
+.combobox-left-arrow:hover,
+.combobox-right-arrow:hover {
+    color: var(--x4-muted-text);
+}
+.rally-checkbox-boundlist.x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-bg);
+}
+.x4-form-trigger {
+    background-color: var(--x4-bg);
+    border-color: var(--x4-control-border);
+}
+.x4-form-trigger-wrap .x4-form-spinner-up,
+.x4-form-trigger-wrap .x4-form-spinner-down,
+.x4-grid-row-editor .x4-form-trigger-wrap .x4-form-spinner-up,
+.x4-grid-row-editor .x4-form-trigger-wrap .x4-form-spinner-down {
+    border-color: var(--x4-control-border);
+}
+.x4-item-disabled.rui-triggerfield:hover .x4-form-text {
+    border-color: var(--x4-control-border);
+}
+.x4-item-disabled.rui-triggerfield:hover .x4-form-trigger {
+    border-color: var(--x4-control-border);
+}
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special {
+    background-color: var(--x4-bg);
+}
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell.x4-grid-cell-row-checker,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell.rally-cell-row-action,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div.x4-grid-cell-row-checker,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div.rally-cell-row-action,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special.x4-grid-cell-row-checker,
+.rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special.rally-cell-row-action {
+    background-color: var(--x4-muted-bg) !important;
+}
+.rally-grid .x4-grid-header-ct {
+    background-color: var(--x4-bg);
+}
+.rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-cell,
+.rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-rowwrap-div,
+.rally-grid .x4-grid-row.x4-grid-row-alt .x4-grid-cell-special {
+    background-color: var(--x4-bg);
+}
+.x4-tree-panel.rally-grid .x4-docked-summary .x4-grid-row-summary {
+    background-color: var(--x4-muted-bg);
+}
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.x4-grid-cell-row-checker,
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-cell-row-action {
+    background-color: var(--x4-muted-bg);
+}
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child .x4-grid-cell.x4-grid-cell-row-checker,
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row.node-child .x4-grid-cell.rally-cell-row-action {
+    background-color: var(--x4-muted-bg);
+}
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.x4-grid-cell-row-checker,
+.x4-tree-panel.rally-grid .x4-grid-body .x4-grid-data-row.node-child .x4-grid-cell.rally-cell-row-action {
+    background-color: var(--x4-muted-bg);
+}
+.inline-filter-panel > .x4-panel-body .quick-filter-panel .remove-quick-filter-icon {
+    background-color: var(--x4-bg);
+}
+.advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:hover,
+.advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:focus {
+    color: var(--x4-muted-text);
+}
+.planning-board .cardboard .column-container th.planning-column {
+    background-color: var(--x4-bg);
+}
+.planning-board .cardboard .column-container td.planning-column.current-timebox {
+    background-color: var(--x4-muted-bg);
+}
+.planning-board .cardboard .column-container .planning-column .columnTitle {
+    color: var(--x4-muted-text);
+}
+.inline-add-rowbody.x4-grid-rowbody {
+    background-color: var(--x4-muted-bg);
+}
+div.rallyListView #addNewContainer .error {
+    background-color: var(--x4-bg);
+}
+.rally-list-paging-toolbar {
+    background-color: var(--x4-bg);
+}
+.rally-list-paging-toolbar .x4-btn {
+    background-color: var(--x4-bg);
+}
+.x4-menu .x4-menu-body {
+    background-color: var(--x4-bg) !important;
+}
+.milestone-pill {
+    background-color: var(--x4-muted-bg);
+}
+.grid-pager .page-size-links {
+    color: var(--x4-muted-text);
+}
+.x4-panel-header-default {
+    background-color: var(--x4-bg);
+}
+.progress-bar-container {
+    background-color: var(--x4-muted-bg);
+}
+.rally-date-picker .x4-datepicker-header .x4-datepicker-month .x4-btn-inner-center {
+    color: var(--x4-muted-text);
+}
+.rally-date-picker .x4-datepicker-inner .x4-datepicker-column-header {
+    background-color: var(--x4-muted-bg);
+}
+.rally-date-picker .x4-datepicker-inner .x4-datepicker-column-header .x4-datepicker-column-header-inner {
+    color: var(--x4-muted-text);
+}
+.rally-date-picker.rally-date-picker-no-date-selected .x4-datepicker-inner .x4-datepicker-cell.x4-datepicker-selected .x4-datepicker-date {
+    background-color: var(--x4-bg);
+}
+.rui-multi-object-list .rui-multi-object-picker-close-button:hover {
+    color: var(--x4-muted-text);
+}
+.rally-group-header.multi-object-picker-header {
+    background-color: var(--x4-bg);
+    color: var(--x4-muted-text);
+}
+.rui-multi-object-input {
+    background-color: var(--x4-bg);
+    color: var(--x4-muted-text);
+}
+.simple-picker-menu {
+    border-color: var(--x4-control-border);
+}
+.tagfilter .x4-trigger-cell {
+    background-color: var(--x4-bg);
+}
+.tagfilter .x4-trigger-cell .icon-search {
+    background-color: var(--x4-bg);
+}
+.rly-popover.dependenciesPopover .x4-tab-bar {
+    background-color: var(--x4-muted-bg);
+}
+.rly-popover.dependenciesPopover .x4-tab-active {
+    background-color: var(--x4-bg);
+}
+.rly-popover.dependenciesPopover .x4-panel-body {
+    background-color: var(--x4-bg) !important;
+    color: var(--x4-text) !important;
+}
+.rly-popover.percentDonePopover .x4-window-item {
+    background-color: var(--x4-bg);
+}
+.rly-popover.percentDonePopover hr {
+    background-color: var(--x4-muted-bg);
+}
+.x4-container .rly-popover {
+    background-color: var(--x4-muted-bg);
+}
+.x4-container .rly-popover .x4-window-body {
+    background-color: var(--x4-muted-bg);
+}
+.x4-container .rly-popover .x4-window-header {
+    background-color: var(--x4-muted-bg) !important;
+}
+.x4-container .rly-popover .x4-window-header-body-rally .icon-cancel:hover {
+    color: var(--x4-muted-text);
+}
+.x4-container .rly-popover .rally-grid .x4-grid-header-ct {
+    background-color: var(--x4-muted-bg);
+}
+.x4-container .rly-popover .rally-grid .x4-grid-view,
+.x4-container .rly-popover .rally-grid .x4-tree-view {
+    background-color: var(--x4-bg);
+    color: var(--x4-text);
+}
+.rly-popover.work-product-popover .work-product-popover-details {
+    background-color: var(--x4-muted-bg);
+}
+.toggle-button-template .toggle-button-handle {
+    background-color: var(--x4-bg);
+}
+.rallyRichTextEditor {
+    background-color: var(--x4-bg);
+}
+.rallyRichTextEditor .x4-resizable-handle-south {
+    background-color: var(--x4-bg);
+}
+.rich-text-readonly {
+    background-color: var(--x4-bg);
+}
+.editor-wrap .x-resizable-handle:hover,
+.editor-wrap .x-resizable-handle:active {
+    color: var(--x4-muted-text);
+}
+.rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button {
+    background-color: var(--x4-bg);
+}
+.rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover {
+    background-color: var(--x4-bg);
+}
+.rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
+    color: var(--x4-muted-text);
+}
+.rui-tag-chooser .rui-tag-chooser-add-new .tag-add-new-item {
+    color: var(--x4-muted-text);
+}
+.rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-filter .x4-form-field {
+    color: var(--x4-muted-text);
+}
+.rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-list-ct {
+    background-color: var(--x4-bg);
+}
+.rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-list-ct .rui-tag-bound-list .rui-list-header {
+    color: var(--x4-muted-text);
+}
+.rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-add-new {
+    background-color: var(--x4-bg);
+}
+.rui-tageditorpopover .rui-tag-chooser .rui-tag-chooser-add-new .tag-add-new-item {
+    color: var(--x4-muted-text);
+}
+.dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled,
+.dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled:hover {
+    background-color: var(--x4-bg);
+}
+.rui-tag-bound-list .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-bg);
+    color: var(--x4-muted-text);
+}
+.rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field {
+    color: var(--x4-muted-text);
+}
+.rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-filter .x4-form-field {
+    color: var(--x4-muted-text);
+}
+.rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-list-ct {
+    background-color: var(--x4-bg);
+}
+.rui-mvcfeditorpopover .rui-mvcf-chooser .rui-mvcf-chooser-list-ct .rui-mvcf-bound-list .rui-list-header {
+    color: var(--x4-muted-text);
+}
+.dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled,
+.dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled:hover {
+    background-color: var(--x4-bg);
+}
+.rui-mvcf-bound-list .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-bg);
+    color: var(--x4-muted-text);
+}
+.rally-textfield-component .x4-form-text {
+    border-color: var(--x4-control-border);
+}
+.rally-textfield-component.x4-item-disabled {
+    border-color: var(--x4-control-border);
+}
+.rally-textfield-component.x4-item-disabled .x4-form-text:hover,
+.rally-textfield-component.x4-item-disabled .x4-form-text:focus {
+    border-color: var(--x4-control-border);
+}
+.x4-tip .x4-tip-body {
+    background-color: var(--x4-muted-bg);
+}
+.treeItem .treeItemContent {
+    background-color: var(--x4-bg);
+    background-image: linear-gradient(var(--x4-bg) 70%, var(--x4-bg));
+    color: var(--x4-muted-text);
+}
+.rally-invalid .rally-invalid-field {
+    background-color: var(--x4-bg);
+}
+.x4-tab-bar {
+    background-color: var(--x4-muted-bg);
+}
+.x4-tab-bar .x4-tab-active {
+    background-color: var(--x4-muted-bg);
+}
+.x4-tab-bar-strip {
+    background-color: var(--x4-muted-bg);
+}
