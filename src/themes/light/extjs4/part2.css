@@ -2891,7 +2891,7 @@ a.x4-color-picker-item:hover {
     background-image: none;
     background-color: #deecfd;
     background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
-    box-shadow: white 0 1px 0 0 inset, white -1px 0 0 0 inset, white 1px 0 0 0 inset;
+    box-shadow: #ffffff 0 1px 0 0 inset, #ffffff -1px 0 0 0 inset, #ffffff 1px 0 0 0 inset;
 }
 .x4-nlg .x4-tab-default-top,
 .x4-nlg .x4-tab-default-left,
@@ -2903,7 +2903,7 @@ a.x4-color-picker-item:hover {
     background-image: none;
     background-color: #deecfd;
     background-image: linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
-    box-shadow: white 0 -1px 0 0 inset, white -1px 0 0 0 inset, white 1px 0 0 0 inset;
+    box-shadow: #ffffff 0 -1px 0 0 inset, #ffffff -1px 0 0 0 inset, #ffffff 1px 0 0 0 inset;
 }
 .x4-nlg .x4-tab-default-bottom {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-bg.gif);

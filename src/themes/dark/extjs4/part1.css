@@ -695,7 +695,6 @@
 .x4-window-rally-mr {
 }
 .x4-window-rally:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-rally-sides.gif";
 }
 .x4-window-body-rally {
     background-color: var(--x4-bg);
@@ -731,7 +730,6 @@
 .x4-window-header-rally-top-mr {
 }
 .x4-window-header-rally-top:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-top-sides.gif";
 }
 .x4-window-header-rally-right {
 }
@@ -753,7 +751,6 @@
 .x4-window-header-rally-right-mr {
 }
 .x4-window-header-rally-right:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-right-sides.gif";
 }
 .x4-window-header-rally-bottom {
 }
@@ -775,7 +772,6 @@
 .x4-window-header-rally-bottom-mr {
 }
 .x4-window-header-rally-bottom:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-bottom-sides.gif";
 }
 .x4-window-header-rally-left {
 }
@@ -797,7 +793,6 @@
 .x4-window-header-rally-left-mr {
 }
 .x4-window-header-rally-left:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-left-sides.gif";
 }
 .x4-window-header-rally-collapsed-top {
 }
@@ -819,7 +814,6 @@
 .x4-window-header-rally-collapsed-top-mr {
 }
 .x4-window-header-rally-collapsed-top:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-top-sides.gif";
 }
 .x4-window-header-rally-collapsed-right {
 }
@@ -841,7 +835,6 @@
 .x4-window-header-rally-collapsed-right-mr {
 }
 .x4-window-header-rally-collapsed-right:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-right-sides.gif";
 }
 .x4-window-header-rally-collapsed-bottom {
 }
@@ -863,7 +856,6 @@
 .x4-window-header-rally-collapsed-bottom-mr {
 }
 .x4-window-header-rally-collapsed-bottom:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-bottom-sides.gif";
 }
 .x4-window-header-rally-collapsed-left {
 }
@@ -885,7 +877,6 @@
 .x4-window-header-rally-collapsed-left-mr {
 }
 .x4-window-header-rally-collapsed-left:after {
-    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-rally-collapsed-left-sides.gif";
 }
 .x4-window-header-rally-top {
 }
@@ -1080,7 +1071,6 @@
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-checkbox {
     border-color: var(--x4-silver);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-cb-checked .x4-form-checkbox {
 }
@@ -1119,14 +1109,11 @@
 .rui-checkbox {
     background-color: var(--x4-gray-05);
     border-color: var(--x4-silver);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .rui-checkbox:active {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .rui-checkbox.icon-ok,
 .rui-checkbox.icon-partial {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
 }
 .rui-checkbox.icon-ok:before,
 .rui-checkbox.icon-partial:before {
@@ -1134,7 +1121,6 @@
 .rui-checkbox.rly-disabled {
     background-color: var(--x4-bg);
     border-color: var(--x4-gray-35);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
 }
 .rui-checkbox.rly-disabled:before {
     color: var(--x4-silver);
@@ -1689,7 +1675,6 @@ img.checked {
     color: var(--x4-gray-80);
 }
 .planning-board .cardboard .column-container .planning-column.current-timebox .rui-card {
-    box-shadow: rgba(192, 192, 192, 0.5) 2px 2px;
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status {
     border-right-color: var(--x4-silver);
