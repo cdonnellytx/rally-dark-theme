@@ -140,9 +140,9 @@
     --form-element-transparent-active-background: rgba(var(--black), 0.1);
     --form-element-transparent-disabled-background: rgba(255, 255, 255, 0.6);
 
-    --disabled-background: var(--grey3);
-    --disabled-border: var(--grey3);
-    --disabled-color: var(--white);
+    --disabled-background: var(--main-disabled-bg);
+    --disabled-border: var(--main-disabled-border);
+    --disabled-color: var(--main-disabled-color);
 
     --loading-indicator: #eff8fb;
 

@@ -46,9 +46,9 @@
 .cke_combo_off a.cke_combo_button:focus,
 .cke_toolgroup a.cke_button_off:hover,
 .cke_toolgroup a.cke_button_on:hover {
-    background-color: var(--hover-bg);
-    border-color: var(--hover-border);
-    color: var(--hover-text);
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
+    color: var(--main-hover-text);
 }
 
 .cke_top .cke_toolbox .cke_combo_text:hover,
@@ -56,9 +56,9 @@
 .cke_top .cke_toolbox .cke_combo_off a.cke_combo_button:focus,
 .cke_top .cke_toolbox .cke_toolgroup a.cke_button_off:hover,
 .cke_top .cke_toolbox .cke_toolgroup a.cke_button_on:hover {
-    background-color: var(--hover-text);
-    border-color: var(--hover-border);
-    color: var(--hover-bg);
+    background-color: var(--main-hover-text);
+    border-color: var(--main-hover-border);
+    color: var(--main-hover-bg);
 }
 
 .cke_toolbox .cke_combo_off a.cke_combo_button:hover,
@@ -98,8 +98,8 @@ select.cke_dialog_ui_input_select {
 }
 
 .cke_panel_listItem a:hover {
-    background-color: var(--hover-bg);
-    border-color: var(--hover-border);
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
 }
 
 .cke_panel_listItem a:focus,
@@ -116,8 +116,8 @@ select.cke_dialog_ui_input_select {
 }
 
 .cke_dialog_body {
-    background-color: var(--tertiary-bg);
-    border-color: var(--tertiary-border);
+    background-color: var(--main-tertiary-bg);
+    border-color: var(--main-tertiary-border);
 }
 
 .cke_dialog_title {
@@ -126,7 +126,7 @@ select.cke_dialog_ui_input_select {
 }
 
 .cke_dialog_contents {
-    background-color: var(--tertiary-bg);
+    background-color: var(--main-tertiary-bg);
 }
 
 a.cke_dialog_ui_button {
@@ -166,7 +166,7 @@ a.cke_dialog_ui_button span {
 }
 
 .cke_dialog_footer {
-    outline-color: var(--tertiary-border);
+    outline-color: var(--main-tertiary-border);
 }
 
 /* Text Editor */
@@ -176,7 +176,7 @@ a.cke_dialog_ui_button span {
 }
 
 .cke_editable a {
-    color: var(--link-text);
+    color: var(--main-link-text);
 }
 
 .cke_bottom {
