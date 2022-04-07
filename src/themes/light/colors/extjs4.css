@@ -1,26 +1,41 @@
 :root {
-    /* Making these up */
     /* LIGHT: 100=dark, 0=light */
+    --x4-gray-103: #181818;
     --x4-gray-100: #222222;
     --x4-gray-95: #333333;
+    --x4-gray-93: #393939;
     --x4-gray-90: #444444;
     --x4-gray-85: #464646;
+    --x4-gray-83: #4c4c4c;
     --x4-gray-80: #666666;
+    --x4-gray-78: #696969;
     --x4-gray-75: #808080;
     --x4-gray-70: #888888;
+    --x4-gray-68: #8f8f8f;
     --x4-gray-65: #a9a9a9;
     --x4-gray-60: #aaaaaa;
+    --x4-gray-59: #ababab;
     --x4-gray-55: #b0b0b0;
-    --x4-gray-50: #c0c0c0;
+    --x4-gray-53: #b3b3b3;
+    --x4-gray-52: #b4b4b4;
+    --x4-gray-50: #bbbbbb;
     --x4-gray-45: #c5c5c5;
     --x4-gray-40: #c6c6c6;
+    --x4-gray-39: #cccccc;
+    --x4-gray-38: #d3d3d3;
     --x4-gray-35: #d6d6d6;
+    --x4-gray-34: #d7d7d7;
     --x4-gray-30: #dddddd;
     --x4-gray-25: #e0e0e0;
     --x4-gray-20: #e6e6e6;
+    --x4-gray-18: #e9e9e9;
     --x4-gray-15: #eeeeee;
+    --x4-gray-14: #efefef;
     --x4-gray-10: #f1f1f1;
     --x4-gray-05: #f6f6f6;
+    --x4-gray-03: #fafafa;
+
+    --x4-silver: silver;
 
     /* ExtJS name equivalents */
     --x4-ie-shadow: #777777;
@@ -36,7 +51,7 @@
     --x4-control-border: var(--x4-gray-40);
     --x4-control-text: #222222;
 
-    --x4-dd-drag-border: #dddddd #bbbbbb #bbbbbb #dddddd;
+    --x4-dd-drag-border: var(--x4-gray-30) var(--x4-gray-50) var(--x4-gray-50) #var(--x4-gray-30);
 
     --x4-form-invalid-text: var(--x4-muted-text);
 

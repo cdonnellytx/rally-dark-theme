@@ -72,7 +72,7 @@
     background-color: transparent;
 }
 .rly-carousel .carousel-controls .carousel-dot {
-    color: #c0c0c0;
+    color: var(--x4-silver);
     background-color: transparent;
 }
 .rly-carousel .carousel-controls .carousel-dot.rly-active,
@@ -114,33 +114,33 @@
     background-color: var(--x4-bg);
 }
 .discussion-richtext-stream-view .list .list-item {
-    border-top-color: #c0c0c0;
+    border-top-color: var(--x4-silver);
     color: var(--x4-muted-text);
 }
 .discussion-richtext-stream-view .list-item-info .inactive {
     color: var(--x4-gray-75);
 }
 .discussion-richtext-stream-view .list-item-user .profile {
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
 }
 .discussion-richtext-stream-view .list-item-details .status {
-    color: #8f8f8f;
+    color: var(--x4-gray-68);
 }
 .discussion-richtext-stream-view .show-more-ct {
-    border-top-color: #c0c0c0;
+    border-top-color: var(--x4-silver);
 }
 .discussion-richtext-stream-view .delete-comment {
     background-color: transparent;
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/trash-icon.png);
 }
 .chart .empty {
-    color: #696969;
+    color: var(--x4-gray-78);
 }
 .chart .yaxis-title {
     color: var(--x4-text);
 }
 .detailView .detailContentWrapper fieldset {
-    border-color: #d7d7d7;
+    border-color: var(--x4-gray-34);
     background-color: var(--x4-bg);
 }
 .detailView .detailContentWrapper .invalidField {
@@ -178,7 +178,7 @@
 }
 .fieldBucket {
     background-color: var(--x4-gray-05);
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
 }
 .fieldBucket div.icon-chevron-down.focused,
 .fieldBucket div.icon-chevron-right.focused {
@@ -427,7 +427,7 @@
     color: var(--x4-muted-text);
 }
 .ready-blocked-status .tertiary:hover {
-    background-color: #c0c0c0;
+    background-color: var(--x4-silver);
     color: var(--x4-secondary-text);
 }
 .ready-blocked-status .x4-blocked {
@@ -463,7 +463,7 @@
     background-color: transparent;
 }
 .rally-detail-schedulestate-field .rally-detail-schedulestate-meter .rally-detail-schedulestate-chevron {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rally-detail-schedulestate-field.readonly .rally-detail-schedulestate-chevron {
     color: var(--x4-gray-20);
@@ -529,7 +529,7 @@
     border-color: #30aac7;
 }
 .commentsMetaField .discussion-richtext-stream-view {
-    border-color: #d3d3d3;
+    border-color: var(--x4-gray-38);
 }
 .detailPage {
     background-color: var(--x4-bg);
@@ -564,15 +564,15 @@
     background-color: transparent;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger-wrap:hover .x4-form-field {
-    border-top-color: #c6c6c6 !important;
-    border-bottom-color: #c6c6c6 !important;
-    border-left-color: #c6c6c6 !important;
+    border-top-color: var(--x4-gray-40) !important;
+    border-bottom-color: var(--x4-gray-40) !important;
+    border-left-color: var(--x4-gray-40) !important;
 }
 .detailSubPage .rui-triggerfield .x4-form-trigger {
     border-color: var(--x4-control-border) !important;
 }
 .detailSubPage .rally-grid .rui-triggerfield .x4-form-field[role="spinbutton"] {
-    border-right-color: #c6c6c6 !important;
+    border-right-color: var(--x4-gray-40) !important;
 }
 .detailPage .detailView .detailContentRightPanel .detailFieldContainer {
     border-top-color: var(--x4-gray-20);
@@ -595,7 +595,7 @@
     border-color: #30aac7 !important;
 }
 .detailPage .detailView .detailContentRightPanel .edp-help span {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .detailPage .detailView .detailContentRightPanel .edp-help span:hover {
     color: var(--x4-muted-text);
@@ -656,7 +656,7 @@
 }
 .detailPage .detailView .qdpmetafield .quick-view {
     background-color: var(--x4-bg);
-    border-color: #d3d3d3;
+    border-color: var(--x4-gray-38);
 }
 .detailPage .detailView .qdpmetafield .quick-view:hover {
     background-color: #327c98;
@@ -700,7 +700,7 @@
     color: var(--x4-muted-text);
 }
 .detail-ready-button:hover {
-    background-color: #c0c0c0;
+    background-color: var(--x4-silver);
     color: var(--x4-secondary-text);
 }
 .detail-ready-button.x4-ready {
@@ -753,7 +753,7 @@
     border-color: var(--x4-gray-35);
 }
 .x4-window-header-body-rally .icon-cancel {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-window-header-body-rally .icon-cancel:hover {
     color: var(--x4-muted-text);
@@ -1060,10 +1060,10 @@
     background-color: var(--x4-bg);
 }
 .x4-window.chooser-dialog .chooser-search-icon {
-    color: #c6c6c6;
-    border-top-color: #c6c6c6;
-    border-bottom-color: #c6c6c6;
-    border-right-color: #c6c6c6;
+    color: var(--x4-gray-40);
+    border-top-color: var(--x4-gray-40);
+    border-bottom-color: var(--x4-gray-40);
+    border-right-color: var(--x4-gray-40);
 }
 .x4-window.chooser-dialog .rui-triggerfield:hover .chooser-search-icon,
 .x4-window.chooser-dialog .rui-triggerfield:hover input,
@@ -1125,7 +1125,7 @@
     border-color: var(--x4-gray-70);
 }
 .feedback-dialog .x4-window-body .circle {
-    background-color: #c0c0c0;
+    background-color: var(--x4-silver);
 }
 .feedback-dialog .x4-window-body .circle:hover {
     background-color: var(--x4-gray-65);
@@ -1156,7 +1156,7 @@
     color: #21516d;
 }
 .source-code pre {
-    background-color: #f1f1f1;
+    background-color: var(--x4-gray-10);
     color: var(--x4-muted-text);
 }
 .rally-move-to-position-dialog .x4-grid-row-selected {
@@ -1230,7 +1230,7 @@
 }
 .edit-mode-button.rly-disabled,
 .edit-mode-button.rly-disabled:hover {
-    background-color: #c0c0c0;
+    background-color: var(--x4-silver);
 }
 .edit-mode-button.rly-disabled .x4-btn-wrap,
 .edit-mode-button.rly-disabled:hover .x4-btn-wrap {
@@ -1253,7 +1253,7 @@
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-checkbox {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/large_checkbox_not_selected.png);
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .x4-container .filter-popover.rly-popover .filter-container .checkbox-container .x4-form-cb-checked .x4-form-checkbox {
@@ -1288,7 +1288,7 @@
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/checkbox-checked-hover.png);
 }
 .x4-container .duplicate-field-model-name {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-container .x4-boundlist-item-over .duplicate-field-model-name {
     color: #ffffff;
@@ -1299,7 +1299,7 @@
 }
 .rui-checkbox {
     background-color: var(--x4-gray-05);
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
 }
 .rui-checkbox:active {
@@ -1321,7 +1321,7 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
 }
 .rui-checkbox.rly-disabled:before {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rui-checkbox-label {
     color: var(--x4-muted-text);
@@ -1333,7 +1333,7 @@
 }
 .combobox-left-arrow,
 .combobox-right-arrow {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .combobox-left-arrow:hover,
 .combobox-right-arrow:hover {
@@ -1413,14 +1413,14 @@
 }
 .rui-triggerfield .icon-search {
     background-image: none;
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rui-triggerfield .x4-form-date-trigger {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/date.png);
 }
 .rui-triggerfield .icon-calendar {
     background-image: none;
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-item-disabled.rui-triggerfield ::-webkit-input-placeholder {
     color: #ffffff;
@@ -1495,7 +1495,7 @@
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell .x4-grid-cell-inner .row-action-icon,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-rowwrap-div .x4-grid-cell-inner .row-action-icon,
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over .x4-grid-cell-special .x4-grid-cell-inner .row-action-icon {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rally-grid.grabbing.x4-tree-panel .x4-grid-body .x4-grid-data-row.x4-grid-row-over:last-child .x4-grid-cell {
     border-bottom-color: var(--x4-gray-35);
@@ -1563,7 +1563,7 @@ img.checked {
     color: var(--x4-gray-80);
 }
 .rally-grid .x4-grid-body .x4-grid-view-empty {
-    color: #696969;
+    color: var(--x4-gray-78);
 }
 .rally-grid .x4-grid-row .x4-grid-cell.rally-grid-cell-predecessorsandsuccessors .x4-grid-cell-inner .predecessorsandsuccessors-cnt {
     color: #327c98;
@@ -1952,17 +1952,17 @@ img.checked {
     color: #21516d;
 }
 .advanced-filter-panel > .x4-panel-body .advanced-filter-rows .advanced-filter-row .filter-row-control.x4-disabled {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .advanced-filter-rows .advanced-filter-row .filter-row-control.x4-disabled:hover {
     background-color: transparent;
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .filters-container .x4-panel-body {
     background-color: var(--x4-gray-05);
 }
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:hover,
 .advanced-filter-panel > .x4-panel-body .custom-filter-condition .custom-filter-condition-help:focus {
@@ -1984,7 +1984,7 @@ img.checked {
     box-shadow: rgba(192, 192, 192, 0.5) 2px 2px;
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status {
-    border-right-color: #c0c0c0;
+    border-right-color: var(--x4-silver);
 }
 .planning-board .cardboard .column-container .planning-column.card-column-status .empty-status {
     background-color: var(--x4-gray-90);
@@ -2023,7 +2023,7 @@ img.checked {
     background-color: transparent;
 }
 .rui-leftright .rly-right .filterInfo {
-    border-right-color: #c0c0c0;
+    border-right-color: var(--x4-silver);
 }
 div.rallyListView #addNewContainer .error {
     color: #f66349;
@@ -2034,7 +2034,7 @@ div.rallyListView #addNewContainer .error {
 }
 .rally-list-paging-toolbar .x4-btn {
     background-color: var(--x4-bg);
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-menu .x4-menu-body {
     background-color: var(--x4-bg) !important;
@@ -2073,7 +2073,7 @@ div.rallyListView #addNewContainer .error {
 .milestone-pill {
     background-color: var(--x4-muted-bg);
     color: var(--x4-secondary-text);
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
 }
 .milestone-pill .icon-milestone {
     color: var(--x4-gray-70);
@@ -2149,7 +2149,7 @@ div.rallyListView #addNewContainer .error {
 }
 .rui-tag-picker-add-new-component {
     background-color: #d4eaf6;
-    border-top-color: #aaaaaa;
+    border-top-color: var(--x4-gray-60);
 }
 .rui-multi-object-list {
     border-color: var(--x4-gray-35) !important;
@@ -2158,7 +2158,7 @@ div.rallyListView #addNewContainer .error {
     border-color: var(--x4-gray-20);
 }
 .rally-date-picker .x4-datepicker-header {
-    background-color: #c0c0c0;
+    background-color: var(--x4-silver);
 }
 .rally-date-picker .x4-datepicker-header .x4-datepicker-arrow {
     color: #ffffff;
@@ -2239,7 +2239,7 @@ div.rallyListView #addNewContainer .error {
     background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/checkbox/medium_checkbox_selected.png);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled {
-    color: #8f8f8f;
+    color: var(--x4-gray-68);
 }
 .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
     background-color: #eff8fb;
@@ -2283,14 +2283,14 @@ div.rallyListView #addNewContainer .error {
     color: var(--x4-gray-65);
 }
 .rui-project-picker-container {
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
     background-color: #eff8fb;
 }
 .rui-project-picker-container .mostRecentlyUsedProjects .mostRecentlyUsedProjectsContent {
-    border-bottom-color: #c0c0c0;
+    border-bottom-color: var(--x4-silver);
 }
 .rui-project-picker-container .projectScopeUpDownField {
-    border-top-color: #c0c0c0;
+    border-top-color: var(--x4-silver);
 }
 .rui-project-picker-container .rallytree .treeItem .treeItemContent.treeItemSelected {
     color: #ffffff;
@@ -2349,7 +2349,7 @@ div.rallyListView #addNewContainer .error {
 }
 .tagfilter .x4-trigger-cell .icon-search {
     background-color: var(--x4-bg);
-    color: #aaaaaa;
+    color: var(--x4-gray-60);
 }
 .tagfilter.tagfilter-hover,
 .tagfilter.tagfilter-focus {
@@ -2516,7 +2516,7 @@ span.formatted-id-template:hover .formatted-id-link {
     color: #21516d;
 }
 span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .icon-builder-template.NONE .icon-empty {
     color: var(--x4-gray-35);
@@ -2647,10 +2647,10 @@ span.formatted-id-template:hover .formatted-id-link {
     color: #21516d;
 }
 span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rallyRichTextEditor {
-    border-color: #c0c0c0;
+    border-color: var(--x4-silver);
     background-color: var(--x4-bg);
 }
 .rallyRichTextEditor .x4-resizable-handle-south {
@@ -2682,7 +2682,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-outer-box,
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-inner-box {
-    border-color: #c0c0c0 !important;
+    border-color: var(--x4-silver) !important;
 }
 .rallyRichTextEditor .richTextToolbar #rich-text-editor-templates-button.goog-toolbar-button-hover .goog-toolbar-button-inner-box {
     color: #21516d;
@@ -2771,7 +2771,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: var(--x4-gray-80);
 }
 .unfinished-story-splitting-panel {
-    border-right-color: #c6c6c6 !important;
+    border-right-color: var(--x4-gray-40) !important;
 }
 .rally-search-field:hover input {
     border-color: #30aac7;
@@ -2780,10 +2780,10 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     color: #30aac7;
 }
 .rally-search-field .rally-search-button {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .rally-shared-view-list .default-items {
-    border-bottom-color: #c6c6c6;
+    border-bottom-color: var(--x4-gray-40);
 }
 .rally-shared-view-list .default-items .default-item:hover {
     background-color: #30aac7;
@@ -2865,7 +2865,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled span,
 .dark-container.rui-tageditorpopover .x4-btn.x4-item-disabled:hover span {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-tags .x4-grid-cell-inner:hover {
     border-color: #30aac7;
@@ -2922,7 +2922,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
 }
 .dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled span,
 .dark-container.rui-mvcfeditorpopover .x4-btn.x4-item-disabled:hover span {
-    color: #c0c0c0;
+    color: var(--x4-silver);
 }
 .x4-tree-panel.rally-grid .x4-grid-body .x4-grid-row .x4-grid-cell.rally-grid-cell-mvcfs .x4-grid-cell-inner:hover {
     border-color: #30aac7;
@@ -2997,7 +2997,7 @@ span.formatted-id-template:hover .formatted-id-link span.artifact-icon {
     background-color: var(--x4-bg);
     background-image: linear-gradient(var(--x4-bg) 70%, var(--x4-bg));
     color: var(--x4-muted-text);
-    border-bottom-color: #b3b3b3;
+    border-bottom-color: var(--x4-gray-53);
 }
 .treeItem .treeItemContent:hover {
     background-color: #d4eaf6;
