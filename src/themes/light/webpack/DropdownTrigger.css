@@ -1,0 +1,50 @@
+/* @import "../styles/css/variables/index";
+@import "../styles/css/mixins/form-element";
+@import "../styles/css/mixins/no-select";
+@import "../styles/css/mixins/truncate";
+@import "node_modules/@mineral/tokens/build/light/index.scss"; */
+
+#main .smb-DropdownTrigger {
+    background-color: var(--white);
+    border-color: var(--mnrl-borderColor);
+    color: var(--mnrl-gray-100);
+}
+
+#main .smb-DropdownTrigger:focus {
+    /*
+    FIXME @extend %form-element-focused;
+    */
+    background-color: var(--dropdown-focus-bg);
+    border-color: var(--dropdown-focus-border);
+    box-shadow: var(--dropdown-focus-shadow);
+}
+
+#main .smb-DropdownTrigger:focus .smb-Icon {
+    color: var(--dropdown-text);
+}
+
+#main .smb-DropdownTrigger.is-disabled {
+    background-color: var(--mnrl-backgroundColor-disabled);
+    border-color: var(--mnrl-borderColor);
+    color: var(--mnrl-gray-80);
+}
+#main .smb-DropdownTrigger.is-disabled .smb-SvgIcon {
+    color: var(--mnrl-color-disabled);
+}
+
+#main .smb-DropdownTrigger.is-invalid {
+    border-color: var(--error);
+}
+
+#main .smb-DropdownTrigger .smb-DropdownTrigger-subtext {
+    color: var(--mnrl-gray-80);
+}
+
+#main .smb-DropdownTrigger .smb-DropdownTrigger-placeholderText {
+    color: var(--mnrl-input-color-placeholder);
+}
+
+#main .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover,
+#main .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly).is-open {
+    background-color: var(--dropdown-trigger-bg);
+}

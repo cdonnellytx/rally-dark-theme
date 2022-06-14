@@ -1,0 +1,55 @@
+:root {
+    --main-primary-bg: #111;
+    --main-primary-border: #555;
+    --main-primary-shadow: #444;
+    --main-primary-text: #ddd;
+
+    --main-header-text: #ddd;
+    --main-header-border: #37383b;
+
+    --main-title-text: #cbdfff;
+
+    --main-content-bg: #112;
+    --main-content-border: #555;
+    --main-content-text: #ddd;
+
+    --main-tertiary-bg: #223;
+    --main-tertiary-border: #555;
+    --main-tertiary-text: #bbb;
+
+    --main-link-text: #3eb9f8;
+
+    /* States */
+    --main-disabled-bg: #161b22;
+    --main-disabled-border: #666e79 /* needs research */;
+    --main-disabled-text: #666e79;
+
+    --main-focus-border: #777;
+    --main-focus-text: #ddd;
+
+    --main-hover-bg: #212142;
+    --main-hover-border: ##494991;
+    --main-hover-text: #ddd;
+
+    --mask-bg: #000 /* assumes opacity */;
+
+    /* Controls */
+    --main-placeholder-text: var(--main-disabled-text);
+
+    /*
+     * Controls
+     */
+    --main-control-bg: #444;
+    --main-control-border: #777;
+    --main-control-icon: var(--main-link-text);
+    --main-control-text: #ddd;
+    --main-control-disabled-bg: var(--main-disabled-bg);
+    --main-control-disabled-border: #445;
+    --main-control-disabled-icon: var(--main-control-disabled-text);
+    --main-control-disabled-text: var(--main-disabled-text);
+    --main-control-focus-shadow: 0 0 0 0.1rem var(--main-control-bg), 0 0 0 0.2rem #30353d;
+    --main-control-focus-border: var(--contorl-border);
+    --main-control-hover-border: #8b949e;
+
+    --main-label-text: var(--main-control-text);
+}

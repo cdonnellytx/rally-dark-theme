@@ -1,0 +1,185 @@
+/*
+ * CKE Text Editor
+ */
+
+/* CKE's rules are... ugh. */
+.cke_reset_all {
+    background-color: var(--main-primary-bg);
+    border-color: var(--main-primary-border);
+    color: var(--main-primary-text);
+}
+
+.cke_reset_all *,
+.cke_reset_all a,
+.cke_reset_all textarea {
+    /* border-color: var(--main-primary-border); */
+    color: var(--main-primary-text);
+}
+
+/* Text Editor : Toolbar -- icons limit what we can do here... */
+.cke_top {
+    background-color: var(--control-text);
+    border-color: var(--control-border);
+    color: var(--control-bg);
+}
+
+/* have to '*' and 'a' because cke_reset_all does */
+.cke_top div,
+.cke_top span,
+.cke_top a {
+    background-color: inherit;
+    border-color: inherit;
+    color: var(--control-bg);
+}
+
+.cke_combo_text {
+    /* seems broken */
+    margin-bottom: 0;
+}
+
+.cke_wysiwyg_frame,
+.cke_wysiwyg_div {
+    background-color: #bbb !important;
+}
+
+.cke_combo_off a.cke_combo_button:hover,
+.cke_combo_off a.cke_combo_button:focus,
+.cke_toolgroup a.cke_button_off:hover,
+.cke_toolgroup a.cke_button_on:hover {
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
+    color: var(--main-hover-text);
+}
+
+.cke_top .cke_toolbox .cke_combo_text:hover,
+.cke_top .cke_toolbox .cke_combo_off a.cke_combo_button:hover,
+.cke_top .cke_toolbox .cke_combo_off a.cke_combo_button:focus,
+.cke_top .cke_toolbox .cke_toolgroup a.cke_button_off:hover,
+.cke_top .cke_toolbox .cke_toolgroup a.cke_button_on:hover {
+    background-color: var(--main-hover-text);
+    border-color: var(--main-hover-border);
+    color: var(--main-hover-bg);
+}
+
+.cke_toolbox .cke_combo_off a.cke_combo_button:hover,
+.cke_toolbox .cke_combo_off a.cke_combo_button:focus,
+.cke_toolbox .cke_combo_off a.cke_combo_button:active {
+    border-color: var(--button-link-text);
+}
+
+input.cke_dialog_ui_input_text,
+input.cke_dialog_ui_input_password,
+textarea.cke_dialog_ui_input_textarea,
+select.cke_dialog_ui_input_select {
+    background-color: var(--control-bg);
+    border-color: var(--control-border);
+    color: var(--control-text);
+}
+
+.cke_combo_text {
+    color: var(--control-text);
+    text-shadow: var(--cke-text-shadow);
+}
+
+/* Make the CKE font panel match the editor. */
+.cke_panel_container {
+    background-color: var(--cke-editable-bg);
+    color: var(--cke-editable-text);
+}
+
+.cke_panel_grouptitle {
+    border-color: var(--control-border);
+    color: var(--control-text);
+    text-shadow: var(--cke-text-shadow);
+}
+
+.cke_panel_listItem a {
+    border-color: var(--cke-editable-bg);
+}
+
+.cke_panel_listItem a:hover {
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
+}
+
+.cke_panel_listItem a:focus,
+.cke_panel_listItem a:active {
+    background-color: var(--dropdown-item-is_active-bg);
+    border-color: var(--dropdown-item-is_active-bg);
+    color: var(--dropdown-item-is_active-text);
+}
+
+.cke_dialog_background_cover {
+    /* note: CKE mask HARDCODES color */
+    background-color: var(--mask-bg) !important;
+    /* note: opacity is 50% */
+}
+
+.cke_dialog_body {
+    background-color: var(--main-tertiary-bg);
+    border-color: var(--main-tertiary-border);
+}
+
+.cke_dialog_title {
+    color: var(--main-title-text);
+    text-shadow: none;
+}
+
+.cke_dialog_contents {
+    background-color: var(--main-tertiary-bg);
+}
+
+a.cke_dialog_ui_button {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+    color: var(--button-text);
+    background-image: none;
+    box-shadow: none;
+}
+
+a.cke_dialog_ui_button_ok {
+    background-color: var(--button-primary-bg);
+    border-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+}
+
+a.cke_dialog_ui_button:hover,
+a.cke_dialog_ui_button_ok:hover {
+    background-color: var(--button-primary-hover-bg);
+    border-color: var(--button-primary-hover-bg);
+    background-image: none;
+}
+
+a.cke_dialog_ui_button:active,
+a.cke_dialog_ui_button_ok:active {
+    background-color: var(--button-primary-active-bg);
+    border-color: var(--button-primary-active-bg);
+}
+
+a.cke_dialog_ui_button:focus,
+a.cke_dialog_ui_button_ok:focus {
+    border-color: var(--button-primary-focus-bg);
+}
+
+a.cke_dialog_ui_button span {
+    text-shadow: none;
+}
+
+.cke_dialog_footer {
+    outline-color: var(--main-tertiary-border);
+}
+
+/* Text Editor */
+.cke_editable {
+    background-color: var(--cke-editable-bg);
+    color: var(--cke-editable-text);
+}
+
+.cke_editable a {
+    color: var(--main-link-text);
+}
+
+.cke_bottom {
+    background-color: #bbb;
+}
+

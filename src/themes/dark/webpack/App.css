@@ -1,0 +1,19 @@
+/* @import '~styles/color-variables'; */
+
+.chr-App .chr-App-resizeFrame {
+    background-color: var(--main-primary-bg);
+    border: 1px dashed var(--grey8);
+}
+
+.chr-App:hover .chr-ResizeHandle:hover {
+    background-color: var(--grey1);
+}
+
+.chr-App:hover .chr-ResizeHandle:hover .smb-Icon--more {
+    color: var(--grey7);
+}
+
+.chr-App.is-resizing .chr-ResizeHandle:hover {
+    background-color: transparent;
+}
+

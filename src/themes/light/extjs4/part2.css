@@ -1,0 +1,4320 @@
+.x4-ie-shadow {
+    background-color: var(--x4-ie-shadow);
+}
+.x4-proxy-el {
+    background-color: var(--x4-proxy-bg);
+}
+.x4-dd-drag-ghost {
+    color: var(--x4-primary-text);
+    border-color: var(--x4-dd-drag-border);
+    background-color: var(--x4-primary-bg);
+}
+.x4-dd-drop-ok .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/dd/drop-yes.gif);
+}
+.x4-dd-drop-ok-add .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/dd/drop-add.gif);
+}
+.x4-dd-drop-nodrop div.x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/dd/drop-no.gif);
+}
+.x4-resizable-overlay {
+    background-color: var(--x4-primary-bg);
+}
+.x4-body {
+    color: var(--x4-primary-text);
+}
+.x4-focus-frame-top,
+.x4-focus-frame-bottom {
+    border-top-color: var(--x4-focus-frame-border);
+}
+.x4-focus-frame-left,
+.x4-focus-frame-right {
+    border-left-color: var(--x4-focus-frame-border);
+}
+.x4-mask {
+    background-color: var(--x4-gray-39-bg);
+}
+.x4-mask-msg {
+    border-color: transparent;
+    background-color: #dfe9f6;
+}
+.x4-mask-msg-inner {
+    border-color: transparent;
+    background-color: #eff8fb;
+    color: var(--x4-gray-95-text);
+}
+.x4-mask-msg-text {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/loading.gif);
+}
+.x4-progress-default {
+    background-color: #e0e8f3;
+    border-color: #6594cf;
+}
+.x4-progress-default .x4-progress-bar-default {
+    background-color: #73a3e0;
+    background-image: linear-gradient(top, #b2ccee, #88b1e5 50%, #73a3e0 51%, #5e96db);
+}
+.x4-nlg .x4-progress-default .x4-progress-bar-default {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/progress/progress-default-bg.gif);
+}
+.x4-progress-default .x4-progress-text {
+    color: #ffffff;
+}
+.x4-progress-default .x4-progress-text-back {
+    color: #396295;
+}
+.x4-progress-bar-default:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/progress/progress-default-bg.gif), stretch:bottom";
+}
+.x4-btn-default-small {
+    border-color: #254f62;
+}
+.x4-btn-default-small {
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-small {
+    background-color: transparent;
+}
+.x4-btn-default-small-tl,
+.x4-btn-default-small-bl,
+.x4-btn-default-small-tr,
+.x4-btn-default-small-br,
+.x4-btn-default-small-tc,
+.x4-btn-default-small-bc,
+.x4-btn-default-small-ml,
+.x4-btn-default-small-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-corners.gif);
+}
+.x4-btn-default-small-ml,
+.x4-btn-default-small-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-sides.gif);
+}
+.x4-btn-default-small:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-sides.gif";
+}
+.x4-btn-default-small .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-small .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-small .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-small .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-small-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-small-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-small-focus {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-over {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-menu-active,
+.x4-btn-default-small-pressed {
+    border-color: #317397;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-focus .x4-frame-tl,
+.x4-btn-default-small-focus .x4-frame-bl,
+.x4-btn-default-small-focus .x4-frame-tr,
+.x4-btn-default-small-focus .x4-frame-br,
+.x4-btn-default-small-focus .x4-frame-tc,
+.x4-btn-default-small-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-focus-corners.gif);
+}
+.x4-btn-default-small-focus .x4-frame-ml,
+.x4-btn-default-small-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-focus-sides.gif);
+}
+.x4-btn-default-small-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-over .x4-frame-tl,
+.x4-btn-default-small-over .x4-frame-bl,
+.x4-btn-default-small-over .x4-frame-tr,
+.x4-btn-default-small-over .x4-frame-br,
+.x4-btn-default-small-over .x4-frame-tc,
+.x4-btn-default-small-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-over-corners.gif);
+}
+.x4-btn-default-small-over .x4-frame-ml,
+.x4-btn-default-small-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-over-sides.gif);
+}
+.x4-btn-default-small-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-menu-active .x4-frame-tl,
+.x4-btn-default-small-menu-active .x4-frame-bl,
+.x4-btn-default-small-menu-active .x4-frame-tr,
+.x4-btn-default-small-menu-active .x4-frame-br,
+.x4-btn-default-small-menu-active .x4-frame-tc,
+.x4-btn-default-small-menu-active .x4-frame-bc,
+.x4-btn-default-small-pressed .x4-frame-tl,
+.x4-btn-default-small-pressed .x4-frame-bl,
+.x4-btn-default-small-pressed .x4-frame-tr,
+.x4-btn-default-small-pressed .x4-frame-br,
+.x4-btn-default-small-pressed .x4-frame-tc,
+.x4-btn-default-small-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-pressed-corners.gif);
+}
+.x4-btn-default-small-menu-active .x4-frame-ml,
+.x4-btn-default-small-menu-active .x4-frame-mr,
+.x4-btn-default-small-pressed .x4-frame-ml,
+.x4-btn-default-small-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-pressed-sides.gif);
+}
+.x4-btn-default-small-menu-active .x4-frame-mc,
+.x4-btn-default-small-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-small-disabled .x4-frame-tl,
+.x4-btn-default-small-disabled .x4-frame-bl,
+.x4-btn-default-small-disabled .x4-frame-tr,
+.x4-btn-default-small-disabled .x4-frame-br,
+.x4-btn-default-small-disabled .x4-frame-tc,
+.x4-btn-default-small-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-disabled-corners.gif);
+}
+.x4-btn-default-small-disabled .x4-frame-ml,
+.x4-btn-default-small-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-disabled-sides.gif);
+}
+.x4-btn-default-small-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-small {
+    background-image: none;
+}
+.x4-btn-default-small .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow.gif);
+}
+.x4-btn-default-small .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b.gif);
+}
+.x4-btn-default-small-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-small-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-small-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-focus-sides.gif";
+}
+.x4-btn-default-small-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-over-sides.gif";
+}
+.x4-btn-default-small-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-pressed-sides.gif";
+}
+.x4-btn-default-small-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-small-disabled-sides.gif";
+}
+.x4-btn-default-medium {
+    border-color: #254f62;
+}
+.x4-btn-default-medium {
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-medium {
+    background-color: transparent;
+}
+.x4-btn-default-medium-tl,
+.x4-btn-default-medium-bl,
+.x4-btn-default-medium-tr,
+.x4-btn-default-medium-br,
+.x4-btn-default-medium-tc,
+.x4-btn-default-medium-bc,
+.x4-btn-default-medium-ml,
+.x4-btn-default-medium-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-corners.gif);
+}
+.x4-btn-default-medium-ml,
+.x4-btn-default-medium-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-sides.gif);
+}
+.x4-btn-default-medium:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-sides.gif";
+}
+.x4-btn-default-medium .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-medium .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-medium .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-medium .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-medium-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-medium-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-medium-focus {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-over {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-menu-active,
+.x4-btn-default-medium-pressed {
+    border-color: #317397;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-focus .x4-frame-tl,
+.x4-btn-default-medium-focus .x4-frame-bl,
+.x4-btn-default-medium-focus .x4-frame-tr,
+.x4-btn-default-medium-focus .x4-frame-br,
+.x4-btn-default-medium-focus .x4-frame-tc,
+.x4-btn-default-medium-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-focus-corners.gif);
+}
+.x4-btn-default-medium-focus .x4-frame-ml,
+.x4-btn-default-medium-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-focus-sides.gif);
+}
+.x4-btn-default-medium-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-over .x4-frame-tl,
+.x4-btn-default-medium-over .x4-frame-bl,
+.x4-btn-default-medium-over .x4-frame-tr,
+.x4-btn-default-medium-over .x4-frame-br,
+.x4-btn-default-medium-over .x4-frame-tc,
+.x4-btn-default-medium-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-over-corners.gif);
+}
+.x4-btn-default-medium-over .x4-frame-ml,
+.x4-btn-default-medium-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-over-sides.gif);
+}
+.x4-btn-default-medium-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-menu-active .x4-frame-tl,
+.x4-btn-default-medium-menu-active .x4-frame-bl,
+.x4-btn-default-medium-menu-active .x4-frame-tr,
+.x4-btn-default-medium-menu-active .x4-frame-br,
+.x4-btn-default-medium-menu-active .x4-frame-tc,
+.x4-btn-default-medium-menu-active .x4-frame-bc,
+.x4-btn-default-medium-pressed .x4-frame-tl,
+.x4-btn-default-medium-pressed .x4-frame-bl,
+.x4-btn-default-medium-pressed .x4-frame-tr,
+.x4-btn-default-medium-pressed .x4-frame-br,
+.x4-btn-default-medium-pressed .x4-frame-tc,
+.x4-btn-default-medium-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-pressed-corners.gif);
+}
+.x4-btn-default-medium-menu-active .x4-frame-ml,
+.x4-btn-default-medium-menu-active .x4-frame-mr,
+.x4-btn-default-medium-pressed .x4-frame-ml,
+.x4-btn-default-medium-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-pressed-sides.gif);
+}
+.x4-btn-default-medium-menu-active .x4-frame-mc,
+.x4-btn-default-medium-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-medium-disabled .x4-frame-tl,
+.x4-btn-default-medium-disabled .x4-frame-bl,
+.x4-btn-default-medium-disabled .x4-frame-tr,
+.x4-btn-default-medium-disabled .x4-frame-br,
+.x4-btn-default-medium-disabled .x4-frame-tc,
+.x4-btn-default-medium-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-disabled-corners.gif);
+}
+.x4-btn-default-medium-disabled .x4-frame-ml,
+.x4-btn-default-medium-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-disabled-sides.gif);
+}
+.x4-btn-default-medium-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-medium {
+    background-image: none;
+}
+.x4-btn-default-medium .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow.gif);
+}
+.x4-btn-default-medium .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b.gif);
+}
+.x4-btn-default-medium-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-medium-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-medium-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-focus-sides.gif";
+}
+.x4-btn-default-medium-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-over-sides.gif";
+}
+.x4-btn-default-medium-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-pressed-sides.gif";
+}
+.x4-btn-default-medium-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-medium-disabled-sides.gif";
+}
+.x4-btn-default-large {
+    border-color: #254f62;
+}
+.x4-btn-default-large {
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-large {
+    background-color: transparent;
+}
+.x4-btn-default-large-tl,
+.x4-btn-default-large-bl,
+.x4-btn-default-large-tr,
+.x4-btn-default-large-br,
+.x4-btn-default-large-tc,
+.x4-btn-default-large-bc,
+.x4-btn-default-large-ml,
+.x4-btn-default-large-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-corners.gif);
+}
+.x4-btn-default-large-ml,
+.x4-btn-default-large-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-sides.gif);
+}
+.x4-btn-default-large:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-sides.gif";
+}
+.x4-btn-default-large .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-large .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-large .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-large .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-large-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-large-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-large-focus {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-over {
+    border-color: #44525e;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-menu-active,
+.x4-btn-default-large-pressed {
+    border-color: #317397;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-focus .x4-frame-tl,
+.x4-btn-default-large-focus .x4-frame-bl,
+.x4-btn-default-large-focus .x4-frame-tr,
+.x4-btn-default-large-focus .x4-frame-br,
+.x4-btn-default-large-focus .x4-frame-tc,
+.x4-btn-default-large-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-focus-corners.gif);
+}
+.x4-btn-default-large-focus .x4-frame-ml,
+.x4-btn-default-large-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-focus-sides.gif);
+}
+.x4-btn-default-large-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-over .x4-frame-tl,
+.x4-btn-default-large-over .x4-frame-bl,
+.x4-btn-default-large-over .x4-frame-tr,
+.x4-btn-default-large-over .x4-frame-br,
+.x4-btn-default-large-over .x4-frame-tc,
+.x4-btn-default-large-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-over-corners.gif);
+}
+.x4-btn-default-large-over .x4-frame-ml,
+.x4-btn-default-large-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-over-sides.gif);
+}
+.x4-btn-default-large-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-menu-active .x4-frame-tl,
+.x4-btn-default-large-menu-active .x4-frame-bl,
+.x4-btn-default-large-menu-active .x4-frame-tr,
+.x4-btn-default-large-menu-active .x4-frame-br,
+.x4-btn-default-large-menu-active .x4-frame-tc,
+.x4-btn-default-large-menu-active .x4-frame-bc,
+.x4-btn-default-large-pressed .x4-frame-tl,
+.x4-btn-default-large-pressed .x4-frame-bl,
+.x4-btn-default-large-pressed .x4-frame-tr,
+.x4-btn-default-large-pressed .x4-frame-br,
+.x4-btn-default-large-pressed .x4-frame-tc,
+.x4-btn-default-large-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-pressed-corners.gif);
+}
+.x4-btn-default-large-menu-active .x4-frame-ml,
+.x4-btn-default-large-menu-active .x4-frame-mr,
+.x4-btn-default-large-pressed .x4-frame-ml,
+.x4-btn-default-large-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-pressed-sides.gif);
+}
+.x4-btn-default-large-menu-active .x4-frame-mc,
+.x4-btn-default-large-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-large-disabled .x4-frame-tl,
+.x4-btn-default-large-disabled .x4-frame-bl,
+.x4-btn-default-large-disabled .x4-frame-tr,
+.x4-btn-default-large-disabled .x4-frame-br,
+.x4-btn-default-large-disabled .x4-frame-tc,
+.x4-btn-default-large-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-disabled-corners.gif);
+}
+.x4-btn-default-large-disabled .x4-frame-ml,
+.x4-btn-default-large-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-disabled-sides.gif);
+}
+.x4-btn-default-large-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-large {
+    background-image: none;
+}
+.x4-btn-default-large .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow.gif);
+}
+.x4-btn-default-large .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b.gif);
+}
+.x4-btn-default-large-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-large-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-large-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-focus-sides.gif";
+}
+.x4-btn-default-large-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-over-sides.gif";
+}
+.x4-btn-default-large-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-pressed-sides.gif";
+}
+.x4-btn-default-large-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-large-disabled-sides.gif";
+}
+.x4-btn-default-toolbar-small {
+    border-color: transparent;
+}
+.x4-btn-default-toolbar-small {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-toolbar-small {
+    background-color: transparent;
+}
+.x4-btn-default-toolbar-small-tl,
+.x4-btn-default-toolbar-small-bl,
+.x4-btn-default-toolbar-small-tr,
+.x4-btn-default-toolbar-small-br,
+.x4-btn-default-toolbar-small-tc,
+.x4-btn-default-toolbar-small-bc,
+.x4-btn-default-toolbar-small-ml,
+.x4-btn-default-toolbar-small-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-corners.gif);
+}
+.x4-btn-default-toolbar-small-ml,
+.x4-btn-default-toolbar-small-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-sides.gif);
+}
+.x4-btn-default-toolbar-small:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-sides.gif";
+}
+.x4-btn-default-toolbar-small .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-toolbar-small .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-toolbar-small .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-toolbar-small .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-toolbar-small-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-toolbar-small-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-toolbar-small-focus {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-over {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-menu-active,
+.x4-btn-default-toolbar-small-pressed {
+    border-color: #7a9ac4;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-focus .x4-frame-tl,
+.x4-btn-default-toolbar-small-focus .x4-frame-bl,
+.x4-btn-default-toolbar-small-focus .x4-frame-tr,
+.x4-btn-default-toolbar-small-focus .x4-frame-br,
+.x4-btn-default-toolbar-small-focus .x4-frame-tc,
+.x4-btn-default-toolbar-small-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-focus-corners.gif);
+}
+.x4-btn-default-toolbar-small-focus .x4-frame-ml,
+.x4-btn-default-toolbar-small-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-focus-sides.gif);
+}
+.x4-btn-default-toolbar-small-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-over .x4-frame-tl,
+.x4-btn-default-toolbar-small-over .x4-frame-bl,
+.x4-btn-default-toolbar-small-over .x4-frame-tr,
+.x4-btn-default-toolbar-small-over .x4-frame-br,
+.x4-btn-default-toolbar-small-over .x4-frame-tc,
+.x4-btn-default-toolbar-small-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-over-corners.gif);
+}
+.x4-btn-default-toolbar-small-over .x4-frame-ml,
+.x4-btn-default-toolbar-small-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-over-sides.gif);
+}
+.x4-btn-default-toolbar-small-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-menu-active .x4-frame-tl,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-bl,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-tr,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-br,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-tc,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-bc,
+.x4-btn-default-toolbar-small-pressed .x4-frame-tl,
+.x4-btn-default-toolbar-small-pressed .x4-frame-bl,
+.x4-btn-default-toolbar-small-pressed .x4-frame-tr,
+.x4-btn-default-toolbar-small-pressed .x4-frame-br,
+.x4-btn-default-toolbar-small-pressed .x4-frame-tc,
+.x4-btn-default-toolbar-small-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-pressed-corners.gif);
+}
+.x4-btn-default-toolbar-small-menu-active .x4-frame-ml,
+.x4-btn-default-toolbar-small-menu-active .x4-frame-mr,
+.x4-btn-default-toolbar-small-pressed .x4-frame-ml,
+.x4-btn-default-toolbar-small-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-pressed-sides.gif);
+}
+.x4-btn-default-toolbar-small-menu-active .x4-frame-mc,
+.x4-btn-default-toolbar-small-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-small-disabled .x4-frame-tl,
+.x4-btn-default-toolbar-small-disabled .x4-frame-bl,
+.x4-btn-default-toolbar-small-disabled .x4-frame-tr,
+.x4-btn-default-toolbar-small-disabled .x4-frame-br,
+.x4-btn-default-toolbar-small-disabled .x4-frame-tc,
+.x4-btn-default-toolbar-small-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-disabled-corners.gif);
+}
+.x4-btn-default-toolbar-small-disabled .x4-frame-ml,
+.x4-btn-default-toolbar-small-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-disabled-sides.gif);
+}
+.x4-btn-default-toolbar-small-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-toolbar-small {
+    background-image: none;
+}
+.x4-btn-default-toolbar-small .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-noline.gif);
+}
+.x4-btn-default-toolbar-small .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b-noline.gif);
+}
+.x4-btn-default-toolbar-small-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-toolbar-small-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-toolbar-small-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-focus-sides.gif";
+}
+.x4-btn-default-toolbar-small-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-over-sides.gif";
+}
+.x4-btn-default-toolbar-small-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-pressed-sides.gif";
+}
+.x4-btn-default-toolbar-small-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-small-disabled-sides.gif";
+}
+.x4-btn-default-toolbar-medium {
+    border-color: transparent;
+}
+.x4-btn-default-toolbar-medium {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-toolbar-medium {
+    background-color: transparent;
+}
+.x4-btn-default-toolbar-medium-tl,
+.x4-btn-default-toolbar-medium-bl,
+.x4-btn-default-toolbar-medium-tr,
+.x4-btn-default-toolbar-medium-br,
+.x4-btn-default-toolbar-medium-tc,
+.x4-btn-default-toolbar-medium-bc,
+.x4-btn-default-toolbar-medium-ml,
+.x4-btn-default-toolbar-medium-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-corners.gif);
+}
+.x4-btn-default-toolbar-medium-ml,
+.x4-btn-default-toolbar-medium-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-sides.gif);
+}
+.x4-btn-default-toolbar-medium:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-sides.gif";
+}
+.x4-btn-default-toolbar-medium .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-toolbar-medium .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-toolbar-medium .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-toolbar-medium .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-toolbar-medium-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-toolbar-medium-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-toolbar-medium-focus {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-over {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-menu-active,
+.x4-btn-default-toolbar-medium-pressed {
+    border-color: #7a9ac4;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-focus .x4-frame-tl,
+.x4-btn-default-toolbar-medium-focus .x4-frame-bl,
+.x4-btn-default-toolbar-medium-focus .x4-frame-tr,
+.x4-btn-default-toolbar-medium-focus .x4-frame-br,
+.x4-btn-default-toolbar-medium-focus .x4-frame-tc,
+.x4-btn-default-toolbar-medium-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-focus-corners.gif);
+}
+.x4-btn-default-toolbar-medium-focus .x4-frame-ml,
+.x4-btn-default-toolbar-medium-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-focus-sides.gif);
+}
+.x4-btn-default-toolbar-medium-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-over .x4-frame-tl,
+.x4-btn-default-toolbar-medium-over .x4-frame-bl,
+.x4-btn-default-toolbar-medium-over .x4-frame-tr,
+.x4-btn-default-toolbar-medium-over .x4-frame-br,
+.x4-btn-default-toolbar-medium-over .x4-frame-tc,
+.x4-btn-default-toolbar-medium-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-over-corners.gif);
+}
+.x4-btn-default-toolbar-medium-over .x4-frame-ml,
+.x4-btn-default-toolbar-medium-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-over-sides.gif);
+}
+.x4-btn-default-toolbar-medium-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-tl,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-bl,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-tr,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-br,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-tc,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-bc,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-tl,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-bl,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-tr,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-br,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-tc,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-pressed-corners.gif);
+}
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-ml,
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-mr,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-ml,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-pressed-sides.gif);
+}
+.x4-btn-default-toolbar-medium-menu-active .x4-frame-mc,
+.x4-btn-default-toolbar-medium-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-medium-disabled .x4-frame-tl,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-bl,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-tr,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-br,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-tc,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-disabled-corners.gif);
+}
+.x4-btn-default-toolbar-medium-disabled .x4-frame-ml,
+.x4-btn-default-toolbar-medium-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-disabled-sides.gif);
+}
+.x4-btn-default-toolbar-medium-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-toolbar-medium {
+    background-image: none;
+}
+.x4-btn-default-toolbar-medium .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-noline.gif);
+}
+.x4-btn-default-toolbar-medium .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b-noline.gif);
+}
+.x4-btn-default-toolbar-medium-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-toolbar-medium-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-toolbar-medium-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-focus-sides.gif";
+}
+.x4-btn-default-toolbar-medium-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-over-sides.gif";
+}
+.x4-btn-default-toolbar-medium-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-pressed-sides.gif";
+}
+.x4-btn-default-toolbar-medium-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-medium-disabled-sides.gif";
+}
+.x4-btn-default-toolbar-large {
+    border-color: transparent;
+}
+.x4-btn-default-toolbar-large {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-mc {
+    background-color: #3f84a4;
+}
+.x4-nbr .x4-btn-default-toolbar-large {
+    background-color: transparent;
+}
+.x4-btn-default-toolbar-large-tl,
+.x4-btn-default-toolbar-large-bl,
+.x4-btn-default-toolbar-large-tr,
+.x4-btn-default-toolbar-large-br,
+.x4-btn-default-toolbar-large-tc,
+.x4-btn-default-toolbar-large-bc,
+.x4-btn-default-toolbar-large-ml,
+.x4-btn-default-toolbar-large-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-corners.gif);
+}
+.x4-btn-default-toolbar-large-ml,
+.x4-btn-default-toolbar-large-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-sides.gif);
+}
+.x4-btn-default-toolbar-large:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-sides.gif";
+}
+.x4-btn-default-toolbar-large .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-btn-default-toolbar-large .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-default-toolbar-large .x4-btn-glyph {
+    color: #ffffff;
+}
+.x4-ie8m .x4-btn-default-toolbar-large .x4-btn-glyph {
+    color: #9fc1d1;
+}
+.x4-btn-default-toolbar-large-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-default-toolbar-large-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-default-toolbar-large-focus {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-over {
+    border-color: #81a4d0;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-menu-active,
+.x4-btn-default-toolbar-large-pressed {
+    border-color: #7a9ac4;
+    background-image: none;
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-focus .x4-frame-tl,
+.x4-btn-default-toolbar-large-focus .x4-frame-bl,
+.x4-btn-default-toolbar-large-focus .x4-frame-tr,
+.x4-btn-default-toolbar-large-focus .x4-frame-br,
+.x4-btn-default-toolbar-large-focus .x4-frame-tc,
+.x4-btn-default-toolbar-large-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-focus-corners.gif);
+}
+.x4-btn-default-toolbar-large-focus .x4-frame-ml,
+.x4-btn-default-toolbar-large-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-focus-sides.gif);
+}
+.x4-btn-default-toolbar-large-focus .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-over .x4-frame-tl,
+.x4-btn-default-toolbar-large-over .x4-frame-bl,
+.x4-btn-default-toolbar-large-over .x4-frame-tr,
+.x4-btn-default-toolbar-large-over .x4-frame-br,
+.x4-btn-default-toolbar-large-over .x4-frame-tc,
+.x4-btn-default-toolbar-large-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-over-corners.gif);
+}
+.x4-btn-default-toolbar-large-over .x4-frame-ml,
+.x4-btn-default-toolbar-large-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-over-sides.gif);
+}
+.x4-btn-default-toolbar-large-over .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-menu-active .x4-frame-tl,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-bl,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-tr,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-br,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-tc,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-bc,
+.x4-btn-default-toolbar-large-pressed .x4-frame-tl,
+.x4-btn-default-toolbar-large-pressed .x4-frame-bl,
+.x4-btn-default-toolbar-large-pressed .x4-frame-tr,
+.x4-btn-default-toolbar-large-pressed .x4-frame-br,
+.x4-btn-default-toolbar-large-pressed .x4-frame-tc,
+.x4-btn-default-toolbar-large-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-pressed-corners.gif);
+}
+.x4-btn-default-toolbar-large-menu-active .x4-frame-ml,
+.x4-btn-default-toolbar-large-menu-active .x4-frame-mr,
+.x4-btn-default-toolbar-large-pressed .x4-frame-ml,
+.x4-btn-default-toolbar-large-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-pressed-sides.gif);
+}
+.x4-btn-default-toolbar-large-menu-active .x4-frame-mc,
+.x4-btn-default-toolbar-large-pressed .x4-frame-mc {
+    background-color: #3f84a4;
+}
+.x4-btn-default-toolbar-large-disabled .x4-frame-tl,
+.x4-btn-default-toolbar-large-disabled .x4-frame-bl,
+.x4-btn-default-toolbar-large-disabled .x4-frame-tr,
+.x4-btn-default-toolbar-large-disabled .x4-frame-br,
+.x4-btn-default-toolbar-large-disabled .x4-frame-tc,
+.x4-btn-default-toolbar-large-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-corners.gif);
+}
+.x4-btn-default-toolbar-large-disabled .x4-frame-ml,
+.x4-btn-default-toolbar-large-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-sides.gif);
+}
+.x4-btn-default-toolbar-large-disabled .x4-frame-mc {
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-nbr .x4-btn-default-toolbar-large {
+    background-image: none;
+}
+.x4-btn-default-toolbar-large .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-noline.gif);
+}
+.x4-btn-default-toolbar-large .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b-noline.gif);
+}
+.x4-btn-default-toolbar-large-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-default-toolbar-large-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-default-toolbar-large-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-focus-sides.gif";
+}
+.x4-btn-default-toolbar-large-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-over-sides.gif";
+}
+.x4-btn-default-toolbar-large-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-pressed-sides.gif";
+}
+.x4-btn-default-toolbar-large-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-default-toolbar-large-disabled-sides.gif";
+}
+.x4-toolbar-text {
+    color: var(--x4-gray-83-text);
+}
+.x4-toolbar-separator-horizontal {
+    border-left-color: #98c8ff;
+    border-right-color: #ffffff;
+}
+.x4-toolbar-footer {
+    background-color: transparent;
+}
+.x4-toolbar-more-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/toolbar/more.gif) !important;
+}
+.x4-toolbar-default {
+    border-color: #99bce8;
+    background-image: none;
+    background-color: #d3e1f1;
+}
+.x4-toolbar-default .x4-tool-img {
+    background-color: #d3e1f1;
+}
+.x4-toolbar-scroll-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/toolbar/scroll-left.gif);
+    border-color: #8db2e3;
+}
+.x4-toolbar-scroll-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/toolbar/scroll-right.gif);
+    border-color: #8db2e3;
+}
+.x4-toolbar-vertical .x4-toolbar-separator-vertical {
+    border-top-color: #98c8ff;
+    border-bottom-color: #ffffff;
+}
+.x4-panel-default {
+    border-color: #99bce8;
+}
+.x4-panel-header-default {
+    border-color: #99bce8;
+}
+.x4-panel-header-text-container-default {
+    color: #04408c;
+}
+.x4-panel-body-default {
+    background-color: var(--x4-primary-bg);
+    border-color: #99bce8;
+    color: var(--x4-primary-text);
+}
+.x4-panel-header-default {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(top, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-vertical {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(right, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-nlg .x4-panel-header-default-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-top-bg.gif);
+}
+.x4-nlg .x4-panel-header-default-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-bottom-bg.gif);
+}
+.x4-nlg .x4-panel-header-default-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-left-bg.gif);
+}
+.x4-nlg .x4-panel-header-default-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-right-bg.gif);
+}
+.x4-panel-header-default-top:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-top-bg.gif), stretch:bottom";
+}
+.x4-panel-header-default-bottom:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-bottom-bg.gif), stretch:bottom";
+}
+.x4-panel-header-default-left:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-left-bg.gif), stretch:left";
+}
+.x4-panel-header-default-right:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-right-bg.gif), stretch:left";
+}
+.x4-ie9m .x4-panel-header-default-vertical .x4-panel-header-text-container {
+    background-color: #cbddf3;
+}
+.x4-panel-header-default-top {
+    box-shadow: #f3f7fb 0 1px 0 0 inset;
+}
+.x4-panel-header-default-right {
+    box-shadow: #f3f7fb -1px 0 0 0 inset;
+}
+.x4-panel-header-default-bottom {
+    box-shadow: #f3f7fb 0 -1px 0 0 inset;
+}
+.x4-panel-header-default-left {
+    box-shadow: #f3f7fb 1px 0 0 0 inset;
+}
+.x4-panel-header-default .x4-panel-header-glyph {
+    color: #04408c;
+}
+.x4-ie8m .x4-panel-header-default .x4-panel-header-glyph {
+    color: #678ebf;
+}
+.x4-panel-default-framed {
+    border-color: #99bce8;
+}
+.x4-panel-header-default-framed {
+    border-color: #99bce8;
+}
+.x4-panel-header-text-container-default-framed {
+    color: #04408c;
+}
+.x4-panel-body-default-framed {
+    background-color: #dfe9f6;
+    border-color: #99bce8;
+    color: var(--x4-primary-text);
+}
+.x4-panel-default-framed {
+    background-color: #dfe9f6;
+}
+.x4-panel-default-framed-mc {
+    background-color: #dfe9f6;
+}
+.x4-nbr .x4-panel-default-framed {
+    background-color: transparent;
+}
+.x4-panel-default-framed-tl,
+.x4-panel-default-framed-bl,
+.x4-panel-default-framed-tr,
+.x4-panel-default-framed-br,
+.x4-panel-default-framed-tc,
+.x4-panel-default-framed-bc,
+.x4-panel-default-framed-ml,
+.x4-panel-default-framed-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel/panel-default-framed-corners.gif);
+}
+.x4-panel-default-framed-ml,
+.x4-panel-default-framed-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel/panel-default-framed-sides.gif);
+}
+.x4-panel-default-framed:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel/panel-default-framed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel/panel-default-framed-sides.gif";
+}
+.x4-panel-header-default-framed-top {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(top, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-top-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-top {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-top-tl,
+.x4-panel-header-default-framed-top-bl,
+.x4-panel-header-default-framed-top-tr,
+.x4-panel-header-default-framed-top-br,
+.x4-panel-header-default-framed-top-tc,
+.x4-panel-header-default-framed-top-bc,
+.x4-panel-header-default-framed-top-ml,
+.x4-panel-header-default-framed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-corners.gif);
+}
+.x4-panel-header-default-framed-top-ml,
+.x4-panel-header-default-framed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-sides.gif);
+}
+.x4-panel-header-default-framed-top:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-top-sides.gif";
+}
+.x4-panel-header-default-framed-right {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(right, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-right-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-right {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-right-tl,
+.x4-panel-header-default-framed-right-bl,
+.x4-panel-header-default-framed-right-tr,
+.x4-panel-header-default-framed-right-br,
+.x4-panel-header-default-framed-right-tc,
+.x4-panel-header-default-framed-right-bc,
+.x4-panel-header-default-framed-right-ml,
+.x4-panel-header-default-framed-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-corners.gif);
+}
+.x4-panel-header-default-framed-right-tc,
+.x4-panel-header-default-framed-right-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-sides.gif);
+}
+.x4-panel-header-default-framed-right:after {
+    content: "x-slicer:stretch:left, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-right-sides.gif";
+}
+.x4-panel-header-default-framed-bottom {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(top, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-bottom-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-bottom {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-bottom-tl,
+.x4-panel-header-default-framed-bottom-bl,
+.x4-panel-header-default-framed-bottom-tr,
+.x4-panel-header-default-framed-bottom-br,
+.x4-panel-header-default-framed-bottom-tc,
+.x4-panel-header-default-framed-bottom-bc,
+.x4-panel-header-default-framed-bottom-ml,
+.x4-panel-header-default-framed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-corners.gif);
+}
+.x4-panel-header-default-framed-bottom-ml,
+.x4-panel-header-default-framed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-sides.gif);
+}
+.x4-panel-header-default-framed-bottom:after {
+    content: "x-slicer:stretch:top, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-bottom-sides.gif";
+}
+.x4-panel-header-default-framed-left {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(right, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-left-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-left {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-left-tl,
+.x4-panel-header-default-framed-left-bl,
+.x4-panel-header-default-framed-left-tr,
+.x4-panel-header-default-framed-left-br,
+.x4-panel-header-default-framed-left-tc,
+.x4-panel-header-default-framed-left-bc,
+.x4-panel-header-default-framed-left-ml,
+.x4-panel-header-default-framed-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-corners.gif);
+}
+.x4-panel-header-default-framed-left-tc,
+.x4-panel-header-default-framed-left-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-sides.gif);
+}
+.x4-panel-header-default-framed-left:after {
+    content: "x-slicer:stretch:right, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-left-sides.gif";
+}
+.x4-panel-header-default-framed-collapsed-top {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(top, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-collapsed-top-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-collapsed-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-collapsed-top {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-collapsed-top-tl,
+.x4-panel-header-default-framed-collapsed-top-bl,
+.x4-panel-header-default-framed-collapsed-top-tr,
+.x4-panel-header-default-framed-collapsed-top-br,
+.x4-panel-header-default-framed-collapsed-top-tc,
+.x4-panel-header-default-framed-collapsed-top-bc,
+.x4-panel-header-default-framed-collapsed-top-ml,
+.x4-panel-header-default-framed-collapsed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif);
+}
+.x4-panel-header-default-framed-collapsed-top-ml,
+.x4-panel-header-default-framed-collapsed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif);
+}
+.x4-panel-header-default-framed-collapsed-top:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-top-sides.gif";
+}
+.x4-panel-header-default-framed-collapsed-right {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(right, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-collapsed-right-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-collapsed-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-collapsed-right {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-collapsed-right-tl,
+.x4-panel-header-default-framed-collapsed-right-bl,
+.x4-panel-header-default-framed-collapsed-right-tr,
+.x4-panel-header-default-framed-collapsed-right-br,
+.x4-panel-header-default-framed-collapsed-right-tc,
+.x4-panel-header-default-framed-collapsed-right-bc,
+.x4-panel-header-default-framed-collapsed-right-ml,
+.x4-panel-header-default-framed-collapsed-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif);
+}
+.x4-panel-header-default-framed-collapsed-right-tc,
+.x4-panel-header-default-framed-collapsed-right-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif);
+}
+.x4-panel-header-default-framed-collapsed-right:after {
+    content: "x-slicer:stretch:left, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-right-sides.gif";
+}
+.x4-panel-header-default-framed-collapsed-bottom {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(top, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-collapsed-bottom-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-collapsed-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-collapsed-bottom {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-collapsed-bottom-tl,
+.x4-panel-header-default-framed-collapsed-bottom-bl,
+.x4-panel-header-default-framed-collapsed-bottom-tr,
+.x4-panel-header-default-framed-collapsed-bottom-br,
+.x4-panel-header-default-framed-collapsed-bottom-tc,
+.x4-panel-header-default-framed-collapsed-bottom-bc,
+.x4-panel-header-default-framed-collapsed-bottom-ml,
+.x4-panel-header-default-framed-collapsed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif);
+}
+.x4-panel-header-default-framed-collapsed-bottom-ml,
+.x4-panel-header-default-framed-collapsed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif);
+}
+.x4-panel-header-default-framed-collapsed-bottom:after {
+    content: "x-slicer:stretch:top, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif";
+}
+.x4-panel-header-default-framed-collapsed-left {
+    background-image: none;
+    background-color: #cbddf3;
+    background-image: linear-gradient(right, #dae7f6, #cddef3 45%, #abc7ec 46%, #abc7ec 50%, #b8cfee 51%, #cbddf3);
+}
+.x4-panel-header-default-framed-collapsed-left-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-fbg.gif);
+    background-color: #cbddf3;
+}
+.x4-nlg .x4-panel-header-default-framed-collapsed-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-bg.gif);
+}
+.x4-nbr .x4-panel-header-default-framed-collapsed-left {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-panel-header-default-framed-collapsed-left-tl,
+.x4-panel-header-default-framed-collapsed-left-bl,
+.x4-panel-header-default-framed-collapsed-left-tr,
+.x4-panel-header-default-framed-collapsed-left-br,
+.x4-panel-header-default-framed-collapsed-left-tc,
+.x4-panel-header-default-framed-collapsed-left-bc,
+.x4-panel-header-default-framed-collapsed-left-ml,
+.x4-panel-header-default-framed-collapsed-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif);
+}
+.x4-panel-header-default-framed-collapsed-left-tc,
+.x4-panel-header-default-framed-collapsed-left-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif);
+}
+.x4-panel-header-default-framed-collapsed-left:after {
+    content: "x-slicer:stretch:right, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/panel-header/panel-header-default-framed-collapsed-left-sides.gif";
+}
+.x4-ie9m .x4-panel-header-default-framed-vertical .x4-panel-header-text-container {
+    background-color: #cbddf3;
+}
+.x4-panel-header-default-framed-top {
+    box-shadow: #f3f7fb 0 1px 0 0 inset, #f3f7fb -1px 0 0 0 inset, #f3f7fb 1px 0 0 0 inset;
+}
+.x4-panel-header-default-framed-right {
+    box-shadow: #f3f7fb 0 1px 0 0 inset, #f3f7fb 0 -1px 0 0 inset, #f3f7fb -1px 0 0 0 inset;
+}
+.x4-panel-header-default-framed-bottom {
+    box-shadow: #f3f7fb 0 -1px 0 0 inset, #f3f7fb -1px 0 0 0 inset, #f3f7fb 1px 0 0 0 inset;
+}
+.x4-panel-header-default-framed-left {
+    box-shadow: #f3f7fb 0 1px 0 0 inset, #f3f7fb 0 -1px 0 0 inset, #f3f7fb 1px 0 0 0 inset;
+}
+.x4-panel-header-default-framed .x4-panel-header-glyph {
+    color: #04408c;
+}
+.x4-ie8m .x4-panel-header-default-framed .x4-panel-header-glyph {
+    color: #678ebf;
+}
+.x4-tip-anchor {
+    border-color: var(--x4-gray-59-border);
+}
+.x4-tip-anchor-top {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.x4-tip-anchor-bottom {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.x4-tip-anchor-left {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.x4-tip-anchor-right {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.x4-tip-default {
+    background-image: none;
+    background-color: var(--x4-gray-10-bg);
+    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10-bg));
+}
+.x4-tip-default-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-fbg.gif);
+    background-color: var(--x4-gray-10-bg);
+}
+.x4-nlg .x4-tip-default {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-bg.gif);
+}
+.x4-nbr .x4-tip-default {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-tip-default-tl,
+.x4-tip-default-bl,
+.x4-tip-default-tr,
+.x4-tip-default-br,
+.x4-tip-default-tc,
+.x4-tip-default-bc,
+.x4-tip-default-ml,
+.x4-tip-default-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-corners.gif);
+}
+.x4-tip-default-ml,
+.x4-tip-default-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-sides.gif);
+}
+.x4-tip-default:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-default-sides.gif";
+}
+.x4-tip-default {
+    border-color: var(--x4-gray-59-border);
+}
+.x4-tip-header-text-container-default {
+    color: var(--x4-muted-text);
+}
+.x4-tip-body-default {
+    color: var(--x4-muted-text);
+}
+.x4-tip-body-default a {
+    color: #327c98;
+}
+.x4-tip-form-invalid {
+    background-image: none;
+    background-color: var(--x4-primary-bg);
+    background-image: linear-gradient(top, #ffffff, var(--x4-gray-10-bg));
+}
+.x4-tip-form-invalid-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-fbg.gif);
+    background-color: var(--x4-primary-bg);
+}
+.x4-nlg .x4-tip-form-invalid {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-bg.gif);
+}
+.x4-tip-form-invalid-tl,
+.x4-tip-form-invalid-bl,
+.x4-tip-form-invalid-tr,
+.x4-tip-form-invalid-br,
+.x4-tip-form-invalid-tc,
+.x4-tip-form-invalid-bc,
+.x4-tip-form-invalid-ml,
+.x4-tip-form-invalid-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-corners.gif);
+}
+.x4-tip-form-invalid-ml,
+.x4-tip-form-invalid-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-sides.gif);
+}
+.x4-tip-form-invalid:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tip/tip-form-invalid-sides.gif";
+}
+.x4-tip-form-invalid {
+    border-color: #a1311f;
+    box-shadow: #d87166 0 1px 0 0 inset, #d87166 0 -1px 0 0 inset, #d87166 -1px 0 0 0 inset, #d87166 1px 0 0 0 inset;
+}
+.x4-tip-header-text-container-form-invalid {
+    color: var(--x4-form-invalid-text);
+}
+.x4-tip-body-form-invalid {
+    color: var(--x4-form-invalid-text);
+}
+.x4-tip-body-form-invalid a {
+    color: #327c98;
+}
+.x4-tip-body-form-invalid {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/exclamation.gif);
+}
+.x4-btn-group-default {
+    border-color: #b7c8d7;
+    box-shadow: #e3ebf5 0 1px 0 0 inset, #e3ebf5 0 -1px 0 0 inset, #e3ebf5 -1px 0 0 0 inset, #e3ebf5 1px 0 0 0 inset;
+}
+.x4-btn-group-header-default {
+    background-color: #c2d8f0;
+}
+.x4-btn-group-header-default .x4-tool-img {
+    background-color: #c2d8f0;
+}
+.x4-btn-group-header-text-container-default {
+    color: #3e6aaa;
+}
+.x4-btn-group-default-framed {
+    background-color: #d0def0;
+}
+.x4-btn-group-default-framed-mc {
+    background-color: #d0def0;
+}
+.x4-nbr .x4-btn-group-default-framed {
+    background-color: transparent;
+}
+.x4-btn-group-default-framed-tl,
+.x4-btn-group-default-framed-bl,
+.x4-btn-group-default-framed-tr,
+.x4-btn-group-default-framed-br,
+.x4-btn-group-default-framed-tc,
+.x4-btn-group-default-framed-bc,
+.x4-btn-group-default-framed-ml,
+.x4-btn-group-default-framed-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-corners.gif);
+}
+.x4-btn-group-default-framed-ml,
+.x4-btn-group-default-framed-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-sides.gif);
+}
+.x4-btn-group-default-framed:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-sides.gif";
+}
+.x4-btn-group-default-framed-notitle {
+    background-color: #d0def0;
+}
+.x4-btn-group-default-framed-notitle-mc {
+    background-color: #d0def0;
+}
+.x4-nbr .x4-btn-group-default-framed-notitle {
+    background-color: transparent;
+}
+.x4-btn-group-default-framed-notitle-tl,
+.x4-btn-group-default-framed-notitle-bl,
+.x4-btn-group-default-framed-notitle-tr,
+.x4-btn-group-default-framed-notitle-br,
+.x4-btn-group-default-framed-notitle-tc,
+.x4-btn-group-default-framed-notitle-bc,
+.x4-btn-group-default-framed-notitle-ml,
+.x4-btn-group-default-framed-notitle-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-notitle-corners.gif);
+}
+.x4-btn-group-default-framed-notitle-ml,
+.x4-btn-group-default-framed-notitle-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-notitle-sides.gif);
+}
+.x4-btn-group-default-framed-notitle:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-notitle-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn-group/btn-group-default-framed-notitle-sides.gif";
+}
+.x4-btn-group-default-framed {
+    border-color: #b7c8d7;
+    box-shadow: #e3ebf5 0 1px 0 0 inset, #e3ebf5 0 -1px 0 0 inset, #e3ebf5 -1px 0 0 0 inset, #e3ebf5 1px 0 0 0 inset;
+}
+.x4-btn-group-header-default-framed {
+    background-color: #c2d8f0;
+}
+.x4-btn-group-header-default-framed .x4-tool-img {
+    background-color: #c2d8f0;
+}
+.x4-btn-group-header-text-container-default-framed {
+    color: #3e6aaa;
+}
+.x4-window-default {
+    border-color: #a2b1c5;
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+.x4-window-default {
+    background-color: #ced9e7;
+}
+.x4-window-default-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-default {
+    background-color: transparent;
+}
+.x4-window-default-tl,
+.x4-window-default-bl,
+.x4-window-default-tr,
+.x4-window-default-br,
+.x4-window-default-tc,
+.x4-window-default-bc,
+.x4-window-default-ml,
+.x4-window-default-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-default-corners.gif);
+}
+.x4-window-default-ml,
+.x4-window-default-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-default-sides.gif);
+}
+.x4-window-default:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-default-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window/window-default-sides.gif";
+}
+.x4-window-body-default {
+    border-color: #99bbe8;
+    background-color: #dfe8f6;
+    color: var(--x4-primary-text);
+}
+.x4-window-header-default {
+    border-color: #a2b1c5;
+    background-color: #ced9e7;
+}
+.x4-window-header-default .x4-tool-img {
+    background-color: #ced9e7;
+}
+.x4-ie9m .x4-window-header-default-vertical .x4-window-header-text-container {
+    background-color: #ced9e7;
+}
+.x4-window-header-text-container-default {
+    color: #04468c;
+}
+.x4-window-header-default-top {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-top-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-top {
+    background-color: transparent;
+}
+.x4-window-header-default-top-tl,
+.x4-window-header-default-top-bl,
+.x4-window-header-default-top-tr,
+.x4-window-header-default-top-br,
+.x4-window-header-default-top-tc,
+.x4-window-header-default-top-bc,
+.x4-window-header-default-top-ml,
+.x4-window-header-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-top-corners.gif);
+}
+.x4-window-header-default-top-ml,
+.x4-window-header-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-top-sides.gif);
+}
+.x4-window-header-default-top:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-top-sides.gif";
+}
+.x4-window-header-default-right {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-right-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-right {
+    background-color: transparent;
+}
+.x4-window-header-default-right-tl,
+.x4-window-header-default-right-bl,
+.x4-window-header-default-right-tr,
+.x4-window-header-default-right-br,
+.x4-window-header-default-right-tc,
+.x4-window-header-default-right-bc,
+.x4-window-header-default-right-ml,
+.x4-window-header-default-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-right-corners.gif);
+}
+.x4-window-header-default-right-ml,
+.x4-window-header-default-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-right-sides.gif);
+}
+.x4-window-header-default-right:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-right-sides.gif";
+}
+.x4-window-header-default-bottom {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-bottom-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-bottom {
+    background-color: transparent;
+}
+.x4-window-header-default-bottom-tl,
+.x4-window-header-default-bottom-bl,
+.x4-window-header-default-bottom-tr,
+.x4-window-header-default-bottom-br,
+.x4-window-header-default-bottom-tc,
+.x4-window-header-default-bottom-bc,
+.x4-window-header-default-bottom-ml,
+.x4-window-header-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-bottom-corners.gif);
+}
+.x4-window-header-default-bottom-ml,
+.x4-window-header-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-bottom-sides.gif);
+}
+.x4-window-header-default-bottom:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-bottom-sides.gif";
+}
+.x4-window-header-default-left {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-left-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-left {
+    background-color: transparent;
+}
+.x4-window-header-default-left-tl,
+.x4-window-header-default-left-bl,
+.x4-window-header-default-left-tr,
+.x4-window-header-default-left-br,
+.x4-window-header-default-left-tc,
+.x4-window-header-default-left-bc,
+.x4-window-header-default-left-ml,
+.x4-window-header-default-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-left-corners.gif);
+}
+.x4-window-header-default-left-ml,
+.x4-window-header-default-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-left-sides.gif);
+}
+.x4-window-header-default-left:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-left-sides.gif";
+}
+.x4-window-header-default-collapsed-top {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-collapsed-top-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-collapsed-top {
+    background-color: transparent;
+}
+.x4-window-header-default-collapsed-top-tl,
+.x4-window-header-default-collapsed-top-bl,
+.x4-window-header-default-collapsed-top-tr,
+.x4-window-header-default-collapsed-top-br,
+.x4-window-header-default-collapsed-top-tc,
+.x4-window-header-default-collapsed-top-bc,
+.x4-window-header-default-collapsed-top-ml,
+.x4-window-header-default-collapsed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-top-corners.gif);
+}
+.x4-window-header-default-collapsed-top-ml,
+.x4-window-header-default-collapsed-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-top-sides.gif);
+}
+.x4-window-header-default-collapsed-top:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-top-sides.gif";
+}
+.x4-window-header-default-collapsed-right {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-collapsed-right-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-collapsed-right {
+    background-color: transparent;
+}
+.x4-window-header-default-collapsed-right-tl,
+.x4-window-header-default-collapsed-right-bl,
+.x4-window-header-default-collapsed-right-tr,
+.x4-window-header-default-collapsed-right-br,
+.x4-window-header-default-collapsed-right-tc,
+.x4-window-header-default-collapsed-right-bc,
+.x4-window-header-default-collapsed-right-ml,
+.x4-window-header-default-collapsed-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-right-corners.gif);
+}
+.x4-window-header-default-collapsed-right-ml,
+.x4-window-header-default-collapsed-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-right-sides.gif);
+}
+.x4-window-header-default-collapsed-right:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-right-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-right-sides.gif";
+}
+.x4-window-header-default-collapsed-bottom {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-collapsed-bottom-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-collapsed-bottom {
+    background-color: transparent;
+}
+.x4-window-header-default-collapsed-bottom-tl,
+.x4-window-header-default-collapsed-bottom-bl,
+.x4-window-header-default-collapsed-bottom-tr,
+.x4-window-header-default-collapsed-bottom-br,
+.x4-window-header-default-collapsed-bottom-tc,
+.x4-window-header-default-collapsed-bottom-bc,
+.x4-window-header-default-collapsed-bottom-ml,
+.x4-window-header-default-collapsed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-bottom-corners.gif);
+}
+.x4-window-header-default-collapsed-bottom-ml,
+.x4-window-header-default-collapsed-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-bottom-sides.gif);
+}
+.x4-window-header-default-collapsed-bottom:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-bottom-sides.gif";
+}
+.x4-window-header-default-collapsed-left {
+    background-color: #ced9e7;
+}
+.x4-window-header-default-collapsed-left-mc {
+    background-color: #ced9e7;
+}
+.x4-nbr .x4-window-header-default-collapsed-left {
+    background-color: transparent;
+}
+.x4-window-header-default-collapsed-left-tl,
+.x4-window-header-default-collapsed-left-bl,
+.x4-window-header-default-collapsed-left-tr,
+.x4-window-header-default-collapsed-left-br,
+.x4-window-header-default-collapsed-left-tc,
+.x4-window-header-default-collapsed-left-bc,
+.x4-window-header-default-collapsed-left-ml,
+.x4-window-header-default-collapsed-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-left-corners.gif);
+}
+.x4-window-header-default-collapsed-left-ml,
+.x4-window-header-default-collapsed-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-left-sides.gif);
+}
+.x4-window-header-default-collapsed-left:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-left-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/window-header/window-header-default-collapsed-left-sides.gif";
+}
+.x4-window-header-default-top {
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+.x4-window-header-default-right {
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset;
+}
+.x4-window-header-default-bottom {
+    box-shadow: #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+.x4-window-header-default-left {
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}
+.x4-window-header-default .x4-window-header-icon {
+    color: #04468c;
+}
+.x4-window-header-default .x4-window-header-glyph {
+    color: #04468c;
+}
+.x4-ie8m .x4-window-header-default .x4-window-header-glyph {
+    color: #698fb9;
+}
+.x4-form-invalid-under {
+    color: #c0272b;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/exclamation.gif);
+}
+.x4-form-invalid-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/exclamation.gif);
+}
+.x4-form-item-label {
+    color: var(--x4-primary-text);
+}
+.x4-form-field {
+    color: var(--x4-primary-text);
+}
+.x4-form-type-text textarea.x4-form-invalid-field,
+.x4-form-type-text input.x4-form-invalid-field,
+.x4-form-type-password textarea.x4-form-invalid-field,
+.x4-form-type-password input.x4-form-invalid-field,
+.x4-form-type-number textarea.x4-form-invalid-field,
+.x4-form-type-number input.x4-form-invalid-field,
+.x4-form-type-email textarea.x4-form-invalid-field,
+.x4-form-type-email input.x4-form-invalid-field,
+.x4-form-type-search textarea.x4-form-invalid-field,
+.x4-form-type-search input.x4-form-invalid-field,
+.x4-form-type-tel textarea.x4-form-invalid-field,
+.x4-form-type-tel input.x4-form-invalid-field {
+    background-color: var(--x4-primary-bg);
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/invalid_line.gif);
+    border-color: #cc3300;
+}
+.x4-form-text {
+    color: var(--x4-primary-text);
+    background-color: var(--x4-primary-bg);
+    border-color: var(--x4-control-border);
+}
+.x4-form-focus {
+    border-color: #7eadd9;
+}
+.x4-form-empty-field,
+textarea.x4-form-empty-field {
+    color: var(--x4-gray);
+}
+.x4-form-display-field {
+    color: var(--x4-primary-text);
+}
+.x4-message-box .x4-window-body {
+    background-color: #ced9e7;
+}
+.x4-message-box-info {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/icon-info.gif);
+}
+.x4-message-box-warning {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/icon-warning.gif);
+}
+.x4-message-box-question {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/icon-question.gif);
+}
+.x4-message-box-error {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/icon-error.gif);
+}
+.x4-form-checkbox {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/checkbox.gif);
+}
+.x4-form-invalid .x4-form-checkboxgroup-body {
+    border-color: #cc3300;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/invalid_line.gif);
+}
+.x4-check-group-alt {
+    background-color: #d1ddef;
+    border-top-color: #b5b8c8;
+    border-bottom-color: #b5b8c8;
+}
+.x4-form-check-group-label {
+    color: var(--x4-primary-text);
+    border-color: #000000;
+}
+.x4-fieldset {
+    border-color: #b5b8c8;
+}
+.x4-fieldset-header-text {
+    color: #15428b;
+}
+.x4-fieldset-collapsed {
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+.x4-form-radio {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/radio.gif);
+}
+.x4-form-trigger {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/trigger.gif);
+    border-color: var(--x4-control-border);
+}
+.x4-trigger-cell {
+    background-color: transparent;
+}
+.x4-form-trigger-over {
+    border-color: #7eadd9;
+}
+.x4-form-trigger-wrap-focus .x4-form-trigger {
+    border-color: #7eadd9;
+}
+.x4-form-clear-trigger {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/clear-trigger.gif);
+}
+.x4-form-search-trigger {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/search-trigger.gif);
+}
+div.x4-form-spinner-up,
+div.x4-form-spinner-down {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/spinner.gif);
+    background-color: var(--x4-primary-bg);
+}
+.x4-toolbar-item div.x4-form-spinner-up,
+.x4-toolbar-item div.x4-form-spinner-down {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/spinner-small.gif);
+}
+.x4-tbar-page-first {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-first.gif);
+}
+.x4-tbar-page-prev {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-prev.gif);
+}
+.x4-tbar-page-next {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-next.gif);
+}
+.x4-tbar-page-last {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-last.gif);
+}
+.x4-tbar-loading {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/refresh.gif);
+}
+.x4-item-disabled .x4-tbar-page-first {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-first-disabled.gif);
+}
+.x4-item-disabled .x4-tbar-page-prev {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-prev-disabled.gif);
+}
+.x4-item-disabled .x4-tbar-page-next {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-next-disabled.gif);
+}
+.x4-item-disabled .x4-tbar-page-last {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/page-last-disabled.gif);
+}
+.x4-item-disabled .x4-tbar-loading {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/refresh-disabled.gif);
+}
+.x4-boundlist {
+    border-color: var(--x4-control-border);
+    background-color: #eff8fb;
+}
+.x4-boundlist-item {
+    border-color: #eff8fb;
+}
+.x4-boundlist-selected {
+    background-color: #b5d8eb;
+    border-color: #b5d8eb;
+}
+.x4-boundlist-item-over {
+    background-color: #d4eaf6;
+    border-color: #d4eaf6;
+}
+.x4-datepicker {
+    border-color: var(--x4-control-border);
+    background-color: var(--x4-primary-bg);
+}
+.x4-datepicker-header {
+    background-image: none;
+    background-color: #b5d8eb;
+}
+.x4-datepicker-arrow {
+    background-color: #b5d8eb;
+}
+.x4-datepicker-next {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/right-btn.gif);
+}
+.x4-datepicker-prev {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/left-btn.gif);
+}
+.x4-datepicker-month .x4-btn,
+.x4-datepicker-month .x4-btn .x4-btn-tc,
+.x4-datepicker-month .x4-btn .x4-btn-tl,
+.x4-datepicker-month .x4-btn .x4-btn-tr,
+.x4-datepicker-month .x4-btn .x4-btn-mc,
+.x4-datepicker-month .x4-btn .x4-btn-ml,
+.x4-datepicker-month .x4-btn .x4-btn-mr,
+.x4-datepicker-month .x4-btn .x4-btn-bc,
+.x4-datepicker-month .x4-btn .x4-btn-bl,
+.x4-datepicker-month .x4-btn .x4-btn-br {
+    background-color: transparent;
+}
+.x4-datepicker-month .x4-btn-inner {
+    color: #ffffff;
+}
+.x4-datepicker-month .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-light.gif);
+}
+.x4-datepicker-column-header {
+    color: #233d6d;
+    border-color: #b2d1f5;
+    background-image: none;
+    background-color: #dfecfb;
+    background-image: linear-gradient(top, #edf4fd, #cde1f9);
+}
+.x4-datepicker-cell {
+    border-color: #ffffff;
+}
+.x4-datepicker-date {
+    color: var(--x4-primary-text);
+}
+a.x4-datepicker-date:hover {
+    color: var(--x4-primary-text);
+    background-color: #b5d8eb;
+}
+.x4-datepicker-selected {
+    border-color: #8db2e3;
+}
+.x4-datepicker-selected .x4-datepicker-date {
+    background-color: #dae5f3;
+}
+.x4-datepicker-today {
+    border-color: #8b0000;
+}
+.x4-datepicker-prevday .x4-datepicker-date,
+.x4-datepicker-nextday .x4-datepicker-date {
+    color: var(--x4-gray-60-text);
+}
+.x4-datepicker-disabled a.x4-datepicker-date {
+    background-color: var(--x4-gray-15-bg);
+    color: var(--x4-gray-50-text);
+}
+.x4-datepicker-disabled a.x4-datepicker-date:hover {
+    background-color: var(--x4-gray-15-bg);
+}
+.x4-datepicker-footer,
+.x4-monthpicker-buttons {
+    border-color: #b2d1f5;
+    background-image: none;
+    background-color: var(--x4-primary-bg);
+}
+.x4-monthpicker {
+    border-color: var(--x4-control-border);
+    background-color: var(--x4-primary-bg);
+}
+.x4-monthpicker-months {
+    border-color: var(--x4-control-border);
+}
+.x4-monthpicker-item-inner {
+    color: #085478;
+    border-color: #ffffff;
+}
+a.x4-monthpicker-item-inner:hover {
+    background-color: #b5d8eb;
+}
+.x4-monthpicker-selected {
+    background-color: #eff8fb;
+    border-color: #8db2e3;
+}
+.x4-monthpicker-yearnav-button {
+    background-color: var(--x4-primary-bg);
+}
+.x4-monthpicker-yearnav-next {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/tool-sprites.gif);
+}
+.x4-monthpicker-yearnav-prev {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/tool-sprites.gif);
+}
+.x4-form-date-trigger {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/date-trigger.gif);
+}
+.x4-form-file-wrap .x4-form-text {
+    color: var(--x4-gray);
+}
+.x4-color-picker {
+    background-color: var(--x4-primary-bg);
+    border-color: #ffffff;
+}
+.x4-color-picker-item {
+    border-color: #ffffff;
+    background-color: var(--x4-primary-bg);
+}
+a.x4-color-picker-item:hover {
+    border-color: #8bb8f3;
+    background-color: #deecfd;
+}
+.x4-color-picker-selected {
+    border-color: #8bb8f3;
+    background-color: #deecfd;
+}
+.x4-color-picker-item-inner {
+    border-color: #aca899;
+}
+.x4-html-editor-tb .x4-btn-text {
+    background-color: transparent;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-bold,
+.x4-menu-item div.x4-edit-bold {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-italic,
+.x4-menu-item div.x4-edit-italic {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-underline,
+.x4-menu-item div.x4-edit-underline {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-forecolor,
+.x4-menu-item div.x4-edit-forecolor {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-backcolor,
+.x4-menu-item div.x4-edit-backcolor {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-justifyleft,
+.x4-menu-item div.x4-edit-justifyleft {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-justifycenter,
+.x4-menu-item div.x4-edit-justifycenter {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-justifyright,
+.x4-menu-item div.x4-edit-justifyright {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-insertorderedlist,
+.x4-menu-item div.x4-edit-insertorderedlist {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-insertunorderedlist,
+.x4-menu-item div.x4-edit-insertunorderedlist {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-increasefontsize,
+.x4-menu-item div.x4-edit-increasefontsize {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-decreasefontsize,
+.x4-menu-item div.x4-edit-decreasefontsize {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-sourceedit,
+.x4-menu-item div.x4-edit-sourceedit {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-tb .x4-edit-createlink,
+.x4-menu-item div.x4-edit-createlink {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/editor/tb-sprite.gif);
+}
+.x4-html-editor-wrap textarea {
+    background-color: var(--x4-primary-bg);
+}
+.x4-grid-body {
+    background-color: var(--x4-primary-bg);
+    border-color: #99bce8;
+}
+.x4-grid-empty {
+    color: var(--x4-gray);
+    background-color: var(--x4-primary-bg);
+}
+.x4-grid-cell {
+    color: transparent;
+    background-color: var(--x4-primary-bg);
+    border-color: var(--x4-control-border);
+}
+.x4-grid-row-alt .x4-grid-td {
+    background-color: var(--x4-gray-03-bg);
+}
+.x4-grid-row-before-over .x4-grid-td {
+    border-bottom-color: var(--x4-gray-30-border);
+}
+.x4-grid-row-over .x4-grid-td {
+    border-bottom-color: var(--x4-gray-30-border);
+}
+.x4-grid-row-before-selected .x4-grid-td {
+    border-bottom-color: #a3bae9;
+}
+.x4-grid-row-selected .x4-grid-td {
+    border-bottom-color: #a3bae9;
+}
+.x4-grid-row-before-focused .x4-grid-td {
+    border-bottom-color: var(--x4-gray-85-border);
+}
+.x4-grid-row-focused .x4-grid-td {
+    background-color: var(--x4-gray-14-bg);
+}
+.x4-grid-row-over .x4-grid-td {
+    background-color: #ecf8fb;
+}
+.x4-grid-row-selected .x4-grid-td {
+    background-color: #b5d8eb;
+}
+.x4-grid-row-focused .x4-grid-td {
+    border-bottom-color: var(--x4-gray-85-border);
+}
+.x4-grid-table .x4-grid-row-focused-first .x4-grid-td {
+    border-top-color: var(--x4-gray-85-border);
+}
+.x4-grid-row-selected .x4-grid-row-summary .x4-grid-td {
+    border-bottom-color: #b5d8eb;
+}
+.x4-grid-row-focused .x4-grid-row-summary .x4-grid-td {
+    border-bottom-color: var(--x4-gray-14-border);
+}
+.x4-grid-with-row-lines .x4-grid-table {
+    border-top-color: #ffffff;
+}
+.x4-grid-with-row-lines .x4-grid-table-over-first {
+    border-top-color: var(--x4-gray-30-border);
+}
+.x4-grid-with-row-lines .x4-grid-table-selected-first {
+    border-top-color: #a3bae9;
+}
+.x4-grid-body .x4-grid-table-focused-first {
+    border-top-color: var(--x4-gray-85-border);
+}
+.x4-grid-cell-special {
+    border-color: var(--x4-control-border);
+    background-image: none;
+    background-color: var(--x4-gray-05-bg);
+    background-image: linear-gradient(top, var(--x4-gray-05-bg), var(--x4-gray-18-bg));
+}
+.x4-grid-row-selected .x4-grid-cell-special {
+    border-right-color: var(--x4-control-border) #aaccf6;
+    background-image: none;
+    background-color: #b5d8eb;
+    background-image: linear-gradient(left, #b5d8eb, #a1cde6);
+}
+.x4-nlg .x4-grid-cell-special {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/cell-special-bg.gif);
+}
+.x4-nlg .x4-grid-row-selected .x4-grid-cell-special {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/cell-special-selected-bg.gif);
+}
+.x4-grid-cell-special .x4-grid-cell-special:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/cell-special-bg.gif";
+}
+.x4-grid-cell-special .x4-grid-cell-special-selected:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/cell-special-selected-bg.gif";
+}
+.x4-grid-dirty-cell {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dirty.gif);
+}
+.x4-grid-row .x4-grid-cell-selected {
+    color: transparent;
+    background-color: #b8cfee;
+}
+.x4-grid-resize-marker {
+    background-color: #0f0f0f;
+}
+.x4-grid-drop-indicator {
+    background-color: #77bc71;
+}
+.x4-grid-drop-indicator .x4-grid-drop-indicator-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dd-insert-arrow-right.png);
+}
+.x4-grid-drop-indicator .x4-grid-drop-indicator-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dd-insert-arrow-left.png);
+}
+.x4-ie6 .x4-grid-drop-indicator-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dd-insert-arrow-right.gif);
+}
+.x4-ie6 .x4-grid-drop-indicator-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/dd-insert-arrow-left.gif);
+}
+.col-move-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/col-move-top.gif);
+}
+.col-move-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/col-move-bottom.gif);
+}
+.x4-grid-header-ct {
+    border-color: #99bce8;
+    border-bottom-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    background-color: transparent;
+}
+.x4-grid-body {
+    border-top-color: var(--x4-gray-45-border);
+}
+.x4-hmenu-sort-asc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/hmenu-asc.gif);
+}
+.x4-hmenu-sort-desc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/hmenu-desc.gif);
+}
+.x4-cols-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/columns.gif);
+}
+.x4-column-header {
+    border-right-color: var(--x4-gray-45-border);
+    color: var(--x4-primary-text);
+    background-image: none;
+}
+.x4-group-sub-header {
+    border-top-color: var(--x4-gray-45-border);
+}
+.x4-column-header-over,
+.x4-column-header-sort-ASC,
+.x4-column-header-sort-DESC {
+    background-image: none;
+    background-color: #aaccf6;
+    background-image: linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+}
+.x4-nlg .x4-grid-header-ct,
+.x4-nlg .x4-column-header {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/column-header-bg.gif);
+}
+.x4-nlg .x4-column-header-over,
+.x4-nlg .x4-column-header-sort-ASC,
+.x4-nlg .x4-column-header-sort-DESC {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/column-header-over-bg.gif);
+}
+.x4-column-header-open {
+    background-color: transparent;
+}
+.x4-column-header-open .x4-column-header-trigger {
+    background-color: transparent;
+}
+.x4-column-header-trigger {
+    background-color: transparent;
+}
+.x4-column-header-sort-ASC .x4-column-header-text {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/sort_asc.gif);
+}
+.x4-column-header-sort-DESC .x4-column-header-text {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/sort_desc.gif);
+}
+.x4-column-header-over:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/column-header-over-bg.gif), stretch:bottom";
+}
+.x4-grid-checkcolumn {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/checkbox.gif);
+}
+.x4-grid-group-hd {
+    border-color: #99bbe8;
+    background-color: var(--x4-primary-bg);
+}
+.x4-grid-group-hd-collapsible .x4-grid-group-title {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-collapse.gif);
+}
+.x4-grid-group-title {
+    color: #3764a0;
+}
+.x4-grid-group-hd-collapsed .x4-grid-group-title {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-expand.gif);
+}
+.x4-grid-group-collapsed .x4-grid-group-title {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-expand.gif);
+}
+.x4-group-by-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-by.gif);
+}
+.x4-show-groups-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-by.gif);
+}
+.x4-grid-rowwrap {
+    border-color: var(--x4-control-border);
+}
+.x4-docked-summary {
+    border-color: #99bce8;
+}
+.x4-grid-row-summary .x4-grid-cell,
+.x4-grid-row-summary .x4-grid-rowwrap,
+.x4-grid-row-summary .x4-grid-cell-rowbody {
+    border-color: var(--x4-control-border);
+    background-color: transparent !important;
+}
+.x4-hmenu-lock {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/hmenu-lock.gif);
+}
+.x4-hmenu-unlock {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/hmenu-unlock.gif);
+}
+.x4-grid-row-editor .x4-panel-body {
+    border-top-color: #99bce8 !important;
+    border-bottom-color: #99bce8 !important;
+    background-color: #eaf1fb;
+}
+.x4-grid-row-editor-buttons-default-bottom {
+    background-color: #eaf1fb;
+}
+.x4-grid-row-editor-buttons-default-bottom-mc {
+    background-color: #eaf1fb;
+}
+.x4-nbr .x4-grid-row-editor-buttons-default-bottom {
+    background-color: transparent;
+}
+.x4-grid-row-editor-buttons-default-bottom-tl,
+.x4-grid-row-editor-buttons-default-bottom-bl,
+.x4-grid-row-editor-buttons-default-bottom-tr,
+.x4-grid-row-editor-buttons-default-bottom-br,
+.x4-grid-row-editor-buttons-default-bottom-tc,
+.x4-grid-row-editor-buttons-default-bottom-bc,
+.x4-grid-row-editor-buttons-default-bottom-ml,
+.x4-grid-row-editor-buttons-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif);
+}
+.x4-grid-row-editor-buttons-default-bottom-ml,
+.x4-grid-row-editor-buttons-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif);
+}
+.x4-grid-row-editor-buttons-default-bottom:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-bottom-sides.gif";
+}
+.x4-grid-row-editor-buttons-default-top {
+    background-color: #eaf1fb;
+}
+.x4-grid-row-editor-buttons-default-top-mc {
+    background-color: #eaf1fb;
+}
+.x4-nbr .x4-grid-row-editor-buttons-default-top {
+    background-color: transparent;
+}
+.x4-grid-row-editor-buttons-default-top-tl,
+.x4-grid-row-editor-buttons-default-top-bl,
+.x4-grid-row-editor-buttons-default-top-tr,
+.x4-grid-row-editor-buttons-default-top-br,
+.x4-grid-row-editor-buttons-default-top-tc,
+.x4-grid-row-editor-buttons-default-top-bc,
+.x4-grid-row-editor-buttons-default-top-ml,
+.x4-grid-row-editor-buttons-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif);
+}
+.x4-grid-row-editor-buttons-default-top-ml,
+.x4-grid-row-editor-buttons-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif);
+}
+.x4-grid-row-editor-buttons-default-top:after {
+    content: "x-slicer:corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/grid-row-editor-buttons/grid-row-editor-buttons-default-top-sides.gif";
+}
+.x4-grid-row-editor-buttons {
+    border-color: #99bce8;
+}
+.x4-grid-row-expander {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-collapse.gif);
+}
+.x4-grid-row-collapsed .x4-grid-row-expander {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/group-expand.gif);
+}
+.x4-grid-cell-inner-property-name {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/property-cell-bg.gif);
+}
+.x4-accordion-layout-ct {
+    background-color: var(--x4-primary-bg);
+}
+.x4-accordion-hd .x4-panel-header-text-container {
+    color: var(--x4-primary-text);
+}
+.x4-accordion-item .x4-accordion-hd {
+    background-color: #d9e7f8;
+    border-top-color: #f3f7fb;
+}
+.x4-accordion-item .x4-accordion-hd-sibling-expanded {
+    border-top-color: #99bce8;
+}
+.x4-accordion-item .x4-accordion-hd-last-collapsed {
+    border-bottom-color: #d9e7f8;
+}
+.x4-accordion-hd .x4-tool-img {
+    background-color: #d9e7f8;
+}
+.x4-layout-split-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-left.gif);
+}
+.x4-layout-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-right.gif);
+}
+.x4-layout-split-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-top.gif);
+}
+.x4-layout-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-bottom.gif);
+}
+.x4-splitter-collapsed .x4-layout-split-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-right.gif);
+}
+.x4-splitter-collapsed .x4-layout-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-left.gif);
+}
+.x4-splitter-collapsed .x4-layout-split-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-bottom.gif);
+}
+.x4-splitter-collapsed .x4-layout-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/util/splitter/mini-top.gif);
+}
+.x4-splitter-active {
+    background-color: var(--x4-gray-52-bg);
+}
+.x4-border-layout-ct {
+    background-color: #dfe8f6;
+}
+.x4-menu-body {
+    background-color: #eff8fb;
+}
+.x4-menu-icon-separator {
+    border-left-color: var(--x4-gray-25-border);
+    background-color: var(--x4-primary-bg);
+}
+.x4-menu-item-active {
+    background-image: none;
+    background-color: #b5d8eb;
+    background-image: linear-gradient(top, #c1deee, #a5d0e7);
+    border-color: #b5d8eb;
+}
+.x4-nlg .x4-menu-item-active {
+    background-color: #b5d8eb;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/menu-item-active-bg.gif);
+}
+.x4-menu-item-glyph {
+    color: var(--x4-control-text);
+}
+.x4-ie8m .x4-menu-item-glyph {
+    color: #888d8e;
+}
+.x4-menu-item-text {
+    color: var(--x4-control-text);
+}
+.x4-menu-item-checked .x4-menu-item-checkbox {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/checked.gif);
+}
+.x4-menu-item-checked .x4-menu-group-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/group-checked.gif);
+}
+.x4-menu-item-unchecked .x4-menu-item-checkbox {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/unchecked.gif);
+}
+.x4-menu-item-unchecked .x4-menu-group-icon {
+    background-image: none;
+}
+.x4-menu-item-separator {
+    border-top-color: var(--x4-gray-25-border);
+    background-color: var(--x4-primary-bg);
+}
+.x4-menu-item-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/menu-parent.gif);
+}
+.x4-ie .x4-menu-item-disabled .x4-menu-item-text {
+    background-color: transparent;
+}
+.x4-menu-item .x4-form-item-label {
+    color: var(--x4-control-text);
+}
+.x4-menu-scroll-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/scroll-top.gif);
+}
+.x4-menu-scroll-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/scroll-bottom.gif);
+}
+.x4-menu-scroll-top,
+.x4-menu-scroll-bottom {
+    background-color: #eff8fb;
+}
+.x4-menu-item-link:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/menu/menu-item-active-bg.gif), stretch:bottom";
+}
+.x4-tool-img {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/tool-sprites.gif);
+}
+.x4-resizable-handle {
+    background-color: var(--x4-primary-bg);
+}
+.x4-resizable-proxy {
+    border-color: #3b5a82;
+}
+.x4-resizable-over .x4-resizable-handle-east,
+.x4-resizable-over .x4-resizable-handle-west,
+.x4-resizable-pinned .x4-resizable-handle-east,
+.x4-resizable-pinned .x4-resizable-handle-west {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/e-handle.gif);
+}
+.x4-resizable-over .x4-resizable-handle-south,
+.x4-resizable-over .x4-resizable-handle-north,
+.x4-resizable-pinned .x4-resizable-handle-south,
+.x4-resizable-pinned .x4-resizable-handle-north {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/s-handle.gif);
+}
+.x4-resizable-over .x4-resizable-handle-southeast,
+.x4-resizable-pinned .x4-resizable-handle-southeast {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/se-handle.gif);
+}
+.x4-resizable-over .x4-resizable-handle-northwest,
+.x4-resizable-pinned .x4-resizable-handle-northwest {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/nw-handle.gif);
+}
+.x4-resizable-over .x4-resizable-handle-northeast,
+.x4-resizable-pinned .x4-resizable-handle-northeast {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/ne-handle.gif);
+}
+.x4-resizable-over .x4-resizable-handle-southwest,
+.x4-resizable-pinned .x4-resizable-handle-southwest {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/sizer/sw-handle.gif);
+}
+.x4-slider-horz .x4-slider-thumb {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-thumb.png);
+}
+.x4-slider-vert .x4-slider-thumb {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-v-thumb.png);
+}
+.x4-slider-horz,
+.x4-slider-horz .x4-slider-end,
+.x4-slider-horz .x4-slider-inner {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-bg.png);
+}
+.x4-slider-vert,
+.x4-slider-vert .x4-slider-end,
+.x4-slider-vert .x4-slider-inner {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-v-bg.png);
+}
+.x4-tab-default-top {
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+.x4-tab-default-top-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif);
+    background-color: #deecfd;
+}
+.x4-nlg .x4-tab-default-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif);
+}
+.x4-nbr .x4-tab-default-top {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-tab-default-top-tl,
+.x4-tab-default-top-bl,
+.x4-tab-default-top-tr,
+.x4-tab-default-top-br,
+.x4-tab-default-top-tc,
+.x4-tab-default-top-bc,
+.x4-tab-default-top-ml,
+.x4-tab-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif);
+}
+.x4-tab-default-top-ml,
+.x4-tab-default-top-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif);
+}
+.x4-tab-default-top:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif";
+}
+.x4-tab-default-bottom {
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+.x4-tab-default-bottom-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-fbg.gif);
+    background-color: #deecfd;
+}
+.x4-nlg .x4-tab-default-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-bg.gif);
+}
+.x4-nbr .x4-tab-default-bottom {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-tab-default-bottom-tl,
+.x4-tab-default-bottom-bl,
+.x4-tab-default-bottom-tr,
+.x4-tab-default-bottom-br,
+.x4-tab-default-bottom-tc,
+.x4-tab-default-bottom-bc,
+.x4-tab-default-bottom-ml,
+.x4-tab-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-corners.gif);
+}
+.x4-tab-default-bottom-ml,
+.x4-tab-default-bottom-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-sides.gif);
+}
+.x4-tab-default-bottom:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-sides.gif";
+}
+.x4-tab-default-left {
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+.x4-tab-default-left-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif);
+    background-color: #deecfd;
+}
+.x4-nlg .x4-tab-default-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif);
+}
+.x4-nbr .x4-tab-default-left {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-tab-default-left-tl,
+.x4-tab-default-left-bl,
+.x4-tab-default-left-tr,
+.x4-tab-default-left-br,
+.x4-tab-default-left-tc,
+.x4-tab-default-left-bc,
+.x4-tab-default-left-ml,
+.x4-tab-default-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif);
+}
+.x4-tab-default-left-ml,
+.x4-tab-default-left-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif);
+}
+.x4-tab-default-left:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif";
+}
+.x4-tab-default-right {
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+.x4-tab-default-right-mc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif);
+    background-color: #deecfd;
+}
+.x4-nlg .x4-tab-default-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif);
+}
+.x4-nbr .x4-tab-default-right {
+    background-color: transparent;
+    background-image: none;
+}
+.x4-tab-default-right-tl,
+.x4-tab-default-right-bl,
+.x4-tab-default-right-tr,
+.x4-tab-default-right-br,
+.x4-tab-default-right-tc,
+.x4-tab-default-right-bc,
+.x4-tab-default-right-ml,
+.x4-tab-default-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif);
+}
+.x4-tab-default-right-ml,
+.x4-tab-default-right-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif);
+}
+.x4-tab-default-right:after {
+    content: "x-slicer:stretch:bottom, frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-fbg.gif), bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-sides.gif";
+}
+.x4-tab-default {
+    border-color: #8db3e3;
+}
+.x4-tab-default .x4-tab-inner {
+    color: #416da3;
+}
+.x4-tab-default .x4-tab-glyph {
+    color: #416da3;
+}
+.x4-ie8m .x4-tab-default .x4-tab-glyph {
+    color: #8facd0;
+}
+.x4-tab-default-top,
+.x4-tab-default-left,
+.x4-tab-default-right {
+    border-bottom-color: #99bce8;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    box-shadow: #ffffff 0 1px 0 0 inset, #ffffff -1px 0 0 0 inset, #ffffff 1px 0 0 0 inset;
+}
+.x4-nlg .x4-tab-default-top,
+.x4-nlg .x4-tab-default-left,
+.x4-nlg .x4-tab-default-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-bg.gif);
+}
+.x4-tab-default-bottom {
+    border-top-color: #99bce8;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    box-shadow: #ffffff 0 -1px 0 0 inset, #ffffff -1px 0 0 0 inset, #ffffff 1px 0 0 0 inset;
+}
+.x4-nlg .x4-tab-default-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-bg.gif);
+}
+.x4-tab-default-over {
+    background-color: #e8f2ff;
+}
+.x4-tab-default-over .x4-tab-glyph {
+    color: #416da3;
+}
+.x4-ie8m .x4-tab-default-over .x4-tab-glyph {
+    color: #94afd1;
+}
+.x4-tab-default-top-over,
+.x4-tab-default-left-over,
+.x4-tab-default-right-over {
+    background-image: none;
+    background-color: #e8f2ff;
+    background-image: linear-gradient(top, #d7e5fd, #e0edff 25%, #e8f2ff 45%);
+}
+.x4-nlg .x4-tab-default-top-over,
+.x4-nlg .x4-tab-default-left-over,
+.x4-nlg .x4-tab-default-right-over {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-bg.gif);
+}
+.x4-tab-default-bottom-over {
+    background-image: none;
+    background-color: #e8f2ff;
+    background-image: linear-gradient(bottom, #d7e5fd, #e0edff 25%, #e8f2ff 45%);
+}
+.x4-nlg .x4-tab-default-bottom-over {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-bg.gif);
+}
+.x4-tab-default-active {
+    background-color: #deecfd;
+}
+.x4-tab-default-active .x4-tab-inner {
+    color: #15498b;
+}
+.x4-tab-default-active .x4-tab-glyph {
+    color: #15498b;
+}
+.x4-ie8m .x4-tab-default-active .x4-tab-glyph {
+    color: #799ac4;
+}
+.x4-tab-default-top-active,
+.x4-tab-default-left-active,
+.x4-tab-default-right-active {
+    border-bottom-color: #deecfd;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(top, #ffffff, #f5f9fe 25%, #deecfd 45%);
+}
+.x4-nlg .x4-tab-default-top-active,
+.x4-nlg .x4-tab-default-left-active,
+.x4-nlg .x4-tab-default-right-active {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-bg.gif);
+}
+.x4-tab-default-bottom-active {
+    border-top-color: #deecfd;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: linear-gradient(bottom, #ffffff, #f5f9fe 25%, #deecfd 45%);
+}
+.x4-nlg .x4-tab-default-bottom-active {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-bg.gif);
+}
+.x4-tab-default-disabled {
+    border-color: #bbd2ef;
+}
+.x4-tab-default-disabled .x4-tab-inner {
+    color: #c3b3b3;
+}
+.x4-tab-default-disabled .x4-tab-glyph {
+    color: #c3b3b3;
+}
+.x4-ie8m .x4-tab-default-disabled .x4-tab-glyph {
+    color: #d8dae4;
+}
+.x4-tab-default-top-disabled,
+.x4-tab-default-left-disabled,
+.x4-tab-default-right-disabled {
+    border-color: #bbd2ef #bbd2ef #99bce8;
+}
+.x4-tab-default-bottom-disabled {
+    border-color: #99bce8 #bbd2ef #bbd2ef #bbd2ef;
+}
+.x4-tab-default-top-disabled,
+.x4-tab-default-left-disabled,
+.x4-tab-default-right-disabled {
+    background-image: none;
+    background-color: #e1ecfa;
+    background-image: linear-gradient(top, #e1ecfa, #ecf4fe);
+}
+.x4-nlg .x4-tab-default-top-disabled,
+.x4-nlg .x4-tab-default-left-disabled,
+.x4-nlg .x4-tab-default-right-disabled {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-bg.gif);
+}
+.x4-tab-default-bottom-disabled {
+    background-image: none;
+    background-color: #e1ecfa;
+    background-image: linear-gradient(bottom, #e1ecfa, #ecf4fe);
+}
+.x4-nlg .x4-tab-default-bottom-disabled {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-bg.gif);
+}
+.x4-nbr .x4-tab-default {
+    background-image: none;
+}
+.x4-tab-default-top-over .x4-frame-tl,
+.x4-tab-default-top-over .x4-frame-bl,
+.x4-tab-default-top-over .x4-frame-tr,
+.x4-tab-default-top-over .x4-frame-br,
+.x4-tab-default-top-over .x4-frame-tc,
+.x4-tab-default-top-over .x4-frame-bc,
+.x4-tab-default-left-over .x4-frame-tl,
+.x4-tab-default-left-over .x4-frame-bl,
+.x4-tab-default-left-over .x4-frame-tr,
+.x4-tab-default-left-over .x4-frame-br,
+.x4-tab-default-left-over .x4-frame-tc,
+.x4-tab-default-left-over .x4-frame-bc,
+.x4-tab-default-right-over .x4-frame-tl,
+.x4-tab-default-right-over .x4-frame-bl,
+.x4-tab-default-right-over .x4-frame-tr,
+.x4-tab-default-right-over .x4-frame-br,
+.x4-tab-default-right-over .x4-frame-tc,
+.x4-tab-default-right-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-corners.gif);
+}
+.x4-tab-default-top-over .x4-frame-ml,
+.x4-tab-default-top-over .x4-frame-mr,
+.x4-tab-default-left-over .x4-frame-ml,
+.x4-tab-default-left-over .x4-frame-mr,
+.x4-tab-default-right-over .x4-frame-ml,
+.x4-tab-default-right-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-sides.gif);
+}
+.x4-tab-default-top-over .x4-frame-mc,
+.x4-tab-default-left-over .x4-frame-mc,
+.x4-tab-default-right-over .x4-frame-mc {
+    background-color: #e8f2ff;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-fbg.gif);
+}
+.x4-tab-default-bottom-over .x4-frame-tl,
+.x4-tab-default-bottom-over .x4-frame-bl,
+.x4-tab-default-bottom-over .x4-frame-tr,
+.x4-tab-default-bottom-over .x4-frame-br,
+.x4-tab-default-bottom-over .x4-frame-tc,
+.x4-tab-default-bottom-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-corners.gif);
+}
+.x4-tab-default-bottom-over .x4-frame-ml,
+.x4-tab-default-bottom-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-sides.gif);
+}
+.x4-tab-default-bottom-over .x4-frame-mc {
+    background-color: #e8f2ff;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-fbg.gif);
+}
+.x4-tab-default-top-active .x4-frame-tl,
+.x4-tab-default-top-active .x4-frame-bl,
+.x4-tab-default-top-active .x4-frame-tr,
+.x4-tab-default-top-active .x4-frame-br,
+.x4-tab-default-top-active .x4-frame-tc,
+.x4-tab-default-top-active .x4-frame-bc,
+.x4-tab-default-left-active .x4-frame-tl,
+.x4-tab-default-left-active .x4-frame-bl,
+.x4-tab-default-left-active .x4-frame-tr,
+.x4-tab-default-left-active .x4-frame-br,
+.x4-tab-default-left-active .x4-frame-tc,
+.x4-tab-default-left-active .x4-frame-bc,
+.x4-tab-default-right-active .x4-frame-tl,
+.x4-tab-default-right-active .x4-frame-bl,
+.x4-tab-default-right-active .x4-frame-tr,
+.x4-tab-default-right-active .x4-frame-br,
+.x4-tab-default-right-active .x4-frame-tc,
+.x4-tab-default-right-active .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-corners.gif);
+}
+.x4-tab-default-top-active .x4-frame-ml,
+.x4-tab-default-top-active .x4-frame-mr,
+.x4-tab-default-left-active .x4-frame-ml,
+.x4-tab-default-left-active .x4-frame-mr,
+.x4-tab-default-right-active .x4-frame-ml,
+.x4-tab-default-right-active .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-sides.gif);
+}
+.x4-tab-default-top-active .x4-frame-mc,
+.x4-tab-default-left-active .x4-frame-mc,
+.x4-tab-default-right-active .x4-frame-mc {
+    background-color: #deecfd;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-fbg.gif);
+}
+.x4-tab-default-bottom-active .x4-frame-tl,
+.x4-tab-default-bottom-active .x4-frame-bl,
+.x4-tab-default-bottom-active .x4-frame-tr,
+.x4-tab-default-bottom-active .x4-frame-br,
+.x4-tab-default-bottom-active .x4-frame-tc,
+.x4-tab-default-bottom-active .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-corners.gif);
+}
+.x4-tab-default-bottom-active .x4-frame-ml,
+.x4-tab-default-bottom-active .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-sides.gif);
+}
+.x4-tab-default-bottom-active .x4-frame-mc {
+    background-color: #deecfd;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-fbg.gif);
+}
+.x4-tab-default-top-disabled .x4-frame-tl,
+.x4-tab-default-top-disabled .x4-frame-bl,
+.x4-tab-default-top-disabled .x4-frame-tr,
+.x4-tab-default-top-disabled .x4-frame-br,
+.x4-tab-default-top-disabled .x4-frame-tc,
+.x4-tab-default-top-disabled .x4-frame-bc,
+.x4-tab-default-left-disabled .x4-frame-tl,
+.x4-tab-default-left-disabled .x4-frame-bl,
+.x4-tab-default-left-disabled .x4-frame-tr,
+.x4-tab-default-left-disabled .x4-frame-br,
+.x4-tab-default-left-disabled .x4-frame-tc,
+.x4-tab-default-left-disabled .x4-frame-bc,
+.x4-tab-default-right-disabled .x4-frame-tl,
+.x4-tab-default-right-disabled .x4-frame-bl,
+.x4-tab-default-right-disabled .x4-frame-tr,
+.x4-tab-default-right-disabled .x4-frame-br,
+.x4-tab-default-right-disabled .x4-frame-tc,
+.x4-tab-default-right-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-corners.gif);
+}
+.x4-tab-default-top-disabled .x4-frame-ml,
+.x4-tab-default-top-disabled .x4-frame-mr,
+.x4-tab-default-left-disabled .x4-frame-ml,
+.x4-tab-default-left-disabled .x4-frame-mr,
+.x4-tab-default-right-disabled .x4-frame-ml,
+.x4-tab-default-right-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-sides.gif);
+}
+.x4-tab-default-top-disabled .x4-frame-mc,
+.x4-tab-default-left-disabled .x4-frame-mc,
+.x4-tab-default-right-disabled .x4-frame-mc {
+    background-color: #e1ecfa;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-fbg.gif);
+}
+.x4-tab-default-bottom-disabled .x4-frame-tl,
+.x4-tab-default-bottom-disabled .x4-frame-bl,
+.x4-tab-default-bottom-disabled .x4-frame-tr,
+.x4-tab-default-bottom-disabled .x4-frame-br,
+.x4-tab-default-bottom-disabled .x4-frame-tc,
+.x4-tab-default-bottom-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-corners.gif);
+}
+.x4-tab-default-bottom-disabled .x4-frame-ml,
+.x4-tab-default-bottom-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-sides.gif);
+}
+.x4-tab-default-bottom-disabled .x4-frame-mc {
+    background-color: #e1ecfa;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-fbg.gif);
+}
+.x4-tab-default .x4-tab-close-btn {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-close.gif);
+}
+.x4-tab-default-top-over:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-over-fbg.gif), stretch:bottom";
+}
+.x4-tab-default-bottom-over:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-over-fbg.gif), stretch:top";
+}
+.x4-tab-default-top-active:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-active-fbg.gif), stretch:bottom";
+}
+.x4-tab-default-bottom-active:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-active-fbg.gif), stretch:top";
+}
+.x4-tab-default-top-disabled:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-top-disabled-fbg.gif), stretch:bottom";
+}
+.x4-tab-default-bottom-disabled:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-bg.gif), corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-sides.gif), frame-bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab/tab-default-bottom-disabled-fbg.gif), stretch:top";
+}
+.x4-tab-bar-default {
+    border-color: #99bce8;
+}
+.x4-tab-bar-strip-default {
+    border-color: #99bce8;
+    background-color: #deecfd;
+}
+.x4-tab-bar-default {
+    background-color: #cbdbef;
+}
+.x4-tab-bar-default-top {
+    background-image: none;
+    background-color: #cbdbef;
+    background-image: linear-gradient(top, #dde8f5, #cbdbef);
+}
+.x4-nlg .x4-tab-bar-default-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-top-bg.gif);
+}
+.x4-tab-bar-default-bottom {
+    background-image: none;
+    background-color: #cbdbef;
+    background-image: linear-gradient(bottom, #dde8f5, #cbdbef);
+}
+.x4-nlg .x4-tab-bar-default-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-bottom-bg.gif);
+}
+.x4-tab-bar-default-left {
+    background-image: none;
+    background-color: #cbdbef;
+    background-image: linear-gradient(left, #dde8f5, #cbdbef);
+}
+.x4-nlg .x4-tab-bar-default-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-left-bg.gif);
+}
+.x4-tab-bar-default-right {
+    background-image: none;
+    background-color: #cbdbef;
+    background-image: linear-gradient(right, #dde8f5, #cbdbef);
+}
+.x4-nlg .x4-tab-bar-default-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-right-bg.gif);
+}
+.x4-tab-bar-default-top .x4-tabbar-scroll-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-left-top.gif);
+}
+.x4-tab-bar-default-top .x4-tabbar-scroll-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-right-top.gif);
+}
+.x4-tab-bar-default-bottom .x4-tabbar-scroll-left {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-left-bottom.gif);
+}
+.x4-tab-bar-default-bottom .x4-tabbar-scroll-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-right-bottom.gif);
+}
+.x4-tab-bar-default-left .x4-tabbar-scroll-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-top-left.gif);
+}
+.x4-tab-bar-default-left .x4-tabbar-scroll-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-bottom-left.gif);
+}
+.x4-tab-bar-default-right .x4-tabbar-scroll-top {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-top-right.gif);
+}
+.x4-tab-bar-default-right .x4-tabbar-scroll-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/default-scroll-bottom-right.gif);
+}
+.x4-tab-bar-default-top:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-top-bg.gif), stretch:bottom";
+}
+.x4-tab-bar-default-bottom:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-bottom-bg.gif), stretch:top";
+}
+.x4-tab-bar-default-left:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-left-bg.gif), stretch:right";
+}
+.x4-tab-bar-default-right:after {
+    content: "x-slicer:bg:url(/slm/js-lib/rui/builds/rui/resources/css/images/tab-bar/tab-bar-default-right-bg.gif), stretch:left";
+}
+.x4-column-header-checkbox {
+    border-color: transparent;
+}
+.x4-grid-row-checker,
+.x4-column-header-checkbox .x4-column-header-text {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/checkbox.gif);
+}
+.x4-tree-arrows .x4-tree-expander {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/arrows.gif);
+}
+.x4-tree-lines .x4-tree-elbow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow.gif);
+}
+.x4-tree-lines .x4-tree-elbow-end {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-end.gif);
+}
+.x4-tree-lines .x4-tree-elbow-plus {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-plus.gif);
+}
+.x4-tree-lines .x4-tree-elbow-end-plus {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-end-plus.gif);
+}
+.x4-tree-lines .x4-grid-tree-node-expanded .x4-tree-elbow-plus {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-minus.gif);
+}
+.x4-tree-lines .x4-grid-tree-node-expanded .x4-tree-elbow-end-plus {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-end-minus.gif);
+}
+.x4-tree-lines .x4-tree-elbow-line {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-line.gif);
+}
+.x4-tree-no-lines .x4-tree-expander {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-plus-nl.gif);
+}
+.x4-tree-no-lines .x4-grid-tree-node-expanded .x4-tree-expander {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/elbow-minus-nl.gif);
+}
+.x4-tree-icon-leaf {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/leaf.gif);
+}
+.x4-tree-icon-parent {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/folder.gif);
+}
+.x4-grid-tree-node-expanded .x4-tree-icon-parent {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/folder-open.gif);
+}
+.x4-tree-checkbox {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/checkbox.gif);
+}
+.x4-grid-tree-loading .x4-tree-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/loading.gif);
+}
+.x4-tree-drop-ok-append .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/drop-append.gif);
+}
+.x4-tree-drop-ok-above .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/drop-above.gif);
+}
+.x4-tree-drop-ok-below .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/drop-below.gif);
+}
+.x4-tree-drop-ok-between .x4-dd-drop-icon {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tree/drop-between.gif);
+}
+.x4-tree-ddindicator {
+    border-color: #008000;
+}
+.x4-box-tl {
+    background-color: transparent;
+}
+.x4-box-tc {
+    background-color: transparent;
+}
+.x4-box-tr {
+    background-color: transparent;
+}
+.x4-box-ml {
+    background-color: transparent;
+}
+.x4-box-mr {
+    background-color: transparent;
+}
+.x4-box-bl {
+    background-color: transparent;
+}
+.x4-box-bc {
+    background-color: transparent;
+}
+.x4-box-br {
+    background-color: transparent;
+}
+.x4-box-tl {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/corners.gif);
+}
+.x4-box-tc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/tb.gif);
+}
+.x4-box-tr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/corners.gif);
+}
+.x4-box-ml {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/l.gif);
+}
+.x4-box-mc {
+    background-color: var(--x4-gray-15-bg);
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/tb.gif);
+    color: var(--x4-gray-93-text);
+}
+.x4-box-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/r.gif);
+}
+.x4-box-bl {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/corners.gif);
+}
+.x4-box-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/tb.gif);
+}
+.x4-box-br {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/corners.gif);
+}
+.x4-box-blue .x4-box-bl,
+.x4-box-blue .x4-box-br,
+.x4-box-blue .x4-box-tl,
+.x4-box-blue .x4-box-tr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/corners-blue.gif);
+}
+.x4-box-blue .x4-box-bc,
+.x4-box-blue .x4-box-mc,
+.x4-box-blue .x4-box-tc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/tb-blue.gif);
+}
+.x4-box-blue .x4-box-mc {
+    background-color: #c3daf9;
+}
+.x4-box-blue .x4-box-mc h3 {
+    color: #17385b;
+}
+.x4-box-blue .x4-box-ml {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/l-blue.gif);
+}
+.x4-box-blue .x4-box-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/box/r-blue.gif);
+}
+.x4-message-box .x4-msg-box-wait {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/shared/blue-loading.gif);
+}
+.x4-html-editor-wrap .x4-toolbar {
+    border-left-color: var(--x4-control-border);
+    border-top-color: var(--x4-control-border);
+    border-right-color: var(--x4-control-border);
+}
+.x4-html-editor-input {
+    border-color: var(--x4-control-border);
+}
+.x4-column-header-trigger {
+    background-color: transparent;
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/grid/grid3-hd-btn.gif);
+}
+.x4-grid-editor .x4-form-spinner-up,
+.x4-grid-editor .x4-form-spinner-down {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/spinner-small.gif);
+}
+.x4-accordion-hd {
+    box-shadow: inset 0 0 0 0 #d9e7f8;
+}
+.x4-accordion-hd-sibling-expanded {
+    box-shadow: inset 0 1px 0 0 #f3f7fb;
+}
+.x4-ie6 .x4-slider-horz,
+.x4-ie6 .x4-slider-horz .x4-slider-end,
+.x4-ie6 .x4-slider-horz .x4-slider-inner {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-bg.gif);
+}
+.x4-ie6 .x4-slider-horz .x4-slider-thumb {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-thumb.gif);
+}
+.x4-ie6 .x4-slider-vert,
+.x4-ie6 .x4-slider-vert .x4-slider-end,
+.x4-ie6 .x4-slider-vert .x4-slider-inner {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-v-bg.gif);
+}
+.x4-ie6 .x4-slider-vert .x4-slider-thumb {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/slider/slider-v-thumb.gif);
+}
+a:link {
+    color: #327c98;
+}
+a:visited {
+    color: #327c98;
+}
+.hyperlink {
+    color: #327c98;
+}
+.add-new .x4-btn.rly-collapse {
+    background-color: transparent;
+}
+.app-menu {
+    color: var(--x4-silver);
+}
+.app-menu:hover {
+    color: var(--x4-muted-text);
+}
+.app-settings {
+    background-color: var(--x4-muted-bg);
+}
+.app-settings .x4-panel-body-default {
+    background-color: var(--x4-muted-bg);
+    color: var(--x4-muted-text);
+}
+.app-settings .settings-title {
+    color: var(--x4-gray-100-text);
+}
+div.banner {
+    background-color: #fbedca;
+    color: var(--x4-muted-text);
+}
+div.banner .dismiss-btn {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/tools/close-b5d8eb.png);
+}
+.x4-boundlist {
+    background-color: var(--x4-primary-bg);
+}
+.x4-boundlist .x4-boundlist-item {
+    background-color: var(--x4-primary-bg);
+    border-left-color: var(--x4-gray-35-border);
+    border-right-color: var(--x4-gray-35-border);
+    color: var(--x4-muted-text);
+}
+.x4-boundlist .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-primary-bg);
+    border-color: var(--x4-gray-35-border);
+    color: var(--x4-control-text);
+}
+.x4-boundlist .x4-boundlist-item.x4-boundlist-item-over {
+    background-color: #30aac7;
+    border-color: #30aac7;
+    color: #ffffff;
+}
+.x4-boundlist .x4-boundlist-item.x4-boundlist-item-over .rui-checkbox-label {
+    color: #ffffff;
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled {
+    color: var(--x4-gray-70-text);
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.rui-multi-object-picker-disabled.x4-boundlist-item-over {
+    background-color: var(--x4-primary-bg);
+    border-color: var(--x4-gray-35-border);
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-selected {
+    background-color: var(--x4-primary-bg);
+}
+.x4-boundlist .x4-boundlist-item.rui-multi-object-picker.x4-boundlist-item-over {
+    background-color: #30aac7;
+}
+.x4-boundlist .rally-group-header {
+    color: var(--x4-gray-80-text);
+}
+.x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected {
+    background-color: var(--x4-muted-bg);
+}
+.x4-boundlist.x4-boundlist-floating .x4-boundlist-item.x4-boundlist-selected.x4-boundlist-item-over {
+    background-color: #30aac7;
+}
+.x4-btn-link-small {
+    border-color: #254f62;
+}
+.x4-btn-link-small {
+    background-color: transparent;
+}
+.x4-btn-link-small-mc {
+    background-color: transparent;
+}
+.x4-nbr .x4-btn-link-small {
+    background-color: transparent;
+}
+.x4-btn-link-small .x4-btn-inner {
+    color: #085478;
+}
+.x4-btn-link-small .x4-btn-arrow {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/arrow.gif);
+}
+.x4-btn-link-small .x4-btn-glyph {
+    color: #ff0000;
+}
+.x4-ie8m .x4-btn-link-small .x4-btn-glyph {
+    color: #ff0000;
+}
+.x4-btn-link-small-disabled {
+    border-color: var(--x4-gray-55-border);
+    background-image: none;
+    background-color: transparent;
+}
+.x4-btn-link-small-disabled .x4-btn-inner {
+    color: var(--x4-gray-80-text);
+}
+.x4-btn-link-small-focus {
+    border-color: #44525e;
+    background-image: none;
+    background-color: transparent;
+}
+.x4-btn-link-small-over {
+    border-color: #44525e;
+    background-image: none;
+    background-color: transparent;
+}
+.x4-btn-link-small-menu-active,
+.x4-btn-link-small-pressed {
+    border-color: #317397;
+    background-image: none;
+    background-color: transparent;
+}
+.x4-btn-link-small-focus .x4-frame-tl,
+.x4-btn-link-small-focus .x4-frame-bl,
+.x4-btn-link-small-focus .x4-frame-tr,
+.x4-btn-link-small-focus .x4-frame-br,
+.x4-btn-link-small-focus .x4-frame-tc,
+.x4-btn-link-small-focus .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-focus-corners.gif);
+}
+.x4-btn-link-small-focus .x4-frame-ml,
+.x4-btn-link-small-focus .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-focus-sides.gif);
+}
+.x4-btn-link-small-focus .x4-frame-mc {
+    background-color: transparent;
+}
+.x4-btn-link-small-over .x4-frame-tl,
+.x4-btn-link-small-over .x4-frame-bl,
+.x4-btn-link-small-over .x4-frame-tr,
+.x4-btn-link-small-over .x4-frame-br,
+.x4-btn-link-small-over .x4-frame-tc,
+.x4-btn-link-small-over .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-over-corners.gif);
+}
+.x4-btn-link-small-over .x4-frame-ml,
+.x4-btn-link-small-over .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-over-sides.gif);
+}
+.x4-btn-link-small-over .x4-frame-mc {
+    background-color: transparent;
+}
+.x4-btn-link-small-menu-active .x4-frame-tl,
+.x4-btn-link-small-menu-active .x4-frame-bl,
+.x4-btn-link-small-menu-active .x4-frame-tr,
+.x4-btn-link-small-menu-active .x4-frame-br,
+.x4-btn-link-small-menu-active .x4-frame-tc,
+.x4-btn-link-small-menu-active .x4-frame-bc,
+.x4-btn-link-small-pressed .x4-frame-tl,
+.x4-btn-link-small-pressed .x4-frame-bl,
+.x4-btn-link-small-pressed .x4-frame-tr,
+.x4-btn-link-small-pressed .x4-frame-br,
+.x4-btn-link-small-pressed .x4-frame-tc,
+.x4-btn-link-small-pressed .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-pressed-corners.gif);
+}
+.x4-btn-link-small-menu-active .x4-frame-ml,
+.x4-btn-link-small-menu-active .x4-frame-mr,
+.x4-btn-link-small-pressed .x4-frame-ml,
+.x4-btn-link-small-pressed .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-pressed-sides.gif);
+}
+.x4-btn-link-small-menu-active .x4-frame-mc,
+.x4-btn-link-small-pressed .x4-frame-mc {
+    background-color: transparent;
+}
+.x4-btn-link-small-disabled .x4-frame-tl,
+.x4-btn-link-small-disabled .x4-frame-bl,
+.x4-btn-link-small-disabled .x4-frame-tr,
+.x4-btn-link-small-disabled .x4-frame-br,
+.x4-btn-link-small-disabled .x4-frame-tc,
+.x4-btn-link-small-disabled .x4-frame-bc {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-disabled-corners.gif);
+}
+.x4-btn-link-small-disabled .x4-frame-ml,
+.x4-btn-link-small-disabled .x4-frame-mr {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-disabled-sides.gif);
+}
+.x4-btn-link-small-disabled .x4-frame-mc {
+    background-color: transparent;
+}
+.x4-nbr .x4-btn-link-small {
+    background-image: none;
+}
+.x4-btn-link-small .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow.gif);
+}
+.x4-btn-link-small .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-b.gif);
+}
+.x4-btn-link-small-over .x4-btn-split-right {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-o.gif);
+}
+.x4-btn-link-small-over .x4-btn-split-bottom {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/button/s-arrow-bo.gif);
+}
+.x4-btn-link-small-focus:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-focus-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-focus-sides.gif";
+}
+.x4-btn-link-small-over:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-over-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-over-sides.gif";
+}
+.x4-btn-link-small-pressed:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-pressed-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-pressed-sides.gif";
+}
+.x4-btn-link-small-disabled:after {
+    content: "x-slicer:stretch:bottom, corners:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-disabled-corners.gif), sides:url(/slm/js-lib/rui/builds/rui/resources/css/images/btn/btn-link-small-disabled-sides.gif";
+}
+.x4-btn-default-toolbar-small-disabled {
+    background-image: none;
+    background-color: var(--x4-gray-40-bg);
+}
+.x4-btn-link-small-small .x4-btn-inner {
+    color: #085478;
+}
+.x4-btn .x4-btn-button {
+    border-color: transparent !important;
+}
+.x4-btn-focus .x4-btn-button {
+    border-color: var(--x4-gray-25-border) !important;
+}
+.x4-ie7m .x4-btn-focus .x4-btn-mc {
+    border-color: var(--x4-gray-25-border);
+}
+.x4-ie7m .x4-btn-icon {
+    border-color: transparent;
+}
+.x4-ie7m .x4-btn-focus .x4-btn-icon {
+    border-color: var(--x4-gray-25-border);
+}
+.x4-btn.toggle {
+    border-color: var(--x4-gray-35-border);
+    color: #327c98;
+    background-color: var(--x4-primary-bg);
+}
+.x4-btn.toggle.rly-active,
+.x4-btn.toggle.rly-active:hover {
+    color: #ffffff;
+    background-color: #327c98;
+    border-color: #327c98;
+}
+.x4-btn.toggle:hover {
+    background-color: #21516d;
+    border-color: #21516d;
+    color: #ffffff;
+}
+.x4-btn.toggle.center {
+    border-top-color: var(--x4-gray-35-border);
+    border-bottom-color: var(--x4-gray-35-border);
+}
+.x4-btn.secondary.control.button {
+    background-color: transparent;
+}
+.x4-btn.secondary.control.button span {
+    color: #327c98;
+}
+.x4-btn.tertiary.controls.button {
+    background-color: transparent;
+}
+.x4-btn.tertiary.controls.button span {
+    color: var(--x4-gray-35-text);
+}
+.x4-btn.primary.highlight,
+.x4-btn.primary.highlight tr td,
+.x4-btn.secondary.highlight,
+.x4-btn.secondary.highlight tr td,
+.x4-btn.tertiary.highlight,
+.x4-btn.tertiary.highlight tr td,
+.x4-btn.highlight.highlight,
+.x4-btn.highlight.highlight tr td {
+    background-image: none;
+    background-color: #ffc91c;
+    border-color: #ffc91c;
+}
+.x4-btn.primary.highlight span,
+.x4-btn.primary.highlight tr td span,
+.x4-btn.secondary.highlight span,
+.x4-btn.secondary.highlight tr td span,
+.x4-btn.tertiary.highlight span,
+.x4-btn.tertiary.highlight tr td span,
+.x4-btn.highlight.highlight span,
+.x4-btn.highlight.highlight tr td span {
+    color: var(--x4-muted-text);
+}
+.x4-btn.primary.highlight:hover,
+.x4-btn.primary.highlight:hover tr td,
+.x4-btn.primary.highlight tr td:hover,
+.x4-btn.primary.highlight tr td:hover tr td,
+.x4-btn.secondary.highlight:hover,
+.x4-btn.secondary.highlight:hover tr td,
+.x4-btn.secondary.highlight tr td:hover,
+.x4-btn.secondary.highlight tr td:hover tr td,
+.x4-btn.tertiary.highlight:hover,
+.x4-btn.tertiary.highlight:hover tr td,
+.x4-btn.tertiary.highlight tr td:hover,
+.x4-btn.tertiary.highlight tr td:hover tr td,
+.x4-btn.highlight.highlight:hover,
+.x4-btn.highlight.highlight:hover tr td,
+.x4-btn.highlight.highlight tr td:hover,
+.x4-btn.highlight.highlight tr td:hover tr td {
+    background-color: #fee276;
+    border-color: #fee276;
+}
+.x4-btn.primary.highlight:hover span,
+.x4-btn.primary.highlight:hover tr td span,
+.x4-btn.primary.highlight tr td:hover span,
+.x4-btn.primary.highlight tr td:hover tr td span,
+.x4-btn.secondary.highlight:hover span,
+.x4-btn.secondary.highlight:hover tr td span,
+.x4-btn.secondary.highlight tr td:hover span,
+.x4-btn.secondary.highlight tr td:hover tr td span,
+.x4-btn.tertiary.highlight:hover span,
+.x4-btn.tertiary.highlight:hover tr td span,
+.x4-btn.tertiary.highlight tr td:hover span,
+.x4-btn.tertiary.highlight tr td:hover tr td span,
+.x4-btn.highlight.highlight:hover span,
+.x4-btn.highlight.highlight:hover tr td span,
+.x4-btn.highlight.highlight tr td:hover span,
+.x4-btn.highlight.highlight tr td:hover tr td span {
+    color: var(--x4-muted-text);
+}
+.x4-btn.primary.secondary,
+.x4-btn.primary.secondary tr td,
+.x4-btn.secondary.secondary,
+.x4-btn.secondary.secondary tr td,
+.x4-btn.tertiary.secondary,
+.x4-btn.tertiary.secondary tr td,
+.x4-btn.highlight.secondary,
+.x4-btn.highlight.secondary tr td {
+    background-image: none;
+    background-color: var(--x4-primary-bg);
+    border-color: var(--x4-gray-35-border);
+}
+.x4-btn.primary.secondary span,
+.x4-btn.primary.secondary tr td span,
+.x4-btn.secondary.secondary span,
+.x4-btn.secondary.secondary tr td span,
+.x4-btn.tertiary.secondary span,
+.x4-btn.tertiary.secondary tr td span,
+.x4-btn.highlight.secondary span,
+.x4-btn.highlight.secondary tr td span {
+    color: #327c98;
+}
+.x4-btn.primary.secondary:hover,
+.x4-btn.primary.secondary:hover tr td,
+.x4-btn.primary.secondary tr td:hover,
+.x4-btn.primary.secondary tr td:hover tr td,
+.x4-btn.secondary.secondary:hover,
+.x4-btn.secondary.secondary:hover tr td,
+.x4-btn.secondary.secondary tr td:hover,
+.x4-btn.secondary.secondary tr td:hover tr td,
+.x4-btn.tertiary.secondary:hover,
+.x4-btn.tertiary.secondary:hover tr td,
+.x4-btn.tertiary.secondary tr td:hover,
+.x4-btn.tertiary.secondary tr td:hover tr td,
+.x4-btn.highlight.secondary:hover,
+.x4-btn.highlight.secondary:hover tr td,
+.x4-btn.highlight.secondary tr td:hover,
+.x4-btn.highlight.secondary tr td:hover tr td {
+    background-color: #21516d;
+    border-color: #21516d;
+}
+.x4-btn.primary.secondary:hover span,
+.x4-btn.primary.secondary:hover tr td span,
+.x4-btn.primary.secondary tr td:hover span,
+.x4-btn.primary.secondary tr td:hover tr td span,
+.x4-btn.secondary.secondary:hover span,
+.x4-btn.secondary.secondary:hover tr td span,
+.x4-btn.secondary.secondary tr td:hover span,
+.x4-btn.secondary.secondary tr td:hover tr td span,
+.x4-btn.tertiary.secondary:hover span,
+.x4-btn.tertiary.secondary:hover tr td span,
+.x4-btn.tertiary.secondary tr td:hover span,
+.x4-btn.tertiary.secondary tr td:hover tr td span,
+.x4-btn.highlight.secondary:hover span,
+.x4-btn.highlight.secondary:hover tr td span,
+.x4-btn.highlight.secondary tr td:hover span,
+.x4-btn.highlight.secondary tr td:hover tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.secondary.dark,
+.x4-btn.primary.secondary.dark tr td,
+.x4-btn.secondary.secondary.dark,
+.x4-btn.secondary.secondary.dark tr td,
+.x4-btn.tertiary.secondary.dark,
+.x4-btn.tertiary.secondary.dark tr td,
+.x4-btn.highlight.secondary.dark,
+.x4-btn.highlight.secondary.dark tr td {
+    background-color: var(--x4-gray-80-bg);
+    border-color: var(--x4-gray-80-border);
+}
+.x4-btn.primary.secondary.dark span,
+.x4-btn.primary.secondary.dark tr td span,
+.x4-btn.secondary.secondary.dark span,
+.x4-btn.secondary.secondary.dark tr td span,
+.x4-btn.tertiary.secondary.dark span,
+.x4-btn.tertiary.secondary.dark tr td span,
+.x4-btn.highlight.secondary.dark span,
+.x4-btn.highlight.secondary.dark tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.secondary.dark:hover,
+.x4-btn.primary.secondary.dark:hover tr td,
+.x4-btn.primary.secondary.dark tr td:hover,
+.x4-btn.primary.secondary.dark tr td:hover tr td,
+.x4-btn.secondary.secondary.dark:hover,
+.x4-btn.secondary.secondary.dark:hover tr td,
+.x4-btn.secondary.secondary.dark tr td:hover,
+.x4-btn.secondary.secondary.dark tr td:hover tr td,
+.x4-btn.tertiary.secondary.dark:hover,
+.x4-btn.tertiary.secondary.dark:hover tr td,
+.x4-btn.tertiary.secondary.dark tr td:hover,
+.x4-btn.tertiary.secondary.dark tr td:hover tr td,
+.x4-btn.highlight.secondary.dark:hover,
+.x4-btn.highlight.secondary.dark:hover tr td,
+.x4-btn.highlight.secondary.dark tr td:hover,
+.x4-btn.highlight.secondary.dark tr td:hover tr td {
+    background-color: #21516d;
+    border-color: #21516d;
+}
+.x4-btn.primary.secondary.dark:hover span,
+.x4-btn.primary.secondary.dark:hover tr td span,
+.x4-btn.primary.secondary.dark tr td:hover span,
+.x4-btn.primary.secondary.dark tr td:hover tr td span,
+.x4-btn.secondary.secondary.dark:hover span,
+.x4-btn.secondary.secondary.dark:hover tr td span,
+.x4-btn.secondary.secondary.dark tr td:hover span,
+.x4-btn.secondary.secondary.dark tr td:hover tr td span,
+.x4-btn.tertiary.secondary.dark:hover span,
+.x4-btn.tertiary.secondary.dark:hover tr td span,
+.x4-btn.tertiary.secondary.dark tr td:hover span,
+.x4-btn.tertiary.secondary.dark tr td:hover tr td span,
+.x4-btn.highlight.secondary.dark:hover span,
+.x4-btn.highlight.secondary.dark:hover tr td span,
+.x4-btn.highlight.secondary.dark tr td:hover span,
+.x4-btn.highlight.secondary.dark tr td:hover tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.primary,
+.x4-btn.primary.primary tr td,
+.x4-btn.secondary.primary,
+.x4-btn.secondary.primary tr td,
+.x4-btn.tertiary.primary,
+.x4-btn.tertiary.primary tr td,
+.x4-btn.highlight.primary,
+.x4-btn.highlight.primary tr td {
+    background-image: none;
+    background-color: #327c98;
+    border-color: #327c98;
+}
+.x4-btn.primary.primary span,
+.x4-btn.primary.primary tr td span,
+.x4-btn.secondary.primary span,
+.x4-btn.secondary.primary tr td span,
+.x4-btn.tertiary.primary span,
+.x4-btn.tertiary.primary tr td span,
+.x4-btn.highlight.primary span,
+.x4-btn.highlight.primary tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.primary:hover,
+.x4-btn.primary.primary:hover tr td,
+.x4-btn.primary.primary tr td:hover,
+.x4-btn.primary.primary tr td:hover tr td,
+.x4-btn.secondary.primary:hover,
+.x4-btn.secondary.primary:hover tr td,
+.x4-btn.secondary.primary tr td:hover,
+.x4-btn.secondary.primary tr td:hover tr td,
+.x4-btn.tertiary.primary:hover,
+.x4-btn.tertiary.primary:hover tr td,
+.x4-btn.tertiary.primary tr td:hover,
+.x4-btn.tertiary.primary tr td:hover tr td,
+.x4-btn.highlight.primary:hover,
+.x4-btn.highlight.primary:hover tr td,
+.x4-btn.highlight.primary tr td:hover,
+.x4-btn.highlight.primary tr td:hover tr td {
+    background-color: #21516d;
+    border-color: #21516d;
+}
+.x4-btn.primary.primary:hover span,
+.x4-btn.primary.primary:hover tr td span,
+.x4-btn.primary.primary tr td:hover span,
+.x4-btn.primary.primary tr td:hover tr td span,
+.x4-btn.secondary.primary:hover span,
+.x4-btn.secondary.primary:hover tr td span,
+.x4-btn.secondary.primary tr td:hover span,
+.x4-btn.secondary.primary tr td:hover tr td span,
+.x4-btn.tertiary.primary:hover span,
+.x4-btn.tertiary.primary:hover tr td span,
+.x4-btn.tertiary.primary tr td:hover span,
+.x4-btn.tertiary.primary tr td:hover tr td span,
+.x4-btn.highlight.primary:hover span,
+.x4-btn.highlight.primary:hover tr td span,
+.x4-btn.highlight.primary tr td:hover span,
+.x4-btn.highlight.primary tr td:hover tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.x4-item-disabled,
+.x4-btn.primary.x4-item-disabled tr td,
+.x4-btn.secondary.x4-item-disabled,
+.x4-btn.secondary.x4-item-disabled tr td,
+.x4-btn.tertiary.x4-item-disabled,
+.x4-btn.tertiary.x4-item-disabled tr td,
+.x4-btn.highlight.x4-item-disabled,
+.x4-btn.highlight.x4-item-disabled tr td,
+.x4-btn.toggle.x4-item-disabled,
+.x4-btn.toggle.x4-item-disabled tr td {
+    background-color: var(--x4-gray-35-bg);
+    border-color: var(--x4-gray-35-border);
+}
+.x4-btn.primary.x4-item-disabled span,
+.x4-btn.primary.x4-item-disabled tr td span,
+.x4-btn.secondary.x4-item-disabled span,
+.x4-btn.secondary.x4-item-disabled tr td span,
+.x4-btn.tertiary.x4-item-disabled span,
+.x4-btn.tertiary.x4-item-disabled tr td span,
+.x4-btn.highlight.x4-item-disabled span,
+.x4-btn.highlight.x4-item-disabled tr td span,
+.x4-btn.toggle.x4-item-disabled span,
+.x4-btn.toggle.x4-item-disabled tr td span {
+    color: #ffffff;
+}
+.x4-btn.primary.x4-item-disabled:hover,
+.x4-btn.primary.x4-item-disabled:hover tr td,
+.x4-btn.primary.x4-item-disabled tr td:hover,
+.x4-btn.primary.x4-item-disabled tr td:hover tr td,
+.x4-btn.secondary.x4-item-disabled:hover,
+.x4-btn.secondary.x4-item-disabled:hover tr td,
+.x4-btn.secondary.x4-item-disabled tr td:hover,
+.x4-btn.secondary.x4-item-disabled tr td:hover tr td,
+.x4-btn.tertiary.x4-item-disabled:hover,
+.x4-btn.tertiary.x4-item-disabled:hover tr td,
+.x4-btn.tertiary.x4-item-disabled tr td:hover,
+.x4-btn.tertiary.x4-item-disabled tr td:hover tr td,
+.x4-btn.highlight.x4-item-disabled:hover,
+.x4-btn.highlight.x4-item-disabled:hover tr td,
+.x4-btn.highlight.x4-item-disabled tr td:hover,
+.x4-btn.highlight.x4-item-disabled tr td:hover tr td,
+.x4-btn.toggle.x4-item-disabled:hover,
+.x4-btn.toggle.x4-item-disabled:hover tr td,
+.x4-btn.toggle.x4-item-disabled tr td:hover,
+.x4-btn.toggle.x4-item-disabled tr td:hover tr td {
+    background-color: var(--x4-gray-35-bg);
+    border-color: var(--x4-gray-35-border);
+}
+.x4-btn.primary.x4-item-disabled:hover span,
+.x4-btn.primary.x4-item-disabled:hover tr td span,
+.x4-btn.primary.x4-item-disabled tr td:hover span,
+.x4-btn.primary.x4-item-disabled tr td:hover tr td span,
+.x4-btn.secondary.x4-item-disabled:hover span,
+.x4-btn.secondary.x4-item-disabled:hover tr td span,
+.x4-btn.secondary.x4-item-disabled tr td:hover span,
+.x4-btn.secondary.x4-item-disabled tr td:hover tr td span,
+.x4-btn.tertiary.x4-item-disabled:hover span,
+.x4-btn.tertiary.x4-item-disabled:hover tr td span,
+.x4-btn.tertiary.x4-item-disabled tr td:hover span,
+.x4-btn.tertiary.x4-item-disabled tr td:hover tr td span,
+.x4-btn.highlight.x4-item-disabled:hover span,
+.x4-btn.highlight.x4-item-disabled:hover tr td span,
+.x4-btn.highlight.x4-item-disabled tr td:hover span,
+.x4-btn.highlight.x4-item-disabled tr td:hover tr td span,
+.x4-btn.toggle.x4-item-disabled:hover span,
+.x4-btn.toggle.x4-item-disabled:hover tr td span,
+.x4-btn.toggle.x4-item-disabled tr td:hover span,
+.x4-btn.toggle.x4-item-disabled tr td:hover tr td span {
+    color: #ffffff;
+}
+.x4-btn .button-beta-badge {
+    background-color: #ffc91c;
+    color: var(--x4-control-text);
+}
+.dark-container .x4-btn.secondary {
+    background-color: #000000;
+    border-color: #000000;
+}
+.dark-container .x4-btn.secondary span {
+    color: var(--x4-gray-35-text);
+}
+.dark-container .x4-btn.secondary:hover {
+    background-color: var(--x4-gray-99-bg);
+    border-color: var(--x4-gray-99-border);
+}
+.dark-container .x4-btn.secondary:hover span {
+    color: var(--x4-gray-20-text);
+}
+.dark-container .x4-btn.x4-item-disabled,
+.dark-container .x4-btn.x4-item-disabled:hover {
+    background-color: var(--x4-gray-80-bg);
+    border-color: var(--x4-gray-80-border);
+}
+.dark-container .x4-btn.x4-item-disabled span,
+.dark-container .x4-btn.x4-item-disabled:hover span {
+    color: var(--x4-muted-text);
+}
+.rui-button-slider .x4-btn-icon .x4-btn-icon-el {
+    color: #327c98;
+}
+.rui-button-slider .x4-btn-icon:focus .x4-btn-icon-el,
+.rui-button-slider .x4-btn-icon:hover .x4-btn-icon-el {
+    color: #21516d;
+}
+.rui-card {
+    box-shadow: var(--x4-gray-35-bg) 2px 2px;
+    background-color: var(--x4-primary-bg);
+}
+.rui-card .artifact-color {
+    background-color: var(--x4-gray-65-bg);
+}
+.rui-card .card-table-ct {
+    border-color: var(--x4-gray-65-border);
+}
+.rui-card.dndItemBefore {
+    border-top-color: #6ad17b;
+}
+.rui-card.dndItemAfter {
+    border-bottom-color: #6ad17b;
+}
+.rui-card.ready .card-table-ct {
+    border-color: #5cba49 !important;
+}
+.rui-card.blocked .card-table-ct {
+    border-color: #b81b10 !important;
+}
+.cardboard .x4-dd-drag-ghost .rui-card {
+    box-shadow: var(--x4-gray-40-bg) 0 0;
+}
+.cardboard .column-container th.card-column {
+    border-bottom-color: var(--x4-gray-70-border);
+}
+.cardboard .column-container th.card-column.over-capacity {
+    background-color: #b81b10;
+}
+.cardboard .column-container th.card-column.over-capacity .column-header {
+    color: #ffffff;
+}
+.cardboard .column-container td.card-column {
+    background-color: var(--x4-gray-05-bg);
+    border-bottom-color: var(--x4-gray-70-border);
+}
+.cardboard .column-container .card-column {
+    border-left-color: var(--x4-gray-70-border);
+}
+.cardboard .column-container .card-column:first-child {
+    border-left-color: transparent;
+}
+.cardboard .column-container .card-column:last-child {
+    border-right-color: transparent;
+}
+.cardboard .column-container .card-column.over-capacity .column-header .column-card-count {
+    color: #ffffff;
+}
+.cardboard .column-container .card-column.over-capacity .rally-drop-indicator {
+    background-color: #b81b10;
+}
+.cardboard .column-container .card-column.over-capacity .rui-card {
+    box-shadow: rgba(192, 192, 192, 0.5) 2px 2px;
+}
+.cardboard .column-container .card-column.dnd-over {
+    background-color: var(--x4-gray-05-bg);
+}
+.cardboard .column-container .card-column.dnd-over.no-drop,
+.cardboard .column-container .card-column.dnd-over.over-capacity {
+    background-color: var(--x4-gray-05-bg);
+}
+.cardboard .column-container .column-header {
+    color: var(--x4-gray-95-text);
+}
+.cardboard .column-container .column-header .editableField {
+    border-color: transparent;
+}
+.cardboard .column-container .column-header .editableField:hover {
+    border-color: var(--x4-gray-25-border);
+    background-color: var(--x4-primary-bg);
+}
+.cardboard .column-container .column-header .column-card-count {
+    color: var(--x4-gray-70-text);
+}
+.cardboard .column-container .column-header .policy {
+    background-color: var(--x4-primary-bg);
+    color: var(--x4-gray-70-text);
+    border-top-color: var(--x4-gray-70-border);
+}
+.cardboard .column-container .row-header .row-header-cell {
+    border-bottom-color: var(--x4-gray-70-border);
+}
+.cardboard .column-container .row-header .row-header-cell .row-header-title {
+    color: var(--x4-gray-95-text);
+}
+.cardboard .column-container .row-header:hover .expand-collapse {
+    color: var(--x4-muted-text);
+}
+.cardboard .column-container .row-header .expand-collapse {
+    background-color: var(--x4-primary-bg);
+    color: var(--x4-silver);
+}
+.cardboard .card-column .column-content .rally-drop-indicator {
+    background-color: var(--x4-gray-35-bg);
+}
+.boardprint .column {
+    border-bottom-color: var(--x4-gray-70-border);
+}
+.boardprint th,
+.boardprint td {
+    border-right-color: var(--x4-gray-70-border);
+}
+.rally-blocked-reason-content,
+.rally-blocked-reason-content-popover {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/blocked-active-icon.png);
+}
+.rally-blocked-reason-content .rally-blocked-reason-template,
+.rally-blocked-reason-content .editor-container,
+.rally-blocked-reason-content-popover .rally-blocked-reason-template,
+.rally-blocked-reason-content-popover .editor-container {
+    color: var(--x4-primary-text);
+    border-color: transparent;
+}
+.rally-blocked-reason-content .rally-blocked-reason-template:hover,
+.rally-blocked-reason-content .editor-container:hover,
+.rally-blocked-reason-content-popover .rally-blocked-reason-template:hover,
+.rally-blocked-reason-content-popover .editor-container:hover {
+    border-color: #30aac7;
+    background-color: var(--x4-primary-bg);
+    color: var(--x4-primary-text);
+}
+.rally-blocked-reason-content .empty,
+.rally-blocked-reason-content-popover .empty {
+    color: var(--x4-gray-70-text);
+}
+.rally-blocked-reason-content.required div:hover,
+.rally-blocked-reason-content-popover.required div:hover {
+    border-color: transparent;
+}
+.rally-blocked-reason-content {
+    background-color: var(--x4-muted-bg);
+}
+.rally-blocked-reason-content-popover .rally-blocked-reason-template {
+    background-color: var(--x4-primary-bg);
+}
+.rally-card-editor .rally-textarea-component.blocked-reason-editor textarea.x4-form-text {
+    border-color: #30aac7;
+}
+.rui-card .rui-card-content .status-content > .status-field {
+    color: var(--x4-control-text);
+    background-color: var(--x4-muted-bg);
+    border-color: var(--x4-muted-bg);
+}
+.rui-card .rui-card-content .status-content > .status-field.Discussion {
+    background-color: transparent;
+}
+.rui-card .rui-card-content .status-content > .status-field.Discussion .discussion-count {
+    color: #ffffff;
+}
+.rui-card .rui-card-content .status-content > .status-field .status-value.tasks .icon-to-do {
+    color: var(--x4-gray-70-icon);
+}
+.rui-card .rui-card-content .status-content > .status-field .status-value.pred-suc .predecessors {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-icon.png);
+}
+.rui-card .rui-card-content .status-content > .status-field .status-value.pred-suc .successors {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/succ-icon.png);
+}
+.rui-card .rui-card-content .status-content > .status-field .status-value.pred-suc .both {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/status/pred-succ-icon.png);
+}
+.rui-card .rui-card-content .userstories-template {
+    background-color: var(--x4-muted-bg);
+}
+.rui-card .rui-card-content .userstories-template .icon-story {
+    color: var(--x4-gray-70-icon);
+}
+.rui-card .rui-card-content .dependencies-template {
+    background-color: var(--x4-muted-bg);
+}
+.rui-card .rui-card-content .dependencies-template .icon-predecessor {
+    color: var(--x4-control-text);
+}
+.rui-card .field-content {
+    background-color: transparent;
+}
+.rui-card .field-content .rui-field-label {
+    color: var(--x4-gray-80-text);
+}
+.rui-card .field-content .rui-field-value {
+    color: var(--x4-gray-95-text);
+}
+.rui-card .field-content.ScheduleState.editable:hover .rui-field-value {
+    border-color: transparent;
+}
+.rui-card .field-content.editable .rui-field-label,
+.rui-card .field-content.editable .rui-field-value {
+    border-color: transparent;
+}
+.rui-card .field-content.editable:hover .rui-field-value {
+    border-color: var(--x4-gray-25-border);
+    background-color: var(--x4-primary-bg);
+}
+.rui-card .field-content.rally-invalid-card-field .rui-field-value {
+    background-color: var(--x4-primary-bg);
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/form/red-triangle.png);
+    border-color: #ee1c25;
+}
+.rui-card .field-content.rally-invalid-card-field .rui-field-value:hover {
+    border-color: #ee1c25;
+}
+.rally-card-editor .x4-field .x4-form-text,
+.rally-card-editor .x4-field .x4-form-field {
+    border-color: #5c9acb;
+}
+.rally-card-editor .x4-field .x4-form-trigger {
+    border-color: #5c9acb;
+}
+.rui-card.rui-card-swipe {
+    background-image: url(/slm/js-lib/rui/builds/rui/resources/css/images/cardboard/point-swipe-grey.png);
+}
+.rui-card .rui-card-right-side a {
+    color: #327c98;
+}
+.rui-card .rui-card-right-side .card-estimate-field .field-content.editable .rui-field-value {
+    border-color: transparent;
+    color: var(--x4-control-text);
+}
+.rui-card .rui-card-right-side .card-estimate-field .field-content.editable .rui-field-value.no-estimate {
+    color: var(--x4-control-text);
+}
+.rui-card .rui-card-right-side .card-estimate-field .field-content.editable:hover {
+    border-color: var(--x4-gray-25-border);
+    background-color: var(--x4-primary-bg);
+}
+.rally-card-icons-ct .rally-card-icon {
+    background-color: var(--x4-gray-65-bg);
+    color: var(--x4-control-text);
+}
+.rally-card-icons-ct .rally-card-icon:hover {
+    background-color: #30aac7;
+    color: #ffffff;
+}
+.rally-card-icons-ct .rally-card-icon.card-blocked-icon.rly-active {
+    background-color: #b81b10;
+    color: #ffffff;
+}
+.rally-card-icons-ct .rally-card-icon.card-ready-icon.rly-active {
+    background-color: #5cba49;
+    color: #ffffff;
+}
+.rui-card.ready .rally-card-icons-ct .rally-card-icons.indicator .rally-card-icon {
+    background-color: #5cba49;
+    color: #5cba49;
+}
+.rui-card.blocked .rally-card-icons-ct .rally-card-icons.indicator .rally-card-icon {
+    background-color: #b81b10;
+    color: #b81b10;
+}
+.rui-card.blocked .rally-card-icons-ct .rally-card-icons.indicator .indicator-icon,
+.rui-card.ready .rally-card-icons-ct .rally-card-icons.indicator .indicator-icon {
+    color: #ffffff;
+}

@@ -1,0 +1,2576 @@
+/* Global */
+:root {
+    /*
+     * Main
+     */
+    --invalid-color-1: var(--mnrl-dangerRed-70);
+    --invalid-color-2: var(--mnrl-dangerRed-60);
+
+    --danger-border: var(--mnrl-dangerRed-50);
+
+    --required-text: var(--mnrl-dangerRed-60);
+
+    /*
+     * Main > States
+     */
+
+
+
+    /* selected: no commonalities */
+
+    /*
+     * Main > Colors
+     */
+    --blocked-bg: #323030;
+    --blocked-border: var(--mnrl-dangerRed-60);
+
+    --ready-bg: #2d322f;
+    --ready-border: #2a854e;
+
+
+    /*
+     * Button
+     */
+    --button-bg: #1f1f29;
+    --button-border: #555;
+    --button-icon: var(--button-text);
+    --button-text: #c9d1d9;
+    --button-active-bg: #30353d;
+    --button-active-border: var(--button-border);
+    --button-active-text: var(--button-text);
+    --button-disabled-bg: var(--main-control-disabled-bg);
+    --button-disabled-border: #444;
+    --button-disabled-icon: var(--main-control-disabled-text);
+    --button-disabled-text: var(--main-control-disabled-text);
+    --button-focus-bg: var(--button-bg);
+    --button-focus-border: var(--button-border);
+    --button-focus-icon: var(--button-icon);
+    --button-focus-text: var(--button-text);
+    --button-focus-shadow: var(--main-control-focus-shadow);
+    --button-hover-bg: #323a44;
+    --button-hover-border: #8b949e;
+    --button-hover-icon: var(--button-hover-border);
+    --button-hover-text: var(--button-text);
+    --button-is_active-bg: #2c5597;
+    --button-is_active-border: #365b97;
+    --button-is_active-text: #c9d1d9;
+    --button-is_active-active-bg: var(--button-is_active-bg);
+    --button-is_active-active-border: var(--button-is_active-border);
+    --button-is_active-active-text: var(--button-text);
+    --button-is_active-focus-bg: #3465b5;
+    --button-is_active-focus-border: #406db5;
+    --button-is_active-focus-text: #406db5;
+    --button-is_active-hover-bg: var(--button-is_active-focus-bg);
+    --button-is_active-hover-border: var(--button-is_active-focus-border);
+    --button-is_active-hover-text: var(--button-is_active-focus-text);
+
+    --button-primary-bg: var(--mnrl-mineralBlue-60);
+    --button-primary-text: #fff;
+    --button-primary-active-bg: #1d5bbf;
+    --button-primary-focus-bg: var(--button-primary-bg);
+    --button-primary-focus-shadow: var(--button-focus-shadow);
+    --button-primary-hover-bg: #365b97;
+
+    --button-secondarydark-bg: var(--button-bg);
+    --button-secondarydark-border: var(--button-border);
+    --button-secondarydark-text: var(--button-text);
+    --button-secondarydark-active-bg: var(--button-active-bg);
+    --button-secondarydark-focus-bg: var(--button-secondarydark-bg);
+    --button-secondarydark-focus-border: var(--mnrl-mineralBlue-70);
+    --button-secondarydark-focus-shadow: var(--button-focus-shadow);
+    --button-secondarydark-focus-text: var(--button-secondarydark-text);
+    --button-secondarydark-hover-bg: var(--button-hover-bg);
+    --button-secondarydark-hover-border: var(--button-hover-border);
+    --button-secondarydark-hover-text: var(--button-hover-text);
+    --button-secondarydark-is_active-bg: var(--button-is_active-bg);
+    --button-secondarydark-is_active-border: var(--button-is_active-border);
+    --button-secondarydark-is_active-focus-bg: var(--button-is_active-focus-bg);
+    --button-secondarydark-is_active-focus-border: var(--button-is_active-focus-border);
+    --button-secondarydark-is_active-focus-text: var(--button-secondarydark-text);
+    --button-secondarydark-is_active-hover-bg: var(--button-is_active-hover-bg);
+    --button-secondarydark-is_active-hover-border: var(--button-is_active-hover-border);
+    --button-secondarydark-is_active-hover-text: var(--button-secondarydark-text);
+
+    --button-link-bg: transparent;
+    --button-link-border: var(--button-link-bg);
+    --button-link-icon: var(--button-link-text);
+    --button-link-text: var(--main-link-text);
+    --button-link-active-bg: var(--mnrl-gray-20);
+    --button-link-focus-border: var(--mnrl-mineralBlue-70);
+    --button-link-hover-bg: var(--mnrl-gray-10);
+    --button-link-hover-border: var(--mnrl-gray-10);
+    --button-link-hover-text: var(--button-link-text);
+    --button-link-is_active-bg: var(--mnrl-gray-20);
+    --button-link-is_active-border: var(--mnrl-mineralBlue-70);
+    --button-link-is_active-hover-bg: var(--button-link-hover-bg);
+    --button-link-is_active-hover-border: var(--button-link-is_active-border);
+
+    --button-jumboicon-bg: var(--button-link-bg);
+    --button-jumboicon-border: var(--button-link-border);
+    --button-jumboicon-text: var(--button-link-text);
+    --button-jumboicon-active-bg: var(--mnrl-gray-30);
+    --button-jumboicon-focus-bg: var(--main-content-bg);
+    --button-jumboicon-focus-border: var(--mnrl-mineralBlue-70);
+    --button-jumboicon-hover-bg: var(--mnrl-gray-20);
+    --button-jumboicon-is_active-bg: var(--mnrl-gray-30);
+    --button-jumboicon-is_active-border: var(--mnrl-mineralBlue-70);
+    --button-jumboicon-children-text: var(--mnrl-gray-80);
+    --button-jumboicon-disabled-bg: var(--button-jumboicon-bg);
+    --button-jumboicon-disabled-border: var(--button-jumboicon-border);
+    --button-jumboicon-disabled-children: var(--button-disabled-text);
+    --button-jumboicon-disabled-text: var(--button-disabled-text);
+
+    --group-button-bg: var(--button-bg);
+    --group-button-border: var(--button-border);
+    --group-button-text: var(--button-text);
+    --group-button-active-bg: var(--button-active-bg);
+    --group-button-active-border: var(--button-active-border);
+    --group-button-active-text: var(--group-button-text);
+    --group-button-focus-bg: var(--group-button-bg);
+    --group-button-focus-border: var(--group-button-text);
+    --group-button-focus-text: var(--group-button-text);
+    --group-button-hover-bg: var(--button-hover-bg);
+    --group-button-hover-border: var(--button-hover-border);
+    --group-button-hover-text: var(--group-button-text);
+    --group-button-is_active-bg: var(--mnrl-mineralBlue-60);
+    --group-button-is_active-border: var(--group-button-is_active-bg);
+    --group-button-is_active-text: #fff;
+    --group-button-is_active-active-bg: #777;
+    --group-button-is_active-active-border: var(--group-button-is_active-active-bg);
+    --group-button-is_active-active-text: var(--group-button-is_active-text);
+    --group-button-is_active-focus-bg: var(--main-link-text);
+    --group-button-is_active-focus-border: var(--group-button-is_active-active-bg);
+    --group-button-is_active-focus-shadow: inset 0 0 0 0.1rem var(--button-bg);
+    --group-button-is_active-focus-text: var(--group-button-is_active-text);
+    --group-button-is_active-hover-bg: #365b97;
+    --group-button-is_active-hover-border: var(--group-button-is_active-hover-bg);
+    --group-button-is_active-hover-text: var(--group-button-is_active-text);
+
+    --button-failure-accent: var(--mnrl-dangerRed-60);
+    --button-failure-accent-hover: var(--mnrl-dangerRed-50);
+    --button-failure-accent-af: var(--mnrl-dangerRed-70);
+    --button-failure-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-failure-accent-af);
+
+    --button-success-accent: #2a854e;
+    --button-success-accent-hover: #3ba164;
+    --button-success-accent-af: #20693d;
+    --button-success-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-success-accent-af);
+
+    --button-warning-accent: #ad5f00;
+    --button-warning-accent-hover: #cf7911;
+    --button-warning-accent-af: #8a4d03;
+    --button-warning-af-shadow: 0 0 0 0.1rem var(--color-scale-white), 0 0 0 0.2rem var(--button-warning-accent-af);
+
+    --button-feedback-bg: #ffc91c;
+    --button-feedback-icon: var(--mnrl-gray-70);
+    --button-feedback-text: #444444;
+    --button-feedback-focus-bg: #444444;
+    --button-feedback-focus-text: #ffc91c;
+    --button-feedback-hover-bg: #ffc303;
+
+    /*
+     * Checkbox
+     */
+    --checkbox-is_checked-bg: var(--main-link-text);
+    --checkbox-is_checked-focus-bg: var(--checkbox-is_checked-bg);
+    --checkbox-is_checked-hover-bg: #8b949e;
+    --checkbox-disabled-border: #84b1fa;
+    --checkbox-is_checked-disabled-bg: #84b1fa;
+    --checkbox-is_indeterminate-disabled-bg: #84b1fa;
+    --checkbox-is_indeterminate-color: var(--main-link-text);
+
+    /*
+     * Dropdown
+     */
+    --dropdown-bg: var(--main-control-bg);
+    --dropdown-text: var(--mnrl-gray-100);
+    --dropdown-disabled-bg: var(--main-control-disabled-bg);
+    --dropdown-disabled-border: var(--main-control-disabled-border);
+    --dropdown-disabled-text: var(--main-control-disabled-text);
+    --dropdown-focus-bg: var(--dropdown-bg);
+    --dropdown-focus-shadow: var(--main-control-focus-shadow);
+    --dropdown-focus-border: var(--main-control-focus-border);
+
+    --dropdown-divider-bg: var(--mnrl-gray-20);
+
+    --dropdown-list-shadow: 0 0.2rem 0.2rem var(--main-control-border) var(--black-10);
+
+    --dropdown-header-text: var(--dropdown-text);
+
+    --dropdown-footer-bg: var(--main-tertiary-bg);
+    --dropdown-footer-border: var(--main-control-border);
+    --dropdown-footer-text: var(--main-tertiary-text);
+
+    --dropdown-item-text: var(--mnrl-gray-100);
+    --dropdown-item-subtext: var(--mnrl-gray-80);
+    --dropdown-item-hover-bg: var(--mnrl-gray-20);
+    --dropdown-item-hover-text: var(--main-hover-text);
+    --dropdown-item-is_active-bg: #2929c4;
+    --dropdown-item-is_primary-bg: var(--main-link-text);
+
+    --dropdown-item-is_active-text: var(--dropdown-item-text);
+
+    --dropdown-item-checkbox-checked-bg: var(--mnrl-mineralBlue-50);
+    --dropdown-item-checkbox-checked-border: var(--mnrl-mineralBlue-50);
+    --dropdown-item-checkbox-checked-text-before: var(--main-content-bg);
+
+    --dropdown-item-multiselect-selected-bg: transparent;
+
+    --dropdown-match-bg: var(--mnrl-mineralBlue-30);
+    --dropdown-match-text: var(--dropdown-item-text);
+
+    --dropdown-trigger-hover-bg: var(--mnrl-gray-20);
+    --dropdown-trigger-hover-border: var(--main-hover-border);
+    --dropdown-trigger-hover-text: var(--main-hover-text);
+
+    /*
+     * Label
+     */
+    --label-required-text: var(--required-text);
+
+    /*
+     * List
+     */
+    --listitem-text: var(--main-content-text);
+    --listitem-hover-bg: var(--main-hover-bg);
+    --listitem-is_active-bg: #4b4b85;
+
+    /*
+     * LoadingMask
+     */
+    --loadingmask-bg: var(--black-20);
+    --loadingmask-text: #ddd;
+
+    /*
+     * Menu
+     */
+    --menuitem-text: var(--popover-text);
+    --menuitem-is_active-bg: #4b4b85;
+    --menuitem-hover-bg: #212142;
+    /* --menuitem-hover-bg: #50509f; */
+
+    /*
+     * Panel
+     */
+    --panel-header-bg: #111;
+    --panel-app-border: #000;
+    --panel-app-text: #fff;
+    --panel-app-header-bg: #223;
+
+    /*
+     * Popover
+     */
+    --popover-bg: var(--main-content-bg);
+    --popover-shadow: 0 0 0 0.1rem var(--main-tertiary-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
+    --popover-title-text: var(--main-title-text);
+    --popover-text: var(--main-content-text);
+    --popover-invalid-bg: var(--mnrl-dangerRed-70);
+    --popover-invalid-border: var(--mnrl-dangerRed-70);
+    --popover-invalid-shadow: 0 0 0 0.1rem var(--popover-invalid-bg), 0 0.2rem 0.4rem 0 var(--black-20), 0 0.4rem 0.8rem 0 var(--black-20);
+
+    /*
+     * Tab
+     */
+    --tablist-bg: #292929;
+    --tab-text: #ddd;
+    --tab-focus-bg: #292929;
+    --tab-focus-border: var(--main-link-text);
+    --tab-hover-bg: var(--main-primary-bg);
+    --tab-is_active-bg: #2929c4;
+    --tab-is_active-border: #2525b3;
+    --tab-is_active-focus-bg: var(--main-primary-bg);
+    --tab-is_active-text: #ddd;
+
+    /*
+     * TextInput
+     */
+    --textinput-bg: var(--main-control-bg);
+    --textinput-border: var(--main-control-border);
+    --textinput-icon: var(--main-control-icon);
+    --textinput-text: var(--main-control-text);
+    --textinput-disabled-bg: var(--main-control-disabled-bg);
+    --textinput-disabled-border: var(--main-control-disabled-border);
+    --textinput-disabled-icon: var(--textinput-disabled-text);
+    --textinput-disabled-text: var(--main-control-disabled-text);
+    --textinput-focus-icon: var(--main-link-text);
+    --textinput-focus-shadow: var(--main-control-focus-shadow);
+    --textinput-hover-accent: var(--main-link-text);
+    --textinput-invalid-border: var(--error);
+    --textinput-search-focus-border: var(--main-link-text);
+    --textinput-search-focus-icon: var(--main-link-text);
+    --textinput-search-focus-text: var(--main-link-text);
+
+    /*
+     * Toggle
+     */
+    --toggle-bg: var(--group-button-bg);
+    --toggle-border: var(--group-button-border);
+    --toggle-shadow: inset 0 0 0 2px var(--toggle-bg);
+    --toggle-text: var(--group-button-text);
+
+    --toggle-focus-bg: var(--group-button-focus-bg);
+    --toggle-focus-border: var(--group-button-focus-border);
+    --toggle-focus-shadow: 0 0 0 0.1rem var(--toggle-focus-border), 0 0 0 0.2rem var(--toggle-on-focus-bg);
+
+    --toggle-hover-bg: var(--button-hover-bg);
+    --toggle-hover-border: var(--button-hover-border);
+
+    --toggle-on-bg: var(--group-button-is_active-bg);
+    --toggle-on-border: var(--group-button-is_active-border);
+    --toggle-on-text: var(--group-button-is_active-text);
+
+    --toggle-on-focus-bg: var(--group-button-is_active-focus-bg);
+    --toggle-on-focus-border: var(--group-button-is_active-focus-border);
+    --toggle-on-focus-text: var(--group-button-is_active-focus-text);
+
+    --toggle-on-hover-bg: var(--group-button-is_active-hover-bg);
+    --toggle-on-hover-border: var(--group-button-is_active-hover-border);
+
+    /*
+     * Toggle > Handle
+     */
+    --toggle-handle-bg: var(--mnrl-gray-70);
+    --toggle-handle-on-bg: #fff;
+
+    /*
+     * Toolbar
+     */
+    --toolbar-border: #445;
+
+    /*
+     * Tree
+     */
+    --treeitem-text: var(--listitem-text);
+    --treeitem-hover-bg: var(--listitem-hover-bg);
+    --treeitem-is_active-bg: var(--listitem-is_active-bg);
+
+    /*
+     * HERE BE DRAGONS
+     */
+
+    --cke-editable-bg: #1e1e1e;
+    --cke-editable-text: #dcdcdc;
+    --cke-text-shadow: none;
+
+    --alm-border: #444;
+
+    /* Data Table */
+
+    --datatable-bg: var(--main-primary-bg);
+    --datatable-text: #bbb;
+
+    --datatable-row-bg: #1f1f29;
+    --datatable-row-border: #111;
+    --datatable-row-text: #bbb;
+
+    --datatable-cell-bg: var(--datatable-row-bg);
+    --datatable-cell-border: var(--datatable-bg);
+    --datatable-cell-text: var(--datatable-row-text);
+
+    --datatable-drag-text: #aaa;
+
+    --datatable-gripper-text: var(--mnrl-gray-70);
+
+    --datatable-resizer-border: #555;
+    --datatable-resizer-active-border: #445;
+
+    --datatable-rollup-bg: var(--main-content-bg);
+    --datatable-rollup-text: var(--main-content-text);
+
+    --navbar-section-text: #aaa;
+    --navbar-section-is_active-bg: #223;
+
+    --viewport-button-bg: #223;
+
+    --kanban-column-bg: #223;
+    --kanban-column-text: #ddd;
+
+    --kanban-card-bg: var(--main-content-bg);
+    --kanban-card-border: #555;
+    --kanban-card-text: #bbb;
+    --kanban-card-box-shadow: 0 2px 3px 0 var(--black-40), 0 0 0 1px #555;
+
+    --tag-bg: #036490;
+    --tag-border: #035a81;
+    --tag-text: #d7edf5;
+
+    --banner-bg: #223;
+    --banner-border: #000;
+
+    --filter-bar-bg: #223;
+    --filter-bar-border: #444;
+
+    --disclaimer-bg: var(--main-tertiary-bg);
+    --disclaimer-text: var(--main-tertiary-text);
+
+    /*
+     * @mineral overrides
+     */
+    --mnrl-backgroundColor-disabled: var(--main-disabled-bg);
+    --mnrl-color-disabled: var(--main-disabled-text);
+    --mnrl-input-color-placeholder: var(--main-placeholder-text);
+
+    --mnrl-borderColor: var(--main-control-border);
+
+    --mnrl-danger-border: var(--danger-border);
+
+    --mnrl-borderColor-brand-active: var(--button-active-border);
+    --mnrl-color-brand-active: var(--button-active-text);
+
+    --mnrl-borderColor-brand-focus: var(--main-focus-border);
+    --mnrl-color-brand-focus: var(--main-focus-text);
+
+    --mnrl-color-brand-hover: var(--main-hover-text);
+
+    --mnrl-white: var(--color-scale-white);
+}
+
+/****************************************************/
+/****************************************************/
+
+body,
+#main {
+    background-color: var(--main-primary-bg);
+    color: var(--main-primary-text);
+}
+
+a,
+a:link {
+    color: var(--main-link-text);
+}
+
+/* HACK: Workaround for hardcoded inline CSS for black */
+font[style^="color:#000000"],
+span[style^="color:#000000"],
+font[style^="color:black"],
+span[style^="color:black"] {
+    color: inherit !important;
+}
+
+#main #content,
+#main #content .page {
+    background-color: var(--main-primary-bg);
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+/* Header */
+.alm-header-container {
+    background-color: var(--main-content-bg);
+    border-bottom-color: var(--alm-border);
+}
+
+.alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton) {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+    color: var(--button-text);
+}
+
+.alm-header-container .header-util .smb-Button--iconOnly:not(.chr-ViewportProfileMenu-dropdown):not(.smb-TextInput-clearButton):hover,
+.alm-header-container .chr-ViewportAppModes-item:hover {
+    background-color: var(--button-hover-bg);
+    border-color: var(--button-border);
+}
+
+.chr-NavBar,
+.chr-NavBar-alt {
+    background-color: var(--main-control-bg);
+}
+
+#main .chr-NavBar .chr-NavSection,
+#main .chr-NavBar-alt .chr-NavSection,
+#main .project-picker .project-nav-container .project-nav-label {
+    color: var(--navbar-section-text);
+}
+
+#main .chr-NavBar .chr-NavSection.is-selected,
+#main .chr-NavBar-alt .chr-NavSection.is-selected {
+    background-color: var(--navbar-section-is_active-bg);
+    color: var(--main-link-text);
+}
+
+#main .chr-NavBar .chr-NavSection:hover,
+#main .chr-NavBar-alt .chr-NavSection:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Disclaimer */
+#main .disclaimer {
+    background-color: var(--disclaimer-bg);
+    color: var(--disclaimer-text);
+}
+
+.chr-Site .disclaimer {
+    background-color: var(--disclaimer-bg) !important;
+}
+
+/****************************************************/
+.chr-Pill {
+    box-shadow: 0 0 0 2px var(--main-content-bg);
+}
+
+.chr-Pill.chr-Pill--tags {
+    color: #114599;
+    background-color: #cfe0fc;
+}
+
+.chr-BoardWithToolbarCard--viewOnly .chr-Pill {
+    box-shadow: 0 0 0 2px var(--button-disabled-bg);
+}
+
+/* Menu */
+
+#main .chr-NavDropMenu {
+    background-color: var(--popover-bg);
+    box-shadow: var(--popover-shadow);
+}
+
+.chr-NavDropMenu .chr-NavDropMenu-item:hover a,
+.chr-NavDropMenu .chr-NavDropMenu-item.is-current:hover a {
+    background-color: var(--menuitem-hover-bg);
+}
+
+.chr-NavDropMenu .chr-NavDropMenu-item.is-current .chr-NavDropMenu-itemContent {
+    background-color: var(--menuitem-is_active-bg);
+}
+
+#main .chr-NavDropMenu .chr-NavDropMenu-item .chr-NavDropMenu-itemContent > span {
+    color: var(--menuitem-text);
+}
+
+/* Viewport */
+
+#main .chr-WorkspacePicker-listContainer,
+#main .chr-ViewportProjectPickerTray,
+#main .chr-ViewportRecentProjects,
+#main .chr-ViewportScopeUpDown {
+    background-color: var(--popover-bg);
+}
+
+/* Viewport > List */
+
+.chr-ViewportProjectPickerListItem,
+.chr-ViewportRecentProjects .chr-ViewportProjectPickerListItem {
+    color: var(--listitem-text);
+}
+
+.chr-ViewportProjectPickerListItem:hover,
+.chr-ViewportRecentProjects .chr-ViewportProjectPickerListItem:hover {
+    background-color: var(--listitem-hover-bg);
+}
+
+/* Viewport > Tree */
+.chr-ViewportProjectPickerTreeItem:hover {
+    background-color: var(--treeitem-hover-bg);
+}
+
+.chr-ViewportProjectPickerTreeItem--current {
+    background-color: var(--treeitem-is_active-bg);
+}
+
+#main .chr-ViewportProjectPickerTray a,
+#main .chr-WorkspacePicker-listItem .chr-WorkspacePicker-workspaceLink {
+    color: var(--main-primary-text);
+}
+
+.chr-WorkspacePicker-listItem.chr-WorkspacePicker-listItem--active {
+    background-color: var(--listitem-is_active-bg);
+}
+
+/****************************************************/
+.chr-ViewportProfileMenu-dropdown .smb-DropdownList-triggerWrapper {
+    border-color: var(--button-link-border);
+}
+
+.chr-ViewportProfileMenu-dropdown:focus .smb-DropdownList-triggerWrapper {
+    border-color: var(--button-link-focus-border);
+}
+
+.chr-ViewportProfileMenu-dropdown:hover .smb-DropdownList-triggerWrapper {
+    background-color: var(--button-link-hover-bg);
+}
+
+.chr-ViewportProfileMenu-dropdown .smb-DropdownList-triggerWrapper .smb-SvgIcon {
+    color: var(--button-link-text);
+}
+
+/* Stats */
+
+.chr-StatsBanner {
+    background-color: var(--banner-bg);
+}
+
+#main .chr-StatsBanner-panels,
+#main .chr-StatsBanner-toggle,
+#main .chr-StatsBannerProgressPanel,
+#main .chr-StatsBannerItemCountPanel,
+#main .chr-StatsBanner-launchChartsPanel {
+    border-color: var(--banner-border);
+}
+
+#main .chr-StatsBannerProgressPanel-title,
+#main .chr-StatsBannerItemCountPanel-title {
+    color: #aaa;
+}
+
+/* Footer */
+.chr-Footer,
+.chr-ResultsFooter {
+    background-color: var(--main-content-bg);
+    color: #aaa;
+}
+
+/* Main Area */
+#main .chr-Page,
+#main .chr-PlanTeamPage,
+#main .chr-BacklogPage,
+#main .chr-CollectionEditor {
+    background-color: var(--main-primary-bg);
+}
+
+#main .chr-PlanTeamPage > .smb-Header {
+    border-bottom: 1px solid #444;
+}
+
+.project-picker .project-nav-button,
+.smb-HeaderTitle {
+    color: var(--main-header-text);
+}
+
+#main .chr-PlanTeamPage .chr-PlanTeamPage-columnDivider {
+    background-color: #444;
+}
+
+#main .smb-HeaderGroup-title {
+    color: #aaa;
+}
+
+#main .chr-PlanTeamPage .chr-PlanTeamBacklog .smb-PanelHeader .smb-HeaderGroup-title,
+#main .chr-PlanTeamPage .chr-PlanTeamIterationsPanel .smb-PanelHeader .smb-HeaderGroup-title {
+    color: #999;
+}
+
+#main .chr-Tray,
+.advanced-filter-panel > .x-panel-body,
+.inline-filter-panel > .x-panel-body,
+.advanced-filter-panel > .x-panel-body .filters-container .x-panel-body {
+    background-color: var(--filter-bar-bg);
+    border-color: var(--filter-bar-border);
+}
+
+#main .chr-FullDetailOverlay {
+    background-color: var(--main-primary-bg);
+}
+
+#main .chr-FullDetailPage {
+    /* color: #ddd; */
+    /* REDUNDANT */
+    border-color: #555 !important;
+}
+
+/*
+ * Tables
+ */
+.smb-DataTable {
+    background-color: var(--datatable-bg);
+    color: var(--datatable-text);
+}
+
+/* Table > Header */
+
+#main .smb-DataTableTableHeaderCellDragLayer,
+#main .smb-TableHeaderCell,
+.chr-EditorsWorkItemEditorPopover .grid-header .grid-header-labels {
+    background-color: var(--datatable-row-bg);
+    border-bottom-color: var(--datatable-cell-border);
+    color: var(--datatable-cell-text);
+}
+
+#main .chr-RollupRow-cell {
+    background-color: var(--datatable-rollup-bg);
+    color: var(--datatable-rollup-text);
+}
+
+#main .smb-DataTableTableHeaderCellDragLayer .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
+#main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
+#main .smb-TableHeaderCell .smb-DataTableTableHeaderCellDragLayer-content .smb-TableHeaderCell-sortIcon,
+#main .smb-TableHeaderCell .smb-TableHeaderCell-content .smb-TableHeaderCell-sortIcon,
+#main .smb-TableHeaderCell .smb-TableHeaderCell-sort .smb-TableHeaderCell-sortIcon {
+    background-color: var(--datatable-row-bg);
+}
+
+#main .smb-DataTableTableHeaderCellDragLayer .smb-TableHeaderCell-colResizer,
+#main .smb-TableHeaderCell .smb-TableHeaderCell-colResizer {
+    border-right-color: var(--datatable-resizer-border);
+}
+
+#main .smb-DataTableTableHeaderCellDragLayer.is-resizing .smb-TableHeaderCell-colResizer,
+#main .smb-TableHeaderCell.is-resizing .smb-TableHeaderCell-colResizer {
+    border-right-color: var(--datatable-resizer-active-border);
+}
+
+/* Table > Body */
+
+.smb-DataTable:not(.personalized-nav) .smb-Cutline,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow) {
+    background-color: var(--datatable-row-bg);
+}
+
+.smb-TableCell {
+    background-color: var(--datatable-row-bg);
+    color: var(--datatable-row-text);
+}
+
+.smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell {
+    background-color: var(--datatable-row-bg);
+}
+
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell.smb-TableCell--dragAndDropRank {
+    color: var(--datatable-drag-text);
+}
+
+.smb-TableCell--gripper {
+    color: var(--datatable-gripper-text);
+}
+
+.chr-GenericMessageRow {
+    background-color: var(--main-tertiary-bg);
+}
+
+.chr-GenericMessageRow-cell {
+    border-top-color: var(--datatable-cell-border);
+}
+
+.smb-DataTable:not(.personalized-nav) .smb-Cutline:first-child .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging:first-child .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging + .smb-TableRow .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging + .smb-TableRow .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging:first-child .smb-TableCell,
+.chr-DataTable--comfortable .smb-TableCell,
+.chr-DataTable--comfortable .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
+.chr-DataTable--comfortable .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+.chr-DataTable--roomy .smb-TableCell,
+.chr-DataTable--roomy .smb-DataTable .smb-Cutline:first-child .smb-TableCell,
+.chr-DataTable--roomy .smb-DataTable .smb-TableRow:not(.is-groupByRow):first-child .smb-TableCell,
+.chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow .smb-TableCell {
+    border-top-color: var(--datatable-cell-border);
+}
+
+.smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell:first-child,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell:first-child {
+    box-shadow: inset 2px 0 0 0 var(--datatable-drag-text), inset 0 2px 0 0 var(--datatable-drag-text), inset 0 -2px 0 0 var(--datatable-drag-text);
+}
+
+.smb-DataTable:not(.personalized-nav) .smb-Cutline.is-dragging .smb-TableCell,
+.smb-DataTable:not(.personalized-nav) .smb-TableRow:not(.is-groupByRow).is-dragging .smb-TableCell {
+    box-shadow: inset 0 2px 0 0 var(--datatable-drag-text), inset 0 -2px 0 0 var(--datatable-drag-text);
+}
+
+#main .smb-Pagination,
+#main .chr-PlanTeamBacklog .chr-PlanTeamBacklogDataTable-grouped > .smb-DataTable-wrapper > .smb-DataTable > .smb-TableBody > .smb-TableRow,
+#main .chr-PlanTeamIterationsDataTable .smb-TableRowDragDropWrapper.is-groupByRow {
+    background-color: var(--datatable-row-bg);
+    color: var(--datatable-text);
+}
+
+#main .smb-TableCell.smb-TableCell--rowActions,
+#main .chr-PlanTeamIterationsPanel .smb-PanelBody > .smb-DataTable-wrapper > .smb-DataTable tbody tr.is-groupByRow > th,
+#main .chr-PlanTeamIterationsPanel .smb-PanelBody > .smb-DataTable-wrapper > .smb-DataTable tbody tr.is-groupByRow > td {
+    background-color: var(--datatable-row-bg);
+}
+
+#main .chr-PlanTeamIterationsPanel .smb-PanelBody > .smb-DataTable-wrapper > .smb-DataTable > thead th,
+#main .chr-PlanTeamIterationsDataTable > thead .smb-TableHeaderCell .smb-TableHeaderCell-content {
+    background-color: #335;
+    color: #ddd;
+}
+
+/* ??? */
+
+#main .smb-SvgIcon--gear,
+#main .smb-SvgIcon--help,
+#main .smb-SvgIcon--feedback {
+    color: #999;
+}
+
+#main .smb-ChildPager-displayText {
+    color: #ddd;
+    margin-right: 10px;
+}
+
+#main .smb-DataTableBlankSlate-primaryMessage,
+#main .no-data-container .primary-message {
+    color: #ddd;
+}
+
+#main .smb-DataTableBlankSlate-secondaryMessage,
+#main .no-data-container .secondary-message {
+    color: #aaa;
+}
+
+/* New Item Side Panel */
+.smb-ResizableDrawer {
+    color: #ddd !important;
+    background-color: #111 !important;
+}
+
+.smb-ResizableDrawer-draggableLeft {
+    background-color: #222 !important;
+}
+
+/* Team Board */
+#main .chr-BoardRow {
+    background-color: var(--main-primary-bg);
+}
+
+#main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-column,
+#main .chr-BoardWithToolbar-wrapper .chr-BoardWithToolbar-columnHeader,
+#main .chr-TeamBoardSettingsColumn {
+    background-color: var(--kanban-column-bg);
+}
+
+#main .chr-BoardField {
+    color: var(--kanban-card-text);
+}
+
+.chr-StatusFieldRenderer.chr-StatusFieldRenderer--ready {
+    background-color: var(--ready-bg);
+    border-color: var(--ready-border);
+}
+
+.chr-BoardField.chr-BoardField--blockedReason {
+    background-color: var(--blocked-bg);
+    border-color: var(--blocked-border);
+}
+
+#main .chr-BoardTitle {
+    color: #ddd !important;
+}
+
+#main .chr-BoardWipLimit {
+    color: #aaa !important;
+}
+
+#main .chr-BoardCard,
+.rui-card {
+    background-color: var(--kanban-card-bg);
+    border-color: var(--kanban-card-border);
+    box-shadow: var(--kanban-card-box-shadow);
+    color: var(--kanban-card-text);
+}
+
+.cardboard .column-container .column-header {
+    color: var(--kanban-column-text);
+}
+
+.cardboard .column-container td.card-column {
+    background-color: var(--kanban-column-bg);
+    color: var(--kanban-column-text);
+}
+
+.rui-card .field-content .rui-field-value {
+    color: var(--kanban-card-text);
+}
+
+.rui-card .field-content.editable:hover .rui-field-value {
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
+}
+
+.rui-card,
+.cardboard .column-container .card-column.over-capacity .rui-card {
+    box-shadow: var(--kanban-card-box-shadow);
+}
+
+.rui-card .card-table-ct {
+    border-color: var(--kanban-card-border);
+}
+
+.rui-tag-list-item {
+    background-color: var(--tag-bg);
+    border-color: var(--tag-border);
+    color: var(--tag-text);
+}
+
+#main .chr-RenderersUser .chr-RenderersUser-ownedBy {
+    color: #ccc;
+}
+
+#main .chr-RenderersUser .chr-RenderersUser-name {
+    color: #aaa;
+}
+
+/* Discussion Page */
+#main .chr-DiscussionsPostTile-post,
+#main .chr-DiscussionsPostTile-arrow,
+#main .chr-DiscussionsPostTile-arrow::after,
+#main .discussion-richtext-stream-view {
+    background-color: #111;
+}
+
+#main .discussion-richtext-stream-view .list .list-item {
+    color: #bbb;
+}
+
+#main .chr-DiscussionsPostTile-text {
+    color: #bbb;
+}
+
+/*
+ * Button
+ */
+.smb-Button,
+.x-btn {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+    box-shadow: none;
+    color: var(--button-text);
+}
+
+.smb-Button.is-disabled,
+.smb-Button[disabled],
+.smb-Button[disabled]:active,
+.smb-Button[disabled]:focus,
+.smb-Button[disabled]:hover,
+.x-btn[disabled],
+.x-btn[disabled]:active,
+.x-btn[disabled]:focus,
+.x-btn[disabled]:hover {
+    background-color: var(--button-disabled-bg);
+    border-color: var(--button-disabled-border);
+    color: var(--button-disabled-text);
+}
+
+.smb-Button.is-disabled .smb-SvgIcon,
+.smb-Button[disabled] .smb-SvgIcon,
+.smb-Button[disabled]:active .smb-SvgIcon,
+.smb-Button[disabled]:focus .smb-SvgIcon,
+.smb-Button[disabled]:hover .smb-SvgIcon {
+    color: var(--button-disabled-text);
+}
+
+/* Button > Primary */
+.smb-Button--primary,
+.smb-Button--primary.is-active,
+.x-btn.primary.primary,
+.x-btn.primary.rly-active {
+    background-color: var(--button-primary-bg);
+    border-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+}
+
+.smb-Button--primary:active,
+.smb-Button--primary.is-active:active,
+.x-btn.primary.primary:active,
+.x-btn.primary.rly-active:active {
+    background-color: var(--button-primary-active-bg);
+    border-color: var(--button-primary-active-bg);
+}
+
+.smb-Button--primary:focus,
+.smb-Button--primary.is-active:focus,
+.x-btn.primary.primary:focus,
+.x-btn.primary.rly-active:focus {
+    background-color: var(--button-primary-focus-bg);
+    border-color: var(--button-primary-focus-bg);
+    box-shadow: var(--button-primary-focus-shadow);
+}
+
+.smb-Button--primary:hover,
+.x-btn.primary.primary:hover,
+.smb-Button--primary.is-active:hover,
+.x-btn.primary.rly-active:hover {
+    background-color: var(--button-primary-hover-bg);
+    border-color: var(--button-primary-hover-bg);
+}
+
+/* Button > Secondary */
+.smb-Button--secondary,
+.x-btn.secondary.secondary {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+    color: var(--button-text);
+}
+
+.smb-Button--secondary:active,
+.x-btn.secondary.secondary:active {
+    background-color: var(--button-active-bg);
+    border-color: var(--button-active-border);
+}
+
+.smb-Button--secondary:focus,
+.x-btn.secondary.secondary:focus {
+    background-color: var(--button-focus-bg);
+    border-color: var(--button-focus-border);
+    box-shadow: var(--button-focus-shadow);
+}
+
+.smb-Button--secondary:hover,
+.x-btn.secondary.secondary:hover {
+    background-color: var(--button-hover-bg);
+    border-color: var(--button-hover-border);
+}
+
+.smb-Button--secondary.is-active,
+.x-btn.secondary.rly-active {
+    background-color: var(--button-is_active-bg);
+    border-color: var(--button-is_active-border);
+}
+
+.smb-Button--secondary.is-active:focus,
+.x-btn.secondary.rly-active:focus {
+    background-color: var(--button-is_active-focus-bg);
+    border-color: var(--button-is_active-focus-border);
+    box-shadow: var(--button-focus-shadow);
+    color: var(--button-is_active-focus-text);
+}
+
+.smb-Button--secondary.is-active:hover,
+.x-btn.secondary.rly-active:hover {
+    background-color: var(--button-is_active-hover-bg);
+    border-color: var(--button-is_active-hover-border);
+    color: var(--button-is_active-hover-text);
+}
+
+/* Button > Icon */
+.smb-Button--icon,
+.smb-Button--link,
+.smb-Button--minimal {
+    background-color: var(--button-link-bg);
+    border-color: var(--button-link-border);
+    color: var(--button-link-text);
+}
+
+.smb-Button--icon:not(.is-disabled):active,
+.smb-Button--link:not(.is-disabled):active,
+.smb-Button--minimal:not(.is-disabled):active {
+    background-color: var(--button-link-active-bg);
+}
+
+.smb-Button--icon:not(.is-disabled):focus,
+.smb-Button--icon:not(.is-disabled):focus:active,
+.smb-Button--icon:not(.is-disabled):focus:hover,
+.smb-Button--link:not(.is-disabled):focus:active,
+.smb-Button--link:not(.is-disabled):focus:hover,
+.smb-Button--minimal:not(.is-disabled):focus,
+.smb-Button--minimal:not(.is-disabled):focus:active,
+.smb-Button--minimal:not(.is-disabled):focus:hover {
+    border-color: var(--button-link-focus-border);
+}
+
+.smb-Button--icon:not(.is-disabled):hover,
+.smb-Button--link:not(.is-disabled):hover,
+.smb-Button--minimal:not(.is-disabled):hover {
+    background-color: var(--button-link-hover-bg);
+    border-color: var(--button-link-hover-border);
+    color: var(--button-link-hover-text);
+}
+
+.smb-Button--icon:not(.is-disabled).is-active,
+.smb-Button--link:not(.is-disabled).is-active,
+.smb-Button--minimal:not(.is-disabled).is-active {
+    background-color: var(--button-link-is_active-bg);
+    border-color: var(--button-link-is_active-border);
+}
+
+.smb-Button--icon:not(.is-disabled).is-active:hover,
+.smb-Button--link:not(.is-disabled).is-active:hover,
+.smb-Button--minimal:not(.is-disabled).is-active:hover {
+    background-color: var(--button-link-is_active-hover-bg);
+    border-color: var(--button-link-is_active-hover-border);
+}
+
+.smb-Button--icon:not(.is-disabled).is-active:active,
+.smb-Button--link:not(.is-disabled).is-active:active,
+.smb-Button--minimal:not(.is-disabled).is-active:active {
+    background-color: var(--button-link-is_active-bg);
+}
+
+/* Button > JumboIcon */
+.smb-Button--jumboIcon {
+    background-color: var(--button-jumboicon-bg);
+    border-color: var(--button-jumboicon-border);
+    color: var(--button-jumboicon-text);
+}
+
+.smb-Button--jumboIcon:not(.is-disabled):hover,
+.smb-Button--jumboIcon:not(.is-disabled).is-active:hover {
+    background-color: var(--button-jumboicon-hover-bg);
+}
+
+.smb-Button--jumboIcon:not(.is-disabled):focus {
+    background-color: var(--button-jumboicon-focus-bg);
+    border-color: var(--button-jumboicon-focus-border);
+}
+
+.smb-Button--jumboIcon:not(.is-disabled):active,
+.smb-Button--jumboIcon:not(.is-disabled).is-active:active {
+    background-color: var(--button-jumboicon-active-bg);
+}
+
+.smb-Button--jumboIcon:not(.is-disabled).is-active {
+    background-color: var(--button-jumboicon-is_active-bg);
+    border-color: var(--button-jumboicon-is_active-border);
+}
+
+.smb-Button--jumboIcon .smb-Button-contents .smb-Button-children {
+    color: var(--button-jumboicon-children-text);
+}
+
+.smb-Button--jumboIcon.is-disabled,
+.smb-Button--jumboIcon[disabled],
+.smb-Button--jumboIcon[disabled]:active,
+.smb-Button--jumboIcon[disabled]:focus,
+.smb-Button--jumboIcon[disabled]:hover {
+    border-color: var(--button-jumboicon-disabled-bg);
+    background-color: var(--button-jumboicon-disabled-border);
+    color: var(--button-disabled-text);
+}
+
+.smb-Button--jumboIcon.is-disabled .smb-Button-contents .smb-Button-children,
+.smb-Button--jumboIcon[disabled] .smb-Button-contents .smb-Button-children,
+.smb-Button--jumboIcon[disabled]:active .smb-Button-contents .smb-Button-children,
+.smb-Button--jumboIcon[disabled]:focus .smb-Button-contents .smb-Button-children,
+.smb-Button--jumboIcon[disabled]:hover .smb-Button-contents .smb-Button-children {
+    color: var(--button-disabled-text);
+}
+
+/* Button > SecondaryDark */
+.smb-Button--secondaryDark {
+    background-color: var(--button-secondarydark-bg);
+    border-color: var(--button-secondarydark-border);
+    color: var(--button-secondarydark-text);
+}
+
+.smb-Button--secondaryDark:hover {
+    background-color: var(--button-secondarydark-hover-bg);
+    border-color: var(--button-secondarydark-hover-border);
+    color: var(--button-secondarydark-hover-text);
+}
+
+.smb-Button--secondaryDark.is-active {
+    background-color: var(--button-secondarydark-is_active-bg);
+    border-color: var(--button-secondarydark-is_active-border);
+    box-shadow: none;
+    color: var(--button-secondarydark-is_active-text);
+}
+
+.smb-Button--secondaryDark.is-active:focus,
+.smb-Button--secondaryDark.is-active:hover {
+    background-color: var(--button-secondarydark-is_active-focus-bg);
+    border-color: var(--button-secondarydark-is_active-focus-border);
+    box-shadow: none;
+    color: var(--button-secondarydark-is_active-focus-text);
+}
+
+.smb-Button--secondaryDark:focus {
+    background-color: var(--button-secondarydark-focus-bg);
+    border-color: var(--button-secondarydark-focus-border);
+    box-shadow: var(--button-secondarydark-focus-shadow);
+    color: var(--button-secondarydark-focus-text);
+}
+
+/* Button > Feedback */
+.smb-Button--feedback {
+    background-color: var(--button-feedback-bg);
+    color: var(--button-feedback-text);
+}
+
+.smb-Button--feedback:focus {
+    background-color: var(--button-feedback-focus-bg);
+    color: var(--button-feedback-focus-text);
+}
+
+.smb-Button--feedback:hover {
+    background-color: var(--button-feedback-hover-bg);
+}
+
+/* Button > Success */
+.smb-Button--success {
+    background-color: var(--button-bg);
+    border-color: var(--button-success-accent);
+    color: var(--button-success-accent);
+}
+
+.smb-Button--success .smb-Button-icon {
+    color: var(--button-success-accent);
+}
+
+.smb-Button--success:focus {
+    background-color: var(--button-bg);
+    border-color: var(--button-success-accent-af);
+    box-shadow: var(--button-success-af-shadow);
+    color: var(--button-success-accent);
+}
+
+.smb-Button--success:focus .smb-Button-icon {
+    color: var(--button-success-accent);
+}
+
+.smb-Button--success:hover {
+    border-color: var(--button-success-accent-hover);
+    color: var(--button-success-accent-hover);
+}
+
+.smb-Button--success:hover .smb-Button-icon {
+    color: var(--button-success-accent-hover);
+}
+
+.smb-Button--success:active {
+    border-color: var(--button-success-accent-af);
+    color: var(--button-success-accent-af);
+}
+
+.smb-Button--success:active .smb-Button-icon {
+    color: var(--button-success-accent-af);
+}
+
+.smb-Button--success.is-active {
+    background-color: var(--button-success-accent);
+    border-color: var(--button-success-accent);
+    color: var(--button-bg);
+}
+
+.smb-Button--success.is-active .smb-Button-icon {
+    color: var(--button-bg);
+}
+
+.smb-Button--success.is-active:focus {
+    background-color: var(--button-success-accent);
+    border-color: var(--button-success-accent-af);
+    box-shadow: var(--button-success-af-shadow);
+}
+
+.smb-Button--success.is-active:hover {
+    background-color: var(--button-success-accent-hover);
+    border-color: var(--button-success-accent-hover);
+}
+
+.smb-Button--success.is-active:active {
+    background-color: var(--button-success-accent-af);
+    border-color: var(--button-success-accent-af);
+}
+
+/* Button > Failure */
+.smb-Button--failure {
+    background-color: var(--button-bg);
+    border-color: var(--button-failure-accent);
+    color: var(--button-failure-accent);
+}
+
+.smb-Button--failure .smb-Button-icon {
+    color: var(--button-failure-accent);
+}
+
+.smb-Button--failure:focus {
+    background-color: var(--button-bg);
+    border-color: var(--button-failure-accent-af);
+    box-shadow: var(--button-failure-af-shadow);
+    color: var(--button-failure-accent);
+}
+
+.smb-Button--failure:focus .smb-Button-icon {
+    color: var(--button-failure-accent);
+}
+
+.smb-Button--failure:hover {
+    border-color: var(--button-failure-accent-hover);
+    color: var(--button-failure-accent-hover);
+}
+
+.smb-Button--failure:hover .smb-Button-icon {
+    color: var(--button-failure-accent-hover);
+}
+
+.smb-Button--failure:active {
+    border-color: var(--button-failure-accent-af);
+    color: var(--button-failure-accent-af);
+}
+
+.smb-Button--failure:active .smb-Button-icon {
+    color: var(--button-failure-accent-af);
+}
+
+.smb-Button--failure.is-active {
+    background-color: var(--button-failure-accent);
+    border-color: var(--button-failure-accent);
+    color: var(--button-bg);
+}
+
+.smb-Button--failure.is-active .smb-Button-icon {
+    color: var(--button-bg);
+}
+
+.smb-Button--failure.is-active:focus {
+    background-color: var(--button-failure-accent);
+    border-color: var(--button-failure-accent-af);
+    box-shadow: var(--button-failure-af-shadow);
+}
+
+.smb-Button--failure.is-active:hover {
+    background-color: var(--button-failure-accent-hover);
+    border-color: var(--button-failure-accent-hover);
+}
+
+.smb-Button--failure.is-active:active {
+    background-color: var(--button-failure-accent-af);
+    border-color: var(--button-failure-accent-af);
+}
+
+/* Button > Warning */
+.smb-Button--warning {
+    background-color: var(--button-bg);
+    border-color: var(--button-warning-accent);
+    color: var(--button-warning-accent);
+}
+
+.smb-Button--warning .smb-Button-icon {
+    color: var(--button-warning-accent);
+}
+
+.smb-Button--warning:focus {
+    background-color: var(--button-bg);
+    border-color: var(--button-warning-accent-af);
+    box-shadow: var(--button-warning-af-shadow);
+    color: var(--button-warning-accent);
+}
+
+.smb-Button--warning:focus .smb-Button-icon {
+    color: var(--button-warning-accent);
+}
+
+.smb-Button--warning:hover {
+    border-color: var(--button-warning-accent-hover);
+    color: var(--button-warning-accent-hover);
+}
+
+.smb-Button--warning:hover .smb-Button-icon {
+    color: var(--button-warning-accent-hover);
+}
+
+.smb-Button--warning:active {
+    border-color: var(--button-warning-accent-af);
+    color: var(--button-warning-accent-af);
+}
+
+.smb-Button--warning:active .smb-Button-icon {
+    color: var(--button-warning-accent-af);
+}
+
+.smb-Button--warning.is-active {
+    background-color: var(--button-warning-accent);
+    border-color: var(--button-warning-accent);
+    color: var(--button-bg);
+}
+
+.smb-Button--warning.is-active .smb-Button-icon {
+    color: var(--button-bg);
+}
+
+.smb-Button--warning.is-active:focus {
+    background-color: var(--button-warning-accent);
+    border-color: var(--button-warning-accent-af);
+    box-shadow: var(--button-warning-af-shadow);
+}
+
+.smb-Button--warning.is-active:hover {
+    background-color: var(--button-warning-accent-hover);
+    border-color: var(--button-warning-accent-hover);
+}
+
+.smb-Button--warning.is-active:active {
+    background-color: var(--button-warning-accent-af);
+    border-color: var(--button-warning-accent-af);
+}
+
+/*
+ * SMB > ButtonGroup
+ */
+.smb-ButtonGroup > .smb-Button,
+.smb-ButtonGroup .smb-PopoverTrigger .smb-Button,
+.x-btn.toggle {
+    background-color: var(--group-button-bg);
+    border-color: var(--group-button-border);
+    color: var(--group-button-text);
+}
+
+.smb-ButtonGroup > .smb-Button:active,
+.smb-ButtonGroup .smb-PopoverTrigger .smb-Button:active,
+.x-btn.toggle:active {
+    background-color: var(--group-button-active-bg);
+    border-color: var(--group-button-active-border);
+    color: var(--group-button-active-text);
+}
+
+.smb-ButtonGroup > .smb-Button:focus,
+.smb-ButtonGroup .smb-PopoverTrigger .smb-Button:focus,
+.x-btn.toggle:focus {
+    background-color: var(--group-button-focus-bg);
+    border-color: var(--group-button-focus-border);
+    color: var(--group-button-focus-text);
+}
+
+.smb-ButtonGroup > .smb-Button:hover,
+.smb-ButtonGroup .smb-PopoverTrigger .smb-Button:hover,
+.x-btn.toggle:hover {
+    background-color: var(--group-button-hover-bg);
+    border-color: var(--group-button-hover-border);
+    color: var(--group-button-hover-text);
+}
+
+.smb-ButtonGroup > .is-active.smb-Button,
+.smb-ButtonGroup .smb-PopoverTrigger .is-active.smb-Button,
+.x-btn.toggle.rly-active {
+    background-color: var(--group-button-is_active-bg);
+    border-color: var(--group-button-is_active-border);
+    color: var(--group-button-is_active-text);
+}
+
+.smb-ButtonGroup > .is-active.smb-Button:active,
+.smb-ButtonGroup .smb-PopoverTrigger .is-active.smb-Button:active,
+.x-btn.toggle.rly-active:active {
+    background-color: var(--group-button-is_active-active-bg);
+    border-color: var(--group-button-is_active-active-border);
+    color: var(--group-button-is_active-active-text);
+}
+
+.smb-ButtonGroup > .is-active.smb-Button:focus,
+.smb-ButtonGroup .smb-PopoverTrigger .is-active.smb-Button:focus,
+.x-btn.toggle.rly-active:focus {
+    background-color: var(--group-button-is_active-focus-bg);
+    border-color: var(--group-button-is_active-focus-border);
+    box-shadow: var(--group-button-is_active-focus-shadow);
+    color: var(--group-button-is_active-focus-text);
+}
+
+.smb-ButtonGroup > .is-active.smb-Button:hover,
+.smb-ButtonGroup .smb-PopoverTrigger .is-active.smb-Button:hover,
+.x-btn.toggle.rly-active:hover {
+    background-color: var(--group-button-is_active-hover-bg);
+    border-color: var(--group-button-is_active-hover-border);
+    color: var(--group-button-is_active-hover-text);
+}
+
+.smb-ButtonGroup > .smb-Button.is-disabled,
+.smb-ButtonGroup > .smb-Button[disabled],
+.smb-ButtonGroup > .smb-Button[disabled]:active,
+.smb-ButtonGroup > .smb-Button[disabled]:focus,
+.smb-ButtonGroup > .smb-Button[disabled]:hover,
+.x-btn.toggle[disabled] {
+    background-color: var(--button-disabled-bg);
+    border-color: var(--button-disabled-border);
+    color: var(--button-disabled-text);
+}
+
+.smb-ButtonGroup > .smb-Button.is-disabled .smb-SvgIcon,
+.smb-ButtonGroup > .smb-Button[disabled] .smb-SvgIcon,
+.smb-ButtonGroup > .smb-Button[disabled]:active .smb-SvgIcon,
+.smb-ButtonGroup > .smb-Button[disabled]:focus .smb-SvgIcon,
+.smb-ButtonGroup > .smb-Button[disabled]:hover .smb-SvgIcon {
+    color: var(--button-disabled-text);
+}
+
+/*
+ * SMB > CapacityBar
+ */
+.smb-CapacityBar {
+    background-color: #444;
+}
+
+/*
+ * SMB > Checkbox
+ */
+.smb-Checkbox {
+    background-color: var(--main-control-bg);
+    border-color: var(--main-control-border);
+    box-shadow: 0 0.1rem 0.2rem var(--black-05);
+}
+
+.smb-Checkbox.is-disabled {
+    background-color: var(--main-control-disabled-bg);
+    border-color: var(--checkbox-disabled-border);
+}
+
+.smb-Checkbox.is-disabled.is-checked {
+    background-color: var(--checkbox-is_checked-disabled-bg);
+}
+
+.smb-Checkbox.is-disabled.is-checked.is-indeterminate {
+    background-color: var(--checkbox-is_indeterminate-disabled-bg);
+}
+
+.smb-Checkbox:focus {
+    border-color: var(--main-control-focus-border);
+    box-shadow: var(--main-control-focus-shadow);
+}
+
+.smb-Checkbox:hover {
+    border-color: var(--main-control-hover-border);
+}
+
+.smb-Checkbox.is-checked {
+    background-color: var(--checkbox-is_checked-bg);
+}
+
+.smb-Checkbox.is-checked:before {
+    color: var(--main-control-bg);
+}
+
+.smb-Checkbox.is-checked:focus {
+    background-color: var(--checkbox-is_checked-bg);
+}
+
+.smb-Checkbox.is-checked:hover {
+    background-color: var(--checkbox-is_checked-hover-bg);
+}
+
+.smb-Checkbox.is-checked.is-indeterminate {
+    color: var(--checkbox-is_indeterminate-color);
+}
+
+/*
+ * SMB > Dropdown
+ */
+
+/* SMB > Dropdown > List */
+.smb-DropdownList-list {
+    box-shadow: var(--dropdown-list-shadow);
+}
+
+.smb-DropdownList-listContentWrapper {
+    background-color: var(--dropdown-bg);
+    border-color: var(--main-control-border);
+    box-shadow: var(--dropdown-shadow);
+}
+
+.smb-DropdownList-divider {
+    background-color: var(--dropdown-divider-bg);
+}
+
+/* SMB > Dropdown > Header */
+.smb-DropdownHeader {
+    color: var(--dropdown-header-text);
+}
+
+/* SMB > Dropdown > Footer */
+.smb-DropdownList-footer {
+    background-color: var(--dropdown-footer-bg);
+    border-top-color: var(--dropdown-footer-border);
+    color: var(--dropdown-footer-text);
+}
+
+/* SMB > Dropdown > Item */
+.smb-DropdownItem {
+    color: var(--dropdown-item-text);
+}
+
+.smb-DropdownItem.is-active {
+    background-color: var(--dropdown-bg);
+    color: var(--dropdown-item-text);
+}
+
+.smb-DropdownItem.is-active:not(.is-disabled) {
+    background-color: var(--dropdown-item-is_active-bg);
+}
+
+.smb-DropdownItem.is-active:not(.is-disabled) .smb-DropdownItem-text,
+.smb-DropdownItem.is-active:not(.is-disabled) .smb-DropdownItem-subtext {
+    color: var(--dropdown-item-text);
+}
+
+.smb-DropdownItem.is-active:not(.is-disabled) .smb-Match-match {
+    background-color: var(--dropdown-match-bg);
+    color: var(--dropdown-match-text);
+}
+
+.smb-DropdownItem.is-active .smb-Checkbox.is-checked:not(.is-disabled) {
+    background-color: var(--dropdown-item-checkbox-checked-bg);
+    border-color: var(--dropdown-item-checkbox-checked-border);
+}
+
+.smb-DropdownItem.is-active .smb-Checkbox.is-checked:not(.is-disabled):before {
+    color: var(--dropdown-item-checkbox-checked-text-before);
+}
+
+.smb-DropdownItem.is-disabled,
+.smb-DropdownItem.is-disabled:active,
+.smb-DropdownItem.is-disabled:focus,
+.smb-DropdownItem.is-disabled:hover {
+    color: var(--dropdown-disabled-text);
+}
+
+.smb-DropdownItem.is-disabled .smb-DropdownItem-text,
+.smb-DropdownItem.is-disabled:active .smb-DropdownItem-text,
+.smb-DropdownItem.is-disabled:focus .smb-DropdownItem-text,
+.smb-DropdownItem.is-disabled:hover .smb-DropdownItem-text {
+    color: var(--dropdown-disabled-text);
+}
+
+.smb-DropdownItem.is-disabled .smb-DropdownItem-subtext,
+.smb-DropdownItem.is-disabled:active .smb-DropdownItem-subtext,
+.smb-DropdownItem.is-disabled:focus .smb-DropdownItem-subtext,
+.smb-DropdownItem.is-disabled:hover .smb-DropdownItem-subtext {
+    color: var(--dropdown-disabled-text);
+}
+
+.smb-DropdownItem.is-primary .smb-DropdownItem-text {
+    color: var(--dropdown-item-is_primary-bg) !important;
+}
+
+.smb-DropdownItem.is-selected {
+    background-color: var(--dropdown-item-selected-bg);
+}
+
+.smb-DropdownItem.is-multiSelect.is-selected {
+    background-color: var(--dropdown-item-multiselect-selected-bg);
+}
+
+.smb-DropdownItem.is-multiSelect.is-selected.is-active {
+    background-color: var(--dropdown-item-selected-is_active-bg);
+}
+
+.smb-DropdownItem-subtext {
+    color: var(--dropdown-item-subtext);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:hover {
+    background-color: var(--dropdown-bg);
+    color: var(--dropdown-item-text);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover {
+    background-color: var(--dropdown-item-hover-bg);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-text,
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-subtext {
+    color: var(--dropdown-item-text);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-Match-match {
+    background-color: var(--dropdown-match-bg);
+    color: var(--dropdown-match-text);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled) {
+    background-color: var(--dropdown-item-checkbox-checked-bg);
+    border-color: var(--dropdown-item-checkbox-checked-border);
+}
+
+.smb-DropdownList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled):before {
+    color: var(--dropdown-item-checkbox-checked-text-before);
+}
+
+/* SMB > Dropdown > Match */
+.smb-Match-match {
+    background-color: var(--dropdown-match-bg);
+    color: var(--dropdown-match-text);
+}
+
+/* SMB > Dropdown > Button */
+.smb-Dropdown:focus .smb-Button--secondary {
+    border-color: var(--button-border);
+    box-shadow: var(--button-focus-shadow);
+}
+
+/* SMB > Dropdown > SelectTrigger */
+.smb-Select-trigger,
+.smb-Dropdown .smb-Select-trigger,
+.x-form-trigger,
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-Select-trigger,
+.chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-border);
+    box-shadow: none;
+    color: var(--textinput-text);
+}
+
+/* SMB > Dropdown > SelectTrigger > :disabled */
+.smb-Dropdown.smb-Select.is-disabled .smb-Select-trigger,
+.chr-QuickDetailQuickDetailEditor .smb-Dropdown.smb-Select.is-disabled.is-disabled .smb-Select-trigger,
+.chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
+    background-color: var(--textinput-disabled-bg);
+    border-color: var(--textinput-disabled-border);
+    color: var(--textinput-disabled-text);
+}
+
+/* SMB > Dropdown > SelectTrigger > :hover */
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-Select-trigger,
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open:hover .smb-Select-trigger {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-hover-accent);
+}
+
+/* SMB > Dropdown > SelectTrigger > is-autosizing */
+.smb-Dropdown.smb-Select.is-autoSizing .smb-Select-trigger {
+    color: transparent;
+}
+
+/* SMB > Dropdown > SelectTrigger : is-invalid */
+.smb-Dropdown.smb-Select.is-invalid .smb-Select-trigger {
+    border-color: var(--textinput-invalid-border) !important;
+}
+
+/* SMB > Dropdown > Trigger */
+.smb-SearchInput.smb-DropdownTrigger:focus {
+    border-color: var(--dropdown-focus-border);
+    box-shadow: none;
+}
+
+/* SMB > Dropdown > TextInput */
+.smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-focused,
+.smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput.is-readOnly,
+.smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput:focus,
+.smb-DropdownList-searchWrapper .smb-SearchInput.smb-TextInput:hover {
+    box-shadow: none;
+}
+
+.smb-Dropdown.smb-Select .smb-DropdownList-footer .smb-Button--icon.is-disabled .smb-Button-icon .smb-SvgIcon {
+    color: var(--button-disabled-text);
+}
+
+/* SMB > Dropdown > SvgIcon */
+
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):focus .smb-SvgIcon,
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-SvgIcon {
+    color: var(--button-focus-text);
+}
+
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):hover .smb-SvgIcon,
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly).is-open .smb-SvgIcon {
+    color: var(--button-hover-icon);
+}
+
+.smb-Dropdown.smb-Select.is-disabled .smb-SvgIcon {
+    color: var(--button-disabled-icon);
+}
+
+.smb-Dropdown.smb-Select .smb-SvgIcon {
+    color: var(--button-link-icon);
+}
+
+.smb-Select-placeholderText {
+    color: var(--main-placeholder-text);
+}
+
+.smb-Select-subtext {
+    color: var(--dropdown-item-subtext);
+}
+
+.smb-Dropdown.smb-Select.is-autoSizing .smb-Select-subtext {
+    color: transparent;
+}
+
+/* SMB > SelectList */
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover {
+    background-color: var(--dropdown-item-hover-bg);
+    color: var(--dropdown-item-hover-text);
+}
+
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover {
+    background-color: var(--dropdown-item-hover-bg);
+}
+
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-text,
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-DropdownItem-subtext {
+    color: var(--dropdown-item-hover-text);
+}
+
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:not(.is-disabled):hover .smb-Match-match {
+    background-color: var(--dropdown-match-bg);
+    color: var(--dropdown-match-text);
+}
+
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled) {
+    background-color: var(--dropdown-item-checkbox-checked-bg);
+    border-color: var(--dropdown-item-checkbox-checked-border);
+}
+
+.smb-SelectList .smb-SelectList-list.is-mouseMode .smb-DropdownItem:hover .smb-Checkbox.is-checked:not(.is-disabled):before {
+    color: var(--dropdown-item-checkbox-checked-text-before);
+}
+
+.smb-SelectList {
+    background-color: var(--dropdown-bg);
+    box-shadow: 0 0.2rem 0.4rem 0 var(--black-10);
+    border-color: var(--main-control-border);
+    border-bottom-color: var(--main-control-border);
+}
+
+.smb-SelectList .smb-SelectList-list {
+    box-shadow: 0 0.2rem 0.2rem var(--main-control-border) var(--black-10);
+}
+
+.smb-SelectList .smb-SelectList-divider {
+    background-color: var(--dropdown-divider-bg);
+}
+
+.smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput.is-focused,
+.smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput.is-readOnly,
+.smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput:focus,
+.smb-SelectList .smb-SelectList-searchWrapper .smb-SearchInput.smb-TextInput:hover {
+    box-shadow: none;
+}
+
+.smb-SelectList .smb-SelectList-footer {
+    background-color: var(--dropdown-footer-bg);
+    border-top-color: var(--dropdown-footer-border);
+    color: var(--dropdown-footer-text);
+}
+
+/*
+ * SMB > Label
+ */
+.smb-FieldLabel-text,
+.x-form-item-label {
+    color: var(--main-label-text);
+}
+
+.smb-FieldLabel-requiredIndicator,
+.chr-Tray .smb-FieldLabel-requiredIndicator {
+    color: var(--label-required-text);
+}
+
+/*
+ * SMB > LoadingMask
+ */
+.smb-LoadingMask {
+    background-color: var(--loadingmask-bg);
+    color: var(--loadingmask-text);
+}
+
+.smb-LoadingMask-pill {
+    background-color: var(--main-control-bg);
+    color: var(--main-control-text);
+}
+
+/*
+ * SMB > Modal
+ */
+.smb-Modal.is-open .smb-Modal-overlay {
+    background-color: var(--black-100);
+}
+
+.smb-Modal-dialog {
+    background-color: var(--popover-bg);
+    box-shadow: 0 5px 15px var(--black-50);
+    color: var(--popover-text);
+}
+
+.smb-Modal-secondaryTitleText {
+    color: var(--popover-subtitle-text);
+}
+
+.smb-Modal-title {
+    color: var(--popover-title-text);
+}
+
+.smb-Modal-title.smb-Modal-danger {
+    color: var(--mnrl-dangerRed-60);
+}
+
+.smb-Modal-title.smb-Modal-success {
+    color: var(--mnrl-successGreen-60);
+}
+
+.smb-Modal-title.smb-Modal--warning {
+    color: var(--button-warning-accent);
+}
+
+.smb-Modal--feedback .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
+    background-color: var(--button-feedback-bg);
+    border-bottom-color: var(--button-feedback-bg);
+}
+
+.smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
+    background-color: var(--main-content-bg);
+}
+
+.smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
+    color: var(--button-warning-accent);
+}
+
+.smb-Modal--warning .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
+    color: var(--mnrl-mineralBlue-60);
+}
+
+.smb-Modal--warning .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
+    background-color: var(--button-warning-accent);
+    border-color: var(--button-warning-accent);
+}
+
+.smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader {
+    background-color: var(--main-content-bg);
+}
+
+.smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-title {
+    color: var(--mnrl-dangerRed-60);
+}
+
+.smb-Modal--danger .smb-Modal-dialog > .smb-Panel > .smb-PanelHeader .smb-Modal-closeX {
+    color: var(--mnrl-mineralBlue-60);
+}
+
+.smb-Modal--danger .smb-Modal-dialog > .smb-Panel .smb-Button--primary {
+    background-color: var(--mnrl-dangerRed-60);
+    border-color: var(--mnrl-dangerRed-60);
+}
+
+/*
+ * SMB > Page
+ */
+
+/* SMB > Page > Header */
+.smb-HeaderTitle,
+.smb-PageHeader--roomy .smb-HeaderTitle,
+.smb-PageHeader--comfortable .smb-HeaderTitle,
+.smb-PageHeader--compact .smb-HeaderTitle {
+    color: var(--main-header-text);
+}
+
+.smb-Header,
+.smb-PageHeader--roomy .smb-Header,
+.smb-PageHeader--comfortable .smb-Header,
+.smb-PageHeader--compact .smb-Header {
+    border-bottom-color: var(--main-header-border);
+}
+
+/*
+ * SMB > Panel
+ */
+.smb-PanelHeader {
+    border-bottom-color: transparent;
+}
+
+.smb-PanelHeader .smb-HeaderGroup-title {
+    color: inherit;
+}
+
+.smb-Panel {
+    border-color: transparent;
+}
+
+.smb-Panel--app,
+.smb-Panel--appSettings {
+    border-bottom-color: var(--panel-app-border);
+}
+
+.smb-Panel--app > .smb-PanelHeader,
+.smb-Panel--appSettings > .smb-PanelHeader {
+    background-color: var(--panel-app-header-bg);
+    border-bottom-color: var(--panel-app-border);
+    color: var(--panel-app-text);
+}
+
+.smb-Panel--appSettings .smb-PanelHeader .smb-Button--icon {
+    color: var(--panel-app-text);
+}
+
+.smb-Panel--appSettings .smb-PanelHeader .smb-Button--icon:hover {
+    color: var(--panel-app-border);
+}
+
+.smb-Panel--clear {
+    background-color: var(--main-content-bg);
+    border-color: var(--main-content-border);
+}
+
+.smb-Panel--default {
+    background-color: var(--main-content-bg);
+    border-color: var(--main-content-border);
+}
+
+.smb-Panel--default > .smb-PanelHeader {
+    background-color: var(--main-content-bg);
+}
+
+.smb-Panel--default .smb-PanelBody {
+    border-top-color: var(--main-content-border);
+}
+
+.smb-Panel--well {
+    background-color: var(--main-content-bg);
+    border-color: var(--main-content-border);
+}
+
+/*
+ * SMB > Popover
+ */
+.smb-Popover,
+.smb-Popover > .smb-Popover-arrow {
+    background-color: var(--popover-bg);
+    box-shadow: var(--popover-shadow);
+}
+
+.smb-Popover > .smb-Popover-arrow::after {
+    background-color: var(--popover-bg);
+}
+
+.smb-PopoverContent {
+    background-color: var(--popover-bg);
+}
+
+.smb-PopoverContent .smb-DropdownList-listContentWrapper {
+    box-shadow: none;
+}
+
+.smb-Popover.smb-Popover--datatable {
+    background-color: var(--main-primary-bg);
+}
+
+.smb-Popover.smb-Popover--datatable > .smb-Popover-arrow {
+    background-color: var(--main-primary-bg);
+}
+
+.smb-Popover.smb-Popover--datatable > .smb-Popover-arrow:after {
+    background-color: var(--main-primary-bg);
+}
+
+.smb-Popover-header .smb-Popover-title {
+    color: var(--popover-title-text);
+}
+
+.smb-Popover-closeButton.smb-Button--iconOnly:not(.is-disabled):hover:not(:focus):not(:active) {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+    color: var(--button-text);
+}
+
+.smb-Popover--validation {
+    background-color: var(--popover-invalid-bg);
+    box-shadow: var(--popover-invalid-shadow);
+    color: var(--popover-invalid-text);
+}
+
+.smb-Popover--validation.smb-Popover > .smb-Popover-arrow {
+    box-shadow: var(--popover-invalid-shadow);
+}
+
+.smb-Popover--validation.smb-Popover > .smb-Popover-arrow,
+.smb-Popover--validation.smb-Popover > .smb-Popover-arrow:after {
+    background-color: var(--popover-invalid-bg);
+    border-color: var(--popover-invalid-border);
+}
+
+.smb-Popover-header .smb-Popover-title {
+    color: var(--popover-title-text);
+}
+
+.rly-popover.description-popover .description-richtext-view .description {
+    background-color: var(--popover-bg);
+    color: var(--popover-text);
+}
+
+/*
+ * SMB > Tab
+ */
+.smb-Tab {
+    border-color: transparent;
+    color: var(--tab-text);
+}
+
+.smb-Tab:focus {
+    background-color: var(--tab-focus-bg);
+    border-left-color: var(--tab-focus-border);
+    border-top-color: var(--tab-focus-border);
+    border-right-color: var(--tab-focus-border);
+}
+
+.smb-Tab.is-active {
+    background-color: var(--tab-is_active-bg);
+    color: var(--tab-is_active-text);
+}
+
+.smb-Tab.is-active:focus {
+    background-color: var(--tab-is_active-focus-bg);
+    color: var(--tab-is_active-focus-text);
+}
+
+.smb-Tab.is-active:hover {
+    background-color: var(--tab-is_active-bg);
+}
+
+.smb-Tab.is-disabled {
+    background-color: var(--main-control-disabled-bg);
+    color: var(--main-control-disabled-text);
+}
+
+.smb-Tab:hover {
+    background-color: var(--tab-hover-bg);
+}
+
+.smb-TabList {
+    background-color: var(--tablist-bg);
+}
+
+/*
+ * TextInput
+ */
+.smb-TextInput,
+.smb-SearchInput.smb-TextInput,
+.x-form-text,
+.chr-QuickDetailQuickDetailEditor .chr-EditorsDateEditor:not(.is-open) .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
+.chr-QuickDetailQuickDetailEditor .chr-EditorsNumberEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
+.chr-QuickDetailQuickDetailEditor .chr-EditorsStringEditor .smb-TextInput:not(.is-disabled):not(.is-focused):not(:hover),
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer .chr-EditorsStringEditor .smb-TextInput {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-border);
+    box-shadow: none;
+    color: var(--textinput-text);
+}
+
+/* because firefox is stupid */
+.smb-TextInput input {
+    max-height: 100%;
+}
+
+.smb-TextInput ::placeholder {
+    color: var(--main-placeholder-text);
+}
+
+.smb-TextInput .smb-TextInput-input {
+    background-color: transparent;
+    color: inherit;
+}
+
+.smb-TextInput .smb-Icon,
+.smb-TextInput .smb-TextInput-icon {
+    color: var(--textinput-icon);
+}
+
+/* SMB > TextInput : disabled */
+.smb-TextArea.is-disabled,
+.smb-TextInput.is-disabled,
+.chr-QuickDetailQuickDetailEditor .chr-EditorsDateEditor:not(.is-open) .smb-TextInput.is-disabled,
+.chr-QuickDetailQuickDetailEditor .chr-EditorsNumberEditor .smb-TextInput.is-disabled,
+.chr-QuickDetailQuickDetailEditor .chr-EditorsStringEditor .smb-TextInput.is-disabled {
+    background-color: var(--textinput-disabled-bg);
+    border-color: var(--textinput-disabled-border);
+    color: var(--textinput-disabled-text);
+}
+
+.smb-TextArea.is-disabled:hover:not(.is-focused) .smb-Icon,
+.smb-TextInput.is-disabled:hover:not(.is-focused) .smb-Icon {
+    color: var(--textinput-disabled-text);
+}
+
+/* SMB > TextInput : hover */
+.smb-TextArea:not(.is-disabled).is-readOnly:hover,
+.smb-TextArea:not(.is-disabled):not(.is-readOnly):hover,
+.smb-TextInput:not(.is-disabled).is-readOnly:hover,
+.smb-TextInput:not(.is-disabled):not(.is-readOnly):hover,
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:hover .chr-EditorsStringEditor .smb-TextInput {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-hover-accent);
+    /* box-shadow: none;
+    color: var(--textinput-text) */
+}
+
+.smb-TextArea:not(.is-disabled).is-readOnly:hover .smb-Icon,
+.smb-TextArea:not(.is-disabled):not(.is-readOnly):hover .smb-Icon,
+.smb-TextInput:not(.is-disabled).is-readOnly:hover .smb-Icon,
+.smb-TextInput:not(.is-disabled):not(.is-readOnly):hover .smb-Icon {
+    color: var(--textinput-hover-accent);
+}
+
+/* SMB > TextInput : is-invalid */
+.smb-TextInput.is-invalid,
+.x-form-text.rally-invalid-field {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-invalid-border) !important;
+}
+
+.smb-TextInput.is-invalid .smb-Icon {
+    color: var(--textinput-invalid-border);
+}
+
+/* SMB > TextInput : focus */
+
+.smb-TextInput.is-focused:not(.is-disabled),
+.smb-TextInput.is-focused:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
+.smb-TextInput:focus:not(.is-disabled),
+.smb-TextInput:focus:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):focus .smb-Select-trigger {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-border);
+    box-shadow: var(--textinput-focus-shadow);
+    color: var(--textinput-text);
+}
+
+.smb-TextInput:not(.is-disabled).is-focused .smb-Icon,
+.smb-TextInput:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput).is-focused:hover .smb-Icon,
+.smb-TextInput:not(.is-disabled):focus .smb-Icon,
+.smb-TextInput:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput):focus:hover .smb-Icon {
+    color: var(--textinput-focus-icon);
+}
+
+/* SMB > TextInput > SearchInput : focus */
+.smb-SearchInput.is-focused.smb-TextInput:not(.is-disabled),
+.smb-SearchInput.is-focused.smb-TextInput:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
+.smb-SearchInput.smb-TextInput:focus:not(.is-disabled),
+.smb-SearchInput.smb-TextInput:focus:hover:not(.is-disabled):not(.is-readOnly):not(.smb-SearchInput),
+.smb-Dropdown.smb-Select:not(.is-disabled):not(.is-readOnly):focus .smb-SearchInput.smb-Select-trigger {
+    border-color: var(--main-link-text);
+    box-shadow: none;
+}
+
+.smb-TextInput .smb-TextInput-input.is-disabled,
+.smb-TextInput .smb-TextInput-input[disabled] {
+    background-color: var(--button-disabled-bg);
+    color: var(--textinput-disabled-text);
+}
+
+.smb-TextInput--danger {
+    border-color: var(--mnrl-dangerRed-60);
+}
+
+.smb-TextInput--danger:hover:not(.is-disabled):not(.is-readOnly) {
+    border-color: var(--textinput-invalid-border);
+}
+
+.smb-TextInput--danger.is-focused:not(.is-disabled),
+.smb-TextInput--danger:focus:not(.is-disabled) {
+    border-color: var(--danger-border);
+    box-shadow: 0 0 0 0.1rem var(--textinput-bg), 0 0 0 0.2rem var(--textinput-invalid-border);
+}
+
+/*
+ * SMB > Toggle
+ */
+.smb-ToggleButton {
+    background-color: var(--toggle-bg);
+    border-color: var(--toggle-border);
+    box-shadow: var(--toggle-shadow);
+    color: var(--toggle-text);
+    transition: background-color 0.25s;
+}
+
+.smb-ToggleButton .smb-ToggleButton-toggleHandle {
+    background-color: var(--toggle-handle-bg);
+    transition: margin-left 0.25s ease-in;
+}
+
+.smb-ToggleButton.is-disabled,
+.smb-ToggleButton[disabled],
+.smb-ToggleButton[disabled]:active,
+.smb-ToggleButton[disabled]:focus,
+.smb-ToggleButton[disabled]:hover {
+    background-color: var(--main-disabled-bg);
+    border-color: var(--main-disabled-bg);
+    color: var(--main-disabled-text);
+}
+
+.smb-ToggleButton.is-toggleStateOn {
+    background-color: var(--toggle-on-bg);
+    border-color: var(--toggle-on-border);
+    color: var(--toggle-on-text);
+    box-shadow: none;
+}
+
+.smb-ToggleButton.is-toggleStateOn .smb-ToggleButton-toggleHandle {
+    background-color: var(--toggle-handle-on-bg);
+}
+
+.smb-ToggleButton.is-toggleStateOn .smb-ToggleButton-toggleHandle::before {
+    color: var(--toggle-handle-on-bg);
+}
+
+.smb-ToggleButton.is-toggleStateOn:hover,
+.smb-ToggleButton.is-toggleStateOn:hover:active {
+    background-color: var(--toggle-on-hover-bg);
+    border-color: var(--toggle-on-hover-border);
+}
+
+.smb-ToggleButton.is-toggleStateOn:focus,
+.smb-ToggleButton.is-toggleStateOn:focus:active {
+    background-color: var(--toggle-on-focus-bg);
+    border-color: var(--toggle-on-focus-border);
+    box-shadow: var(--toggle-focus-shadow);
+}
+
+.smb-ToggleButton.is-toggleStateOn:active {
+    background-color: var(--toggle-on-active-bg);
+    box-shadow: var(--toggle-focus-shadow);
+}
+
+.smb-ToggleButton.is-toggleStateOff .smb-ToggleButton-toggleHandle::after {
+    color: var(--toggle-bg);
+}
+
+.smb-ToggleButton.is-toggleStateOff:hover {
+    background-color: var(--toggle-hover-bg);
+    border-color: var(--toggle-hover-border);
+}
+
+.smb-ToggleButton.is-toggleStateOff:focus,
+.smb-ToggleButton.is-toggleStateOff:focus:active {
+    background-color: var(--toggle-focus-bg);
+    box-shadow: var(--toggle-focus-shadow);
+}
+
+.smb-ToggleButton.is-toggleStateOff:active {
+    background-color: var(--toggle-focus-bg);
+}
+
+/*
+.smb-ToggleButton:hover,
+.smb-ToggleButton:focus {
+}
+
+.smb-ToggleButton:active {
+    box-shadow: none;
+}
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+
+/*
+* CHR
+*/
+
+/* CHR > Saved Views */
+
+#main .chr-SavedViewsCollectionsDataTable-title,
+#main .chr-SavedViewsSelect-label {
+    color: var(--main-title-text);
+}
+
+#main .chr-SavedViewsSelect .smb-DropdownList-footer,
+#main .chr-ToolbarChooseExistingModal-modalFooterMessage {
+    background-color: var(--main-tertiary-bg);
+    color: var(--main-tertiary-text);
+}
+
+#main .chr-EditorsWorkItemEditor,
+#main .chr-EditorsMultiItemEditor {
+    color: #bbb !important;
+    background-color: #444 !important;
+    border-color: #555 !important;
+}
+
+#main .chr-TableCellStateBlocks-stateBlock--before {
+    background-color: #447;
+}
+
+#main .chr-TableCellStateBlocks-stateBlock--after {
+    color: #ddd;
+    background-color: #444;
+}
+
+/* LATER: is this another schedule state? */
+#main .chr-TableCellStateBlocks-stateBlock--current {
+    color: #ddd;
+    background-color: #2929c4;
+}
+
+#main .chr-TableCellStateBlocks-stateBlock--current.is-blocked {
+    background-color: #c00;
+}
+
+#main .is-disabled.smb-TextArea,
+#main [disabled].smb-TextArea {
+    color: #444;
+}
+
+/* CHR > Pages */
+#main .chr-Page,
+#main .chr-PlanTeamPage,
+#main .chr-BacklogPage,
+#main .chr-CollectionEditor {
+    background-color: var(--main-primary-bg);
+}
+
+/*
+ * CHR > Editor > ScheduleState
+ * (aka [I|D|P|C|A|R])
+ */
+.chr-EditorsScheduleStateEditor .smb-Select-trigger,
+.chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+.chr-QuickDetailQuickDetailEditor .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+.chr-QuickDetailQuickDetailEditor .smb-DataTable .chr-EditorsScheduleStateEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger,
+.chr-EditorsScheduleStateEditor .smb-DropdownTrigger,
+.chr-EditorsScheduleStateEditor .smb-DropdownTrigger:not(.is-disabled):not(.is-readOnly):hover {
+    /* inherit the background, the "dropdown" is supposed to blend in. */
+    background-color: transparent;
+}
+
+.chr-EditorsScheduleStateEditor .smb-Select-text {
+    color: transparent !important;
+}
+
+.chr-EditorsScheduleStates-block,
+.chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--after,
+.schedule-state-wrapper .schedule-state.clickable-state {
+    /* rui one doesn't have an "after" class >:( */
+    background-color: hsl(217.5, 30.8%, 69.8%);
+}
+
+.chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--before,
+.schedule-state-wrapper .schedule-state.before-state {
+    background-color: hsl(216.8, 93%, 63.1%);
+}
+
+.chr-EditorsScheduleStates-block.chr-EditorsScheduleStates-block--current,
+.schedule-state-wrapper .schedule-state.current-state {
+    background-color: var(--mnrl-mineralBlue-60);
+}
+
+/*
+ * CHR > Editors > Block/Ready Buttons
+ */
+
+.chr-EditorsBlockedButton,
+.chr-EditorsBlockedButton .smb-Button-icon,
+.chr-EditorsReadyButton,
+.chr-EditorsReadyButton .smb-Button-icon {
+    border-color: var(--button-link-text);
+    color: var(--button-link-text);
+}
+
+/*
+ * CHR > Toolbar
+ */
+.chr-ToolbarToolbar.chr-ToolbarDefaultToolbar--roomy:not(.is-trayOpen),
+.chr-ToolbarToolbar.chr-TimeSheetEditor-toolbar--roomy {
+    border-color: var(--toolbar-border);
+}
+
+.chr-ToolbarExitAgreementsToggle {
+    color: var(--main-label-text);
+}
+
+/*
+ * CHR > QuickDetail
+ */
+
+.chr-QuickDetailQuickDetailEditor {
+    background-color: transparent;
+}
+
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:focus-within {
+    box-shadow: var(--textinput-focus-shadow);
+}
+
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:focus-within .chr-EditorsStringEditor .smb-TextInput:focus,
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-QuickDetailAttributeEditorWrapper-editorContainer:focus-within .chr-EditorsStringEditor .smb-TextInput.is-focused {
+    background-color: var(--textinput-bg);
+    border-color: var(--textinput-border);
+    box-shadow: var(--textinput-focus-shadow);
+    color: var(--textinput-text);
+}
+
+.chr-QuickDetailQuickDetailEditor .chr-QuickDetailAttributeEditorWrapper--name .chr-EditorsStringEditor {
+    box-shadow: none !important;
+}
+
+.chr-QuickDetailQuickDetailEditor .smb-Select:not(.is-disabled) .smb-Select-text,
+.chr-QuickDetailQuickDetailEditor .smb-DropdownItem:not(.is-active):not(.is-selected):not(.is-disabled):not(:hover) .smb-DropdownItem-text {
+    color: inherit;
+}
+
+/* CHR > QuickDetail > AttributeEditor */
+h2 .chr-QuickDetailAttributeEditorWrapper-label,
+h3 .chr-QuickDetailAttributeEditorWrapper-label {
+    color: var(--main-header-text);
+}
+
+.chr-QuickDetailEntityHeader .chr-QuickDetailEntityHeader-topContainer .chr-QuickDetailEntityHeader-middleContainer .chr-QuickDetailAttributeEditorWrapper--name .smb-TextInput-input {
+    background-color: var(--textinput-bg);
+}
+
+/* CHR > QuickDetail > ConcurrencyFlare */
+/* CHR > QuickDetail > Droppable */
+/* CHR > QuickDetail > EntityFooter */
+.chr-QuickDetailEntityFooter {
+    background-color: var(--main-content-bg);
+    border-top-color: var(--main-content-border);
+}
+
+/* CHR > QuickDetail > EntityHeader */
+.chr-QuickDetailFormattedId .chr-QuickDetailFormattedId-panelTitle {
+    color: #ddd;
+}
+
+/* CHR > QuickDetail > ProfileImageEditor */
+/* CHR > QuickDetail > ResponsiveColumnView */
+
+#main .chr-ProjectPickerSelect .smb-DropdownList-footer {
+    background-color: var(--popover-bg);
+}
+
+.alm-header-container .smb-DropdownList .smb-DropdownList-list {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--black-20), 0 0.2rem 0.4rem 0 var(--black-20), 0 0 0 0.1rem var(--main-control-border);
+}
+
+.chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select:not(.is-disabled):not(.is-open):not(.is-focused):not(:focus):not(:hover) .smb-Select-trigger {
+    border-color: var(--textinput-border);
+}
+
+.chr-QuickDetailQuickDetailEditor .smb-Select.smb-Select.is-disabled.is-disabled .smb-Select-trigger {
+    border-color: var(--textinput-disabled-border);
+}
+
+/****************************************************/
+/****************************************************/
+.chr-DisplayPreferencesModal .smb-Panel .smb-PanelBody {
+    background-color: var(--mnrl-gray-20);
+}
+
+.chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayDescription {
+    color: var(--mnrl-gray-80);
+}
+
+.chr-DisplayPreferencesModal .chr-DisplayPreferencesModal-displayExamples h3 {
+    color: var(--main-title-text);
+}
+
+.chr-Page.chr-IterationStatusPage .chr-IterationStatusPage-iterationPicker .chr-IterationPicker-label {
+    color: var(--main-title-text);
+}
+
+.chr-StatusFieldRenderer .chr-StatusFieldRenderer-text {
+    color: var(--dropdown-item-subtext);
+}
+
+/* former extjs stuff, probably not extjs, but something else */
+#main .page-size-label {
+    color: #ddd;
+}
+
+/* Text Editor */
+.smb-RichTextEditor-textArea {
+    background-color: var(--cke-editable-bg);
+    color: var(--cke-editable-text);
+}
+
+.chr-FormattedId .chr-FormattedId-idText {
+    color: var(--main-link-text);
+}
+
+/* Images so they don't POP white (they'll still be white because they are.) */
+.style_4 {
+    background-color: #000;
+    /* make glare tolerable */
+    opacity: 0.5;
+}
+
+.rally-group-header.multi-object-picker-header {
+    background-color: var(--main-control-bg);
+    border-color: var(--main-control-border);
+    color: var(--main-control-text);
+}

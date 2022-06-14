@@ -1,0 +1,73 @@
+/* @import "../../styles/index-variables";
+@import "node_modules/@mineral/tokens/build/light/index.scss"; */
+
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid {
+    border-color: var(--mnrl-danger-border);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .chr-EditorsMultiItemEditor,
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .chr-ProjectsEditor,
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-Select-trigger,
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-SingleItemDropdown .smb-DropdownTrigger,
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-RichTextEditor,
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput {
+    border-color: var(--mnrl-danger-border) !important;
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper.is-invalid .smb-TextInput.smb-SearchInput {
+    border-color: var(--mnrl-borderColor) !important;
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .smb-ProgressBar--progress.readable {
+    background-color: var(--mnrl-gray-20);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) {
+    border-color: var(--mnrl-borderColor-brand-hover);
+    box-shadow: none;
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) .smb-PopoverTrigger .smb-Button:hover,
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover:not(:focus-within):not(.is-readOnly) .chr-ProjectsEditor-trigger.smb-Button:hover {
+    color: var(--mnrl-color-brand-hover);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within {
+    box-shadow: 0 0 0 0.1rem var(--mnrl-white), 0 0 0 0.2rem var(--mnrl-borderColor-brand-focus);
+}
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:hover {
+    border-color: var(--mnrl-borderColor);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active .smb-PopoverTrigger .smb-Button:active,
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within:active .chr-ProjectsEditor-trigger.smb-Button:active {
+    color: var(--mnrl-color-brand-active);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .smb-PopoverTrigger .smb-Button,
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):hover .chr-ProjectsEditor-trigger.smb-Button,
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within .smb-PopoverTrigger .smb-Button,
+#main .chr-QuickDetailAttributeEditorWrapper .chr-QuickDetailAttributeEditorWrapper-editorContainer > div:not(.chr-EditorsEntityStatus):not(.is-disabled):focus-within .chr-ProjectsEditor-trigger.smb-Button {
+    background-color: transparent;
+}
+
+#main .chr-DragAndDropField-dragHandle:hover {
+    opacity: 1;
+}
+
+#main .chr-DragAndDropField-dragHandle .smb-SvgIcon {
+    color: var(--mnrl-color-brand);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper-editorContainer {
+    line-height: 1;
+}
+
+#main h2 .chr-QuickDetailAttributeEditorWrapper-label,
+#main h3 .chr-QuickDetailAttributeEditorWrapper-label {
+    color: var(--mnrl-gray-80);
+}
+
+#main .chr-QuickDetailAttributeEditorWrapper-requiredIndicator {
+    color: var(--mnrl-color-danger);
+}

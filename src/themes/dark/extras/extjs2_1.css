@@ -1,0 +1,14 @@
+/* Rally uses several (!) versions of ExtJS: 2.1 and 4.x.
+ * This is ExtJS 2.1 (incomplete).
+ */
+.x-body,
+.x-panel-body-default {
+    background-color: var(--main-primary-bg);
+    color: var(--main-primary-text);
+}
+
+.x-boundlist .x-boundlist-item {
+    background-color: var(--control-bg);
+    border-color: var(--control-border);
+    color: var(--control-text);
+}

@@ -1,0 +1,162 @@
+/* @import 'node_modules/@mineral/tokens/build/light/index.scss'; */
+
+:root {
+    /* Color definition */
+    /* black/white vars are very wonkily applied. */
+    --black: lime;
+    --blue: #0092c8;
+    --cyan: #30aac7;
+    --red: #f00;
+    --white: lime;
+    --transparent: transparent;
+    --inherit: inherit;
+    /* Shades / highlight color definition (REVERSED) */
+    --cyan-medium: #b8f1ff;
+    --cyan-light: #61c6e5;
+    --grey1: #222222;
+    --grey2: #444444;
+    --grey3: #666666;
+    --grey4: #888888;
+    --grey5: #a9a9a9;
+    --grey6: #c0c0c0;
+    --grey7: #d6d6d6;
+    --grey8: #e6e6e6;
+    --grey9: #f6f6f6;
+
+    --white-text: #ffffff;
+
+    --grey: var(--grey5); /* can be removed after churro commit for S136962 is released */
+
+    /* Secondary color definition */
+    --brick: #b81b10;
+    --gold: #f6a900;
+    --green: #48a23f;
+    --lime: #5cba49;
+    --ocean: #156d82;
+    --orange: #f7922f;
+    --pink: #9a4789;
+    --purple: #483b5e;
+    --teal: #57c1b4;
+    --yellow: #ffc91c;
+
+    /* MY5 COLORS */
+    --my5-cyan: #1fa7c8;
+    --my5-cyan-medium: #71d3eb;
+    --my5-cyan-light: #b8f1ff;
+
+    --sea: #006488;
+    --sea-dark: #21516d;
+    --sea-light: #53bbd4;
+    --sea-medium: #307696;
+
+    --slate: #143044;
+    --slate-dark: #051a2b;
+    --slate-highlight: #c4d8e8;
+    --slate-medium: #20465f;
+
+    /* CA Core Colors */
+    --ca-core-dark-blue: #22465e;
+    --ca-core-dark-blue-tint: #2d678f;
+    --ca-core-maroon: #6d0404;
+    --ca-core-lime: #5cba49;
+
+    --warm-grey: #677b87;
+    --warm-grey-dark: #58676d;
+    --warm-grey-light: #d0d8d8;
+
+    /* CA Highlights */
+    --ca-highlight-light-green: #57c1b4;
+
+    /* Shades / Highlight secondary color definition */
+    --blue-medium: #00aeef;
+    --brick-light: #f3cfc7;
+    --brick-medium: #f66349;
+    --gold-dark: adjust-color(var(--gold), var(--red): -39, var(--green): -34, var(--blue): 27);
+    --gold-light: adjust-color(var(--gold), var(--red): -2, var(--green): 22, var(--blue): 75);
+    --green-dark: #037a32;
+    --lime-light: #daedd8;
+    --lime-medium: #93cd8f;
+    --ocean-light: #9ad1da;
+    --ocean-medium: #408492;
+    --orange-light: #fac787;
+    --orange-medium: #f7a746;
+    --pink-light: #d69dc7;
+    --pink-medium: #bd66a9;
+    --purple-light: #b5abc0;
+    --purple-medium: #69587f;
+    --red-light: #f66349;
+    --teal-light: #c3e9e3;
+    --teal-medium: #8cd5c8;
+    --yellow-light: #faf1d4;
+    --yellow-medium: #fee276;
+    --yellow-highlight: adjust-color(var(--yellow), var(--red): 3, var(--green): 44, var(--blue): 204);
+
+    --alert: var(--gold);
+    --danger: var(--brick);
+    --error-light: var(--red-light);
+    --error-dark: darken(var(--error-light), 30%);
+    --feedback: var(--yellow);
+    --feedback-hover: darken(var(--feedback), 5%);
+    --highlight: #edf8fb;
+    --highlight-dark: darken(var(--highlight), 10%);
+    --hover: var(--sea-dark);
+    --hover-select: var(--sea-dark);
+    --hover-link: var(--sea-dark);
+    --link: var(--sea);
+    --logo: var(--red);
+    --primary: var(--sea);
+    --primary-hover: darken(var(--primary), 5%);
+    --success: var(--mnrl-green-20);
+    --success-dark: var(--mnrl-successGreen-50);
+    --warning: var(--gold);
+    --warning-hover: darken(var(--warning), 5%);
+    --warning-dark: darken(var(--warning), 30%);
+
+    --chart1: var(--ocean-light);
+    --chart2: var(--ocean-medium);
+    --chart3: var(--ocean);
+    --chart4: var(--lime-medium);
+    --chart5: var(--lime);
+    --chart6: var(--green-dark);
+    --chart7: var(--yellow-medium);
+    --chart8: var(--yellow);
+    --chart9: var(--gold);
+    --chart10: var(--orange);
+    --chart11: var(--brick-light);
+    --chart12: var(--brick-medium);
+    --chart13: var(--logo);
+    --chart14: var(--grey2);
+    --chart15: var(--grey4);
+    --chart16: var(--grey7);
+    --chart17: var(--grey4);
+
+    --portfolio-item1: var(--ocean);
+    --portfolio-item2: lighten(var(--ocean), 15%);
+    --portfolio-item3: lighten(var(--ocean), 30%);
+    --portfolio-item4: lighten(var(--ocean), 45%);
+
+    /* Shared component variables */
+    --form-element-background: var(--main-control-bg);
+    --form-element-border: var(--main-control-border);
+    --form-element-color: var(--main-control-text);
+    --form-element-transparent-active-background: rgba(var(--black), 0.1);
+    --form-element-transparent-disabled-background: var(--main-control-disabled-bg);
+
+    --disabled-background: var(--main-disabled-bg);
+    --disabled-border: var(--main-disabled-border);
+    --disabled-color: var(--main-disabled-color);
+
+    --loading-indicator: #eff8fb;
+
+    --error: var(--red);
+    --saved: var(--lime);
+
+    --box-shadow-0: rgba(0, 0, 0, 0.05);
+    --box-shadow-1: rgba(0, 0, 0, 0.1);
+    --box-shadow-2: rgba(0, 0, 0, 0.125);
+    --box-shadow-3: rgba(0, 0, 0, 0.15);
+    --box-shadow-4: rgba(0, 0, 0, 0.5);
+    --box-shadow-4-inverse: rgba(255, 255, 255, 0.5);
+
+    --update-success: var(--mnrl-green-20);
+}

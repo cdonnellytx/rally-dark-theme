@@ -1,0 +1,18 @@
+/* @import 'node_modules/@mineral/tokens/build/light/index.scss'; */
+
+.chr-ReactPageWrapper .chr-legacy-help {
+    background-color: var(--main-bg);
+}
+.chr-ReactPageWrapper .chr-legacy-help.insights-help {
+    border: none;
+}
+.chr-ReactPageWrapper .chr-legacy-help.insights-help:hover {
+    background-color: transparent;
+}
+.chr-ReactPageWrapper .chr-legacy-help.insights-help .chr-HelpButton {
+    border: none;
+}
+
+.chr-ReactPageWrapper .chr-legacy-help.insights-help .chr-HelpButton .smb-Button-icon .smb-SvgIcon--help {
+    color: #c0c0c0;
+}

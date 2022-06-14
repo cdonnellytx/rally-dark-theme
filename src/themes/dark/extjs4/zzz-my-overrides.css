@@ -1,0 +1,44 @@
+.x4-body {
+    background-color: var(--x4-primary-bg);
+}
+
+#main .x4-btn {
+    background-color: var(--button-bg);
+    border-color: var(--button-border);
+}
+
+#main .x4-grid-body {
+    background-color: inherit;
+    color: inherit;
+}
+
+#main .x4-form-field,
+#main .x4-form-field input {
+    background-color: #555 !important;
+    color: #ddd !important;
+}
+
+#main .x4-form-trigger {
+    color: #ddd;
+    background-color: #555;
+}
+
+#main .x4-field-label-cell {
+    color: #ddd;
+}
+
+#main .x4-column-header {
+    color: #ddd;
+    background-color: #333;
+    border-color: #333;
+}
+
+#main .x4-column-header .x4-column-header-inner {
+    color: #ddd;
+}
+
+#main .x4-grid-cell {
+    background-color: #111;
+    color: #ddd;
+    border-color: #555;
+}
