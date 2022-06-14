@@ -8,7 +8,7 @@
 }
 
 .x-boundlist .x-boundlist-item {
-    background-color: var(--control-bg);
-    border-color: var(--control-border);
-    color: var(--control-text);
+    background-color: var(--main-control-bg);
+    border-color: var(--main-control-border);
+    color: var(--main-control-text);
 }
