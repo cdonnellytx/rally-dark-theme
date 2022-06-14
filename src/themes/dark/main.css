@@ -2330,9 +2330,6 @@ span[style^="color:black"] {
 }
 
 /*
-.smb-ToggleButton:hover,
-.smb-ToggleButton:focus {
-}
 
 .smb-ToggleButton:active {
     box-shadow: none;

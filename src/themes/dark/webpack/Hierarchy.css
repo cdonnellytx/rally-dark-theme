@@ -4,9 +4,6 @@
 @import 'node_modules/@mineral/tokens/build/light/index.scss';
 */
 
-:root {
-}
-
 #main .chr-ViewportProjectPickerTree-wrapper .smb-DataTableBlankSlate-primaryMessage {
     color: var(--mnrl-h2-color);
 }
