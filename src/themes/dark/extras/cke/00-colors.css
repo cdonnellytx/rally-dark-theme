@@ -1,0 +1,7 @@
+:root {
+    /* Toolbar: the icons have a set color and limit what we can do here.
+     * Need to keep this light bg / dark fg. */
+    --cke-toolbar-control-bg: var(--main-control-text);
+    --cke-toolbar-control-border: var(--main-control-border);
+    --cke-toolbar-control-text: var(--main-control-bg);
+}

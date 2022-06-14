@@ -1,0 +1,247 @@
+/* div and span rules are to try to avoid fallback to '*' */
+.cke_reset_all,
+/* .cke_reset_all *, */
+.cke_reset_all div,
+.cke_reset_all span,
+.cke_reset_all a,
+.cke_reset_all textarea {
+    color: var(--main-primary-text);
+}
+.cke_reset_all fieldset {
+    border-color: #e0dfe3;
+}
+.cke_top {
+    background-color: var(--cke-toolbar-control-bg);
+}
+
+/* to handle the toolbar overrides we have to duplicate the * rule :(
+ * div and span rules are to try to avoid fallback to '*'
+ */
+.cke_top,
+/* .cke_top *, */
+.cke_top div,
+.cke_top span,
+.cke_top a,
+.cke_top textarea {
+    color: var(--cke-toolbar-control-text);
+}
+
+.cke_float .cke_top {
+    border-color: #b6b6b6;
+    border-bottom-color: #999;
+}
+.cke_bottom {
+    background-color: #fff;
+}
+.cke_resizer {
+    border-color: transparent #666 transparent transparent;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.cke_resizer_rtl {
+    border-color: transparent transparent transparent #a5a5a5;
+}
+.cke_panel {
+    background-color: #fff;
+    border-color: #b6b6b6;
+    border-bottom-color: #999;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.cke_panel_listItem a {
+    border-color: var(--dropdown-item-border);
+}
+.cke_panel_listItem.cke_selected a {
+    background-color: var(--dropdown-item-is_active-bg);
+    border-color: var(--dropdown-item-is_active-border);
+    color: var(--dropdown-item-is_active-text);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+.cke_panel_listItem a:hover,
+.cke_panel_listItem a:focus,
+.cke_panel_listItem a:active {
+    background-color: var(--dropdown-item-hover-bg);
+    border-color: var(--dropdown-item-hover-border);
+    color: var(--dropdown-item-hover-text);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+.cke_panel_grouptitle {
+    color: #474747;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    border-bottom-color: #b6b6b6;
+}
+.cke_colorblock,
+.cke_colorblock a {
+    color: #000;
+}
+span.cke_colorbox {
+    border-color: #808080;
+}
+a.cke_colorbox {
+    border-color: #fff;
+}
+a:hover.cke_colorbox,
+a:focus.cke_colorbox,
+a:active.cke_colorbox {
+    border-color: #b6b6b6;
+    background-color: #e5e5e5;
+}
+a.cke_colorauto,
+a.cke_colormore {
+    border-color: #fff;
+}
+a:hover.cke_colorauto,
+a:hover.cke_colormore,
+a:focus.cke_colorauto,
+a:focus.cke_colormore,
+a:active.cke_colorauto,
+a:active.cke_colormore {
+    border-color: #b6b6b6;
+    background-color: #e5e5e5;
+}
+a.cke_button {
+    border-color: transparent;
+}
+a.cke_button_on {
+    background-color: #71d3eb;
+}
+a.cke_button_off:hover,
+a.cke_button_off:focus,
+a.cke_button_on:hover,
+a.cke_button_on:focus,
+a.cke_button_off:active {
+    border-color: #327c98;
+}
+.cke_button_label {
+    color: #474747;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.cke_button_arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #474747;
+}
+.cke_toolbar_separator {
+    background-color: #c0c0c0;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 1px rgba(255, 255, 255, 0.5);
+}
+.cke_rtl .cke_toolbar_separator {
+    box-shadow: -1px 0 1px rgba(255, 255, 255, 0.1);
+}
+a.cke_toolbox_collapser {
+    border-color: #a6a6a6;
+    border-bottom-color: #979797;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+    background-color: #e4e4e4;
+    background-image: linear-gradient(to bottom, #fff, #e4e4e4);
+}
+.cke_toolbox_collapser:hover {
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom, #f2f2f2, #ccc);
+}
+.cke_toolbox_collapser .cke_arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #474747;
+    border-top-color: transparent;
+}
+.cke_toolbox_collapser.cke_toolbox_collapser_min .cke_arrow {
+    border-bottom-color: transparent;
+    border-top-color: #474747;
+}
+.cke_menubutton:hover,
+.cke_menubutton:focus,
+.cke_menubutton:active {
+    background-color: var(--toggle-hover-bg);
+}
+.cke_menubutton_icon {
+    background-color: var(--toggle-bg);
+}
+.cke_menubutton:hover .cke_menubutton_icon,
+.cke_menubutton:focus .cke_menubutton_icon,
+.cke_menubutton:active .cke_menubutton_icon {
+    background-color: var(--menuitem-hover-bg);
+}
+.cke_menubutton_on {
+    border-color: var(--toggle-on-border);
+    background-color: var( --toggle-on-bg);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+.cke_menubutton:hover,
+.cke_menubutton:focus,
+.cke_menubutton:active {
+    background-color: var(--toggle-on-hover-bg);
+}
+.cke_menuseparator {
+    background-color: #d3d3d3;
+}
+.cke_menuarrow {
+    background-image: url(images/arrow.png);
+}
+a.cke_combo_button {
+    border-color: #d7d7d7;
+    background-color: #fff;
+}
+.cke_combo_off a.cke_combo_button:hover,
+.cke_combo_off a.cke_combo_button:focus {
+    background-color: var(--main-hover-bg);
+    border-color: var(--main-hover-border);
+}
+.cke_combo.cke_combo_disabled a.cke_combo_button:hover,
+.cke_combo.cke_combo_disabled a.cke_combo_button:focus {
+    border-color: #d7d7d7;
+}
+.cke_combo_off a.cke_combo_button:active,
+.cke_combo_on a.cke_combo_button {
+    border-color: var(--dropdown-item-checkbox-checked-border);
+}
+.cke_combo_text {
+    color: #474747;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.cke_combo_arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #474747;
+}
+a.cke_path_item,
+span.cke_path_empty {
+    color: #4c4c4c;
+    text-shadow: 0 1px 0 #fff;
+}
+a.cke_path_item:hover,
+a.cke_path_item:focus,
+a.cke_path_item:active {
+    background-color: #bfbfbf;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+textarea.cke_source {
+    background-color: #fff;
+}
+.cke_wysiwyg_frame,
+.cke_wysiwyg_div {
+    background-color: #fff;
+}
+.cke_notification {
+    color: white;
+    box-shadow: 2px 2px 3px 0 rgba(50, 50, 50, 0.3);
+}
+.cke_notification_message a {
+    color: #12306f;
+}
+.cke_notification_success {
+    background-color: #72b572;
+    border-color: #63a563;
+}
+.cke_notification_warning {
+    background-color: #c83939;
+    border-color: #902b2b;
+}
+.cke_notification_info {
+    background-color: #2e9ad0;
+    border-color: #0f74a8;
+}
+.cke_notification_info span.cke_notification_progress {
+    background-color: #0f74a8;
+}

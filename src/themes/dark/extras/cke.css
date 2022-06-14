@@ -3,38 +3,25 @@
  */
 
 /* CKE's rules are... ugh. */
-.cke_reset_all {
+
+/* .cke_reset_all {
     background-color: var(--main-primary-bg);
     border-color: var(--main-primary-border);
     color: var(--main-primary-text);
-}
-
-.cke_reset_all *,
-.cke_reset_all a,
-.cke_reset_all textarea {
-    /* border-color: var(--main-primary-border); */
-    color: var(--main-primary-text);
-}
-
-/* Text Editor : Toolbar -- icons limit what we can do here... */
-.cke_top {
-    background-color: var(--main-control-text);
-    border-color: var(--main-control-border);
-    color: var(--main-control-bg);
-}
+} */
 
 /* have to '*' and 'a' because cke_reset_all does */
-.cke_top div,
+/* .cke_top div,
 .cke_top span,
 .cke_top a {
     background-color: inherit;
     border-color: inherit;
     color: var(--main-control-bg);
-}
+} */
 
 .cke_combo_text {
     /* seems broken */
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .cke_wysiwyg_frame,
@@ -42,12 +29,10 @@
     background-color: #bbb !important;
 }
 
-.cke_combo_off a.cke_combo_button:hover,
+/* .cke_combo_off a.cke_combo_button:hover,
 .cke_combo_off a.cke_combo_button:focus {
-    background-color: var(--main-hover-bg);
-    border-color: var(--main-hover-border);
     color: var(--main-hover-text);
-}
+} */
 
 .cke_toolgroup a.cke_button_off:hover,
 .cke_toolgroup a.cke_button_on:hover {
@@ -96,22 +81,6 @@ select.cke_dialog_ui_input_select {
     border-color: var(--main-control-border);
     color: var(--main-control-text);
     text-shadow: var(--cke-text-shadow);
-}
-
-.cke_panel_listItem a {
-    border-color: var(--cke-editable-bg);
-}
-
-.cke_panel_listItem a:hover {
-    background-color: var(--main-hover-bg);
-    border-color: var(--main-hover-border);
-}
-
-.cke_panel_listItem a:focus,
-.cke_panel_listItem a:active {
-    background-color: var(--dropdown-item-is_active-bg);
-    border-color: var(--dropdown-item-is_active-bg);
-    color: var(--dropdown-item-is_active-text);
 }
 
 .cke_dialog_background_cover {

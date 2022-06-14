@@ -201,14 +201,17 @@
     --dropdown-footer-border: var(--main-control-border);
     --dropdown-footer-text: var(--main-tertiary-text);
 
+    --dropdown-item-border: transparent;
     --dropdown-item-text: var(--mnrl-gray-100);
     --dropdown-item-subtext: var(--mnrl-gray-80);
     --dropdown-item-hover-bg: var(--mnrl-gray-20);
+    --dropdown-item-hover-border: var(--dropdown-item-border);
     --dropdown-item-hover-text: var(--main-hover-text);
     --dropdown-item-is_active-bg: #2929c4;
-    --dropdown-item-is_primary-bg: var(--main-link-text);
-
+    --dropdown-item-is_active-border: var(--dropdown-item-border);
     --dropdown-item-is_active-text: var(--dropdown-item-text);
+
+    --dropdown-item-is_primary-bg: var(--main-link-text);
 
     --dropdown-item-checkbox-checked-bg: var(--mnrl-mineralBlue-50);
     --dropdown-item-checkbox-checked-border: var(--mnrl-mineralBlue-50);
