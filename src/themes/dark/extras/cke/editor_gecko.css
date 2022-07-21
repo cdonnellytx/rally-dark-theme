@@ -245,3 +245,9 @@ textarea.cke_source {
 .cke_notification_info span.cke_notification_progress {
     background-color: #0f74a8;
 }
+
+/* HACK: Workaround for hardcoded inline CSS for blackish */
+body.cke_editable font[style^="color:"],
+body.cke_editable span[style^="color:"] {
+    color: inherit !important;
+}
