@@ -2569,6 +2569,16 @@ h3 .chr-QuickDetailAttributeEditorWrapper-label {
     opacity: 0.5;
 }
 
+.highcharts-background[fill="#ffffff"] {
+    /* do not show this background. */
+    opacity: 0;
+}
+.highcharts-axis-labels text {
+    color: var(--main-content-text) !important;
+    fill: var(--main-content-text) !important;
+}
+
+
 .rally-group-header.multi-object-picker-header {
     background-color: var(--main-control-bg);
     border-color: var(--main-control-border);
